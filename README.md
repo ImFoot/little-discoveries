@@ -2,6 +2,8 @@
 
 A personal, untimed hidden-object game built with TypeScript, Vite, PixiJS 8, and HTML/CSS. No accounts, ads, purchases, lives, timers, or paid help. The complete design and all 100 required target counts remain in [DESIGN.md](DESIGN.md).
 
+**[Play Little Discoveries](https://imfoot.github.io/little-discoveries/)** in ordinary iPhone Safari. No installation is required.
+
 Source repository: [ImFoot/little-discoveries](https://github.com/ImFoot/little-discoveries). GitHub Pages publishing is configured in `.github/workflows/pages.yml`; pushes to `main` publish after tests, content validation and the build pass. See [hosting and save migration](docs/HOSTING.md).
 
 ## Run locally

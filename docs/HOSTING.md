@@ -12,7 +12,11 @@ The workflow uses GitHub's built-in token and deployment identity. No personal a
 
 Vite uses relative asset URLs and the game uses hash navigation, so the project subdirectory works without server route rewrites. The service worker, manifest, artwork and chapter downloads stay within the game's directory. HTTPS supports ordinary iPhone Safari and service-worker offline downloads; Home Screen installation is optional.
 
-The live URL and first successful deployment are recorded below once verified. Later updates publish by committing and pushing to `main`; deployment status appears in the repository's Actions tab.
+Live game: **https://imfoot.github.io/little-discoveries/**
+
+The [first deployment](https://github.com/ImFoot/little-discoveries/actions/runs/41414125158) succeeded on 2026-11-02 from commit `6c2abaa02ff9a3572b9efcc54f01a841058893a3`. Hosted checks confirmed the catalog's 100 scenes / 1,304 targets, all ten complete chapter manifests, required entry assets, and scene/preview assets for levels 1, 28, 80 and 100. Desktop browser checks confirmed collection, saved progress after reload, and a complete first-chapter download (136/136 files). These checks do not establish physical iPhone acceptance. Details are in [verification/deployment.json](verification/deployment.json).
+
+Later updates publish by committing and pushing to `main`; deployment status appears in the repository's Actions tab.
 
 ## Moving progress
 

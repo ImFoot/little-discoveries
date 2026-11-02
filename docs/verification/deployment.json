@@ -1,0 +1,79 @@
+{
+  "checkedAt": "2026-11-02T08:37:10.222Z",
+  "url": "https://imfoot.github.io/little-discoveries/",
+  "https": true,
+  "catalogScenes": 100,
+  "placements": 1304,
+  "completeOfflineChapters": 10,
+  "buildVersion": "db2ebbc10a3a2a25",
+  "contentVersion": "c671b9b40405e5eb",
+  "representatives": [
+    {
+      "id": 1,
+      "title": "Morning kitchen",
+      "targets": 8
+    },
+    {
+      "id": 28,
+      "title": "The haberdashery",
+      "targets": 16
+    },
+    {
+      "id": 80,
+      "title": "The lantern grove",
+      "targets": 14
+    },
+    {
+      "id": 100,
+      "title": "A table for two",
+      "targets": 10
+    }
+  ],
+  "entryAssets": [
+    "./assets/index-DKEk8VsT.js",
+    "./assets/index-D9sxs_sf.css"
+  ],
+  "httpChecksPassed": true,
+  "physicalIPhone": false,
+  "verified": true,
+  "repository": "https://github.com/ImFoot/little-discoveries",
+  "repositoryVisibility": "public",
+  "sourceCommit": "6c2abaa02ff9a3572b9efcc54f01a841058893a3",
+  "workflow": {
+    "url": "https://github.com/ImFoot/little-discoveries/actions/runs/41414125158",
+    "status": "completed",
+    "conclusion": "success",
+    "updatedAt": "2026-11-02T08:36:32Z",
+    "jobs": [
+      {
+        "name": "build",
+        "conclusion": "success"
+      },
+      {
+        "name": "deploy",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "browserChecks": {
+    "browser": "ChatGPT in-app browser on Windows",
+    "physicalIPhone": false,
+    "illustrationsRendered": [
+      1,
+      28
+    ],
+    "pointerCollection": {
+      "level": 1,
+      "target": "Striped mug",
+      "counter": "1 / 8"
+    },
+    "reloadPreservedFind": true,
+    "chapterDownload": {
+      "chapter": 1,
+      "state": "Available offline",
+      "filesCached": 136,
+      "filesRequired": 136
+    },
+    "offlineWithoutNetwork": "Previously verified in local production Chromium and WebKit tests; network disconnection was not repeated in this hosted browser check."
+  }
+}

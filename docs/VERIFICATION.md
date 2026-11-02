@@ -1,6 +1,6 @@
 # Implementation and verification
 
-Generated 2026-11-02T08:10:41.973Z.
+Generated 2026-11-02T08:40:32.160Z.
 
 The local game contains **100 original illustrated scenes and 1,304 authored object placements**, with the exact chapter/level counts in DESIGN.md. Source PNGs, final prompts, manually traced outlines, matching previews and runtime level JSON are retained in this workspace. No placeholder level counts as finished. All ten complete offline packages are in the production build.
 
@@ -24,6 +24,6 @@ A cold scene became playable in **1388 ms** under Chromium's emulated 10 Mbps / 
 
 **No actual iPhone has been tested.** All 100 per-scene smallPhone flags remain false. The intended phone still needs normal-brightness artwork/target review, real two-finger pinch/drag, Safari toolbar and app-switch/lock interruptions, storage eviction behavior, and performance measurements. See [DEVICE_REVIEW.md](DEVICE_REVIEW.md). This is the remaining acceptance blocker; browser emulation cannot establish those results.
 
-The build is ready for static HTTPS hosting in dist/. It has not been deployed to a public website by this task. Opening a normal HTTPS link is sufficient; Home Screen installation is optional.
+The game is published on GitHub Pages at [https://imfoot.github.io/little-discoveries/](https://imfoot.github.io/little-discoveries/). Deployment details and hosted checks are recorded in [verification/deployment.json](verification/deployment.json). Opening a normal HTTPS link is sufficient; Home Screen installation is optional.
 
 Detailed evidence, raw reports, screenshots and package versions are in [verification/results.json](verification/results.json) and the neighboring files. Chapter composition contact sheets are in artwork/review/.

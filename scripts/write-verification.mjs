@@ -17,6 +17,7 @@ for(const run of reports){run.report=await readJSON(run.path);for(const suite of
 const content=await readJSON('.cache/content-validation.json');
 const unit=await readJSON('.cache/unit-report.json');
 const manifest=await readJSON('dist/offline-manifest.json');
+let deployment;try{deployment=await readJSON('docs/verification/deployment.json');}catch{}
 let missingArt;try{missingArt=await readJSON('.cache/missing-art-results.json');}catch{}
 const cases=[...latest.values()];
 const summary={total:cases.length,passed:cases.filter(c=>c.status==='expected').length,skipped:cases.filter(c=>c.status==='skipped').length,failed:cases.filter(c=>!['expected','skipped'].includes(c.status)).length};
@@ -43,6 +44,7 @@ const evidence={
   additionalRecovery:missingArt?.stats,metrics,
   packages:Object.fromEntries(['pixi.js','vite','typescript','sharp','@playwright/test'].map(name=>[name,versions[`node_modules/${name}`].version])),
   buildVersion:manifest.version,contentVersion:manifest.contentVersion,
+  hostedDeployment:deployment,
   offlineChapters:manifest.chapters.map(c=>({chapter:c.id,scenes:c.readyLevels,files:c.files.length,bytes:c.bytes})),
   physicalIPhoneTested:false,
 };
@@ -75,7 +77,7 @@ A cold scene became playable in **${loading.playableMs} ms** under Chromium's em
 
 **No actual iPhone has been tested.** All 100 per-scene smallPhone flags remain false. The intended phone still needs normal-brightness artwork/target review, real two-finger pinch/drag, Safari toolbar and app-switch/lock interruptions, storage eviction behavior, and performance measurements. See [DEVICE_REVIEW.md](DEVICE_REVIEW.md). This is the remaining acceptance blocker; browser emulation cannot establish those results.
 
-The build is ready for static HTTPS hosting in dist/. It has not been deployed to a public website by this task. Opening a normal HTTPS link is sufficient; Home Screen installation is optional.
+${deployment?.verified?`The game is published on GitHub Pages at [${deployment.url}](${deployment.url}). Deployment details and hosted checks are recorded in [verification/deployment.json](verification/deployment.json).`:'The build is ready for static HTTPS hosting in dist/. It has not been deployed to a public website by this task.'} Opening a normal HTTPS link is sufficient; Home Screen installation is optional.
 
 Detailed evidence, raw reports, screenshots and package versions are in [verification/results.json](verification/results.json) and the neighboring files. Chapter composition contact sheets are in artwork/review/.
 `;
