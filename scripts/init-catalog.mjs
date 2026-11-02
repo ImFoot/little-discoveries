@@ -1,0 +1,14 @@
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
+const text = await readFile('DESIGN.md', 'utf8');
+const subtitles = ['Small comforts, lovely little things.', 'Follow the light into the garden.', 'An afternoon of window shopping.', 'Salt air and sunlit treasures.', 'Slow days in the countryside.', 'Take the scenic route.', 'Every room has a story.', 'A touch of everyday wonder.', 'A lovely time for every season.', 'The best place to end a journey.'];
+const colors = ['#76806a','#839479','#b8957b','#7d9aab','#b39965','#8c9e9b','#9a8c79','#7f858c','#ae8776','#ad9a85'];
+const chapters = [...text.matchAll(/^### Chapter (\d+) (.+)$/gm)].map((m, i) => ({ id: +m[1], title: m[2].trim(), subtitle: subtitles[i], color: colors[i] }));
+const levels = [...text.matchAll(/^\| (\d+) \| ([^|]+) \| (\d+) \| ([^|]+) \|/gm)].map(m => ({ id: +m[1], chapter: Math.ceil(+m[1] / 10), title: m[2].trim(), targetCount: +m[3], sample: m[4].trim(), thumbnail: `art/${m[1].padStart(3, '0')}-thumb.webp`, status: 'draft', targetIds: [] }));
+if (levels.length !== 100 || levels.reduce((n,l)=>n+l.targetCount,0)!==1304) throw Error('Design catalog mismatch');
+await mkdir('public/content/levels', { recursive: true });
+await mkdir('public/art', { recursive: true });
+await mkdir('artwork/source', { recursive: true });
+await mkdir('artwork/annotations', { recursive: true });
+await mkdir('docs', { recursive: true });
+await writeFile('public/content/catalog.json', JSON.stringify({ chapters, levels }, null, 2)+'\n');
+console.log('Catalog: 100 scenes, 1,304 required placements.');

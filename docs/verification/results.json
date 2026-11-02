@@ -1,0 +1,313 @@
+{
+  "date": "2026-11-02T08:10:41.973Z",
+  "content": {
+    "catalogScenes": 100,
+    "requiredPlacements": 1304,
+    "illustratedScenes": 100,
+    "authoredPlacements": 1304,
+    "actualIPhoneReviewed": 0,
+    "errors": [],
+    "warnings": []
+  },
+  "unitTests": {
+    "passed": 15,
+    "failed": 0
+  },
+  "browserTests": {
+    "total": 24,
+    "passed": 23,
+    "skipped": 1,
+    "failed": 0,
+    "method": "Latest result per engine and scenario, full tour followed by final focused regression checks.",
+    "runs": [
+      {
+        "file": "full-browser-run.json",
+        "startTime": "2026-11-02T07:54:07.861Z",
+        "duration": 512875.403,
+        "expected": 21,
+        "skipped": 1,
+        "unexpected": 2,
+        "flaky": 0
+      },
+      {
+        "file": "final-regression-run.json",
+        "startTime": "2026-11-02T08:08:43.726Z",
+        "duration": 34205.956,
+        "expected": 13,
+        "skipped": 1,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    ],
+    "cases": [
+      {
+        "project": "chromium-phone",
+        "title": "a narrow foreground comb keeps its edge when pointer coordinates are rounded",
+        "status": "expected",
+        "run": "full-browser-run.json"
+      },
+      {
+        "project": "chromium-phone",
+        "title": "an unfound scarf keeps its visible edge beside an unfound journal",
+        "status": "expected",
+        "run": "full-browser-run.json"
+      },
+      {
+        "project": "chromium-phone",
+        "title": "every authored placement can be revealed and collected through the real scene picker",
+        "status": "expected",
+        "run": "full-browser-run.json"
+      },
+      {
+        "project": "chromium-phone",
+        "title": "a complete chapter downloads, survives offline navigation, detects missing files, and repairs",
+        "status": "expected",
+        "run": "full-browser-run.json"
+      },
+      {
+        "project": "chromium-phone",
+        "title": "an interrupted chapter download resumes without discarding cached files or progress",
+        "status": "expected",
+        "run": "full-browser-run.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "a narrow foreground comb keeps its edge when pointer coordinates are rounded",
+        "status": "expected",
+        "run": "full-browser-run.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "an unfound scarf keeps its visible edge beside an unfound journal",
+        "status": "expected",
+        "run": "full-browser-run.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "every authored placement can be revealed and collected through the real scene picker",
+        "status": "expected",
+        "run": "full-browser-run.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "a complete chapter downloads, survives offline navigation, detects missing files, and repairs",
+        "status": "expected",
+        "run": "full-browser-run.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "an interrupted chapter download resumes without discarding cached files or progress",
+        "status": "expected",
+        "run": "full-browser-run.json"
+      },
+      {
+        "project": "chromium-phone",
+        "title": "real tap, repeated tap, offscreen-card collection, help, resume, and complete replay",
+        "status": "expected",
+        "run": "final-regression-run.json"
+      },
+      {
+        "project": "chromium-phone",
+        "title": "drag and pinch never collect; small portrait and landscape controls stay reachable",
+        "status": "expected",
+        "run": "final-regression-run.json"
+      },
+      {
+        "project": "chromium-phone",
+        "title": "representatives render all targets and all 100 catalog entries are selectable",
+        "status": "expected",
+        "run": "final-regression-run.json"
+      },
+      {
+        "project": "chromium-phone",
+        "title": "backup export, invalid import preservation, and confirmed restore",
+        "status": "expected",
+        "run": "final-regression-run.json"
+      },
+      {
+        "project": "chromium-phone",
+        "title": "service worker restores a visited scene with networking disabled",
+        "status": "expected",
+        "run": "final-regression-run.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "real tap, repeated tap, offscreen-card collection, help, resume, and complete replay",
+        "status": "expected",
+        "run": "final-regression-run.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "drag and pinch never collect; small portrait and landscape controls stay reachable",
+        "status": "expected",
+        "run": "final-regression-run.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "representatives render all targets and all 100 catalog entries are selectable",
+        "status": "expected",
+        "run": "final-regression-run.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "backup export, invalid import preservation, and confirmed restore",
+        "status": "expected",
+        "run": "final-regression-run.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "service worker restores a visited scene with networking disabled",
+        "status": "expected",
+        "run": "final-regression-run.json"
+      },
+      {
+        "project": "chromium-phone",
+        "title": "a cold scene fits the transfer and loading budgets at an emulated 10 Mbps",
+        "status": "expected",
+        "run": "final-regression-run.json"
+      },
+      {
+        "project": "chromium-phone",
+        "title": "a valid touch produces progress feedback within 100 ms and picture recovery preserves finds",
+        "status": "expected",
+        "run": "final-regression-run.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "a cold scene fits the transfer and loading budgets at an emulated 10 Mbps",
+        "status": "skipped",
+        "run": "final-regression-run.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "a valid touch produces progress feedback within 100 ms and picture recovery preserves finds",
+        "status": "expected",
+        "run": "final-regression-run.json"
+      }
+    ]
+  },
+  "additionalRecovery": {
+    "startTime": "2026-11-02T07:51:10.266Z",
+    "duration": 20014.965999999997,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "metrics": [
+    {
+      "name": "verified-placements.json",
+      "project": "chromium-phone",
+      "run": "full-browser-run.json",
+      "engine": "chromium-phone",
+      "scenes": 100,
+      "placements": 1304,
+      "physicalIPhone": false
+    },
+    {
+      "name": "verified-placements.json",
+      "project": "webkit-phone",
+      "run": "full-browser-run.json",
+      "engine": "webkit-phone",
+      "scenes": 100,
+      "placements": 1304,
+      "physicalIPhone": false
+    },
+    {
+      "name": "emulated-loading.json",
+      "project": "chromium-phone",
+      "run": "final-regression-run.json",
+      "playableMs": 1388,
+      "bytes": 128351,
+      "downloadMbps": 10,
+      "latencyMs": 40,
+      "physicalIPhone": false
+    },
+    {
+      "name": "emulated-touch-feedback.json",
+      "project": "chromium-phone",
+      "run": "final-regression-run.json",
+      "feedbackMs": 3.199999988079071,
+      "physicalIPhone": false
+    },
+    {
+      "name": "emulated-touch-feedback.json",
+      "project": "webkit-phone",
+      "run": "final-regression-run.json",
+      "feedbackMs": 3,
+      "physicalIPhone": false
+    }
+  ],
+  "packages": {
+    "pixi.js": "8.22.0",
+    "vite": "7.3.7",
+    "typescript": "5.9.3",
+    "sharp": "0.35.5",
+    "@playwright/test": "1.64.1"
+  },
+  "buildVersion": "638e4557d5db56de",
+  "contentVersion": "c671b9b40405e5eb",
+  "offlineChapters": [
+    {
+      "chapter": 1,
+      "scenes": 10,
+      "files": 136,
+      "bytes": 6998622
+    },
+    {
+      "chapter": 2,
+      "scenes": 10,
+      "files": 150,
+      "bytes": 8390299
+    },
+    {
+      "chapter": 3,
+      "scenes": 10,
+      "files": 160,
+      "bytes": 7631551
+    },
+    {
+      "chapter": 4,
+      "scenes": 10,
+      "files": 166,
+      "bytes": 7703918
+    },
+    {
+      "chapter": 5,
+      "scenes": 10,
+      "files": 166,
+      "bytes": 8020016
+    },
+    {
+      "chapter": 6,
+      "scenes": 10,
+      "files": 166,
+      "bytes": 7806326
+    },
+    {
+      "chapter": 7,
+      "scenes": 10,
+      "files": 166,
+      "bytes": 7638843
+    },
+    {
+      "chapter": 8,
+      "scenes": 10,
+      "files": 166,
+      "bytes": 8160084
+    },
+    {
+      "chapter": 9,
+      "scenes": 10,
+      "files": 166,
+      "bytes": 7780443
+    },
+    {
+      "chapter": 10,
+      "scenes": 10,
+      "files": 162,
+      "bytes": 7508223
+    }
+  ],
+  "physicalIPhoneTested": false
+}

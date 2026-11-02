@@ -1,0 +1,1128 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\tensi\\hidden_objects\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--workers=2",
+      "--trace=off"
+    ],
+    "configFile": "C:\\Users\\tensi\\hidden_objects\\playwright.config.ts",
+    "rootDir": "C:/Users/tensi/hidden_objects/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/tensi/hidden_objects/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium-phone",
+        "name": "chromium-phone",
+        "testDir": "C:/Users/tensi/hidden_objects/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/tensi/hidden_objects/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit-phone",
+        "name": "webkit-phone",
+        "testDir": "C:/Users/tensi/hidden_objects/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\tensi\\hidden_objects\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "name": "chromium-phone",
+        "testDir": "C:\\Users\\tensi\\hidden_objects\\tests\\browser",
+        "snapshotDir": "C:\\Users\\tensi\\hidden_objects\\tests\\browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "trace": "off",
+          "screenshot": "only-on-failure",
+          "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/27.2 Mobile/14E304 Safari/602.1",
+          "viewport": {
+            "width": 375,
+            "height": 667
+          },
+          "deviceScaleFactor": 2,
+          "isMobile": true,
+          "hasTouch": true,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium-phone"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\tensi\\hidden_objects\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "name": "webkit-phone",
+        "testDir": "C:\\Users\\tensi\\hidden_objects\\tests\\browser",
+        "snapshotDir": "C:\\Users\\tensi\\hidden_objects\\tests\\browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "trace": "off",
+          "screenshot": "only-on-failure",
+          "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/27.2 Mobile/14E304 Safari/602.1",
+          "viewport": {
+            "width": 375,
+            "height": 667
+          },
+          "deviceScaleFactor": 2,
+          "isMobile": true,
+          "hasTouch": true,
+          "defaultBrowserType": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit-phone"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": ".cache/browser-report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 2,
+    "webServer": {
+      "command": "npm run preview -- --host 127.0.0.1 --port 4173",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": true,
+      "timeout": 30000
+    }
+  },
+  "suites": [
+    {
+      "title": "content.spec.ts",
+      "file": "content.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "a narrow foreground comb keeps its edge when pointer coordinates are rounded",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 574,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T07:54:09.099Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d74cd27346db6aa64657-bb9c68155b2b02f6e930",
+          "file": "content.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "an unfound scarf keeps its visible edge beside an unfound journal",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 464,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T07:54:09.758Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d74cd27346db6aa64657-0a59131c03f90de3591b",
+          "file": "content.spec.ts",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "every authored placement can be revealed and collected through the real scene picker",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 1200000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 266267,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T07:54:10.228Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "verified-placements.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJlbmdpbmUiOiAiY2hyb21pdW0tcGhvbmUiLAogICJzY2VuZXMiOiAxMDAsCiAgInBsYWNlbWVudHMiOiAxMzA0LAogICJwaHlzaWNhbElQaG9uZSI6IGZhbHNlCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d74cd27346db6aa64657-7b4e1af3d61e2456bbd6",
+          "file": "content.spec.ts",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "a complete chapter downloads, survives offline navigation, detects missing files, and repairs",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5948,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T07:58:36.510Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d74cd27346db6aa64657-25f8bd2f2a3921f68484",
+          "file": "content.spec.ts",
+          "line": 85,
+          "column": 1
+        },
+        {
+          "title": "an interrupted chapter download resumes without discarding cached files or progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2835,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T07:58:42.480Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d74cd27346db6aa64657-58423c57c9494ceb1f9e",
+          "file": "content.spec.ts",
+          "line": 114,
+          "column": 1
+        },
+        {
+          "title": "a narrow foreground comb keeps its edge when pointer coordinates are rounded",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1011,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T07:54:30.486Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d74cd27346db6aa64657-29d79aeedfe45c5ac4fa",
+          "file": "content.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "an unfound scarf keeps its visible edge beside an unfound journal",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 797,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T07:54:31.562Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d74cd27346db6aa64657-6aad5293ac908d730dac",
+          "file": "content.spec.ts",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "every authored placement can be revealed and collected through the real scene picker",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 1200000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 457049,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T07:54:32.364Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "verified-placements.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJlbmdpbmUiOiAid2Via2l0LXBob25lIiwKICAic2NlbmVzIjogMTAwLAogICJwbGFjZW1lbnRzIjogMTMwNCwKICAicGh5c2ljYWxJUGhvbmUiOiBmYWxzZQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d74cd27346db6aa64657-08dcd8bff03321077d83",
+          "file": "content.spec.ts",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "a complete chapter downloads, survives offline navigation, detects missing files, and repairs",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 17627,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T08:02:09.429Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d74cd27346db6aa64657-9b0993d2cdb19fa38deb",
+          "file": "content.spec.ts",
+          "line": 85,
+          "column": 1
+        },
+        {
+          "title": "an interrupted chapter download resumes without discarding cached files or progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 12943,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T08:02:27.073Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d74cd27346db6aa64657-d794450a0651acab712a",
+          "file": "content.spec.ts",
+          "line": 114,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "game.spec.ts",
+      "file": "game.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "real tap, repeated tap, offscreen-card collection, help, resume, and complete replay",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2121,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T07:54:09.099Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-1a7cff261d33c38de40f",
+          "file": "game.spec.ts",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "drag and pinch never collect; small portrait and landscape controls stay reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 829,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T07:54:11.303Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-56ef23671f62ec153576",
+          "file": "game.spec.ts",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "representatives render all targets and all 100 catalog entries are selectable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2635,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T07:54:12.141Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-a72261b0b4e266ca4c06",
+          "file": "game.spec.ts",
+          "line": 54,
+          "column": 1
+        },
+        {
+          "title": "backup export, invalid import preservation, and confirmed restore",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1953,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T07:54:14.790Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-86ad4d7f5cc2d3c1a4b5",
+          "file": "game.spec.ts",
+          "line": 61,
+          "column": 1
+        },
+        {
+          "title": "service worker restores a visited scene with networking disabled",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 11600,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#reveal-notice')\nExpected: visible\nReceived: hidden\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('#reveal-notice') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#reveal-notice')\u001b[22m\n\u001b[2m    23 × locator resolved to <div hidden=\"\" id=\"reveal-notice\" class=\"reveal-notice\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#reveal-notice')\nExpected: visible\nReceived: hidden\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('#reveal-notice') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#reveal-notice')\u001b[22m\n\u001b[2m    23 × locator resolved to <div hidden=\"\" id=\"reveal-notice\" class=\"reveal-notice\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n\n    at C:\\Users\\tensi\\hidden_objects\\tests\\browser\\game.spec.ts:75:114",
+                    "location": {
+                      "file": "C:\\Users\\tensi\\hidden_objects\\tests\\browser\\game.spec.ts",
+                      "column": 114,
+                      "line": 75
+                    },
+                    "snippet": "  73 |  await page.getByRole('button',{name:'All objects',exact:true}).click();await expect.poll(()=>page.locator('dialog .object-preview img').evaluateAll(imgs=>imgs.every(i=>(i as HTMLImageElement).complete&&(i as HTMLImageElement).naturalWidth>0))).toBe(true);await page.getByRole('button',{name:'Close panel'}).click();\n  74 |  await tapPoint(page,110,530);await context.setOffline(true);await page.reload();await expect(page.locator('#picture canvas')).toBeVisible();await expect(page.locator('#progress')).toHaveText('1 / 8');\n> 75 |  await page.getByRole('button',{name:'Show me',exact:true}).click();await expect(page.locator('#reveal-notice')).toBeVisible();await context.setOffline(false);\n     |                                                                                                                  ^\n  76 | });\n  77 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\tensi\\hidden_objects\\tests\\browser\\game.spec.ts",
+                        "column": 114,
+                        "line": 75
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#reveal-notice')\nExpected: visible\nReceived: hidden\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('#reveal-notice') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#reveal-notice')\u001b[22m\n\u001b[2m    23 × locator resolved to <div hidden=\"\" id=\"reveal-notice\" class=\"reveal-notice\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n\n\n  73 |  await page.getByRole('button',{name:'All objects',exact:true}).click();await expect.poll(()=>page.locator('dialog .object-preview img').evaluateAll(imgs=>imgs.every(i=>(i as HTMLImageElement).complete&&(i as HTMLImageElement).naturalWidth>0))).toBe(true);await page.getByRole('button',{name:'Close panel'}).click();\n  74 |  await tapPoint(page,110,530);await context.setOffline(true);await page.reload();await expect(page.locator('#picture canvas')).toBeVisible();await expect(page.locator('#progress')).toHaveText('1 / 8');\n> 75 |  await page.getByRole('button',{name:'Show me',exact:true}).click();await expect(page.locator('#reveal-notice')).toBeVisible();await context.setOffline(false);\n     |                                                                                                                  ^\n  76 | });\n  77 |\n    at C:\\Users\\tensi\\hidden_objects\\tests\\browser\\game.spec.ts:75:114"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T07:54:16.755Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\tensi\\hidden_objects\\test-results\\game-service-worker-restor-34df9-ne-with-networking-disabled-chromium-phone\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\tensi\\hidden_objects\\test-results\\game-service-worker-restor-34df9-ne-with-networking-disabled-chromium-phone\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\tensi\\hidden_objects\\tests\\browser\\game.spec.ts",
+                    "column": 114,
+                    "line": 75
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-e95a3afbecaaf531b0aa",
+          "file": "game.spec.ts",
+          "line": 69,
+          "column": 1
+        },
+        {
+          "title": "real tap, repeated tap, offscreen-card collection, help, resume, and complete replay",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5910,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T07:58:45.751Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-b1da0bfdb879edf39776",
+          "file": "game.spec.ts",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "drag and pinch never collect; small portrait and landscape controls stay reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1523,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T07:58:51.739Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-0ecdda5c12ca2bba294d",
+          "file": "game.spec.ts",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "representatives render all targets and all 100 catalog entries are selectable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2389,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T07:58:53.276Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-c5062757fe96a4ca5ec0",
+          "file": "game.spec.ts",
+          "line": 54,
+          "column": 1
+        },
+        {
+          "title": "backup export, invalid import preservation, and confirmed restore",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1558,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T07:58:55.680Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-6df504188c9ded1a92a0",
+          "file": "game.spec.ts",
+          "line": 61,
+          "column": 1
+        },
+        {
+          "title": "service worker restores a visited scene with networking disabled",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2306,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T07:58:57.249Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-0e1c0612a33a08c02d0e",
+          "file": "game.spec.ts",
+          "line": 69,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "performance.spec.ts",
+      "file": "performance.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "a cold scene fits the transfer and loading budgets at an emulated 10 Mbps",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 739,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T07:54:28.760Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "emulated-loading.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJwbGF5YWJsZU1zIjogNTYyLAogICJieXRlcyI6IDEyODI0MywKICAiZG93bmxvYWRNYnBzIjogMTAsCiAgImxhdGVuY3lNcyI6IDQwLAogICJwaHlzaWNhbElQaG9uZSI6IGZhbHNlCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b15d6361b2fc38288977-c8e12cecca4a9c8ff801",
+          "file": "performance.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "a valid touch produces progress feedback within 100 ms and picture recovery preserves finds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 575,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T07:54:29.584Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "emulated-touch-feedback.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJmZWVkYmFja01zIjogMTIuNTk5OTk5OTk0MDM5NTM2LAogICJwaHlzaWNhbElQaG9uZSI6IGZhbHNlCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b15d6361b2fc38288977-2a958bef2074d9621677",
+          "file": "performance.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "a cold scene fits the transfer and loading budgets at an emulated 10 Mbps",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Network throttling in this test uses Chromium CDP.",
+                  "location": {
+                    "file": "C:\\Users\\tensi\\hidden_objects\\tests\\browser\\performance.spec.ts",
+                    "line": 4,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 161,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T07:58:59.588Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Network throttling in this test uses Chromium CDP.",
+                      "location": {
+                        "file": "C:\\Users\\tensi\\hidden_objects\\tests\\browser\\performance.spec.ts",
+                        "line": 4,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "b15d6361b2fc38288977-f951a53db274d772d461",
+          "file": "performance.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "a valid touch produces progress feedback within 100 ms and picture recovery preserves finds",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1099,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m100\u001b[39m\nReceived:   \u001b[31m109\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m100\u001b[39m\nReceived:   \u001b[31m109\u001b[39m\n    at C:\\Users\\tensi\\hidden_objects\\tests\\browser\\performance.spec.ts:27:21",
+                    "location": {
+                      "file": "C:\\Users\\tensi\\hidden_objects\\tests\\browser\\performance.spec.ts",
+                      "column": 21,
+                      "line": 27
+                    },
+                    "snippet": "  25 |  await expect(page.locator('#progress')).toHaveText('1 / 8');\n  26 |  const feedbackMs=await page.evaluate(()=>(window as unknown as {findFeedbackMs:number}).findFeedbackMs);\n> 27 |  expect(feedbackMs).toBeLessThan(100);\n     |                     ^\n  28 |  await page.locator('#picture canvas').evaluate(canvas=>canvas.dispatchEvent(new Event('webglcontextlost',{cancelable:true})));\n  29 |  await expect(page.getByRole('button',{name:'Open picture again',exact:true})).toBeVisible();await page.getByRole('button',{name:'Open picture again',exact:true}).click();await expect(page.locator('#object-tray .object-card')).toHaveCount(8);await expect(page.locator('#progress')).toHaveText('1 / 8');\n  30 |  await info.attach('emulated-touch-feedback.json',{body:JSON.stringify({feedbackMs,physicalIPhone:false},null,2),contentType:'application/json'});"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\tensi\\hidden_objects\\tests\\browser\\performance.spec.ts",
+                        "column": 21,
+                        "line": 27
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m100\u001b[39m\nReceived:   \u001b[31m109\u001b[39m\n\n  25 |  await expect(page.locator('#progress')).toHaveText('1 / 8');\n  26 |  const feedbackMs=await page.evaluate(()=>(window as unknown as {findFeedbackMs:number}).findFeedbackMs);\n> 27 |  expect(feedbackMs).toBeLessThan(100);\n     |                     ^\n  28 |  await page.locator('#picture canvas').evaluate(canvas=>canvas.dispatchEvent(new Event('webglcontextlost',{cancelable:true})));\n  29 |  await expect(page.getByRole('button',{name:'Open picture again',exact:true})).toBeVisible();await page.getByRole('button',{name:'Open picture again',exact:true}).click();await expect(page.locator('#object-tray .object-card')).toHaveCount(8);await expect(page.locator('#progress')).toHaveText('1 / 8');\n  30 |  await info.attach('emulated-touch-feedback.json',{body:JSON.stringify({feedbackMs,physicalIPhone:false},null,2),contentType:'application/json'});\n    at C:\\Users\\tensi\\hidden_objects\\tests\\browser\\performance.spec.ts:27:21"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T07:58:59.764Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\tensi\\hidden_objects\\test-results\\performance-a-valid-touch--6376f-re-recovery-preserves-finds-webkit-phone\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\tensi\\hidden_objects\\test-results\\performance-a-valid-touch--6376f-re-recovery-preserves-finds-webkit-phone\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\tensi\\hidden_objects\\tests\\browser\\performance.spec.ts",
+                    "column": 21,
+                    "line": 27
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b15d6361b2fc38288977-e64ec37b4436dd08f291",
+          "file": "performance.spec.ts",
+          "line": 16,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-02T07:54:07.861Z",
+    "duration": 512875.403,
+    "expected": 21,
+    "skipped": 1,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}
