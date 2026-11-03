@@ -3,8 +3,8 @@
   "chapter": 1,
   "title": "The lakeside pier",
   "targetCount": 12,
-  "art": "art/v2/009.webp",
-  "thumbnail": "art/v2/009-thumb.webp",
+  "art": "art/v3/009.webp",
+  "thumbnail": "art/v3/009-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l059-life-ring-keychain",
       "name": "Life-ring keychain",
-      "preview": "art/v2/009/life-ring-keychain.webp",
+      "preview": "art/v3/009/life-ring-keychain.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           151,
@@ -441,7 +442,8 @@
     {
       "id": "l059-red-thermos",
       "name": "Red metal thermos",
-      "preview": "art/v2/009/red-thermos.webp",
+      "preview": "art/v3/009/red-thermos.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           864,
@@ -588,7 +590,8 @@
     {
       "id": "l059-paper-boat",
       "name": "White paper boat",
-      "preview": "art/v2/009/paper-boat.webp",
+      "preview": "art/v3/009/paper-boat.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           463,
@@ -687,7 +690,8 @@
     {
       "id": "l059-binoculars",
       "name": "Navy binoculars",
-      "preview": "art/v2/009/binoculars.webp",
+      "preview": "art/v3/009/binoculars.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           479,
@@ -946,7 +950,8 @@
     {
       "id": "l059-straw-hat",
       "name": "Green-ribbon straw hat",
-      "preview": "art/v2/009/straw-hat.webp",
+      "preview": "art/v3/009/straw-hat.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           640,
@@ -1245,7 +1250,8 @@
     {
       "id": "l059-blue-mug",
       "name": "Blue enamel mug",
-      "preview": "art/v2/009/blue-mug.webp",
+      "preview": "art/v3/009/blue-mug.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           51,
@@ -1512,7 +1518,8 @@
     {
       "id": "l059-green-pear",
       "name": "Green pear",
-      "preview": "art/v2/009/green-pear.webp",
+      "preview": "art/v3/009/green-pear.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           954,
@@ -1707,7 +1714,8 @@
     {
       "id": "l059-fishing-bell",
       "name": "Brass fishing bell",
-      "preview": "art/v2/009/fishing-bell.webp",
+      "preview": "art/v3/009/fishing-bell.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           170,
@@ -1902,7 +1910,8 @@
     {
       "id": "l059-striped-scarf",
       "name": "Orange-striped wool scarf",
-      "preview": "art/v2/009/striped-scarf.webp",
+      "preview": "art/v3/009/striped-scarf.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           956,
@@ -2329,7 +2338,8 @@
     {
       "id": "l059-blue-paperback",
       "name": "Blue leather book",
-      "preview": "art/v2/009/blue-paperback.webp",
+      "preview": "art/v3/009/blue-paperback.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           591,
@@ -2452,7 +2462,8 @@
     {
       "id": "l059-fish-brooch",
       "name": "Silver fish brooch",
-      "preview": "art/v2/009/fish-brooch.webp",
+      "preview": "art/v3/009/fish-brooch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           839,
@@ -2647,7 +2658,8 @@
     {
       "id": "l059-wooden-whistle",
       "name": "Carved wooden whistle",
-      "preview": "art/v2/009/wooden-whistle.webp",
+      "preview": "art/v3/009/wooden-whistle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           570,

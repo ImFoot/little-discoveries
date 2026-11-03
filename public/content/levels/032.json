@@ -3,8 +3,8 @@
   "chapter": 4,
   "title": "The pumpkin kitchen",
   "targetCount": 14,
-  "art": "art/v2/032.webp",
-  "thumbnail": "art/v2/032-thumb.webp",
+  "art": "art/v3/032.webp",
+  "thumbnail": "art/v3/032-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l082-pumpkin-cutter",
       "name": "Pumpkin cookie cutter",
-      "preview": "art/v2/032/pumpkin-cutter.webp",
+      "preview": "art/v3/032/pumpkin-cutter.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           117,
@@ -199,7 +200,8 @@
     {
       "id": "l082-nutmeg-grater",
       "name": "Nutmeg grater",
-      "preview": "art/v2/032/nutmeg-grater.webp",
+      "preview": "art/v3/032/nutmeg-grater.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           335,
@@ -370,7 +372,8 @@
     {
       "id": "l082-oven-mitt",
       "name": "Red quilted mitt",
-      "preview": "art/v2/032/oven-mitt.webp",
+      "preview": "art/v3/032/oven-mitt.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           152,
@@ -597,7 +600,8 @@
     {
       "id": "l082-rolling-pin",
       "name": "Pale rolling pin",
-      "preview": "art/v2/032/rolling-pin.webp",
+      "preview": "art/v3/032/rolling-pin.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           243,
@@ -800,7 +804,8 @@
     {
       "id": "l082-mixing-bowl",
       "name": "Blue mixing bowl",
-      "preview": "art/v2/032/mixing-bowl.webp",
+      "preview": "art/v3/032/mixing-bowl.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           364,
@@ -963,7 +968,8 @@
     {
       "id": "l082-green-pear",
       "name": "Green pear",
-      "preview": "art/v2/032/green-pear.webp",
+      "preview": "art/v3/032/green-pear.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           729,
@@ -1110,7 +1116,8 @@
     {
       "id": "l082-honey-jar",
       "name": "Glass honey jar",
-      "preview": "art/v2/032/honey-jar.webp",
+      "preview": "art/v3/032/honey-jar.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           444,
@@ -1305,7 +1312,8 @@
     {
       "id": "l082-checked-napkin",
       "name": "Purple checked napkin",
-      "preview": "art/v2/032/checked-napkin.webp",
+      "preview": "art/v3/032/checked-napkin.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           305,
@@ -1468,7 +1476,8 @@
     {
       "id": "l082-butter-paddle",
       "name": "Wooden butter paddle",
-      "preview": "art/v2/032/butter-paddle.webp",
+      "preview": "art/v3/032/butter-paddle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           574,
@@ -1647,7 +1656,8 @@
     {
       "id": "l082-egg-cup",
       "name": "Egg cup with egg",
-      "preview": "art/v2/032/egg-cup.webp",
+      "preview": "art/v3/032/egg-cup.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           803,
@@ -1842,7 +1852,8 @@
     {
       "id": "l082-flour-scoop",
       "name": "Copper flour scoop",
-      "preview": "art/v2/032/flour-scoop.webp",
+      "preview": "art/v3/032/flour-scoop.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           103,
@@ -2061,7 +2072,8 @@
     {
       "id": "l082-recipe-book",
       "name": "Red recipe book",
-      "preview": "art/v2/032/recipe-book.webp",
+      "preview": "art/v3/032/recipe-book.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           328,
@@ -2192,7 +2204,8 @@
     {
       "id": "l082-kitchen-timer",
       "name": "Bell kitchen timer",
-      "preview": "art/v2/032/kitchen-timer.webp",
+      "preview": "art/v3/032/kitchen-timer.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           601,
@@ -2379,7 +2392,8 @@
     {
       "id": "l082-wooden-cat",
       "name": "Carved wooden cat",
-      "preview": "art/v2/032/wooden-cat.webp",
+      "preview": "art/v3/032/wooden-cat.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           909,

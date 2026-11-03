@@ -3,8 +3,8 @@
   "chapter": 2,
   "title": "The natural history room",
   "targetCount": 14,
-  "art": "art/v2/012.webp",
-  "thumbnail": "art/v2/012-thumb.webp",
+  "art": "art/v3/012.webp",
+  "thumbnail": "art/v3/012-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l062-ammonite",
       "name": "Ammonite fossil",
-      "preview": "art/v2/012/ammonite.webp",
+      "preview": "art/v3/012/ammonite.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           412,
@@ -287,7 +288,8 @@
     {
       "id": "l062-specimen-brush",
       "name": "Red specimen brush",
-      "preview": "art/v2/012/specimen-brush.webp",
+      "preview": "art/v3/012/specimen-brush.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           0,
@@ -538,7 +540,8 @@
     {
       "id": "l062-beetle-brooch",
       "name": "Emerald beetle brooch",
-      "preview": "art/v2/012/beetle-brooch.webp",
+      "preview": "art/v3/012/beetle-brooch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           541,
@@ -1173,7 +1176,8 @@
     {
       "id": "l062-magnifier",
       "name": "Wood-handled magnifier",
-      "preview": "art/v2/012/magnifier.webp",
+      "preview": "art/v3/012/magnifier.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           50,
@@ -1440,7 +1444,8 @@
     {
       "id": "l062-butterfly-paperweight",
       "name": "Blue butterfly paperweight",
-      "preview": "art/v2/012/butterfly-paperweight.webp",
+      "preview": "art/v3/012/butterfly-paperweight.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           481,
@@ -1587,7 +1592,8 @@
     {
       "id": "l062-crystal-cluster",
       "name": "Purple crystal cluster",
-      "preview": "art/v2/012/crystal-cluster.webp",
+      "preview": "art/v3/012/crystal-cluster.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           771,
@@ -1814,7 +1820,8 @@
     {
       "id": "l062-specimen-stamp",
       "name": "Wood-handled specimen stamp",
-      "preview": "art/v2/012/specimen-stamp.webp",
+      "preview": "art/v3/012/specimen-stamp.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           420,
@@ -2001,7 +2008,8 @@
     {
       "id": "l062-spiral-shell",
       "name": "White spiral shell",
-      "preview": "art/v2/012/spiral-shell.webp",
+      "preview": "art/v3/012/spiral-shell.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           811,
@@ -2172,7 +2180,8 @@
     {
       "id": "l062-specimen-bottle",
       "name": "Green specimen bottle",
-      "preview": "art/v2/012/specimen-bottle.webp",
+      "preview": "art/v3/012/specimen-bottle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           436,
@@ -2359,7 +2368,8 @@
     {
       "id": "l062-red-feather-bookmark",
       "name": "Red feather bookmark",
-      "preview": "art/v2/012/red-feather-bookmark.webp",
+      "preview": "art/v3/012/red-feather-bookmark.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           140,
@@ -2594,7 +2604,8 @@
     {
       "id": "l062-snail-ornament",
       "name": "Ceramic snail",
-      "preview": "art/v2/012/snail-ornament.webp",
+      "preview": "art/v3/012/snail-ornament.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           151,
@@ -2829,7 +2840,8 @@
     {
       "id": "l062-linen-pouch",
       "name": "Blue-tied linen pouch",
-      "preview": "art/v2/012/linen-pouch.webp",
+      "preview": "art/v3/012/linen-pouch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           778,
@@ -3144,7 +3156,8 @@
     {
       "id": "l062-leaf-pendant",
       "name": "Silver leaf pendant",
-      "preview": "art/v2/012/leaf-pendant.webp",
+      "preview": "art/v3/012/leaf-pendant.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           925,
@@ -3467,7 +3480,8 @@
     {
       "id": "l062-pinecone",
       "name": "Pinecone specimen",
-      "preview": "art/v2/012/pinecone.webp",
+      "preview": "art/v3/012/pinecone.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           668,

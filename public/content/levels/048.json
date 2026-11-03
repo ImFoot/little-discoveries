@@ -3,8 +3,8 @@
   "chapter": 5,
   "title": "The rooftop supper",
   "targetCount": 15,
-  "art": "art/v2/048.webp",
-  "thumbnail": "art/v2/048-thumb.webp",
+  "art": "art/v3/048.webp",
+  "thumbnail": "art/v3/048-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l098-citrus-press",
       "name": "Glass citrus press",
-      "preview": "art/v2/048/citrus-press.webp",
+      "preview": "art/v3/048/citrus-press.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           32,
@@ -215,7 +216,8 @@
     {
       "id": "l098-lantern-hook",
       "name": "Brass S hook",
-      "preview": "art/v2/048/lantern-hook.webp",
+      "preview": "art/v3/048/lantern-hook.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           234,
@@ -626,7 +628,8 @@
     {
       "id": "l098-patterned-coaster",
       "name": "Patterned cobalt coaster",
-      "preview": "art/v2/048/patterned-coaster.webp",
+      "preview": "art/v3/048/patterned-coaster.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           146,
@@ -765,7 +768,8 @@
     {
       "id": "l098-blue-teapot",
       "name": "Blue ceramic teapot",
-      "preview": "art/v2/048/blue-teapot.webp",
+      "preview": "art/v3/048/blue-teapot.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           18,
@@ -1040,7 +1044,8 @@
     {
       "id": "l098-striped-napkin",
       "name": "Red striped napkin",
-      "preview": "art/v2/048/striped-napkin.webp",
+      "preview": "art/v3/048/striped-napkin.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           142,
@@ -1251,7 +1256,8 @@
     {
       "id": "l098-green-pear",
       "name": "Green pear",
-      "preview": "art/v2/048/green-pear.webp",
+      "preview": "art/v3/048/green-pear.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           412,
@@ -1414,7 +1420,8 @@
     {
       "id": "l098-cake-server",
       "name": "Silver cake server",
-      "preview": "art/v2/048/cake-server.webp",
+      "preview": "art/v3/048/cake-server.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           575,
@@ -1657,7 +1664,8 @@
     {
       "id": "l098-purple-pouch",
       "name": "Purple velvet pouch",
-      "preview": "art/v2/048/purple-pouch.webp",
+      "preview": "art/v3/048/purple-pouch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           715,
@@ -1900,7 +1908,8 @@
     {
       "id": "l098-wooden-dove",
       "name": "Little wooden dove",
-      "preview": "art/v2/048/wooden-dove.webp",
+      "preview": "art/v3/048/wooden-dove.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           174,
@@ -2103,7 +2112,8 @@
     {
       "id": "l098-amber-bottle",
       "name": "Amber perfume bottle",
-      "preview": "art/v2/048/amber-bottle.webp",
+      "preview": "art/v3/048/amber-bottle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           273,
@@ -2314,7 +2324,8 @@
     {
       "id": "l098-cream-journal",
       "name": "Cream journal",
-      "preview": "art/v2/048/cream-journal.webp",
+      "preview": "art/v3/048/cream-journal.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           861,
@@ -2405,7 +2416,8 @@
     {
       "id": "l098-copper-bell",
       "name": "Copper handbell",
-      "preview": "art/v2/048/copper-bell.webp",
+      "preview": "art/v3/048/copper-bell.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           868,
@@ -2640,7 +2652,8 @@
     {
       "id": "l098-honey-dipper",
       "name": "Wooden honey dipper",
-      "preview": "art/v2/048/honey-dipper.webp",
+      "preview": "art/v3/048/honey-dipper.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           390,
@@ -2803,7 +2816,8 @@
     {
       "id": "l098-shell-dish",
       "name": "White shell dish",
-      "preview": "art/v2/048/shell-dish.webp",
+      "preview": "art/v3/048/shell-dish.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           472,
@@ -3022,7 +3036,8 @@
     {
       "id": "l098-orange-mitten",
       "name": "Orange knitted mitten",
-      "preview": "art/v2/048/orange-mitten.webp",
+      "preview": "art/v3/048/orange-mitten.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           170,

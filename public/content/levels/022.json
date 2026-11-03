@@ -3,8 +3,8 @@
   "chapter": 3,
   "title": "The mushroom village",
   "targetCount": 14,
-  "art": "art/v2/022.webp",
-  "thumbnail": "art/v2/022-thumb.webp",
+  "art": "art/v3/022.webp",
+  "thumbnail": "art/v3/022-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l072-little-basket",
       "name": "Arched-handle basket",
-      "preview": "art/v2/022/little-basket.webp",
+      "preview": "art/v3/022/little-basket.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           84,
@@ -167,7 +168,8 @@
     {
       "id": "l072-market-lantern",
       "name": "Market lantern",
-      "preview": "art/v2/022/market-lantern.webp",
+      "preview": "art/v3/022/market-lantern.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           867,
@@ -346,7 +348,8 @@
     {
       "id": "l072-leaf-umbrella",
       "name": "Leaf umbrella",
-      "preview": "art/v2/022/leaf-umbrella.webp",
+      "preview": "art/v3/022/leaf-umbrella.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           634,
@@ -557,7 +560,8 @@
     {
       "id": "l072-toy-snail",
       "name": "Wooden toy snail",
-      "preview": "art/v2/022/toy-snail.webp",
+      "preview": "art/v3/022/toy-snail.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           323,
@@ -864,7 +868,8 @@
     {
       "id": "l072-blue-kettle",
       "name": "Blue enamel kettle",
-      "preview": "art/v2/022/blue-kettle.webp",
+      "preview": "art/v3/022/blue-kettle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           75,
@@ -1139,7 +1144,8 @@
     {
       "id": "l072-red-handkerchief",
       "name": "Polka-dot handkerchief",
-      "preview": "art/v2/022/red-handkerchief.webp",
+      "preview": "art/v3/022/red-handkerchief.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           850,
@@ -1318,7 +1324,8 @@
     {
       "id": "l072-wooden-spoon",
       "name": "Carved wooden spoon",
-      "preview": "art/v2/022/wooden-spoon.webp",
+      "preview": "art/v3/022/wooden-spoon.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           905,
@@ -1449,7 +1456,8 @@
     {
       "id": "l072-horseshoe",
       "name": "Silver horseshoe",
-      "preview": "art/v2/022/horseshoe.webp",
+      "preview": "art/v3/022/horseshoe.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           54,
@@ -1668,7 +1676,8 @@
     {
       "id": "l072-pink-vase",
       "name": "Bell-flower vase",
-      "preview": "art/v2/022/pink-vase.webp",
+      "preview": "art/v3/022/pink-vase.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           918,
@@ -1863,7 +1872,8 @@
     {
       "id": "l072-yellow-boot",
       "name": "Yellow boot",
-      "preview": "art/v2/022/yellow-boot.webp",
+      "preview": "art/v3/022/yellow-boot.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           67,
@@ -2058,7 +2068,8 @@
     {
       "id": "l072-straw-hat",
       "name": "Ribboned straw hat",
-      "preview": "art/v2/022/straw-hat.webp",
+      "preview": "art/v3/022/straw-hat.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           469,
@@ -2245,7 +2256,8 @@
     {
       "id": "l072-acorn-jar",
       "name": "Acorn jar",
-      "preview": "art/v2/022/acorn-jar.webp",
+      "preview": "art/v3/022/acorn-jar.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           280,
@@ -2464,7 +2476,8 @@
     {
       "id": "l072-sealed-envelope",
       "name": "Sealed envelope",
-      "preview": "art/v2/022/sealed-envelope.webp",
+      "preview": "art/v3/022/sealed-envelope.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           659,
@@ -2555,7 +2568,8 @@
     {
       "id": "l072-heart-cutter",
       "name": "Heart biscuit cutter",
-      "preview": "art/v2/022/heart-cutter.webp",
+      "preview": "art/v3/022/heart-cutter.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           280,

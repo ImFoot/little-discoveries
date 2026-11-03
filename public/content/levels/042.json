@@ -3,8 +3,8 @@
   "chapter": 5,
   "title": "The balcony garden",
   "targetCount": 14,
-  "art": "art/v2/042.webp",
-  "thumbnail": "art/v2/042-thumb.webp",
+  "art": "art/v3/042.webp",
+  "thumbnail": "art/v3/042-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l092-bird-feeder",
       "name": "Wooden bird feeder",
-      "preview": "art/v2/042/bird-feeder.webp",
+      "preview": "art/v3/042/bird-feeder.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           226,
@@ -191,7 +192,8 @@
     {
       "id": "l092-plant-mister",
       "name": "Green glass plant mister",
-      "preview": "art/v2/042/plant-mister.webp",
+      "preview": "art/v3/042/plant-mister.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           867,
@@ -538,7 +540,8 @@
     {
       "id": "l092-ribbon-bookmark",
       "name": "Purple ribbon bookmark",
-      "preview": "art/v2/042/ribbon-bookmark.webp",
+      "preview": "art/v3/042/ribbon-bookmark.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           273,
@@ -637,7 +640,8 @@
     {
       "id": "l092-red-glove",
       "name": "Red floral garden glove",
-      "preview": "art/v2/042/red-glove.webp",
+      "preview": "art/v3/042/red-glove.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           106,
@@ -976,7 +980,8 @@
     {
       "id": "l092-hand-trowel",
       "name": "Copper hand trowel",
-      "preview": "art/v2/042/hand-trowel.webp",
+      "preview": "art/v3/042/hand-trowel.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           817,
@@ -1179,7 +1184,8 @@
     {
       "id": "l092-blue-watering-can",
       "name": "Blue watering can",
-      "preview": "art/v2/042/blue-watering-can.webp",
+      "preview": "art/v3/042/blue-watering-can.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           497,
@@ -1534,7 +1540,8 @@
     {
       "id": "l092-straw-hat",
       "name": "Yellow straw hat",
-      "preview": "art/v2/042/straw-hat.webp",
+      "preview": "art/v3/042/straw-hat.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           148,
@@ -1753,7 +1760,8 @@
     {
       "id": "l092-snail-ornament",
       "name": "White snail ornament",
-      "preview": "art/v2/042/snail-ornament.webp",
+      "preview": "art/v3/042/snail-ornament.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           267,
@@ -2012,7 +2020,8 @@
     {
       "id": "l092-orange-fan",
       "name": "Orange paper fan",
-      "preview": "art/v2/042/orange-fan.webp",
+      "preview": "art/v3/042/orange-fan.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           593,
@@ -2199,7 +2208,8 @@
     {
       "id": "l092-green-pear",
       "name": "Green pear",
-      "preview": "art/v2/042/green-pear.webp",
+      "preview": "art/v3/042/green-pear.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           502,
@@ -2362,7 +2372,8 @@
     {
       "id": "l092-pink-mug",
       "name": "Pink ceramic mug",
-      "preview": "art/v2/042/pink-mug.webp",
+      "preview": "art/v3/042/pink-mug.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           880,
@@ -2549,7 +2560,8 @@
     {
       "id": "l092-lavender-throw",
       "name": "Lavender throw",
-      "preview": "art/v2/042/lavender-throw.webp",
+      "preview": "art/v3/042/lavender-throw.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           354,
@@ -3048,7 +3060,8 @@
     {
       "id": "l092-pruning-shears",
       "name": "Silver pruning shears",
-      "preview": "art/v2/042/pruning-shears.webp",
+      "preview": "art/v3/042/pruning-shears.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           896,
@@ -3283,7 +3296,8 @@
     {
       "id": "l092-crescent-dish",
       "name": "Ceramic crescent dish",
-      "preview": "art/v2/042/crescent-dish.webp",
+      "preview": "art/v3/042/crescent-dish.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           899,

@@ -3,8 +3,8 @@
   "chapter": 1,
   "title": "The hotel lobby",
   "targetCount": 15,
-  "art": "art/v2/004.webp",
-  "thumbnail": "art/v2/004-thumb.webp",
+  "art": "art/v3/004.webp",
+  "thumbnail": "art/v3/004-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l054-desk-bell",
       "name": "Brass desk bell",
-      "preview": "art/v2/004/desk-bell.webp",
+      "preview": "art/v3/004/desk-bell.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           308,
@@ -183,7 +184,8 @@
     {
       "id": "l054-luggage-key",
       "name": "Ornate luggage key",
-      "preview": "art/v2/004/luggage-key.webp",
+      "preview": "art/v3/004/luggage-key.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           180,
@@ -562,7 +564,8 @@
     {
       "id": "l054-fountain-pen",
       "name": "Green fountain pen",
-      "preview": "art/v2/004/fountain-pen.webp",
+      "preview": "art/v3/004/fountain-pen.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           472,
@@ -789,7 +792,8 @@
     {
       "id": "l054-blue-luggage-tag",
       "name": "Blue picture luggage tag",
-      "preview": "art/v2/004/blue-luggage-tag.webp",
+      "preview": "art/v3/004/blue-luggage-tag.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           936,
@@ -936,7 +940,8 @@
     {
       "id": "l054-folding-fan",
       "name": "Floral folding fan",
-      "preview": "art/v2/004/folding-fan.webp",
+      "preview": "art/v3/004/folding-fan.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           141,
@@ -1139,7 +1144,8 @@
     {
       "id": "l054-rose-brooch",
       "name": "Red rose brooch",
-      "preview": "art/v2/004/rose-brooch.webp",
+      "preview": "art/v3/004/rose-brooch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           943,
@@ -1398,7 +1404,8 @@
     {
       "id": "l054-spectacles-case",
       "name": "Leather spectacles case",
-      "preview": "art/v2/004/spectacles-case.webp",
+      "preview": "art/v3/004/spectacles-case.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           720,
@@ -1585,7 +1592,8 @@
     {
       "id": "l054-perfume-atomizer",
       "name": "Glass perfume atomizer",
-      "preview": "art/v2/004/perfume-atomizer.webp",
+      "preview": "art/v3/004/perfume-atomizer.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           174,
@@ -1844,7 +1852,8 @@
     {
       "id": "l054-shoehorn",
       "name": "Ivory shoehorn",
-      "preview": "art/v2/004/shoehorn.webp",
+      "preview": "art/v3/004/shoehorn.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           755,
@@ -2015,7 +2024,8 @@
     {
       "id": "l054-purple-mitten",
       "name": "Purple wool mitten",
-      "preview": "art/v2/004/purple-mitten.webp",
+      "preview": "art/v3/004/purple-mitten.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           342,
@@ -2202,7 +2212,8 @@
     {
       "id": "l054-domino",
       "name": "Wooden domino tile",
-      "preview": "art/v2/004/domino.webp",
+      "preview": "art/v3/004/domino.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           361,
@@ -2277,7 +2288,8 @@
     {
       "id": "l054-pocket-watch",
       "name": "Silver pocket watch",
-      "preview": "art/v2/004/pocket-watch.webp",
+      "preview": "art/v3/004/pocket-watch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           994,
@@ -2464,7 +2476,8 @@
     {
       "id": "l054-carved-bird",
       "name": "Carved wooden bird",
-      "preview": "art/v2/004/carved-bird.webp",
+      "preview": "art/v3/004/carved-bird.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           558,
@@ -2691,7 +2704,8 @@
     {
       "id": "l054-yellow-pear",
       "name": "Yellow pear",
-      "preview": "art/v2/004/yellow-pear.webp",
+      "preview": "art/v3/004/yellow-pear.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           127,
@@ -2806,7 +2820,8 @@
     {
       "id": "l054-red-tassel",
       "name": "Red curtain tassel",
-      "preview": "art/v2/004/red-tassel.webp",
+      "preview": "art/v3/004/red-tassel.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           894,

@@ -3,8 +3,8 @@
   "chapter": 1,
   "title": "The vintage train",
   "targetCount": 14,
-  "art": "art/v2/002.webp",
-  "thumbnail": "art/v2/002-thumb.webp",
+  "art": "art/v3/002.webp",
+  "thumbnail": "art/v3/002-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l052-ticket-punch",
       "name": "Steel ticket punch",
-      "preview": "art/v2/002/ticket-punch.webp",
+      "preview": "art/v3/002/ticket-punch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           285,
@@ -231,7 +232,8 @@
     {
       "id": "l052-enamel-cup",
       "name": "Blue-rim enamel cup",
-      "preview": "art/v2/002/enamel-cup.webp",
+      "preview": "art/v3/002/enamel-cup.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           68,
@@ -422,7 +424,8 @@
     {
       "id": "l052-spectacles",
       "name": "Gold-rim spectacles",
-      "preview": "art/v2/002/spectacles.webp",
+      "preview": "art/v3/002/spectacles.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           726,
@@ -751,7 +754,8 @@
     {
       "id": "l052-luggage-tag",
       "name": "Red luggage tag",
-      "preview": "art/v2/002/luggage-tag.webp",
+      "preview": "art/v3/002/luggage-tag.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           614,
@@ -866,7 +870,8 @@
     {
       "id": "l052-knitted-mitten",
       "name": "Blue knitted mitten",
-      "preview": "art/v2/002/knitted-mitten.webp",
+      "preview": "art/v3/002/knitted-mitten.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           417,
@@ -1181,7 +1186,8 @@
     {
       "id": "l052-locomotive-ornament",
       "name": "Brass locomotive ornament",
-      "preview": "art/v2/002/locomotive-ornament.webp",
+      "preview": "art/v3/002/locomotive-ornament.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           700,
@@ -1600,7 +1606,8 @@
     {
       "id": "l052-rolled-map",
       "name": "Rolled route map",
-      "preview": "art/v2/002/rolled-map.webp",
+      "preview": "art/v3/002/rolled-map.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           783,
@@ -1859,7 +1866,8 @@
     {
       "id": "l052-leather-camera",
       "name": "Leather camera",
-      "preview": "art/v2/002/leather-camera.webp",
+      "preview": "art/v3/002/leather-camera.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           882,
@@ -2078,7 +2086,8 @@
     {
       "id": "l052-rose-brooch",
       "name": "Pink rose brooch",
-      "preview": "art/v2/002/rose-brooch.webp",
+      "preview": "art/v3/002/rose-brooch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           461,
@@ -2201,7 +2210,8 @@
     {
       "id": "l052-yellow-pear",
       "name": "Yellow pear",
-      "preview": "art/v2/002/yellow-pear.webp",
+      "preview": "art/v3/002/yellow-pear.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           129,
@@ -2444,7 +2454,8 @@
     {
       "id": "l052-striped-necktie",
       "name": "Striped silk necktie",
-      "preview": "art/v2/002/striped-necktie.webp",
+      "preview": "art/v3/002/striped-necktie.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           708,
@@ -2607,7 +2618,8 @@
     {
       "id": "l052-purple-journal",
       "name": "Purple travel journal",
-      "preview": "art/v2/002/purple-journal.webp",
+      "preview": "art/v3/002/purple-journal.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           611,
@@ -2714,7 +2726,8 @@
     {
       "id": "l052-teaspoon",
       "name": "Silver teaspoon",
-      "preview": "art/v2/002/teaspoon.webp",
+      "preview": "art/v3/002/teaspoon.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           251,
@@ -2917,7 +2930,8 @@
     {
       "id": "l052-cordial-bottle",
       "name": "Orange cordial bottle",
-      "preview": "art/v2/002/cordial-bottle.webp",
+      "preview": "art/v3/002/cordial-bottle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           379,

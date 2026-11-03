@@ -3,8 +3,8 @@
   "chapter": 4,
   "title": "The winter cabin",
   "targetCount": 14,
-  "art": "art/v2/036.webp",
-  "thumbnail": "art/v2/036-thumb.webp",
+  "art": "art/v3/036.webp",
+  "thumbnail": "art/v3/036-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l086-knitted-mitten",
       "name": "Red knitted mitten",
-      "preview": "art/v2/036/knitted-mitten.webp",
+      "preview": "art/v3/036/knitted-mitten.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           58,
@@ -239,7 +240,8 @@
     {
       "id": "l086-pinecone-ornament",
       "name": "Pinecone ornament",
-      "preview": "art/v2/036/pinecone-ornament.webp",
+      "preview": "art/v3/036/pinecone-ornament.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           157,
@@ -586,7 +588,8 @@
     {
       "id": "l086-matchbox",
       "name": "Blue star matchbox",
-      "preview": "art/v2/036/matchbox.webp",
+      "preview": "art/v3/036/matchbox.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           342,
@@ -661,7 +664,8 @@
     {
       "id": "l086-green-thermos",
       "name": "Green thermos",
-      "preview": "art/v2/036/green-thermos.webp",
+      "preview": "art/v3/036/green-thermos.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           885,
@@ -848,7 +852,8 @@
     {
       "id": "l086-wooden-reindeer",
       "name": "Carved reindeer",
-      "preview": "art/v2/036/wooden-reindeer.webp",
+      "preview": "art/v3/036/wooden-reindeer.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           391,
@@ -1315,7 +1320,8 @@
     {
       "id": "l086-copper-mug",
       "name": "Copper mug",
-      "preview": "art/v2/036/copper-mug.webp",
+      "preview": "art/v3/036/copper-mug.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           181,
@@ -1518,7 +1524,8 @@
     {
       "id": "l086-cream-scarf",
       "name": "Cream knitted scarf",
-      "preview": "art/v2/036/cream-scarf.webp",
+      "preview": "art/v3/036/cream-scarf.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           625,
@@ -2073,7 +2080,8 @@
     {
       "id": "l086-purple-journal",
       "name": "Purple leather journal",
-      "preview": "art/v2/036/purple-journal.webp",
+      "preview": "art/v3/036/purple-journal.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           611,
@@ -2220,7 +2228,8 @@
     {
       "id": "l086-candle-snuffer",
       "name": "Candle snuffer",
-      "preview": "art/v2/036/candle-snuffer.webp",
+      "preview": "art/v3/036/candle-snuffer.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           187,
@@ -2415,7 +2424,8 @@
     {
       "id": "l086-striped-sock",
       "name": "Striped wool sock",
-      "preview": "art/v2/036/striped-sock.webp",
+      "preview": "art/v3/036/striped-sock.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           893,
@@ -2626,7 +2636,8 @@
     {
       "id": "l086-brass-compass",
       "name": "Brass compass",
-      "preview": "art/v2/036/brass-compass.webp",
+      "preview": "art/v3/036/brass-compass.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           452,
@@ -2853,7 +2864,8 @@
     {
       "id": "l086-ceramic-bird",
       "name": "Blue ceramic bird",
-      "preview": "art/v2/036/ceramic-bird.webp",
+      "preview": "art/v3/036/ceramic-bird.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           279,
@@ -3048,7 +3060,8 @@
     {
       "id": "l086-nutcracker",
       "name": "Orange-handled nutcracker",
-      "preview": "art/v2/036/nutcracker.webp",
+      "preview": "art/v3/036/nutcracker.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           491,
@@ -3355,7 +3368,8 @@
     {
       "id": "l086-heart-tin",
       "name": "Red heart tin",
-      "preview": "art/v2/036/heart-tin.webp",
+      "preview": "art/v3/036/heart-tin.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           815,

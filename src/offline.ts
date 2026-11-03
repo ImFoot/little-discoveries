@@ -1,8 +1,8 @@
 import type {Level} from './types';
 import {levelUrl,offlineManifestUrl} from './content';
 export type OfflineAsset={url:string;bytes:number};
-export type OfflineChapter={id:number;files:OfflineAsset[];bytes:number;readyLevels:number};
-type Manifest={catalogRevision:2;version:string;contentVersion:string;shell:string[];chapters:OfflineChapter[]};
+export type OfflineChapter={id:number;files:OfflineAsset[];bytes:number;readyLevels:number;expectedLevels:number};
+type Manifest={catalogRevision:3;version:string;contentVersion:string;shell:string[];chapters:OfflineChapter[]};
 export type DownloadState={total:number;cached:number;bytes:number;available:boolean;partial:boolean};
 export class OfflineLibrary {
   manifest?:Manifest;
@@ -18,7 +18,7 @@ export class OfflineLibrary {
       const response=await fetch(this.resolve(offlineManifestUrl));
       if(!response.ok)throw Error('Download information is unavailable.');
       this.manifest=await response.json() as Manifest;
-      if(this.manifest.catalogRevision!==2){this.manifest=undefined;throw Error('The download list belongs to an older collection.');}
+      if(this.manifest.catalogRevision!==3){this.manifest=undefined;throw Error('The download list belongs to an older collection.');}
     }catch{this.error='Offline setup could not finish. Reconnect and open Settings to retry. Your progress is safe.';}
   }
   private async shellReady(){
@@ -33,7 +33,7 @@ export class OfflineLibrary {
     const cache=await caches.open(`little-discoveries-content-${this.manifest.contentVersion}`);
     const cached=(await Promise.all(chapter.files.map(async f=>(await cache.match(this.resolve(f.url)))?.ok??false))).filter(Boolean).length;
     const shell=await this.shellReady();
-    return{total:chapter.files.length,cached,bytes:chapter.bytes,available:chapter.readyLevels===10&&cached===chapter.files.length&&shell,partial:cached>0&&cached<chapter.files.length};
+    return{total:chapter.files.length,cached,bytes:chapter.bytes,available:chapter.readyLevels===chapter.expectedLevels&&cached===chapter.files.length&&shell,partial:cached>0&&cached<chapter.files.length};
   }
   async keepVisited(level:Level){
     if(!this.manifest)return;
@@ -47,7 +47,7 @@ export class OfflineLibrary {
     if(this.busy.has(id))return;
     const chapter=this.manifest?.chapters.find(c=>c.id===id);
     if(!chapter||!this.manifest)throw Error(this.error||'Download information is not ready. Please retry.');
-    if(chapter.readyLevels!==10)throw Error(`This chapter has ${chapter.readyLevels} of 10 illustrated scenes. Its full offline package will be available when the chapter is finished.`);
+    if(chapter.readyLevels!==chapter.expectedLevels)throw Error(`This chapter has ${chapter.readyLevels} of ${chapter.expectedLevels} illustrated scenes. Its full offline package will be available when the chapter is finished.`);
     this.busy.add(id);
     try{
       const cache=await caches.open(`little-discoveries-content-${this.manifest.contentVersion}`);

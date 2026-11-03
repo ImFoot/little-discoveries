@@ -3,8 +3,8 @@
   "chapter": 5,
   "title": "Welcome home",
   "targetCount": 12,
-  "art": "art/v2/049.webp",
-  "thumbnail": "art/v2/049-thumb.webp",
+  "art": "art/v3/049.webp",
+  "thumbnail": "art/v3/049-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l099-house-key",
       "name": "Brass house key",
-      "preview": "art/v2/049/house-key.webp",
+      "preview": "art/v3/049/house-key.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           44,
@@ -231,7 +232,8 @@
     {
       "id": "l099-bouquet-ribbon",
       "name": "Pink bouquet ribbon",
-      "preview": "art/v2/049/bouquet-ribbon.webp",
+      "preview": "art/v3/049/bouquet-ribbon.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           55,
@@ -570,7 +572,8 @@
     {
       "id": "l099-heart-biscuit",
       "name": "Heart-shaped biscuit",
-      "preview": "art/v2/049/heart-biscuit.webp",
+      "preview": "art/v3/049/heart-biscuit.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           35,
@@ -709,7 +712,8 @@
     {
       "id": "l099-green-cap",
       "name": "Green knitted cap",
-      "preview": "art/v2/049/green-cap.webp",
+      "preview": "art/v3/049/green-cap.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           780,
@@ -872,7 +876,8 @@
     {
       "id": "l099-red-journal",
       "name": "Red leather journal",
-      "preview": "art/v2/049/red-journal.webp",
+      "preview": "art/v3/049/red-journal.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           146,
@@ -1011,7 +1016,8 @@
     {
       "id": "l099-copper-bell",
       "name": "Copper handbell",
-      "preview": "art/v2/049/copper-bell.webp",
+      "preview": "art/v3/049/copper-bell.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           276,
@@ -1262,7 +1268,8 @@
     {
       "id": "l099-purple-purse",
       "name": "Purple velvet purse",
-      "preview": "art/v2/049/purple-purse.webp",
+      "preview": "art/v3/049/purple-purse.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           909,
@@ -1529,7 +1536,8 @@
     {
       "id": "l099-wooden-bird",
       "name": "White wooden bird",
-      "preview": "art/v2/049/wooden-bird.webp",
+      "preview": "art/v3/049/wooden-bird.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           815,
@@ -1788,7 +1796,8 @@
     {
       "id": "l099-blue-mug",
       "name": "Blue enamel mug",
-      "preview": "art/v2/049/blue-mug.webp",
+      "preview": "art/v3/049/blue-mug.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           80,
@@ -1991,7 +2000,8 @@
     {
       "id": "l099-orange-fan",
       "name": "Folded orange fan",
-      "preview": "art/v2/049/orange-fan.webp",
+      "preview": "art/v3/049/orange-fan.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           139,
@@ -2170,7 +2180,8 @@
     {
       "id": "l099-green-bottle",
       "name": "Pear-shaped green bottle",
-      "preview": "art/v2/049/green-bottle.webp",
+      "preview": "art/v3/049/green-bottle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           243,
@@ -2349,7 +2360,8 @@
     {
       "id": "l099-cream-slipper",
       "name": "Cream wool slipper",
-      "preview": "art/v2/049/cream-slipper.webp",
+      "preview": "art/v3/049/cream-slipper.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           771,

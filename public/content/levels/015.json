@@ -3,8 +3,8 @@
   "chapter": 2,
   "title": "The ceramic studio",
   "targetCount": 10,
-  "art": "art/v2/015.webp",
-  "thumbnail": "art/v2/015-thumb.webp",
+  "art": "art/v3/015.webp",
+  "thumbnail": "art/v3/015-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l065-potters-rib",
       "name": "Wooden potter's rib",
-      "preview": "art/v2/015/potters-rib.webp",
+      "preview": "art/v3/015/potters-rib.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           196,
@@ -283,7 +284,8 @@
     {
       "id": "l065-striped-bowl",
       "name": "Blue striped bowl",
-      "preview": "art/v2/015/striped-bowl.webp",
+      "preview": "art/v3/015/striped-bowl.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           574,
@@ -406,7 +408,8 @@
     {
       "id": "l065-sponge",
       "name": "Yellow natural sponge",
-      "preview": "art/v2/015/sponge.webp",
+      "preview": "art/v3/015/sponge.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           22,
@@ -561,7 +564,8 @@
     {
       "id": "l065-trimming-loop",
       "name": "Red clay trimming loop",
-      "preview": "art/v2/015/trimming-loop.webp",
+      "preview": "art/v3/015/trimming-loop.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           475,
@@ -892,7 +896,8 @@
     {
       "id": "l065-blue-jug",
       "name": "Blue ceramic jug",
-      "preview": "art/v2/015/blue-jug.webp",
+      "preview": "art/v3/015/blue-jug.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           804,
@@ -1139,7 +1144,8 @@
     {
       "id": "l065-flower-button",
       "name": "Pink flower button",
-      "preview": "art/v2/015/flower-button.webp",
+      "preview": "art/v3/015/flower-button.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           171,
@@ -1366,7 +1372,8 @@
     {
       "id": "l065-tool-roll",
       "name": "Green-tied linen tool roll",
-      "preview": "art/v2/015/tool-roll.webp",
+      "preview": "art/v3/015/tool-roll.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           732,
@@ -1585,7 +1592,8 @@
     {
       "id": "l065-terracotta-bird",
       "name": "Terracotta bird",
-      "preview": "art/v2/015/terracotta-bird.webp",
+      "preview": "art/v3/015/terracotta-bird.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           188,
@@ -1812,7 +1820,8 @@
     {
       "id": "l065-caliper",
       "name": "Brass caliper",
-      "preview": "art/v2/015/caliper.webp",
+      "preview": "art/v3/015/caliper.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           656,
@@ -2239,7 +2248,8 @@
     {
       "id": "l065-blue-paintbrush",
       "name": "Blue-bristled paintbrush",
-      "preview": "art/v2/015/blue-paintbrush.webp",
+      "preview": "art/v3/015/blue-paintbrush.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           569,

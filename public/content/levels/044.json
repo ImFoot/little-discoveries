@@ -3,8 +3,8 @@
   "chapter": 5,
   "title": "The flea-market treasures",
   "targetCount": 15,
-  "art": "art/v2/044.webp",
-  "thumbnail": "art/v2/044-thumb.webp",
+  "art": "art/v3/044.webp",
+  "thumbnail": "art/v3/044-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l094-cameo-pin",
       "name": "Cameo pin",
-      "preview": "art/v2/044/cameo-pin.webp",
+      "preview": "art/v3/044/cameo-pin.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           121,
@@ -159,7 +160,8 @@
     {
       "id": "l094-brass-compass",
       "name": "Brass pocket compass",
-      "preview": "art/v2/044/brass-compass.webp",
+      "preview": "art/v3/044/brass-compass.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           251,
@@ -418,7 +420,8 @@
     {
       "id": "l094-enamel-bird",
       "name": "Blue enamel bird",
-      "preview": "art/v2/044/enamel-bird.webp",
+      "preview": "art/v3/044/enamel-bird.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           375,
@@ -701,7 +704,8 @@
     {
       "id": "l094-green-bottle",
       "name": "Pear-shaped green bottle",
-      "preview": "art/v2/044/green-bottle.webp",
+      "preview": "art/v3/044/green-bottle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           116,
@@ -904,7 +908,8 @@
     {
       "id": "l094-purple-fan",
       "name": "Purple floral fan",
-      "preview": "art/v2/044/purple-fan.webp",
+      "preview": "art/v3/044/purple-fan.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           191,
@@ -1059,7 +1064,8 @@
     {
       "id": "l094-silver-handbell",
       "name": "Silver handbell",
-      "preview": "art/v2/044/silver-handbell.webp",
+      "preview": "art/v3/044/silver-handbell.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           431,
@@ -1302,7 +1308,8 @@
     {
       "id": "l094-wooden-horse",
       "name": "Wooden horse",
-      "preview": "art/v2/044/wooden-horse.webp",
+      "preview": "art/v3/044/wooden-horse.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           62,
@@ -1761,7 +1768,8 @@
     {
       "id": "l094-velvet-purse",
       "name": "Red velvet purse",
-      "preview": "art/v2/044/velvet-purse.webp",
+      "preview": "art/v3/044/velvet-purse.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           196,
@@ -1980,7 +1988,8 @@
     {
       "id": "l094-flower-teacup",
       "name": "Flower teacup and saucer",
-      "preview": "art/v2/044/flower-teacup.webp",
+      "preview": "art/v3/044/flower-teacup.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           376,
@@ -2207,7 +2216,8 @@
     {
       "id": "l094-brass-key",
       "name": "Brass key",
-      "preview": "art/v2/044/brass-key.webp",
+      "preview": "art/v3/044/brass-key.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           191,
@@ -2466,7 +2476,8 @@
     {
       "id": "l094-amber-marble",
       "name": "Striped amber marble",
-      "preview": "art/v2/044/amber-marble.webp",
+      "preview": "art/v3/044/amber-marble.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           304,
@@ -2589,7 +2600,8 @@
     {
       "id": "l094-pink-ribbon-spool",
       "name": "Pink ribbon spool",
-      "preview": "art/v2/044/pink-ribbon-spool.webp",
+      "preview": "art/v3/044/pink-ribbon-spool.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           695,
@@ -3144,7 +3156,8 @@
     {
       "id": "l094-heart-box",
       "name": "Copper heart box",
-      "preview": "art/v2/044/heart-box.webp",
+      "preview": "art/v3/044/heart-box.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           815,
@@ -3371,7 +3384,8 @@
     {
       "id": "l094-miniature-chair",
       "name": "Miniature wooden chair",
-      "preview": "art/v2/044/miniature-chair.webp",
+      "preview": "art/v3/044/miniature-chair.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           838,
@@ -3710,7 +3724,8 @@
     {
       "id": "l094-lace-glove",
       "name": "Cream lace glove",
-      "preview": "art/v2/044/lace-glove.webp",
+      "preview": "art/v3/044/lace-glove.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           36,

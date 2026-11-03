@@ -3,8 +3,8 @@
   "chapter": 5,
   "title": "A table for two",
   "targetCount": 10,
-  "art": "art/v2/050.webp",
-  "thumbnail": "art/v2/050-thumb.webp",
+  "art": "art/v3/050.webp",
+  "thumbnail": "art/v3/050-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l100-sealed-note",
       "name": "Sealed note",
-      "preview": "art/v2/050/sealed-note.webp",
+      "preview": "art/v3/050/sealed-note.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           110,
@@ -71,7 +72,8 @@
     {
       "id": "l100-flower-pendant",
       "name": "Golden flower pendant",
-      "preview": "art/v2/050/flower-pendant.webp",
+      "preview": "art/v3/050/flower-pendant.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           359,
@@ -306,7 +308,8 @@
     {
       "id": "l100-wooden-heart",
       "name": "Small wooden heart",
-      "preview": "art/v2/050/wooden-heart.webp",
+      "preview": "art/v3/050/wooden-heart.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           499,
@@ -445,7 +448,8 @@
     {
       "id": "l100-blue-bud-vase",
       "name": "Blue glass bud vase",
-      "preview": "art/v2/050/blue-bud-vase.webp",
+      "preview": "art/v3/050/blue-bud-vase.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           380,
@@ -648,7 +652,8 @@
     {
       "id": "l100-copper-candleholder",
       "name": "Copper candleholder",
-      "preview": "art/v2/050/copper-candleholder.webp",
+      "preview": "art/v3/050/copper-candleholder.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           641,
@@ -971,7 +976,8 @@
     {
       "id": "l100-green-fan",
       "name": "Folded green paper fan",
-      "preview": "art/v2/050/green-fan.webp",
+      "preview": "art/v3/050/green-fan.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           609,
@@ -1134,7 +1140,8 @@
     {
       "id": "l100-green-pear",
       "name": "Green pear",
-      "preview": "art/v2/050/green-pear.webp",
+      "preview": "art/v3/050/green-pear.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           684,
@@ -1345,7 +1352,8 @@
     {
       "id": "l100-silver-teaspoon",
       "name": "Ornate silver teaspoon",
-      "preview": "art/v2/050/silver-teaspoon.webp",
+      "preview": "art/v3/050/silver-teaspoon.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           573,
@@ -1564,7 +1572,8 @@
     {
       "id": "l100-velvet-pouch",
       "name": "Purple velvet pouch",
-      "preview": "art/v2/050/velvet-pouch.webp",
+      "preview": "art/v3/050/velvet-pouch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           760,
@@ -1919,7 +1928,8 @@
     {
       "id": "l100-striped-napkin",
       "name": "Red checked napkin",
-      "preview": "art/v2/050/striped-napkin.webp",
+      "preview": "art/v3/050/striped-napkin.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           798,

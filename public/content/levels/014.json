@@ -3,8 +3,8 @@
   "chapter": 2,
   "title": "The theater dressing room",
   "targetCount": 15,
-  "art": "art/v2/014.webp",
-  "thumbnail": "art/v2/014-thumb.webp",
+  "art": "art/v3/014.webp",
+  "thumbnail": "art/v3/014-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l064-turquoise-mask",
       "name": "Turquoise eye mask",
-      "preview": "art/v2/014/turquoise-mask.webp",
+      "preview": "art/v3/014/turquoise-mask.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           0,
@@ -401,7 +402,8 @@
     {
       "id": "l064-powder-puff",
       "name": "White powder puff",
-      "preview": "art/v2/014/powder-puff.webp",
+      "preview": "art/v3/014/powder-puff.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           119,
@@ -564,7 +566,8 @@
     {
       "id": "l064-purple-glove",
       "name": "Purple silk glove",
-      "preview": "art/v2/014/purple-glove.webp",
+      "preview": "art/v3/014/purple-glove.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           361,
@@ -1047,7 +1050,8 @@
     {
       "id": "l064-star-hairpin",
       "name": "Silver star hairpin",
-      "preview": "art/v2/014/star-hairpin.webp",
+      "preview": "art/v3/014/star-hairpin.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           336,
@@ -1194,7 +1198,8 @@
     {
       "id": "l064-perfume-bottle",
       "name": "Pink perfume bottle",
-      "preview": "art/v2/014/perfume-bottle.webp",
+      "preview": "art/v3/014/perfume-bottle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           338,
@@ -1469,7 +1474,8 @@
     {
       "id": "l064-shoe-buckle",
       "name": "Brass shoe buckle",
-      "preview": "art/v2/014/shoe-buckle.webp",
+      "preview": "art/v3/014/shoe-buckle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           849,
@@ -1636,7 +1642,8 @@
     {
       "id": "l064-lipstick",
       "name": "Red lipstick in gold tube",
-      "preview": "art/v2/014/lipstick.webp",
+      "preview": "art/v3/014/lipstick.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           531,
@@ -1799,7 +1806,8 @@
     {
       "id": "l064-flower-brooch",
       "name": "Yellow flower brooch",
-      "preview": "art/v2/014/flower-brooch.webp",
+      "preview": "art/v3/014/flower-brooch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           858,
@@ -2002,7 +2010,8 @@
     {
       "id": "l064-blue-bow",
       "name": "Blue satin ribbon bow",
-      "preview": "art/v2/014/blue-bow.webp",
+      "preview": "art/v3/014/blue-bow.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           803,
@@ -2285,7 +2294,8 @@
     {
       "id": "l064-cameo-locket",
       "name": "Oval cameo locket",
-      "preview": "art/v2/014/cameo-locket.webp",
+      "preview": "art/v3/014/cameo-locket.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           763,
@@ -2424,7 +2434,8 @@
     {
       "id": "l064-ivory-comb",
       "name": "Ivory hair comb",
-      "preview": "art/v2/014/ivory-comb.webp",
+      "preview": "art/v3/014/ivory-comb.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           261,
@@ -2723,7 +2734,8 @@
     {
       "id": "l064-sun-compact",
       "name": "Orange sun compact",
-      "preview": "art/v2/014/sun-compact.webp",
+      "preview": "art/v3/014/sun-compact.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           512,
@@ -2894,7 +2906,8 @@
     {
       "id": "l064-ballerina",
       "name": "Wooden ballerina figurine",
-      "preview": "art/v2/014/ballerina.webp",
+      "preview": "art/v3/014/ballerina.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           662,
@@ -3393,7 +3406,8 @@
     {
       "id": "l064-embroidery-scissors",
       "name": "Gold embroidery scissors",
-      "preview": "art/v2/014/embroidery-scissors.webp",
+      "preview": "art/v3/014/embroidery-scissors.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           732,
@@ -3770,7 +3784,8 @@
     {
       "id": "l064-thimble",
       "name": "Silver thimble",
-      "preview": "art/v2/014/thimble.webp",
+      "preview": "art/v3/014/thimble.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           621,

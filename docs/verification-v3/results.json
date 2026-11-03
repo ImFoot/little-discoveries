@@ -1,0 +1,343 @@
+{
+  "date": "2026-11-03T07:20:58.559Z",
+  "catalogRevision": 3,
+  "content": {
+    "catalogRevision": 3,
+    "catalogScenes": 53,
+    "requiredPlacements": 702,
+    "illustratedScenes": 53,
+    "authoredPlacements": 702,
+    "actualIPhoneReviewed": 0,
+    "errors": [],
+    "warnings": []
+  },
+  "unitTests": {
+    "passed": 24,
+    "failed": 0
+  },
+  "browserTests": {
+    "total": 28,
+    "passed": 28,
+    "skipped": 0,
+    "failed": 0,
+    "runs": [
+      {
+        "file": "r3-browser.json",
+        "startTime": "2026-11-03T07:05:07.795Z",
+        "duration": 345502.878,
+        "expected": 22,
+        "skipped": 0,
+        "unexpected": 2,
+        "flaky": 0
+      },
+      {
+        "file": "r3-final-checks.json",
+        "startTime": "2026-11-03T07:11:22.302Z",
+        "duration": 12227.236,
+        "expected": 6,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      {
+        "file": "r3-final-visual.json",
+        "startTime": "2026-11-03T07:17:40.432Z",
+        "duration": 36741.96799999999,
+        "expected": 8,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    ],
+    "cases": [
+      {
+        "project": "chromium-phone",
+        "title": "old Safari progress follows its picture from 72 to 22 without double migration",
+        "status": "expected",
+        "run": "r3-browser.json"
+      },
+      {
+        "project": "chromium-phone",
+        "title": "an original cached tab upgrades on reload and preserves discoveries",
+        "status": "expected",
+        "run": "r3-final-checks.json"
+      },
+      {
+        "project": "chromium-phone",
+        "title": "every authored placement can be revealed and collected through the real scene picker",
+        "status": "expected",
+        "run": "r3-browser.json"
+      },
+      {
+        "project": "chromium-phone",
+        "title": "a complete chapter works offline, detects missing art and repairs without losing finds",
+        "status": "expected",
+        "run": "r3-browser.json"
+      },
+      {
+        "project": "chromium-phone",
+        "title": "an interrupted chapter download resumes without discarding cached files or progress",
+        "status": "expected",
+        "run": "r3-browser.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "old Safari progress follows its picture from 72 to 22 without double migration",
+        "status": "expected",
+        "run": "r3-browser.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "an original cached tab upgrades on reload and preserves discoveries",
+        "status": "expected",
+        "run": "r3-final-checks.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "every authored placement can be revealed and collected through the real scene picker",
+        "status": "expected",
+        "run": "r3-browser.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "a complete chapter works offline, detects missing art and repairs without losing finds",
+        "status": "expected",
+        "run": "r3-browser.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "an interrupted chapter download resumes without discarding cached files or progress",
+        "status": "expected",
+        "run": "r3-browser.json"
+      },
+      {
+        "project": "chromium-phone",
+        "title": "real taps, offscreen tray targets, help, resume and replay preserve the gameplay loop",
+        "status": "expected",
+        "run": "r3-browser.json"
+      },
+      {
+        "project": "chromium-phone",
+        "title": "drag and pinch never collect; compact portrait and landscape controls stay reachable",
+        "status": "expected",
+        "run": "r3-browser.json"
+      },
+      {
+        "project": "chromium-phone",
+        "title": "three clear samples render; rejected scenes are absent from the catalog",
+        "status": "expected",
+        "run": "r3-final-visual.json"
+      },
+      {
+        "project": "chromium-phone",
+        "title": "backup export, invalid import preservation, and confirmed restore",
+        "status": "expected",
+        "run": "r3-browser.json"
+      },
+      {
+        "project": "chromium-phone",
+        "title": "service worker restores a visited scene with networking disabled",
+        "status": "expected",
+        "run": "r3-browser.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "real taps, offscreen tray targets, help, resume and replay preserve the gameplay loop",
+        "status": "expected",
+        "run": "r3-browser.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "drag and pinch never collect; compact portrait and landscape controls stay reachable",
+        "status": "expected",
+        "run": "r3-browser.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "three clear samples render; rejected scenes are absent from the catalog",
+        "status": "expected",
+        "run": "r3-final-visual.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "backup export, invalid import preservation, and confirmed restore",
+        "status": "expected",
+        "run": "r3-browser.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "service worker restores a visited scene with networking disabled",
+        "status": "expected",
+        "run": "r3-browser.json"
+      },
+      {
+        "project": "chromium-phone",
+        "title": "revision two updates preserve level 24 and do not transfer rejected finds to sample 51",
+        "status": "expected",
+        "run": "r3-browser.json"
+      },
+      {
+        "project": "chromium-phone",
+        "title": "all three samples and their unchanged source previews download as one complete offline set",
+        "status": "expected",
+        "run": "r3-final-visual.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "revision two updates preserve level 24 and do not transfer rejected finds to sample 51",
+        "status": "expected",
+        "run": "r3-browser.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "all three samples and their unchanged source previews download as one complete offline set",
+        "status": "expected",
+        "run": "r3-final-visual.json"
+      },
+      {
+        "project": "chromium-phone",
+        "title": "a cold scene fits the transfer and loading budgets at an emulated 10 Mbps",
+        "status": "expected",
+        "run": "r3-final-visual.json"
+      },
+      {
+        "project": "chromium-phone",
+        "title": "a valid touch gives feedback within 100 ms and picture recovery preserves finds",
+        "status": "expected",
+        "run": "r3-final-visual.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "a cold scene fits the transfer and loading budgets at an emulated 10 Mbps",
+        "status": "expected",
+        "run": "r3-final-visual.json"
+      },
+      {
+        "project": "webkit-phone",
+        "title": "a valid touch gives feedback within 100 ms and picture recovery preserves finds",
+        "status": "expected",
+        "run": "r3-final-visual.json"
+      }
+    ]
+  },
+  "difficulty": {
+    "maxTargets": 15,
+    "retainedScenes": 50,
+    "samples": 3,
+    "sampleTargets": 12,
+    "referenceLevel": 24,
+    "playerAccepted": false
+  },
+  "metrics": [
+    {
+      "name": "verified-placements.json",
+      "project": "chromium-phone",
+      "run": "r3-browser.json",
+      "engine": "chromium-phone",
+      "scenes": 53,
+      "placements": 702,
+      "physicalIPhone": false
+    },
+    {
+      "name": "verified-placements.json",
+      "project": "webkit-phone",
+      "run": "r3-browser.json",
+      "engine": "webkit-phone",
+      "scenes": 53,
+      "placements": 702,
+      "physicalIPhone": false
+    },
+    {
+      "name": "emulated-loading.json",
+      "project": "chromium-phone",
+      "run": "r3-final-visual.json",
+      "playableMs": 2188,
+      "bytes": 1162450,
+      "downloadMbps": 10,
+      "latencyMs": 40,
+      "measurement": "Aggregate HTTP response payloads, including page, Pixi worker and service worker; picture and all target previews ready.",
+      "physicalIPhone": false
+    },
+    {
+      "name": "emulated-touch-feedback.json",
+      "project": "chromium-phone",
+      "run": "r3-final-visual.json",
+      "scene": 51,
+      "feedbackMs": 3.8000000044703484,
+      "physicalIPhone": false
+    },
+    {
+      "name": "emulated-loading.json",
+      "project": "webkit-phone",
+      "run": "r3-final-visual.json",
+      "playableMs": 2452,
+      "bytes": 1369167,
+      "downloadMbps": 10,
+      "latencyMs": 40,
+      "measurement": "Aggregate HTTP response payloads, including page, Pixi worker and service worker; picture and all target previews ready.",
+      "physicalIPhone": false
+    },
+    {
+      "name": "emulated-touch-feedback.json",
+      "project": "webkit-phone",
+      "run": "r3-final-visual.json",
+      "scene": 51,
+      "feedbackMs": 4,
+      "physicalIPhone": false
+    }
+  ],
+  "buildVersion": "eb7cde3c49a66d62",
+  "contentVersion": "a1da8e6447a16460",
+  "offlineChapters": [
+    {
+      "id": 1,
+      "scenes": 10,
+      "files": 164,
+      "bytes": 7783386
+    },
+    {
+      "id": 2,
+      "scenes": 10,
+      "files": 164,
+      "bytes": 7595216
+    },
+    {
+      "id": 3,
+      "scenes": 10,
+      "files": 164,
+      "bytes": 8120686
+    },
+    {
+      "id": 4,
+      "scenes": 10,
+      "files": 164,
+      "bytes": 7731884
+    },
+    {
+      "id": 5,
+      "scenes": 10,
+      "files": 160,
+      "bytes": 7478115
+    },
+    {
+      "id": 6,
+      "scenes": 3,
+      "files": 45,
+      "bytes": 2829378
+    }
+  ],
+  "staticArchive": {
+    "catalogRevision": 3,
+    "created": "2026-11-03T07:19:25.6544240Z",
+    "file": "LittleDiscoveries-static.zip",
+    "bytes": 39970334,
+    "sha256": "a64e25f3dd66d69bb23a261c4c4d34145a30d4a6b4f7e5e7595213150facf4ac",
+    "counts": {
+      "Scenes": 53,
+      "Previews": 702,
+      "RuntimeLevels": 53,
+      "Catalogs": 2
+    }
+  },
+  "physicalIPhoneTested": false
+}

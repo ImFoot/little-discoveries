@@ -3,8 +3,8 @@
   "chapter": 2,
   "title": "The museum courtyard",
   "targetCount": 12,
-  "art": "art/v2/019.webp",
-  "thumbnail": "art/v2/019-thumb.webp",
+  "art": "art/v3/019.webp",
+  "thumbnail": "art/v3/019-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l069-sketchbook",
       "name": "Indigo sketchbook",
-      "preview": "art/v2/019/sketchbook.webp",
+      "preview": "art/v3/019/sketchbook.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           34,
@@ -143,7 +144,8 @@
     {
       "id": "l069-leaf-pendant",
       "name": "Golden leaf pendant",
-      "preview": "art/v2/019/leaf-pendant.webp",
+      "preview": "art/v3/019/leaf-pendant.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           890,
@@ -306,7 +308,8 @@
     {
       "id": "l069-water-flask",
       "name": "Red water flask",
-      "preview": "art/v2/019/water-flask.webp",
+      "preview": "art/v3/019/water-flask.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           91,
@@ -621,7 +624,8 @@
     {
       "id": "l069-bronze-owl",
       "name": "Bronze owl",
-      "preview": "art/v2/019/bronze-owl.webp",
+      "preview": "art/v3/019/bronze-owl.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           533,
@@ -832,7 +836,8 @@
     {
       "id": "l069-ammonite",
       "name": "Ammonite fossil",
-      "preview": "art/v2/019/ammonite.webp",
+      "preview": "art/v3/019/ammonite.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           812,
@@ -1019,7 +1024,8 @@
     {
       "id": "l069-folding-fan",
       "name": "Sage folding fan",
-      "preview": "art/v2/019/folding-fan.webp",
+      "preview": "art/v3/019/folding-fan.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           74,
@@ -1198,7 +1204,8 @@
     {
       "id": "l069-straw-hat",
       "name": "Plum-ribbon sunhat",
-      "preview": "art/v2/019/straw-hat.webp",
+      "preview": "art/v3/019/straw-hat.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           828,
@@ -1489,7 +1496,8 @@
     {
       "id": "l069-fountain-pen",
       "name": "Blue fountain pen",
-      "preview": "art/v2/019/fountain-pen.webp",
+      "preview": "art/v3/019/fountain-pen.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           595,
@@ -1660,7 +1668,8 @@
     {
       "id": "l069-apple",
       "name": "Red apple",
-      "preview": "art/v2/019/apple.webp",
+      "preview": "art/v3/019/apple.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           846,
@@ -1879,7 +1888,8 @@
     {
       "id": "l069-leather-pouch",
       "name": "Leather pouch",
-      "preview": "art/v2/019/leather-pouch.webp",
+      "preview": "art/v3/019/leather-pouch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           281,
@@ -2082,7 +2092,8 @@
     {
       "id": "l069-seashell",
       "name": "Scallop shell",
-      "preview": "art/v2/019/seashell.webp",
+      "preview": "art/v3/019/seashell.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           866,
@@ -2205,7 +2216,8 @@
     {
       "id": "l069-pocket-compass",
       "name": "Open brass compass",
-      "preview": "art/v2/019/pocket-compass.webp",
+      "preview": "art/v3/019/pocket-compass.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           339,

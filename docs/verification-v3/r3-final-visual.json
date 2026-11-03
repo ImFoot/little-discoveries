@@ -1,0 +1,491 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\tensi\\hidden_objects\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "game.spec.ts",
+      "samples.spec.ts",
+      "performance.spec.ts",
+      "--grep",
+      "three clear samples|all three samples|a cold scene|a valid touch",
+      "--workers=1",
+      "--trace=off",
+      "--output=.cache/r3-final-visual-results",
+      "--reporter=list,json"
+    ],
+    "configFile": "C:\\Users\\tensi\\hidden_objects\\playwright.config.ts",
+    "rootDir": "C:/Users/tensi/hidden_objects/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/tensi/hidden_objects/.cache/r3-final-visual-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium-phone",
+        "name": "chromium-phone",
+        "testDir": "C:/Users/tensi/hidden_objects/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/tensi/hidden_objects/.cache/r3-final-visual-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit-phone",
+        "name": "webkit-phone",
+        "testDir": "C:/Users/tensi/hidden_objects/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\tensi\\hidden_objects\\.cache\\r3-final-visual-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium-phone",
+        "testDir": "C:\\Users\\tensi\\hidden_objects\\tests\\browser",
+        "snapshotDir": "C:\\Users\\tensi\\hidden_objects\\tests\\browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "trace": "off",
+          "screenshot": "only-on-failure",
+          "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/27.2 Mobile/14E304 Safari/602.1",
+          "viewport": {
+            "width": 375,
+            "height": 667
+          },
+          "deviceScaleFactor": 2,
+          "isMobile": true,
+          "hasTouch": true,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium-phone"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\tensi\\hidden_objects\\.cache\\r3-final-visual-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "webkit-phone",
+        "testDir": "C:\\Users\\tensi\\hidden_objects\\tests\\browser",
+        "snapshotDir": "C:\\Users\\tensi\\hidden_objects\\tests\\browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "trace": "off",
+          "screenshot": "only-on-failure",
+          "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/27.2 Mobile/14E304 Safari/602.1",
+          "viewport": {
+            "width": 375,
+            "height": 667
+          },
+          "deviceScaleFactor": 2,
+          "isMobile": true,
+          "hasTouch": true,
+          "defaultBrowserType": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit-phone"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run preview -- --host 127.0.0.1 --port 4173",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": true,
+      "timeout": 30000
+    }
+  },
+  "suites": [
+    {
+      "title": "game.spec.ts",
+      "file": "game.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "three clear samples render; rejected scenes are absent from the catalog",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2397,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:17:41.651Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-6f08cc94ec0fc0e6e72c",
+          "file": "game.spec.ts",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "three clear samples render; rejected scenes are absent from the catalog",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5019,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:17:53.719Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-356b2bee0f24fea3aaa0",
+          "file": "game.spec.ts",
+          "line": 29,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "performance.spec.ts",
+      "file": "performance.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "a cold scene fits the transfer and loading budgets at an emulated 10 Mbps",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2552,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:17:44.143Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "emulated-loading.json",
+                      "contentType": "application/json",
+                      "body": "eyJwbGF5YWJsZU1zIjoyMTg4LCJieXRlcyI6MTE2MjQ1MCwiZG93bmxvYWRNYnBzIjoxMCwibGF0ZW5jeU1zIjo0MCwibWVhc3VyZW1lbnQiOiJBZ2dyZWdhdGUgSFRUUCByZXNwb25zZSBwYXlsb2FkcywgaW5jbHVkaW5nIHBhZ2UsIFBpeGkgd29ya2VyIGFuZCBzZXJ2aWNlIHdvcmtlcjsgcGljdHVyZSBhbmQgYWxsIHRhcmdldCBwcmV2aWV3cyByZWFkeS4iLCJwaHlzaWNhbElQaG9uZSI6ZmFsc2V9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b15d6361b2fc38288977-c8e12cecca4a9c8ff801",
+          "file": "performance.spec.ts",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "a valid touch gives feedback within 100 ms and picture recovery preserves finds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1336,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:17:46.702Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "emulated-touch-feedback.json",
+                      "contentType": "application/json",
+                      "body": "eyJzY2VuZSI6NTEsImZlZWRiYWNrTXMiOjMuODAwMDAwMDA0NDcwMzQ4NCwicGh5c2ljYWxJUGhvbmUiOmZhbHNlfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b15d6361b2fc38288977-8b655417eb77aed98751",
+          "file": "performance.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "a cold scene fits the transfer and loading budgets at an emulated 10 Mbps",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2722,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:17:58.826Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "emulated-loading.json",
+                      "contentType": "application/json",
+                      "body": "eyJwbGF5YWJsZU1zIjoyNDUyLCJieXRlcyI6MTM2OTE2NywiZG93bmxvYWRNYnBzIjoxMCwibGF0ZW5jeU1zIjo0MCwibWVhc3VyZW1lbnQiOiJBZ2dyZWdhdGUgSFRUUCByZXNwb25zZSBwYXlsb2FkcywgaW5jbHVkaW5nIHBhZ2UsIFBpeGkgd29ya2VyIGFuZCBzZXJ2aWNlIHdvcmtlcjsgcGljdHVyZSBhbmQgYWxsIHRhcmdldCBwcmV2aWV3cyByZWFkeS4iLCJwaHlzaWNhbElQaG9uZSI6ZmFsc2V9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b15d6361b2fc38288977-f951a53db274d772d461",
+          "file": "performance.spec.ts",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "a valid touch gives feedback within 100 ms and picture recovery preserves finds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1661,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:18:01.567Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "emulated-touch-feedback.json",
+                      "contentType": "application/json",
+                      "body": "eyJzY2VuZSI6NTEsImZlZWRiYWNrTXMiOjQsInBoeXNpY2FsSVBob25lIjpmYWxzZX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b15d6361b2fc38288977-432ec41ddc99de1c4743",
+          "file": "performance.spec.ts",
+          "line": 14,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "samples.spec.ts",
+      "file": "samples.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "all three samples and their unchanged source previews download as one complete offline set",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5237,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:17:48.078Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6a22158aed66c56e7279-d3940f4b1515d9bcab68",
+          "file": "samples.spec.ts",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "all three samples and their unchanged source previews download as one complete offline set",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13346,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:18:03.267Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6a22158aed66c56e7279-0ef8d8a10edebca5f39f",
+          "file": "samples.spec.ts",
+          "line": 17,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-03T07:17:40.432Z",
+    "duration": 36741.96799999999,
+    "expected": 8,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

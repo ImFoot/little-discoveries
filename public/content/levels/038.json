@@ -3,8 +3,8 @@
   "chapter": 4,
   "title": "The holiday village",
   "targetCount": 15,
-  "art": "art/v2/038.webp",
-  "thumbnail": "art/v2/038-thumb.webp",
+  "art": "art/v3/038.webp",
+  "thumbnail": "art/v3/038-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l088-toy-sled",
       "name": "Red toy sled",
-      "preview": "art/v2/038/toy-sled.webp",
+      "preview": "art/v3/038/toy-sled.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           59,
@@ -239,7 +240,8 @@
     {
       "id": "l088-green-handled-bell",
       "name": "Green-handled brass bell",
-      "preview": "art/v2/038/green-handled-bell.webp",
+      "preview": "art/v3/038/green-handled-bell.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           94,
@@ -450,7 +452,8 @@
     {
       "id": "l088-star-ornament",
       "name": "Silver star ornament",
-      "preview": "art/v2/038/star-ornament.webp",
+      "preview": "art/v3/038/star-ornament.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           644,
@@ -557,7 +560,8 @@
     {
       "id": "l088-toy-train",
       "name": "Blue toy train",
-      "preview": "art/v2/038/toy-train.webp",
+      "preview": "art/v3/038/toy-train.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           242,
@@ -968,7 +972,8 @@
     {
       "id": "l088-red-mitten",
       "name": "Red knitted mitten",
-      "preview": "art/v2/038/red-mitten.webp",
+      "preview": "art/v3/038/red-mitten.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           335,
@@ -1195,7 +1200,8 @@
     {
       "id": "l088-green-thermos",
       "name": "Green thermos",
-      "preview": "art/v2/038/green-thermos.webp",
+      "preview": "art/v3/038/green-thermos.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           70,
@@ -1366,7 +1372,8 @@
     {
       "id": "l088-wooden-dove",
       "name": "White wooden dove",
-      "preview": "art/v2/038/wooden-dove.webp",
+      "preview": "art/v3/038/wooden-dove.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           741,
@@ -1593,7 +1600,8 @@
     {
       "id": "l088-heart-cutter",
       "name": "Heart cookie cutter",
-      "preview": "art/v2/038/heart-cutter.webp",
+      "preview": "art/v3/038/heart-cutter.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           560,
@@ -1732,7 +1740,8 @@
     {
       "id": "l088-purple-ribbon",
       "name": "Purple ribbon spool",
-      "preview": "art/v2/038/purple-ribbon.webp",
+      "preview": "art/v3/038/purple-ribbon.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           775,
@@ -2071,7 +2080,8 @@
     {
       "id": "l088-snow-globe",
       "name": "Tree snow globe",
-      "preview": "art/v2/038/snow-globe.webp",
+      "preview": "art/v3/038/snow-globe.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           485,
@@ -2282,7 +2292,8 @@
     {
       "id": "l088-striped-scarf",
       "name": "Striped wool scarf",
-      "preview": "art/v2/038/striped-scarf.webp",
+      "preview": "art/v3/038/striped-scarf.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           793,
@@ -2733,7 +2744,8 @@
     {
       "id": "l088-red-book",
       "name": "Closed red book",
-      "preview": "art/v2/038/red-book.webp",
+      "preview": "art/v3/038/red-book.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           29,
@@ -2856,7 +2868,8 @@
     {
       "id": "l088-spinning-top",
       "name": "Orange spinning top",
-      "preview": "art/v2/038/spinning-top.webp",
+      "preview": "art/v3/038/spinning-top.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           716,
@@ -3051,7 +3064,8 @@
     {
       "id": "l088-wicker-basket",
       "name": "Tiny wicker basket",
-      "preview": "art/v2/038/wicker-basket.webp",
+      "preview": "art/v3/038/wicker-basket.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           893,
@@ -3206,7 +3220,8 @@
     {
       "id": "l088-yellow-fan",
       "name": "Yellow paper fan",
-      "preview": "art/v2/038/yellow-fan.webp",
+      "preview": "art/v3/038/yellow-fan.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           794,

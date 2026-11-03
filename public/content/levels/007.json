@@ -3,8 +3,8 @@
   "chapter": 1,
   "title": "The traveling trunk",
   "targetCount": 14,
-  "art": "art/v2/007.webp",
-  "thumbnail": "art/v2/007-thumb.webp",
+  "art": "art/v3/007.webp",
+  "thumbnail": "art/v3/007-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l057-lace-glove",
       "name": "Ivory lace glove",
-      "preview": "art/v2/007/lace-glove.webp",
+      "preview": "art/v3/007/lace-glove.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           36,
@@ -407,7 +408,8 @@
     {
       "id": "l057-floral-fan",
       "name": "Floral folding fan",
-      "preview": "art/v2/007/floral-fan.webp",
+      "preview": "art/v3/007/floral-fan.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           274,
@@ -610,7 +612,8 @@
     {
       "id": "l057-vintage-camera",
       "name": "Vintage brown camera",
-      "preview": "art/v2/007/vintage-camera.webp",
+      "preview": "art/v3/007/vintage-camera.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           744,
@@ -909,7 +912,8 @@
     {
       "id": "l057-brass-key",
       "name": "Brass luggage key",
-      "preview": "art/v2/007/brass-key.webp",
+      "preview": "art/v3/007/brass-key.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           495,
@@ -1168,7 +1172,8 @@
     {
       "id": "l057-passport-cover",
       "name": "Red passport cover",
-      "preview": "art/v2/007/passport-cover.webp",
+      "preview": "art/v3/007/passport-cover.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           362,
@@ -1267,7 +1272,8 @@
     {
       "id": "l057-perfume-bottle",
       "name": "Blue-stopper perfume bottle",
-      "preview": "art/v2/007/perfume-bottle.webp",
+      "preview": "art/v3/007/perfume-bottle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           142,
@@ -1470,7 +1476,8 @@
     {
       "id": "l057-shoe-buckle",
       "name": "Silver shoe buckle",
-      "preview": "art/v2/007/shoe-buckle.webp",
+      "preview": "art/v3/007/shoe-buckle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           329,
@@ -1677,7 +1684,8 @@
     {
       "id": "l057-purple-bow",
       "name": "Purple silk bow",
-      "preview": "art/v2/007/purple-bow.webp",
+      "preview": "art/v3/007/purple-bow.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           6,
@@ -2120,7 +2128,8 @@
     {
       "id": "l057-green-feather",
       "name": "Green hat feather",
-      "preview": "art/v2/007/green-feather.webp",
+      "preview": "art/v3/007/green-feather.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           0,
@@ -2315,7 +2324,8 @@
     {
       "id": "l057-striped-stocking",
       "name": "Striped wool stocking",
-      "preview": "art/v2/007/striped-stocking.webp",
+      "preview": "art/v3/007/striped-stocking.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           667,
@@ -2558,7 +2568,8 @@
     {
       "id": "l057-elephant-souvenir",
       "name": "Carved elephant",
-      "preview": "art/v2/007/elephant-souvenir.webp",
+      "preview": "art/v3/007/elephant-souvenir.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           574,
@@ -2873,7 +2884,8 @@
     {
       "id": "l057-embroidered-purse",
       "name": "Yellow embroidered coin purse",
-      "preview": "art/v2/007/embroidered-purse.webp",
+      "preview": "art/v3/007/embroidered-purse.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           532,
@@ -3108,7 +3120,8 @@
     {
       "id": "l057-city-map",
       "name": "Folded city map",
-      "preview": "art/v2/007/city-map.webp",
+      "preview": "art/v3/007/city-map.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           817,
@@ -3191,7 +3204,8 @@
     {
       "id": "l057-blue-travel-cup",
       "name": "Blue enamel travel cup",
-      "preview": "art/v2/007/blue-travel-cup.webp",
+      "preview": "art/v3/007/blue-travel-cup.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           902,

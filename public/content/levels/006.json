@@ -3,8 +3,8 @@
   "chapter": 1,
   "title": "The tram depot",
   "targetCount": 14,
-  "art": "art/v2/006.webp",
-  "thumbnail": "art/v2/006-thumb.webp",
+  "art": "art/v3/006.webp",
+  "thumbnail": "art/v3/006-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l056-conductors-cap",
       "name": "Conductor's peaked cap",
-      "preview": "art/v2/006/conductors-cap.webp",
+      "preview": "art/v3/006/conductors-cap.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           832,
@@ -199,7 +200,8 @@
     {
       "id": "l056-red-oilcan",
       "name": "Red oilcan",
-      "preview": "art/v2/006/red-oilcan.webp",
+      "preview": "art/v3/006/red-oilcan.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           39,
@@ -682,7 +684,8 @@
     {
       "id": "l056-brass-token",
       "name": "Star brass token",
-      "preview": "art/v2/006/brass-token.webp",
+      "preview": "art/v3/006/brass-token.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           789,
@@ -853,7 +856,8 @@
     {
       "id": "l056-green-whistle",
       "name": "Green enamel whistle",
-      "preview": "art/v2/006/green-whistle.webp",
+      "preview": "art/v3/006/green-whistle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           831,
@@ -1064,7 +1068,8 @@
     {
       "id": "l056-work-glove",
       "name": "Leather work glove",
-      "preview": "art/v2/006/work-glove.webp",
+      "preview": "art/v3/006/work-glove.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           426,
@@ -1379,7 +1384,8 @@
     {
       "id": "l056-screwdriver",
       "name": "Wood-handled screwdriver",
-      "preview": "art/v2/006/screwdriver.webp",
+      "preview": "art/v3/006/screwdriver.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           286,
@@ -1590,7 +1596,8 @@
     {
       "id": "l056-route-map",
       "name": "Blue route map",
-      "preview": "art/v2/006/route-map.webp",
+      "preview": "art/v3/006/route-map.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           695,
@@ -1665,7 +1672,8 @@
     {
       "id": "l056-pocket-watch",
       "name": "Silver pocket watch",
-      "preview": "art/v2/006/pocket-watch.webp",
+      "preview": "art/v3/006/pocket-watch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           88,
@@ -1852,7 +1860,8 @@
     {
       "id": "l056-signal-lens",
       "name": "Amber signal lens",
-      "preview": "art/v2/006/signal-lens.webp",
+      "preview": "art/v3/006/signal-lens.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           630,
@@ -2079,7 +2088,8 @@
     {
       "id": "l056-red-paintbrush",
       "name": "Red paintbrush",
-      "preview": "art/v2/006/red-paintbrush.webp",
+      "preview": "art/v3/006/red-paintbrush.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           0,
@@ -2290,7 +2300,8 @@
     {
       "id": "l056-tram-model",
       "name": "Wooden tram model",
-      "preview": "art/v2/006/tram-model.webp",
+      "preview": "art/v3/006/tram-model.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           777,
@@ -2621,7 +2632,8 @@
     {
       "id": "l056-blue-mug",
       "name": "Blue ceramic mug",
-      "preview": "art/v2/006/blue-mug.webp",
+      "preview": "art/v3/006/blue-mug.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           594,
@@ -2760,7 +2772,8 @@
     {
       "id": "l056-padlock",
       "name": "Black toolbox padlock",
-      "preview": "art/v2/006/padlock.webp",
+      "preview": "art/v3/006/padlock.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           775,
@@ -2919,7 +2932,8 @@
     {
       "id": "l056-tool-pouch",
       "name": "Canvas tool pouch",
-      "preview": "art/v2/006/tool-pouch.webp",
+      "preview": "art/v3/006/tool-pouch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           920,

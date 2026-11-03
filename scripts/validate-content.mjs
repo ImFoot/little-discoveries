@@ -4,11 +4,13 @@ import {createHash} from 'node:crypto';
 import {writeArtifact} from './artifact-io.mjs';
 const catalog=JSON.parse(await readFile('public/content/catalog.json','utf8'));
 const requiredPlacements=catalog.requiredPlacements??1304;
+const requiredScenes=catalog.requiredScenes??100;
 const errors=[],warnings=[];
 const check=(valid,message)=>{if(!valid)errors.push(message);};
-check(catalog.levels.length===100,'Exactly 100 catalog entries are required.');
+check(catalog.levels.length===requiredScenes,`Exactly ${requiredScenes} catalog entries are required.`);
 check(catalog.levels.reduce((n,l)=>n+l.targetCount,0)===requiredPlacements,`Target counts must total ${requiredPlacements}.`);
-check(catalog.chapters.length===10,'Exactly 10 chapters are required.');
+check(catalog.chapters.length===Math.ceil(requiredScenes/10),'Chapter count does not match the active collection.');
+check(catalog.revision===3&&requiredScenes===53&&requiredPlacements===702,'This release must contain 50 retained scenes and only three samples.');
 let ready=0,placements=0,phone=0;
 const artHashes=new Set();
 function simplePolygon(points){
@@ -22,11 +24,11 @@ function simplePolygon(points){
  }
  return true;
 }
-for(let i=0;i<100;i++){
+for(let i=0;i<requiredScenes;i++){
  const meta=catalog.levels[i];if(!meta)continue;
  check(meta.id===i+1,`Numbering mismatch at ${i+1}`);
  check(meta.chapter===Math.floor(i/10)+1,`Chapter mismatch at ${i+1}`);
- if(catalog.revision===2)check(meta.targetCount<=15,`Scene ${meta.id}: fifteen-target maximum exceeded`);
+ check(meta.targetCount>0&&meta.targetCount<=15,`Scene ${meta.id}: fifteen-target maximum exceeded`);
  if(meta.status!=='reviewed'){warnings.push(`Scene ${meta.id}: illustration and placement production pending.`);continue;}
  try{
   const level=JSON.parse(await readFile(`public/content/levels/${String(meta.id).padStart(3,'0')}.json`,'utf8'));
@@ -38,19 +40,15 @@ for(let i=0;i<100;i++){
   check(level.targetCount===meta.targetCount&&level.targets.length===meta.targetCount,`Scene ${meta.id}: target count mismatch`);
   check(new Set(level.targets.map(t=>t.id)).size===meta.targetCount,`Scene ${meta.id}: duplicate target IDs`);
   check(JSON.stringify(level.targets.map(t=>t.id))===JSON.stringify(meta.targetIds),`Scene ${meta.id}: catalog target IDs differ`);
-  if(catalog.revision===2){
-   const alias=await readFile(`public/content/v2/levels/${String(meta.id).padStart(3,'0')}.json`,'utf8');
+  {
+   const alias=await readFile(`public/content/v${catalog.revision}/levels/${String(meta.id).padStart(3,'0')}.json`,'utf8');
    check(alias===await readFile(`public/content/levels/${String(meta.id).padStart(3,'0')}.json`,'utf8'),`Scene ${meta.id}: versioned data differs`);
-   check([level.art,level.thumbnail,...level.targets.map(t=>t.preview)].every(path=>path.startsWith('art/v2/')),`Scene ${meta.id}: old-cache asset URL collision`);
+   check([level.art,level.thumbnail,...level.targets.map(t=>t.preview)].every(path=>path.startsWith(`art/v${catalog.revision}/`)),`Scene ${meta.id}: old-cache asset URL collision`);
   }
-  if(catalog.revision===2&&meta.id>=51){
+  if(meta.id>=51){
    check(level.review.contextOutlines===true,`Scene ${meta.id}: source/outline overlay review required`);
-   const count=meta.id%10===0?10:15,hard=meta.id%10===0?3:11;
-   check(level.targetCount===count,`Scene ${meta.id}: replacement scene requires ${count} targets`);
-   check(meta.breakLevel===(meta.id%10===0),`Scene ${meta.id}: incorrect break schedule`);
-   check(level.targets.filter(t=>t.difficulty==='challenging').length===hard,`Scene ${meta.id}: requires ${hard} challenging targets`);
-   check(level.targets.filter(t=>t.difficulty==='easy').length===count-hard,`Scene ${meta.id}: incorrect easy target quota`);
-   check(level.targets.every(t=>typeof t.concealment==='string'&&t.concealment.length>=20),`Scene ${meta.id}: missing visual concealment review`);
+   check(level.targetCount===12&&meta.sampleLevel===true,`Scene ${meta.id}: sample requires 12 targets`);
+   check(level.targets.every(t=>t.previewMode==='context'),`Scene ${meta.id}: samples require unmasked picture crops`);
   }
   await access(`public/${level.thumbnail}`);
   const names=new Set();
@@ -66,13 +64,20 @@ for(let i=0;i<100;i++){
    check(target.inspect.zoom>=1&&target.inspect.zoom<=8&&target.inspect.x>=0&&target.inspect.x<=1&&target.inspect.y>=0&&target.inspect.y<=1,`${tag}: invalid inspection view`);
    await access(`public/${target.preview}`);
    const preview=await sharp(`public/${target.preview}`).stats();check(preview.channels.some(c=>c.max>c.min),`${tag}: empty preview`);
+   const c=target.crop;
+   check(c.x>=0&&c.y>=0&&c.width>0&&c.height>0&&c.x+c.width<=level.width&&c.y+c.height<=level.height,`${tag}: preview crop outside source`);
+   check(target.outline.every(([x,y])=>x>=c.x&&x<=c.x+c.width&&y>=c.y&&y<=c.y+c.height),`${tag}: preview clips target silhouette`);
+   if(target.previewMode==='context'){
+    const expected=await sharp(`artwork/source/${String(meta.id).padStart(3,'0')}.png`).extract({left:c.x,top:c.y,width:c.width,height:c.height}).resize(280,280,{fit:'inside'}).webp({quality:92}).toBuffer();
+    check(expected.equals(await readFile(`public/${target.preview}`)),`${tag}: preview is not an unchanged source crop`);
+   }
   }
   check(level.review.artwork&&level.review.geometry,`Scene ${meta.id}: missing artwork/geometry review`);
   if(level.review.smallPhone)phone++;
   ready++;placements+=level.targets.length;
  }catch(e){errors.push(`Scene ${meta.id}: ${e.message}`);}
 }
-const report={catalogRevision:catalog.revision??1,catalogScenes:100,requiredPlacements,illustratedScenes:ready,authoredPlacements:placements,actualIPhoneReviewed:phone,errors,warnings};
+const report={catalogRevision:catalog.revision??1,catalogScenes:requiredScenes,requiredPlacements,illustratedScenes:ready,authoredPlacements:placements,actualIPhoneReviewed:phone,errors,warnings};
 console.log(JSON.stringify(report,null,2));
-if(catalog.revision===2&&process.argv.includes('--complete')){await mkdir('.cache',{recursive:true});await writeArtifact('.cache/r2-content.json',JSON.stringify(report,null,2)+'\n');}
-if(errors.length||process.argv.includes('--complete')&&(ready!==100||placements!==requiredPlacements))process.exitCode=1;
+if(process.argv.includes('--complete')){await mkdir('.cache',{recursive:true});await writeArtifact('.cache/r3-content.json',JSON.stringify(report,null,2)+'\n');}
+if(errors.length||process.argv.includes('--complete')&&(ready!==requiredScenes||placements!==requiredPlacements))process.exitCode=1;

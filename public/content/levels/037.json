@@ -3,8 +3,8 @@
   "chapter": 4,
   "title": "The gift-wrapping table",
   "targetCount": 14,
-  "art": "art/v2/037.webp",
-  "thumbnail": "art/v2/037-thumb.webp",
+  "art": "art/v3/037.webp",
+  "thumbnail": "art/v3/037-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l087-tape-dispenser",
       "name": "Blue tape dispenser",
-      "preview": "art/v2/037/tape-dispenser.webp",
+      "preview": "art/v3/037/tape-dispenser.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           29,
@@ -183,7 +184,8 @@
     {
       "id": "l087-ribbon-curl",
       "name": "Loose red ribbon",
-      "preview": "art/v2/037/ribbon-curl.webp",
+      "preview": "art/v3/037/ribbon-curl.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           79,
@@ -626,7 +628,8 @@
     {
       "id": "l087-gift-tag",
       "name": "Cream gift tag",
-      "preview": "art/v2/037/gift-tag.webp",
+      "preview": "art/v3/037/gift-tag.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           354,
@@ -701,7 +704,8 @@
     {
       "id": "l087-paper-scissors",
       "name": "Gold paper scissors",
-      "preview": "art/v2/037/paper-scissors.webp",
+      "preview": "art/v3/037/paper-scissors.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           451,
@@ -920,7 +924,8 @@
     {
       "id": "l087-green-ribbon-spool",
       "name": "Green ribbon spool",
-      "preview": "art/v2/037/green-ribbon-spool.webp",
+      "preview": "art/v3/037/green-ribbon-spool.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           563,
@@ -1227,7 +1232,8 @@
     {
       "id": "l087-wax-stamp",
       "name": "Purple wax seal stamp",
-      "preview": "art/v2/037/wax-stamp.webp",
+      "preview": "art/v3/037/wax-stamp.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           659,
@@ -1430,7 +1436,8 @@
     {
       "id": "l087-pear-paperweight",
       "name": "Pear brass paperweight",
-      "preview": "art/v2/037/pear-paperweight.webp",
+      "preview": "art/v3/037/pear-paperweight.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           656,
@@ -1617,7 +1624,8 @@
     {
       "id": "l087-orange-fan",
       "name": "Orange paper fan",
-      "preview": "art/v2/037/orange-fan.webp",
+      "preview": "art/v3/037/orange-fan.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           726,
@@ -1748,7 +1756,8 @@
     {
       "id": "l087-star-ornament",
       "name": "Silver star ornament",
-      "preview": "art/v2/037/star-ornament.webp",
+      "preview": "art/v3/037/star-ornament.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           873,
@@ -1879,7 +1888,8 @@
     {
       "id": "l087-floral-tin",
       "name": "Round floral tin",
-      "preview": "art/v2/037/floral-tin.webp",
+      "preview": "art/v3/037/floral-tin.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           636,
@@ -2034,7 +2044,8 @@
     {
       "id": "l087-wooden-ruler",
       "name": "Wooden ruler",
-      "preview": "art/v2/037/wooden-ruler.webp",
+      "preview": "art/v3/037/wooden-ruler.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           381,
@@ -2093,7 +2104,8 @@
     {
       "id": "l087-red-mitten",
       "name": "Red knitted mitten",
-      "preview": "art/v2/037/red-mitten.webp",
+      "preview": "art/v3/037/red-mitten.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           456,
@@ -2360,7 +2372,8 @@
     {
       "id": "l087-ceramic-bird",
       "name": "White ceramic bird",
-      "preview": "art/v2/037/ceramic-bird.webp",
+      "preview": "art/v3/037/ceramic-bird.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           790,
@@ -2579,7 +2592,8 @@
     {
       "id": "l087-blue-glass-bottle",
       "name": "Tiny blue glass bottle",
-      "preview": "art/v2/037/blue-glass-bottle.webp",
+      "preview": "art/v3/037/blue-glass-bottle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           949,

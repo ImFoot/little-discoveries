@@ -1,0 +1,1091 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\tensi\\hidden_objects\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "content.spec.ts",
+      "game.spec.ts",
+      "samples.spec.ts",
+      "--workers=2",
+      "--trace=off",
+      "--output=.cache/r3-browser-results",
+      "--reporter=list,json"
+    ],
+    "configFile": "C:\\Users\\tensi\\hidden_objects\\playwright.config.ts",
+    "rootDir": "C:/Users/tensi/hidden_objects/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/tensi/hidden_objects/.cache/r3-browser-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium-phone",
+        "name": "chromium-phone",
+        "testDir": "C:/Users/tensi/hidden_objects/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/tensi/hidden_objects/.cache/r3-browser-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit-phone",
+        "name": "webkit-phone",
+        "testDir": "C:/Users/tensi/hidden_objects/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\tensi\\hidden_objects\\.cache\\r3-browser-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "name": "chromium-phone",
+        "testDir": "C:\\Users\\tensi\\hidden_objects\\tests\\browser",
+        "snapshotDir": "C:\\Users\\tensi\\hidden_objects\\tests\\browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "trace": "off",
+          "screenshot": "only-on-failure",
+          "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/27.2 Mobile/14E304 Safari/602.1",
+          "viewport": {
+            "width": 375,
+            "height": 667
+          },
+          "deviceScaleFactor": 2,
+          "isMobile": true,
+          "hasTouch": true,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium-phone"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\tensi\\hidden_objects\\.cache\\r3-browser-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "name": "webkit-phone",
+        "testDir": "C:\\Users\\tensi\\hidden_objects\\tests\\browser",
+        "snapshotDir": "C:\\Users\\tensi\\hidden_objects\\tests\\browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "trace": "off",
+          "screenshot": "only-on-failure",
+          "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/27.2 Mobile/14E304 Safari/602.1",
+          "viewport": {
+            "width": 375,
+            "height": 667
+          },
+          "deviceScaleFactor": 2,
+          "isMobile": true,
+          "hasTouch": true,
+          "defaultBrowserType": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit-phone"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 2,
+    "webServer": {
+      "command": "npm run preview -- --host 127.0.0.1 --port 4173",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": true,
+      "timeout": 30000
+    }
+  },
+  "suites": [
+    {
+      "title": "content.spec.ts",
+      "file": "content.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "old Safari progress follows its picture from 72 to 22 without double migration",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 905,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:05:09.153Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d74cd27346db6aa64657-0e933120e7ec00086f3e",
+          "file": "content.spec.ts",
+          "line": 9,
+          "column": 1
+        },
+        {
+          "title": "an original cached tab upgrades on reload and preserves discoveries",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 586,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m3\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m3\u001b[39m\n    at C:\\Users\\tensi\\hidden_objects\\tests\\browser\\content.spec.ts:36:108",
+                    "location": {
+                      "file": "C:\\Users\\tensi\\hidden_objects\\tests\\browser\\content.spec.ts",
+                      "column": 108,
+                      "line": 36
+                    },
+                    "snippet": "  34 |   await ready(page,22);await expect(page.locator('#progress')).toHaveText('13 / 14');await expect(page).toHaveURL(/#scene\\/22$/);\n  35 |   expect(await page.evaluate(()=>caches.keys())).not.toContain('little-discoveries-shell-original-fixture');\n> 36 |   expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('little-discoveries.save.v3')!).version)).toBe(2);\n     |                                                                                                            ^\n  37 |   expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('little-discoveries.save.v1')!).version)).toBe(1);\n  38 |   await page.reload();await ready(page,22);await expect(page.locator('#progress')).toHaveText('13 / 14');\n  39 |  }finally{await unlink(path);}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\tensi\\hidden_objects\\tests\\browser\\content.spec.ts",
+                        "column": 108,
+                        "line": 36
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m3\u001b[39m\n\n  34 |   await ready(page,22);await expect(page.locator('#progress')).toHaveText('13 / 14');await expect(page).toHaveURL(/#scene\\/22$/);\n  35 |   expect(await page.evaluate(()=>caches.keys())).not.toContain('little-discoveries-shell-original-fixture');\n> 36 |   expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('little-discoveries.save.v3')!).version)).toBe(2);\n     |                                                                                                            ^\n  37 |   expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('little-discoveries.save.v1')!).version)).toBe(1);\n  38 |   await page.reload();await ready(page,22);await expect(page.locator('#progress')).toHaveText('13 / 14');\n  39 |  }finally{await unlink(path);}\n    at C:\\Users\\tensi\\hidden_objects\\tests\\browser\\content.spec.ts:36:108"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:05:10.142Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\tensi\\hidden_objects\\.cache\\r3-browser-results\\content-an-original-cached-c7847-d-and-preserves-discoveries-chromium-phone\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\tensi\\hidden_objects\\.cache\\r3-browser-results\\content-an-original-cached-c7847-d-and-preserves-discoveries-chromium-phone\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\tensi\\hidden_objects\\tests\\browser\\content.spec.ts",
+                    "column": 108,
+                    "line": 36
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d74cd27346db6aa64657-f6edd8ad8a6a5648ff6a",
+          "file": "content.spec.ts",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "every authored placement can be revealed and collected through the real scene picker",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 1200000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 157659,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:05:11.068Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "verified-placements.json",
+                      "contentType": "application/json",
+                      "body": "eyJlbmdpbmUiOiJjaHJvbWl1bS1waG9uZSIsInNjZW5lcyI6NTMsInBsYWNlbWVudHMiOjcwMiwicGh5c2ljYWxJUGhvbmUiOmZhbHNlfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d74cd27346db6aa64657-7b4e1af3d61e2456bbd6",
+          "file": "content.spec.ts",
+          "line": 42,
+          "column": 1
+        },
+        {
+          "title": "a complete chapter works offline, detects missing art and repairs without losing finds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9340,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:07:48.821Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d74cd27346db6aa64657-e17698ac165c23ca5243",
+          "file": "content.spec.ts",
+          "line": 56,
+          "column": 1
+        },
+        {
+          "title": "an interrupted chapter download resumes without discarding cached files or progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3006,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:07:58.176Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d74cd27346db6aa64657-58423c57c9494ceb1f9e",
+          "file": "content.spec.ts",
+          "line": 66,
+          "column": 1
+        },
+        {
+          "title": "old Safari progress follows its picture from 72 to 22 without double migration",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1724,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:05:31.208Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d74cd27346db6aa64657-f7118c49e5de68e9a367",
+          "file": "content.spec.ts",
+          "line": 9,
+          "column": 1
+        },
+        {
+          "title": "an original cached tab upgrades on reload and preserves discoveries",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 763,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m3\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m3\u001b[39m\n    at C:\\Users\\tensi\\hidden_objects\\tests\\browser\\content.spec.ts:36:108",
+                    "location": {
+                      "file": "C:\\Users\\tensi\\hidden_objects\\tests\\browser\\content.spec.ts",
+                      "column": 108,
+                      "line": 36
+                    },
+                    "snippet": "  34 |   await ready(page,22);await expect(page.locator('#progress')).toHaveText('13 / 14');await expect(page).toHaveURL(/#scene\\/22$/);\n  35 |   expect(await page.evaluate(()=>caches.keys())).not.toContain('little-discoveries-shell-original-fixture');\n> 36 |   expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('little-discoveries.save.v3')!).version)).toBe(2);\n     |                                                                                                            ^\n  37 |   expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('little-discoveries.save.v1')!).version)).toBe(1);\n  38 |   await page.reload();await ready(page,22);await expect(page.locator('#progress')).toHaveText('13 / 14');\n  39 |  }finally{await unlink(path);}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\tensi\\hidden_objects\\tests\\browser\\content.spec.ts",
+                        "column": 108,
+                        "line": 36
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m3\u001b[39m\n\n  34 |   await ready(page,22);await expect(page.locator('#progress')).toHaveText('13 / 14');await expect(page).toHaveURL(/#scene\\/22$/);\n  35 |   expect(await page.evaluate(()=>caches.keys())).not.toContain('little-discoveries-shell-original-fixture');\n> 36 |   expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('little-discoveries.save.v3')!).version)).toBe(2);\n     |                                                                                                            ^\n  37 |   expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('little-discoveries.save.v1')!).version)).toBe(1);\n  38 |   await page.reload();await ready(page,22);await expect(page.locator('#progress')).toHaveText('13 / 14');\n  39 |  }finally{await unlink(path);}\n    at C:\\Users\\tensi\\hidden_objects\\tests\\browser\\content.spec.ts:36:108"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:05:33.019Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\tensi\\hidden_objects\\.cache\\r3-browser-results\\content-an-original-cached-c7847-d-and-preserves-discoveries-webkit-phone\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\tensi\\hidden_objects\\.cache\\r3-browser-results\\content-an-original-cached-c7847-d-and-preserves-discoveries-webkit-phone\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\tensi\\hidden_objects\\tests\\browser\\content.spec.ts",
+                    "column": 108,
+                    "line": 36
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d74cd27346db6aa64657-e958fa05332697ab507e",
+          "file": "content.spec.ts",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "every authored placement can be revealed and collected through the real scene picker",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 1200000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 275171,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:05:34.123Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "verified-placements.json",
+                      "contentType": "application/json",
+                      "body": "eyJlbmdpbmUiOiJ3ZWJraXQtcGhvbmUiLCJzY2VuZXMiOjUzLCJwbGFjZW1lbnRzIjo3MDIsInBoeXNpY2FsSVBob25lIjpmYWxzZX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d74cd27346db6aa64657-08dcd8bff03321077d83",
+          "file": "content.spec.ts",
+          "line": 42,
+          "column": 1
+        },
+        {
+          "title": "a complete chapter works offline, detects missing art and repairs without losing finds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 27478,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:10:09.374Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d74cd27346db6aa64657-c91fd366f6b2f112961b",
+          "file": "content.spec.ts",
+          "line": 56,
+          "column": 1
+        },
+        {
+          "title": "an interrupted chapter download resumes without discarding cached files or progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 15636,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:10:36.876Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d74cd27346db6aa64657-d794450a0651acab712a",
+          "file": "content.spec.ts",
+          "line": 66,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "game.spec.ts",
+      "file": "game.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "real taps, offscreen tray targets, help, resume and replay preserve the gameplay loop",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2907,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:05:09.154Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-a47ee016e684b5c70d6a",
+          "file": "game.spec.ts",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "drag and pinch never collect; compact portrait and landscape controls stay reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1513,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:05:12.149Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-4bf4bdbab465cfa86a65",
+          "file": "game.spec.ts",
+          "line": 21,
+          "column": 1
+        },
+        {
+          "title": "three clear samples render; rejected scenes are absent from the catalog",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 5179,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:05:13.678Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-6f08cc94ec0fc0e6e72c",
+          "file": "game.spec.ts",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "backup export, invalid import preservation, and confirmed restore",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2176,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:05:18.872Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-86ad4d7f5cc2d3c1a4b5",
+          "file": "game.spec.ts",
+          "line": 34,
+          "column": 1
+        },
+        {
+          "title": "service worker restores a visited scene with networking disabled",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2666,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:05:21.060Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-e95a3afbecaaf531b0aa",
+          "file": "game.spec.ts",
+          "line": 39,
+          "column": 1
+        },
+        {
+          "title": "real taps, offscreen tray targets, help, resume and replay preserve the gameplay loop",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9017,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:08:01.634Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-5ba0e023f77c7d53fbdb",
+          "file": "game.spec.ts",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "drag and pinch never collect; compact portrait and landscape controls stay reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2074,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:08:10.722Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-56c81eff6241acb9df28",
+          "file": "game.spec.ts",
+          "line": 21,
+          "column": 1
+        },
+        {
+          "title": "three clear samples render; rejected scenes are absent from the catalog",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7066,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:08:12.808Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-356b2bee0f24fea3aaa0",
+          "file": "game.spec.ts",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "backup export, invalid import preservation, and confirmed restore",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2055,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:08:19.883Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-6df504188c9ded1a92a0",
+          "file": "game.spec.ts",
+          "line": 34,
+          "column": 1
+        },
+        {
+          "title": "service worker restores a visited scene with networking disabled",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2796,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:08:21.950Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-0e1c0612a33a08c02d0e",
+          "file": "game.spec.ts",
+          "line": 39,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "samples.spec.ts",
+      "file": "samples.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "revision two updates preserve level 24 and do not transfer rejected finds to sample 51",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2088,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:05:23.765Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6a22158aed66c56e7279-a18d8064606d79145452",
+          "file": "samples.spec.ts",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "all three samples and their unchanged source previews download as one complete offline set",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-phone",
+              "projectName": "chromium-phone",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4897,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:05:25.870Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6a22158aed66c56e7279-d3940f4b1515d9bcab68",
+          "file": "samples.spec.ts",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "revision two updates preserve level 24 and do not transfer rejected finds to sample 51",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3155,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:08:24.780Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6a22158aed66c56e7279-db73d08d46bd85c86b40",
+          "file": "samples.spec.ts",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "all three samples and their unchanged source previews download as one complete offline set",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-phone",
+              "projectName": "webkit-phone",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13756,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-03T07:08:27.952Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6a22158aed66c56e7279-0ef8d8a10edebca5f39f",
+          "file": "samples.spec.ts",
+          "line": 17,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-03T07:05:07.795Z",
+    "duration": 345502.878,
+    "expected": 22,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

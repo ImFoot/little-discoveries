@@ -1,56 +1,46 @@
 import {readFile} from 'node:fs/promises';
 import {writeArtifact} from './artifact-io.mjs';
 const catalog=JSON.parse(await readFile('public/content/catalog.json','utf8'));
-if(catalog.revision!==2)throw Error('This generator describes the revised collection.');
-const chapters=catalog.chapters.map(c=>`### ${c.id}. ${c.title}\n\n| Level | Scene | Targets | Search mix |\n| --- | --- | --- | --- |\n${catalog.levels.filter(l=>l.chapter===c.id).map(l=>`| ${l.id} | ${l.title} | ${l.targetCount} | ${l.id<=50?`Retained from original ${l.id+50}`:l.breakLevel?'Break: 3 challenging, 7 easy':'11 challenging, 4 easy'} |`).join('\n')}`).join('\n\n');
-await writeArtifact('DESIGN.md',`# Little Discoveries — revised collection
+if(catalog.revision!==3)throw Error('Expected the three-sample collection.');
+const tables=catalog.chapters.map(c=>`### ${c.id}. ${c.title}\n\n| Level | Scene | Targets |\n| --- | --- | --- |\n`+catalog.levels.filter(l=>l.chapter===c.id).map(l=>`| ${l.id} | ${l.title} | ${l.targetCount} |`).join('\n')).join('\n\n');
+await writeArtifact('DESIGN.md',`# Little Discoveries — three clearer samples
 
-This is the active implementation design, revised after the intended player found the original scenes too easy. The user requested retiring the first fifty scenes, moving the second fifty into the first fifty slots, and adding fifty more challenging scenes. The later instruction caps every level at fifteen targets. The [complete original design](docs/DESIGN-v1.md) and [original design Page](https://chatgpt.com/space/page_f13e568e45148191ab41e86b66b6e5fe) remain available for reference; this revision supersedes their catalog, target counts and difficulty pacing.
+The intended player rejected all fifty revision-2 replacement levels as unplayable: unclear objects and damaged-looking cutout previews. The latest instruction supersedes the earlier 100-scene target and challenge quotas. Remove those fifty pictures and produce only three samples a little more difficult than current level 24, The floating garden. Do not make another fifty before the intended player has assessed these samples.
 
-## Collection and difficulty
+## Active collection
 
-Exactly 100 distinct illustrated scenes remain. Original scenes 51–100 become scenes 1–50. Their artwork is retained; ten sixteen-target scenes lose their largest visible target so every level meets the fifteen-target limit. Original scenes 1–50 are retired from play and remain in Git history.
+**53 scenes / 702 placements**: retained original scenes 1–50 (666 targets), plus three new samples 51–53 (12 targets each). Maximum **15 per level**. Retained pictures, names, numbers, geometry and stable IDs stay unchanged. Rejected scenes and source packages leave the working collection; their history remains in Git. [Original design](docs/DESIGN-v1.md) and [rejected revision-2 design](docs/DESIGN-v2-rejected.md) are historical records.
 
-New scenes 51–100 use fifteen targets in ordinary levels: eleven challenging (73.3%) and four easy. Every tenth new scene — 60, 70, 80, 90 and 100 — is a ten-target break: three challenging (30%) and seven easy (70%). Across the new half, 510 of 725 targets (70.3%) are challenging. The retained half has 666 targets, giving **1,391 placements** in the active collection.
+## Artwork and difficulty
 
-The difficulty quota applies to the fifty new scenes. Concealment comes from matching surrounding texture, repeated shapes, partial overlap, a less obvious orientation, and placement within a coherent dense environment. Prefer two concealment factors for each challenging target. A plainly displayed prop sharing only a color is a weak candidate. Easy anchors offer a few quick discoveries; break levels intentionally have more of them. The [difficulty rubric and migration rules](docs/DIFFICULTY.md) describe how the artwork is reviewed.
+Match level 24's bright, warm illustration and clear ordinary-object identities. Add modest concealment through varied heights, side nooks, depth, and small overlaps from a pot, leaf or cloth. Avoid foreground groups in the center. Most of each object and its identifying features remain visible. No muddy detail, microscopic fragments, distorted objects or misleading names. These three samples are trials for player feedback; authored intent does not establish achieved difficulty or enjoyment.
 
-## Permanent game rules
+Every sample preview is a tight **unmasked crop from the finished scene**, preserving color, visible shape, orientation, overlap and nearby context. No generated replacement icons or masks cutting away identifying details. The crop contains the complete visible target. Tap a card to enlarge that same picture. Original previews remain unchanged. Separate hit/reveal contours follow the actual visible object, not the rectangular preview crop.
 
-All scenes are available immediately. There are no ads, purchases, subscriptions, energy, lives, penalties, timers, waiting periods, accounts or network game service. Hints, exact reveals and assisted finds are unlimited and give ordinary completion credit.
+## Game and iPhone controls
 
-Every target is present and stationary from the start. Its name and preview identify one actual object or meaningful decorative figure. Its preview is extracted from the final illustration with matching shape, color and orientation. Avoid indistinguishable non-target copies. Challenging does not mean a transparent object, a few invisible pixels or an unreliable hotspot. Keep enough visible silhouette and the defining feature to recognize the object after a reveal, normally at least 60%.
+All scenes are immediately available through an ordinary HTTPS iPhone Safari link. Installation is optional. Use TypeScript, Vite, PixiJS and HTML/CSS. No ads, purchases, subscriptions, energy, lives, penalties, timers, waiting or accounts. Unlimited broad hints, exact reveals and assisted finds give normal completion credit.
 
-One tap finds one object. Found objects remain in the artwork and receive optional subtle check marks. Their tray cards keep their positions. Missed taps have no consequence. Dragging, pinching and swiping the tray never count as guesses.
+One tap finds one stationary object; duplicates do not count twice. Misses have no penalty. Dragging, pinching and tray swipes never collect. Generous hit padding remains, with visible silhouettes taking priority over neighboring padding. Keep pinch zoom, dragging, zoom buttons and Fit picture.
 
-Tap an object card to enlarge its picture, select it for help or use Mark found. Hint circles a broad region. Show me moves to a useful inspection view and outlines the exact visible target until found or dismissed. Fit picture restores the full composition. Zoom buttons supplement pinch zoom and dragging. Generous edge taps remain available; nearby visible silhouettes take priority over another target’s padding.
+Portrait-first at 375 CSS pixels, usable landscape, controls at least 44 pixels. The bottom tray stays a compact horizontal scroller, about 74 CSS pixels tall. All objects opens larger cards and a remaining-only filter. Settings retain larger previews/text, reduced motion, optional sound and found markers.
 
-## iPhone layout
+## Saving, replay and offline use
 
-Use TypeScript, Vite and PixiJS for the scene, with HTML/CSS controls. An ordinary HTTPS link opens in iPhone Safari; Home Screen installation is optional. Portrait is primary, at 375 CSS pixels wide. Landscape and short viewports retain reachable controls. All buttons have at least 44-by-44 CSS-pixel hit areas.
+Save version 3 uses a separate local key so an older open game cannot overwrite it. Fully validate revision-2 saves against their immutable catalog, keep retained scenes 1–50 and archive the complete raw old save. Rejected discoveries never credit samples 51–53. Preserve retained views, preferences, favorites and completion. Original version-1 saves still migrate old 51–100 down fifty numbers. Imports accept validated versions 1–3; exports use version 3. Migration is idempotent.
 
-The artwork fills the central area. A compact horizontal object scroller stays at the bottom, about 74 CSS pixels tall in default portrait layout. The picture/help controls sit directly above it. All objects opens an enlarged list and the remaining-only filter. Larger text and previews, reduced motion, optional sound (off initially) and optional found markers are available in Settings.
+Each find saves immediately with a recovery copy; views save on interruption. Replay resets the attempt while retaining permanent completion. Export/import backups in Settings; invalid imports change nothing and valid imports show a review before replacement. Saves belong to the browser/device and website origin. The album and celebration follow the actual catalog size; scene 50 retains the dedication.
 
-## Progress, replay and offline use
+Offline downloads use the actual chapter size: five ten-scene chapters and one complete three-sample chapter. Available offline requires every picture, preview, definition and shell file. Downloads resume and repair missing assets. Versioned content/v3 and art/v3 URLs bypass old cached pictures. Activation removes earlier game caches; progress is stored separately. Reload Safari after publication and download desired chapters again. Browser cache retention remains browser-controlled.
 
-Each find saves immediately. Scene, normalized viewing position, unfinished attempts, preferences and favorites survive reloads and interruptions while device storage remains available. Replay clears the current attempt while retaining permanent completion. Completed pictures enter the album; a complete chapter adds its postcard; all 100 produce a celebration. Level 100 shows the dedication independently of earlier completion.
+## Acceptance and verification
 
-Save version 2 migrates validated original saves. Original scenes 51–100 move down fifty numbers and retain stable target IDs; removed cap targets are filtered. A migrated attempt is complete if all remaining targets were found. Retired scenes never credit unrelated replacement pictures. The original local save is kept as a pre-revision recovery file. Original portable backups still import and migrate. Subsequent version 2 loads do not renumber progress again.
+Inspect all three scenes, all 36 real previews and all 36 source-coordinate contours, including openings and partial overlaps. Confirm names, hit regions, broad hints and useful inspection zoom against finished artwork. Validate exact 53/702 counts, max 15, unique pictures/IDs, valid polygon bounds/topology, complete crop coverage and byte-for-byte preview derivation from unmasked source crops. Retained source hashes and target IDs must match the preceding release.
 
-Settings provides validated export/import backups. Invalid files leave the active save intact; a valid import shows a review before replacement. Saves are local to a device and website origin. Export and restore when changing devices or moving from localhost to the hosted link.
+Test collection, duplicate taps, unlimited help, assisted finds, saves/reload/recovery, old-save migration, backup rejection, replay, catalog/album counts, compact layouts and the complete three-sample offline package. Cold-loading budget: 5 seconds at 10 Mbps and under 5 MB initial transfer; feedback under 100 ms. Desktop Chromium/WebKit emulation is not physical iPhone testing. Only the intended player can approve clarity and the requested difficulty. Keep final prompts, sources, annotations and review sheets for correction.
 
-Keep this chapter offline downloads the shell, all ten scene pictures, thumbnails, target previews and level definitions. Available offline appears only after all required files exist in Cache Storage. Interrupted downloads resume; missing art offers retry without clearing discoveries. Browser storage/cache retention is controlled by the browser, so backups remain useful. Versioned URLs keep the two catalogs and their artwork separate. Reload Safari once after publication to open the new collection.
+## Active catalog
 
-## Artwork and acceptance
-
-Every numbered scene is a distinct original composition. Recolors, mirrors and alternate target lists do not create new scenes. Rich coherent detail, adult warmth, readable evening lighting and deliberate concealment matter. Every intended target is inspected against the finished source and in a close context crop. Names, masked previews, hit regions, broad hints, exact outlines and inspection views must agree. Source PNGs, final prompts, annotations and review evidence remain in the workspace.
-
-Automated checks must enforce 100 scenes, the cap and exact target totals/quotas, unique IDs/art, valid polygon topology and bounds, nonempty matching previews and broad hint coverage. A real-picker browser tour collects every placement. Verify duplicate taps, help, assisted completion, replay, old-save migration, backups/rejection, reload recovery, compact layout and offline downloads/repair. Cold loading and touch feedback budgets remain five seconds at 10 Mbps, under 5 MB initial transfer, and under 100 ms visual feedback. Distinguish desktop browser emulation from actual iPhone testing.
-
-The player's original iPhone screenshot is evidence that the original difficulty failed. The new artwork’s challenge classification is an authored visual assessment; its enjoyment and difficulty still need real player/device feedback. Do not claim those outcomes from labels or automated tests. Finished content, build/test evidence and deployment state are reported separately in [verification](docs/VERIFICATION.md).
-
-## Active 100-level catalog
-
-${chapters}
+${tables}
 `);
-console.log('Updated DESIGN.md from the active revision-2 catalog.');
+console.log('Updated design for 50 retained scenes and three samples.');

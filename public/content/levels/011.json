@@ -3,8 +3,8 @@
   "chapter": 2,
   "title": "The old library",
   "targetCount": 12,
-  "art": "art/v2/011.webp",
-  "thumbnail": "art/v2/011-thumb.webp",
+  "art": "art/v3/011.webp",
+  "thumbnail": "art/v3/011-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l061-bookplate-stamp",
       "name": "Bookplate stamp",
-      "preview": "art/v2/011/bookplate-stamp.webp",
+      "preview": "art/v3/011/bookplate-stamp.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           16,
@@ -295,7 +296,8 @@
     {
       "id": "l061-brass-owl",
       "name": "Brass owl",
-      "preview": "art/v2/011/brass-owl.webp",
+      "preview": "art/v3/011/brass-owl.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           915,
@@ -530,7 +532,8 @@
     {
       "id": "l061-burgundy-tassel",
       "name": "Burgundy braided tassel",
-      "preview": "art/v2/011/burgundy-tassel.webp",
+      "preview": "art/v3/011/burgundy-tassel.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           118,
@@ -885,7 +888,8 @@
     {
       "id": "l061-spectacles",
       "name": "Round silver spectacles",
-      "preview": "art/v2/011/spectacles.webp",
+      "preview": "art/v3/011/spectacles.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           81,
@@ -1330,7 +1334,8 @@
     {
       "id": "l061-feather-bookmark",
       "name": "White feather bookmark",
-      "preview": "art/v2/011/feather-bookmark.webp",
+      "preview": "art/v3/011/feather-bookmark.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           719,
@@ -1669,7 +1674,8 @@
     {
       "id": "l061-ink-bottle",
       "name": "Green ink bottle",
-      "preview": "art/v2/011/ink-bottle.webp",
+      "preview": "art/v3/011/ink-bottle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           224,
@@ -1880,7 +1886,8 @@
     {
       "id": "l061-wooden-acorn",
       "name": "Carved wooden acorn",
-      "preview": "art/v2/011/wooden-acorn.webp",
+      "preview": "art/v3/011/wooden-acorn.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           315,
@@ -2075,7 +2082,8 @@
     {
       "id": "l061-magnifier",
       "name": "Brass magnifying glass",
-      "preview": "art/v2/011/magnifier.webp",
+      "preview": "art/v3/011/magnifier.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           686,
@@ -2366,7 +2374,8 @@
     {
       "id": "l061-red-shawl",
       "name": "Red wool shawl",
-      "preview": "art/v2/011/red-shawl.webp",
+      "preview": "art/v3/011/red-shawl.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           757,
@@ -2777,7 +2786,8 @@
     {
       "id": "l061-teacup",
       "name": "Cream floral teacup",
-      "preview": "art/v2/011/teacup.webp",
+      "preview": "art/v3/011/teacup.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           948,
@@ -2960,7 +2970,8 @@
     {
       "id": "l061-sealed-envelope",
       "name": "Sealed ivory envelope",
-      "preview": "art/v2/011/sealed-envelope.webp",
+      "preview": "art/v3/011/sealed-envelope.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           554,
@@ -3019,7 +3030,8 @@
     {
       "id": "l061-cat-figurine",
       "name": "Blue ceramic cat",
-      "preview": "art/v2/011/cat-figurine.webp",
+      "preview": "art/v3/011/cat-figurine.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           184,

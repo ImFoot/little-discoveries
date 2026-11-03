@@ -3,8 +3,8 @@
   "chapter": 3,
   "title": "The cloud collector’s attic",
   "targetCount": 15,
-  "art": "art/v2/028.webp",
-  "thumbnail": "art/v2/028-thumb.webp",
+  "art": "art/v3/028.webp",
+  "thumbnail": "art/v3/028-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l078-weather-vane",
       "name": "Rooster weather vane",
-      "preview": "art/v2/028/weather-vane.webp",
+      "preview": "art/v3/028/weather-vane.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           153,
@@ -647,7 +648,8 @@
     {
       "id": "l078-cloud-jar",
       "name": "Lidded cloud jar",
-      "preview": "art/v2/028/cloud-jar.webp",
+      "preview": "art/v3/028/cloud-jar.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           637,
@@ -850,7 +852,8 @@
     {
       "id": "l078-sun-badge",
       "name": "Sun-shaped badge",
-      "preview": "art/v2/028/sun-badge.webp",
+      "preview": "art/v3/028/sun-badge.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           630,
@@ -1101,7 +1104,8 @@
     {
       "id": "l078-windsock",
       "name": "Red windsock",
-      "preview": "art/v2/028/windsock.webp",
+      "preview": "art/v3/028/windsock.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           349,
@@ -1320,7 +1324,8 @@
     {
       "id": "l078-kite-spool",
       "name": "Blue kite spool",
-      "preview": "art/v2/028/kite-spool.webp",
+      "preview": "art/v3/028/kite-spool.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           802,
@@ -1603,7 +1608,8 @@
     {
       "id": "l078-pocket-barometer",
       "name": "Silver barometer",
-      "preview": "art/v2/028/pocket-barometer.webp",
+      "preview": "art/v3/028/pocket-barometer.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           615,
@@ -1894,7 +1900,8 @@
     {
       "id": "l078-binoculars",
       "name": "Cream binoculars",
-      "preview": "art/v2/028/binoculars.webp",
+      "preview": "art/v3/028/binoculars.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           352,
@@ -2121,7 +2128,8 @@
     {
       "id": "l078-purple-mitten",
       "name": "Purple knitted mitten",
-      "preview": "art/v2/028/purple-mitten.webp",
+      "preview": "art/v3/028/purple-mitten.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           252,
@@ -2348,7 +2356,8 @@
     {
       "id": "l078-corked-bottle",
       "name": "Corked green bottle",
-      "preview": "art/v2/028/corked-bottle.webp",
+      "preview": "art/v3/028/corked-bottle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           756,
@@ -2559,7 +2568,8 @@
     {
       "id": "l078-paper-airplane",
       "name": "Paper airplane",
-      "preview": "art/v2/028/paper-airplane.webp",
+      "preview": "art/v3/028/paper-airplane.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           497,
@@ -2666,7 +2676,8 @@
     {
       "id": "l078-copper-funnel",
       "name": "Copper funnel",
-      "preview": "art/v2/028/copper-funnel.webp",
+      "preview": "art/v3/028/copper-funnel.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           834,
@@ -2885,7 +2896,8 @@
     {
       "id": "l078-wooden-star",
       "name": "Wooden star",
-      "preview": "art/v2/028/wooden-star.webp",
+      "preview": "art/v3/028/wooden-star.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           934,
@@ -2992,7 +3004,8 @@
     {
       "id": "l078-sky-map",
       "name": "Rolled sky map",
-      "preview": "art/v2/028/sky-map.webp",
+      "preview": "art/v3/028/sky-map.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           815,
@@ -3243,7 +3256,8 @@
     {
       "id": "l078-white-feather",
       "name": "White feather",
-      "preview": "art/v2/028/white-feather.webp",
+      "preview": "art/v3/028/white-feather.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           366,
@@ -3494,7 +3508,8 @@
     {
       "id": "l078-brass-handbell",
       "name": "Brass handbell",
-      "preview": "art/v2/028/brass-handbell.webp",
+      "preview": "art/v3/028/brass-handbell.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           889,

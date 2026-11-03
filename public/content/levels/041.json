@@ -3,8 +3,8 @@
   "chapter": 5,
   "title": "Sunday breakfast",
   "targetCount": 12,
-  "art": "art/v2/041.webp",
-  "thumbnail": "art/v2/041-thumb.webp",
+  "art": "art/v3/041.webp",
+  "thumbnail": "art/v3/041-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l091-pancake-turner",
       "name": "Wooden pancake turner",
-      "preview": "art/v2/041/pancake-turner.webp",
+      "preview": "art/v3/041/pancake-turner.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           75,
@@ -239,7 +240,8 @@
     {
       "id": "l091-berry-bowl",
       "name": "Raspberry bowl",
-      "preview": "art/v2/041/berry-bowl.webp",
+      "preview": "art/v3/041/berry-bowl.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           43,
@@ -442,7 +444,8 @@
     {
       "id": "l091-amber-vase",
       "name": "Tiny amber vase",
-      "preview": "art/v2/041/amber-vase.webp",
+      "preview": "art/v3/041/amber-vase.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           210,
@@ -613,7 +616,8 @@
     {
       "id": "l091-honey-pot",
       "name": "White honey pot",
-      "preview": "art/v2/041/honey-pot.webp",
+      "preview": "art/v3/041/honey-pot.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           279,
@@ -848,7 +852,8 @@
     {
       "id": "l091-striped-napkin",
       "name": "Red striped napkin",
-      "preview": "art/v2/041/striped-napkin.webp",
+      "preview": "art/v3/041/striped-napkin.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           316,
@@ -1083,7 +1088,8 @@
     {
       "id": "l091-butter-knife",
       "name": "Silver butter knife",
-      "preview": "art/v2/041/butter-knife.webp",
+      "preview": "art/v3/041/butter-knife.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           596,
@@ -1270,7 +1276,8 @@
     {
       "id": "l091-green-pear",
       "name": "Green pear",
-      "preview": "art/v2/041/green-pear.webp",
+      "preview": "art/v3/041/green-pear.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           564,
@@ -1449,7 +1456,8 @@
     {
       "id": "l091-blue-enamel-mug",
       "name": "Blue enamel mug",
-      "preview": "art/v2/041/blue-enamel-mug.webp",
+      "preview": "art/v3/041/blue-enamel-mug.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           631,
@@ -1636,7 +1644,8 @@
     {
       "id": "l091-yellow-fan",
       "name": "Yellow hand fan",
-      "preview": "art/v2/041/yellow-fan.webp",
+      "preview": "art/v3/041/yellow-fan.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           793,
@@ -1791,7 +1800,8 @@
     {
       "id": "l091-wooden-rabbit",
       "name": "Wooden rabbit",
-      "preview": "art/v2/041/wooden-rabbit.webp",
+      "preview": "art/v3/041/wooden-rabbit.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           771,
@@ -2082,7 +2092,8 @@
     {
       "id": "l091-purple-journal",
       "name": "Purple journal",
-      "preview": "art/v2/041/purple-journal.webp",
+      "preview": "art/v3/041/purple-journal.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           701,
@@ -2221,7 +2232,8 @@
     {
       "id": "l091-brass-bell",
       "name": "Brass handbell",
-      "preview": "art/v2/041/brass-bell.webp",
+      "preview": "art/v3/041/brass-bell.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           880,

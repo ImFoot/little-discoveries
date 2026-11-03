@@ -6,6 +6,7 @@ export type Target = {
   outline: Point[]; holes?: Point[][]; hit: Point[]; hint: Rect;
   inspect: View; crop: Rect; notes?: string;
   difficulty?: 'challenging' | 'easy'; concealment?: string;
+  previewMode?: 'context' | 'cutout';
 };
 export type Level = {
   id: number; chapter: number; title: string; targetCount: number;
@@ -18,13 +19,14 @@ export type CatalogEntry = {
   sample: string; thumbnail: string; status: 'draft' | 'reviewed';
   targetIds: string[];
   sceneKey?: string; targetPrefix?: string; breakLevel?: boolean; challengingCount?: number;
+  sampleLevel?: boolean;
 };
 export type Chapter = { id: number; title: string; subtitle: string; color: string };
-export type Catalog = { revision?: number; requiredPlacements?: number; chapters: Chapter[]; levels: CatalogEntry[] };
+export type Catalog = { revision?: number; requiredScenes?: number; requiredPlacements?: number; chapters: Chapter[]; levels: CatalogEntry[] };
 export type Attempt = { found: string[]; started: boolean; view: View; updated: number; replay: boolean; completed: boolean };
 export type Preferences = { sound: boolean; reduceMotion: boolean; largePreviews: boolean; largeText: boolean; markers: boolean };
 export type Save = {
-  version: 2; updated: number; current: number; completed: number[];
+  version: 3; updated: number; current: number; completed: number[];
   favorites: number[]; attempts: Record<string, Attempt>;
   preferences: Preferences; catalogScroll: number; onboarded: boolean;
 };

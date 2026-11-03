@@ -3,8 +3,8 @@
   "chapter": 2,
   "title": "The dollhouse workshop",
   "targetCount": 15,
-  "art": "art/v2/018.webp",
-  "thumbnail": "art/v2/018-thumb.webp",
+  "art": "art/v3/018.webp",
+  "thumbnail": "art/v3/018-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l068-miniature-chair",
       "name": "Heart-back miniature chair",
-      "preview": "art/v2/018/miniature-chair.webp",
+      "preview": "art/v3/018/miniature-chair.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           276,
@@ -255,7 +256,8 @@
     {
       "id": "l068-wood-file",
       "name": "Wood file",
-      "preview": "art/v2/018/wood-file.webp",
+      "preview": "art/v3/018/wood-file.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           32,
@@ -498,7 +500,8 @@
     {
       "id": "l068-paint-pot",
       "name": "Turquoise paint pot",
-      "preview": "art/v2/018/paint-pot.webp",
+      "preview": "art/v3/018/paint-pot.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           863,
@@ -669,7 +672,8 @@
     {
       "id": "l068-miniature-table",
       "name": "Oval miniature table",
-      "preview": "art/v2/018/miniature-table.webp",
+      "preview": "art/v3/018/miniature-table.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           488,
@@ -952,7 +956,8 @@
     {
       "id": "l068-miniature-mirror",
       "name": "Miniature gold mirror",
-      "preview": "art/v2/018/miniature-mirror.webp",
+      "preview": "art/v3/018/miniature-mirror.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           479,
@@ -1123,7 +1128,8 @@
     {
       "id": "l068-wooden-star",
       "name": "Carved wooden star",
-      "preview": "art/v2/018/wooden-star.webp",
+      "preview": "art/v3/018/wooden-star.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           918,
@@ -1262,7 +1268,8 @@
     {
       "id": "l068-carpenter-pencil",
       "name": "Carpenter pencil",
-      "preview": "art/v2/018/carpenter-pencil.webp",
+      "preview": "art/v3/018/carpenter-pencil.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           337,
@@ -1465,7 +1472,8 @@
     {
       "id": "l068-flat-brush",
       "name": "Blue-handled paintbrush",
-      "preview": "art/v2/018/flat-brush.webp",
+      "preview": "art/v3/018/flat-brush.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           561,
@@ -1788,7 +1796,8 @@
     {
       "id": "l068-miniature-cushion",
       "name": "Rose floor cushion",
-      "preview": "art/v2/018/miniature-cushion.webp",
+      "preview": "art/v3/018/miniature-cushion.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           293,
@@ -1919,7 +1928,8 @@
     {
       "id": "l068-measuring-tape",
       "name": "Brass tape case",
-      "preview": "art/v2/018/measuring-tape.webp",
+      "preview": "art/v3/018/measuring-tape.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           752,
@@ -2114,7 +2124,8 @@
     {
       "id": "l068-craft-knife",
       "name": "Red craft knife",
-      "preview": "art/v2/018/craft-knife.webp",
+      "preview": "art/v3/018/craft-knife.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           377,
@@ -2325,7 +2336,8 @@
     {
       "id": "l068-wooden-ruler",
       "name": "Wooden ruler",
-      "preview": "art/v2/018/wooden-ruler.webp",
+      "preview": "art/v3/018/wooden-ruler.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           25,
@@ -2448,7 +2460,8 @@
     {
       "id": "l068-paper-boat",
       "name": "Paper sailboat",
-      "preview": "art/v2/018/paper-boat.webp",
+      "preview": "art/v3/018/paper-boat.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           29,
@@ -2587,7 +2600,8 @@
     {
       "id": "l068-twine-spool",
       "name": "Twine spool",
-      "preview": "art/v2/018/twine-spool.webp",
+      "preview": "art/v3/018/twine-spool.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           10,
@@ -2798,7 +2812,8 @@
     {
       "id": "l068-miniature-bucket",
       "name": "Miniature copper bucket",
-      "preview": "art/v2/018/miniature-bucket.webp",
+      "preview": "art/v3/018/miniature-bucket.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           665,

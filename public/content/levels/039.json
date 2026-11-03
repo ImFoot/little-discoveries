@@ -3,8 +3,8 @@
   "chapter": 4,
   "title": "The snowy garden bench",
   "targetCount": 12,
-  "art": "art/v2/039.webp",
-  "thumbnail": "art/v2/039-thumb.webp",
+  "art": "art/v3/039.webp",
+  "thumbnail": "art/v3/039-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l089-red-thermos",
       "name": "Red thermos",
-      "preview": "art/v2/039/red-thermos.webp",
+      "preview": "art/v3/039/red-thermos.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           911,
@@ -143,7 +144,8 @@
     {
       "id": "l089-birdseed-scoop",
       "name": "Birdseed scoop",
-      "preview": "art/v2/039/birdseed-scoop.webp",
+      "preview": "art/v3/039/birdseed-scoop.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           267,
@@ -322,7 +324,8 @@
     {
       "id": "l089-blue-wool-hat",
       "name": "Blue wool hat",
-      "preview": "art/v2/039/blue-wool-hat.webp",
+      "preview": "art/v3/039/blue-wool-hat.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           713,
@@ -573,7 +576,8 @@
     {
       "id": "l089-green-glove",
       "name": "Green garden glove",
-      "preview": "art/v2/039/green-glove.webp",
+      "preview": "art/v3/039/green-glove.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           849,
@@ -824,7 +828,8 @@
     {
       "id": "l089-copper-bell",
       "name": "Copper handbell",
-      "preview": "art/v2/039/copper-bell.webp",
+      "preview": "art/v3/039/copper-bell.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           667,
@@ -1035,7 +1040,8 @@
     {
       "id": "l089-wooden-rabbit",
       "name": "Wooden rabbit",
-      "preview": "art/v2/039/wooden-rabbit.webp",
+      "preview": "art/v3/039/wooden-rabbit.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           169,
@@ -1382,7 +1388,8 @@
     {
       "id": "l089-orange-scarf",
       "name": "Orange plaid scarf",
-      "preview": "art/v2/039/orange-scarf.webp",
+      "preview": "art/v3/039/orange-scarf.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           302,
@@ -1961,7 +1968,8 @@
     {
       "id": "l089-enamel-mug",
       "name": "Cream enamel mug",
-      "preview": "art/v2/039/enamel-mug.webp",
+      "preview": "art/v3/039/enamel-mug.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           548,
@@ -2132,7 +2140,8 @@
     {
       "id": "l089-pinecone-ornament",
       "name": "Ribboned pinecone",
-      "preview": "art/v2/039/pinecone-ornament.webp",
+      "preview": "art/v3/039/pinecone-ornament.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           825,
@@ -2463,7 +2472,8 @@
     {
       "id": "l089-purple-book",
       "name": "Purple book",
-      "preview": "art/v2/039/purple-book.webp",
+      "preview": "art/v3/039/purple-book.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           639,
@@ -2570,7 +2580,8 @@
     {
       "id": "l089-white-feather",
       "name": "White feather",
-      "preview": "art/v2/039/white-feather.webp",
+      "preview": "art/v3/039/white-feather.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           232,
@@ -2813,7 +2824,8 @@
     {
       "id": "l089-brass-key",
       "name": "Brass key",
-      "preview": "art/v2/039/brass-key.webp",
+      "preview": "art/v3/039/brass-key.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           627,

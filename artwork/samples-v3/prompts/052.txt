@@ -1,0 +1,26 @@
+Base generation prompt (verbatim):
+Use case: illustration-story.
+Asset: one original finished hidden-object game picture, portrait 1024x1536, sample52 "The cottage reading room".
+Scene: a bright, cozy cottage reading room with a small sewing corner. A full-room view from the doorway: tall cream-painted bookshelves at left reaching near the ceiling, a deep window seat and sunlit garden window in the upper middle, a modest sewing desk at right, a comfortable teal armchair slightly off-center, a woven rug and visible wooden floor in front. A few houseplants, books, folded fabrics and framed pictures create a believable lived-in room. One continuous illustration with clear depth.
+Style: warm, polished adult storybook realism, tactile painted wood, linen, ceramics and wool, soft daylight and warm lamplight, rich but clean colors, crisp readable object edges. Match the clarity of a beautiful classic hidden-object game: ordinary recognizable objects, not abstract fantasy machinery or elaborate baroque antiques. The room should be attractive and detailed without muddy micro-clutter.
+Searchable props: include a variety of twelve distinct everyday objects naturally spread throughout ALL parts of the picture, from the top shelves and wall hooks down to the window ledge, desk, chair, low shelf and floor. Examples suitable here are a round red alarm clock, a straw hat with a blue band, a closed purple umbrella, a white teapot, a pink teacup, blue-handled scissors, a yellow spool of thread, a red mitten, a ball of green yarn, a copper watering can, a closed blue book, and a small wooden duck. Each should have a coherent familiar shape and plausibly rest or hang somewhere. Give each one only modest 10–25% overlap where natural, with 75–90% of its identifying shape plainly visible. Spread their locations among upper, middle and lower thirds and among left, center and right; do not put them in a horizontal row or collect them all on the foreground table. Favor shapes around 70–160 source pixels, with slender items larger. One obvious instance of each; no indistinguishable copies.
+Difficulty: only slightly trickier than an easy garden scene. Use plausible placement, a partly folded cloth or book edge and modest color harmony to invite a careful look. Avoid tiny targets, transparent targets, engraved animal motifs, decorative fragments, ambiguous tools, deep shadows or hiding defining parts.
+Constraints: original complete composition, portrait 1024x1536, no people, no text or labels, no numbers, no target markers, no UI, no watermark, no collage. The top and far corners should contain real searchable objects as well as the lower area.
+
+Final edit prompt (verbatim; also retained in 052-edit.txt):
+Use case: precise-object-edit.
+Edit target: the supplied portrait cottage reading-room illustration. Preserve the exact room composition, camera, bright daylight, clean readable painted-realism style, palette, all twelve objects, and their existing sizes and general locations. Make only these six small placement/overlap changes:
+1. Move the closed blue book so its rear quarter slips beneath the lower corner of the floral armchair cushion. Keep at least 75% of its blue cover, complete front page block and recognizable spine visible.
+2. Extend only a few existing ivy leaves over the left outer edge of the red alarm clock and over the lower-left body edge of the white floral teapot. Cover roughly 10–15% of each silhouette. The clock face, bells, teapot spout, lid and handle stay clearly visible.
+3. Open the existing sewing-desk drawer slightly and tuck the cuff/top of the hanging red mitten partly into it. Keep its entire snowflake palm, thumb and most of the red knitted shape visible outside the drawer; only about 20% should be covered.
+4. Let a corner of the existing floral sewing fabric overlap the tips of the blue-handled scissors' blades. Keep both blue handles, the pivot and most of the metal blades visible, around 80–85% of the scissors overall. Do not turn them into a strange tool.
+5. Let a small off-white linen corner from the basket rim cross the rear fifth of the green yarn ball. Keep around 80% of the round green yarn shape and its loose tail visible. The linen must look naturally draped rather than a label.
+Everything else stays unchanged, including the straw hat, purple umbrella, copper watering can, pink teacup, yellow thread spool, wooden duck, shelving, window, chair, plants, rug and background. Do not shrink any target. This should be only slightly harder through modest real overlap, with coherent ordinary objects that can be identified immediately once pointed out. No camouflage textures, brass clutter, decorative motifs, extra target copies, text, markers, UI or watermark. Portrait 1024x1536.
+
+Provenance:
+Built-in image_gen used for generation and one edit. No CLI fallback or procedural scene artwork.
+Base image: C:/Users/tensi/.codex/generated_images/01a19f5b-61a6-7000-9664-0df040b4e5a6/exec-86abf859-b87c-44b5-8875-9b7845f95ca0.png
+Final image: C:/Users/tensi/.codex/generated_images/01a19f5b-61a6-7000-9664-0df040b4e5a6/exec-f88b71c5-ad0f-4d8e-aba4-e4c4411981ab.png
+Workspace final: artwork/samples-v3/source/052.png
+Base retained: artwork/samples-v3/source/052-base.png
+Final SHA-256: 26c3afe0c19431300f521f28dc8a3a123b3e238c3a9d9cf0f46fce9ccda0cdc6

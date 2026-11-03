@@ -3,8 +3,8 @@
   "chapter": 2,
   "title": "The photographer’s room",
   "targetCount": 14,
-  "art": "art/v2/017.webp",
-  "thumbnail": "art/v2/017-thumb.webp",
+  "art": "art/v3/017.webp",
+  "thumbnail": "art/v3/017-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l067-lens-cap",
       "name": "Black lens cap",
-      "preview": "art/v2/017/lens-cap.webp",
+      "preview": "art/v3/017/lens-cap.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           391,
@@ -183,7 +184,8 @@
     {
       "id": "l067-film-reel",
       "name": "Silver film reel",
-      "preview": "art/v2/017/film-reel.webp",
+      "preview": "art/v3/017/film-reel.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           0,
@@ -660,7 +662,8 @@
     {
       "id": "l067-clothespin",
       "name": "Large wooden clothespin",
-      "preview": "art/v2/017/clothespin.webp",
+      "preview": "art/v3/017/clothespin.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           55,
@@ -847,7 +850,8 @@
     {
       "id": "l067-leather-camera-case",
       "name": "Brown leather camera case",
-      "preview": "art/v2/017/leather-camera-case.webp",
+      "preview": "art/v3/017/leather-camera-case.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           607,
@@ -1026,7 +1030,8 @@
     {
       "id": "l067-developer-bottle",
       "name": "Green developer bottle",
-      "preview": "art/v2/017/developer-bottle.webp",
+      "preview": "art/v3/017/developer-bottle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           50,
@@ -1245,7 +1250,8 @@
     {
       "id": "l067-air-blower",
       "name": "Red air blower",
-      "preview": "art/v2/017/air-blower.webp",
+      "preview": "art/v3/017/air-blower.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           358,
@@ -1512,7 +1518,8 @@
     {
       "id": "l067-lens-brush",
       "name": "Blue-handled lens brush",
-      "preview": "art/v2/017/lens-brush.webp",
+      "preview": "art/v3/017/lens-brush.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           560,
@@ -1715,7 +1722,8 @@
     {
       "id": "l067-pocket-magnifier",
       "name": "Brass pocket magnifier",
-      "preview": "art/v2/017/pocket-magnifier.webp",
+      "preview": "art/v3/017/pocket-magnifier.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           816,
@@ -1966,7 +1974,8 @@
     {
       "id": "l067-black-glove",
       "name": "Black cotton glove",
-      "preview": "art/v2/017/black-glove.webp",
+      "preview": "art/v3/017/black-glove.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           199,
@@ -2353,7 +2362,8 @@
     {
       "id": "l067-sealed-envelope",
       "name": "Sealed cream envelope",
-      "preview": "art/v2/017/sealed-envelope.webp",
+      "preview": "art/v3/017/sealed-envelope.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           677,
@@ -2420,7 +2430,8 @@
     {
       "id": "l067-blue-cup",
       "name": "Blue enamel cup",
-      "preview": "art/v2/017/blue-cup.webp",
+      "preview": "art/v3/017/blue-cup.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           258,
@@ -2587,7 +2598,8 @@
     {
       "id": "l067-striped-scarf",
       "name": "Folded striped wool scarf",
-      "preview": "art/v2/017/striped-scarf.webp",
+      "preview": "art/v3/017/striped-scarf.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           768,
@@ -3118,7 +3130,8 @@
     {
       "id": "l067-flower-brooch",
       "name": "Pink flower brooch",
-      "preview": "art/v2/017/flower-brooch.webp",
+      "preview": "art/v3/017/flower-brooch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           717,
@@ -3281,7 +3294,8 @@
     {
       "id": "l067-paper-crane",
       "name": "White paper crane",
-      "preview": "art/v2/017/paper-crane.webp",
+      "preview": "art/v3/017/paper-crane.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           667,

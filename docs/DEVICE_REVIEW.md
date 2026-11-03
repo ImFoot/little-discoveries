@@ -1,23 +1,11 @@
-# Actual iPhone review — pending
+# Intended iPhone/player review — pending
 
-The player supplied an actual iPhone Safari screenshot of the original collection and reported that it was too easy. No revised scene has been represented as acceptance-reviewed on that physical phone. Desktop WebKit phone emulation is useful evidence for layout and browser behavior; it does not establish real-device touch comfort, readability, or performance.
+The player rejected the entire fifty-scene revision-2 replacement set because object identities and cutout previews were unclear. That feedback supersedes the previous authored quality assessment. The set has been removed; only three sample replacements are under review.
 
-The revised public HTTPS build is published at **https://imfoot.github.io/little-discoveries/**. Reload Safari once to open it; original scene 72 becomes scene 22 with its retained discoveries. Export progress from a local preview before moving to the hosted origin if you want to keep that progress.
+Open the [public game](https://imfoot.github.io/little-discoveries/) in ordinary Safari and reload after publication. Compare current level 24 with samples 51, 52 and 53. Each sample has twelve targets. Objects should be recognizable from the tray/enlarged crop; the challenge should be finding them among modest overlaps and varied placement. Do not claim acceptance from an automated test or a desktop screenshot.
 
-Use a static HTTPS build on the wife's intended iPhone, at normal brightness, in ordinary Safari. No installation is needed. Start with 1 (retained baseline), 51 (new workshop), 60 (a gentler break) and 86 (a detailed new archive). After approving the style and interaction, review each remaining scene and each target.
+Record phone model, iOS/Safari version, date and reviewer. Inspect all 36 target names/previews against the real picture, both at Fit and zoomed. Test generous edge taps, broad hints, exact visible-object outlines and assisted finds. In particular, identify any preview whose surrounding context obscures the intended object, any misleading overlap or any outline that misses part of it.
 
-For every scene, record phone model, iOS/Safari version, date, normal brightness, and reviewer. Check every target's preview against its actual shape/color/orientation, at least 60% visible silhouette and its defining feature, absence of an indistinguishable twin, fair edge taps, useful broad hint, exact reveal alignment, and useful inspection zoom. Tap targets both at Fit and at inspection zoom. Revise artwork or geometry if the reveal does not make the object recognizable. Mark `smallPhone: true` in the source annotation only after this review.
+Check the horizontal bottom tray, expanded/collapsed Safari toolbar, portrait/landscape, larger text/previews, real two-finger pinch and drag. Gestures must not collect. Find, switch apps, lock/unlock, reload and resume; retained level 24 progress must stay intact and rejected-scene progress must not appear in samples.
 
-Check portrait at 375 CSS pixels, small available height with Safari's toolbar expanded, landscape, text/previews enlarged, and reduced motion. Rotate and expand/collapse the browser toolbar while zoomed. All buttons must remain reachable; the inspected area and discoveries must remain intact.
-
-Pinch with two real fingers, drag in multiple directions, swipe the object tray, and lift the two fingers in different orders. None should find an object accidentally. Try near-edge taps around small and neighboring targets. One tap must never collect several targets. Check that a previously found target gives a neutral acknowledgement.
-
-Find a target, switch apps, lock/unlock, receive an interruption, return, reload, and reopen Safari. Confirm found IDs, current scene and viewing position survive. Move between several unfinished scenes. Complete with hints and assisted finds, stay with the picture, then replay; permanent completion must remain in the album. Complete scene 100 independently and confirm the dedication.
-
-Export a backup to Files; restore it in another browser/device. Try malformed JSON, a different file, unknown IDs, and inconsistent completion. Invalid backups must leave current progress unchanged. Validate a good backup before confirming replacement.
-
-Download a complete chapter. Disconnect Wi-Fi and mobile data, reopen the saved URL, and open all ten scenes and all previews. Interrupt another chapter download and resume it. Delete one cached asset in a developer test and verify that chapter is no longer reported available. Missing art must explain retry without losing progress. Safari may evict caches; this cannot be guaranteed away by the application.
-
-Measure cold first playable scene on a stable 10 Mbps connection (goal: within 5 seconds; initial transfer below 5 MB), response to a valid tap (goal: below 100 ms), and pinch/drag comfort. These are design budgets, not measurements made on a real iPhone in this workspace. Check multiple scene changes for memory pressure and WebGL context loss.
-
-Record issues beside each level in `artwork/annotations/NNN.json` and retain a dated device review report. Rebuild after any art or geometry adjustment.
+Export/restore a backup. Download chapter 6, turn off both Wi-Fi and mobile data, reopen all three samples and all previews. Offline files can be evicted by Safari, so retain backups. A physical-device pass is separate from desktop Chromium/WebKit emulation. Set smallPhone:true only after an actual recorded device review.

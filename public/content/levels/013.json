@@ -3,8 +3,8 @@
   "chapter": 2,
   "title": "The clockmaker’s workshop",
   "targetCount": 14,
-  "art": "art/v2/013.webp",
-  "thumbnail": "art/v2/013-thumb.webp",
+  "art": "art/v3/013.webp",
+  "thumbnail": "art/v3/013-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l063-winding-key",
       "name": "Butterfly winding key",
-      "preview": "art/v2/013/winding-key.webp",
+      "preview": "art/v3/013/winding-key.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           72,
@@ -425,7 +426,8 @@
     {
       "id": "l063-pendulum-weight",
       "name": "Round pendulum weight",
-      "preview": "art/v2/013/pendulum-weight.webp",
+      "preview": "art/v3/013/pendulum-weight.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           933,
@@ -572,7 +574,8 @@
     {
       "id": "l063-tweezers",
       "name": "Silver tweezers",
-      "preview": "art/v2/013/tweezers.webp",
+      "preview": "art/v3/013/tweezers.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           358,
@@ -775,7 +778,8 @@
     {
       "id": "l063-red-screwdriver",
       "name": "Red watchmaker screwdriver",
-      "preview": "art/v2/013/red-screwdriver.webp",
+      "preview": "art/v3/013/red-screwdriver.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           337,
@@ -994,7 +998,8 @@
     {
       "id": "l063-oil-vial",
       "name": "Green glass oil vial",
-      "preview": "art/v2/013/oil-vial.webp",
+      "preview": "art/v3/013/oil-vial.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           653,
@@ -1221,7 +1226,8 @@
     {
       "id": "l063-porcelain-dial",
       "name": "White porcelain clock dial",
-      "preview": "art/v2/013/porcelain-dial.webp",
+      "preview": "art/v3/013/porcelain-dial.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           611,
@@ -1368,7 +1374,8 @@
     {
       "id": "l063-wooden-box",
       "name": "Brass-latched wooden box",
-      "preview": "art/v2/013/wooden-box.webp",
+      "preview": "art/v3/013/wooden-box.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           512,
@@ -1451,7 +1458,8 @@
     {
       "id": "l063-blue-mug",
       "name": "Blue enamel mug",
-      "preview": "art/v2/013/blue-mug.webp",
+      "preview": "art/v3/013/blue-mug.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           273,
@@ -1638,7 +1646,8 @@
     {
       "id": "l063-spectacles-case",
       "name": "Brown spectacles case",
-      "preview": "art/v2/013/spectacles-case.webp",
+      "preview": "art/v3/013/spectacles-case.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           754,
@@ -1809,7 +1818,8 @@
     {
       "id": "l063-ribbon-spool",
       "name": "Red ribbon spool",
-      "preview": "art/v2/013/ribbon-spool.webp",
+      "preview": "art/v3/013/ribbon-spool.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           52,
@@ -2044,7 +2054,8 @@
     {
       "id": "l063-handbell",
       "name": "Brass handbell",
-      "preview": "art/v2/013/handbell.webp",
+      "preview": "art/v3/013/handbell.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           736,
@@ -2263,7 +2274,8 @@
     {
       "id": "l063-tool-pouch",
       "name": "Cream linen tool pouch",
-      "preview": "art/v2/013/tool-pouch.webp",
+      "preview": "art/v3/013/tool-pouch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           698,
@@ -2498,7 +2510,8 @@
     {
       "id": "l063-gear-button",
       "name": "Ivory gear button",
-      "preview": "art/v2/013/gear-button.webp",
+      "preview": "art/v3/013/gear-button.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           815,
@@ -2805,7 +2818,8 @@
     {
       "id": "l063-wooden-mallet",
       "name": "Wooden mallet",
-      "preview": "art/v2/013/wooden-mallet.webp",
+      "preview": "art/v3/013/wooden-mallet.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           304,

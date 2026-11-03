@@ -3,8 +3,8 @@
   "chapter": 3,
   "title": "The moonlit tea table",
   "targetCount": 12,
-  "art": "art/v2/029.webp",
-  "thumbnail": "art/v2/029-thumb.webp",
+  "art": "art/v3/029.webp",
+  "thumbnail": "art/v3/029-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l079-crescent-spoon",
       "name": "Crescent spoon",
-      "preview": "art/v2/029/crescent-spoon.webp",
+      "preview": "art/v3/029/crescent-spoon.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           146,
@@ -215,7 +216,8 @@
     {
       "id": "l079-sugar-mouse",
       "name": "Sugar mouse",
-      "preview": "art/v2/029/sugar-mouse.webp",
+      "preview": "art/v3/029/sugar-mouse.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           111,
@@ -498,7 +500,8 @@
     {
       "id": "l079-velvet-pouch",
       "name": "Plum velvet pouch",
-      "preview": "art/v2/029/velvet-pouch.webp",
+      "preview": "art/v3/029/velvet-pouch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           326,
@@ -789,7 +792,8 @@
     {
       "id": "l079-blue-teapot",
       "name": "Blue floral teapot",
-      "preview": "art/v2/029/blue-teapot.webp",
+      "preview": "art/v3/029/blue-teapot.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           89,
@@ -1280,7 +1284,8 @@
     {
       "id": "l079-pink-teacup",
       "name": "Pink teacup and saucer",
-      "preview": "art/v2/029/pink-teacup.webp",
+      "preview": "art/v3/029/pink-teacup.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           241,
@@ -1523,7 +1528,8 @@
     {
       "id": "l079-yellow-fan",
       "name": "Yellow fan",
-      "preview": "art/v2/029/yellow-fan.webp",
+      "preview": "art/v3/029/yellow-fan.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           487,
@@ -1670,7 +1676,8 @@
     {
       "id": "l079-pocket-watch",
       "name": "Closed pocket watch",
-      "preview": "art/v2/029/pocket-watch.webp",
+      "preview": "art/v3/029/pocket-watch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           444,
@@ -1825,7 +1832,8 @@
     {
       "id": "l079-perfume-bottle",
       "name": "Pear-shaped perfume bottle",
-      "preview": "art/v2/029/perfume-bottle.webp",
+      "preview": "art/v3/029/perfume-bottle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           832,
@@ -2108,7 +2116,8 @@
     {
       "id": "l079-green-mittens",
       "name": "Green knitted mittens",
-      "preview": "art/v2/029/green-mittens.webp",
+      "preview": "art/v3/029/green-mittens.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           487,
@@ -2375,7 +2384,8 @@
     {
       "id": "l079-wooden-fox",
       "name": "Wooden fox",
-      "preview": "art/v2/029/wooden-fox.webp",
+      "preview": "art/v3/029/wooden-fox.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           882,
@@ -2650,7 +2660,8 @@
     {
       "id": "l079-floral-lamp",
       "name": "Floral table lamp",
-      "preview": "art/v2/029/floral-lamp.webp",
+      "preview": "art/v3/029/floral-lamp.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           201,
@@ -3029,7 +3040,8 @@
     {
       "id": "l079-striped-napkin",
       "name": "Orange-striped napkin",
-      "preview": "art/v2/029/striped-napkin.webp",
+      "preview": "art/v3/029/striped-napkin.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           365,

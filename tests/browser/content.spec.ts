@@ -11,7 +11,7 @@ test('old Safari progress follows its picture from 72 to 22 without double migra
  await page.addInitScript(value=>{if(!localStorage.getItem('migration-test-seeded')){localStorage.setItem('little-discoveries.save.v1',JSON.stringify(value));localStorage.setItem('migration-test-seeded','yes');}},old);
  await page.goto('/#scene/72');await ready(page,22);await expect(page).toHaveURL(/#scene\/22$/);await expect(page.locator('#progress')).toHaveText('13 / 14');
  await page.reload();await ready(page,22);await expect(page.locator('#progress')).toHaveText('13 / 14');
- const state=await page.evaluate(()=>({save:JSON.parse(localStorage.getItem('little-discoveries.save.v2')!),original:JSON.parse(localStorage.getItem('little-discoveries.save.v1.before-revision2')!)}));expect(state.save.version).toBe(2);expect(state.save.current).toBe(22);expect(state.save.favorites).toEqual([22]);expect(state.original.current).toBe(72);expect(state.save.attempts[22].view.zoom).toBe(3);
+ const state=await page.evaluate(()=>({save:JSON.parse(localStorage.getItem('little-discoveries.save.v3')!),original:JSON.parse(localStorage.getItem('little-discoveries.save.v1.before-revision2')!)}));expect(state.save.version).toBe(3);expect(state.save.current).toBe(22);expect(state.save.favorites).toEqual([22]);expect(state.original.current).toBe(72);expect(state.save.attempts[22].view.zoom).toBe(3);
 });
 
 test('an original cached tab upgrades on reload and preserves discoveries',async({page},info)=>{
@@ -33,7 +33,7 @@ test('an original cached tab upgrades on reload and preserves discoveries',async
   await page.reload();
   await ready(page,22);await expect(page.locator('#progress')).toHaveText('13 / 14');await expect(page).toHaveURL(/#scene\/22$/);
   expect(await page.evaluate(()=>caches.keys())).not.toContain('little-discoveries-shell-original-fixture');
-  expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('little-discoveries.save.v2')!).version)).toBe(2);
+  expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('little-discoveries.save.v3')!).version)).toBe(3);
   expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('little-discoveries.save.v1')!).version)).toBe(1);
   await page.reload();await ready(page,22);await expect(page.locator('#progress')).toHaveText('13 / 14');
  }finally{await unlink(path);}
@@ -46,11 +46,11 @@ test('every authored placement can be revealed and collected through the real sc
    const target=level.targets[index];await page.getByRole('button',{name:'Show me',exact:true}).click();const p=await targetCoordinates(page,level,target,target.inspect),r=(await page.locator('#picture').boundingBox())!;
    expect(p.x,`${target.id} horizontally reachable`).toBeGreaterThanOrEqual(r.x);expect(p.x).toBeLessThanOrEqual(r.x+r.width);expect(p.y,`${target.id} vertically reachable`).toBeGreaterThanOrEqual(r.y);expect(p.y).toBeLessThanOrEqual(r.y+r.height);
    await page.mouse.click(p.x,p.y);await expect(page.locator('#progress'),`${meta.id}: ${target.name}`).toHaveText(`${index+1} / ${meta.targetCount}`);
-   expect(await page.evaluate(id=>JSON.parse(localStorage.getItem('little-discoveries.save.v2')!).attempts[id].found,meta.id)).toContain(target.id);placements++;
+   expect(await page.evaluate(id=>JSON.parse(localStorage.getItem('little-discoveries.save.v3')!).attempts[id].found,meta.id)).toContain(target.id);placements++;
   }
-  await expect(page.getByRole('dialog').getByRole('heading',{name:'All found. Nicely spotted.'})).toBeVisible();if(meta.id===100)await expect(page.getByRole('dialog').getByText('Made for you, with love.',{exact:true})).toBeVisible();await page.getByRole('button',{name:'Stay and look',exact:true}).click();
+  await expect(page.getByRole('dialog').getByRole('heading',{name:'All found. Nicely spotted.'})).toBeVisible();if(meta.id===50)await expect(page.getByRole('dialog').getByText('Made for you, with love.',{exact:true})).toBeVisible();await page.getByRole('button',{name:'Stay and look',exact:true}).click();
  }
- expect(errors).toEqual([]);expect(placements).toBe(catalog.requiredPlacements);await page.goto('/#album');await expect(page.locator('.postcard')).toHaveCount(10);await expect(page.getByRole('heading',{name:'A whole world of discoveries.'})).toBeVisible();await info.attach('verified-placements.json',{body:JSON.stringify({engine:info.project.name,scenes:authored.length,placements,physicalIPhone:false}),contentType:'application/json'});
+ expect(errors).toEqual([]);expect(placements).toBe(catalog.requiredPlacements);await page.goto('/#album');await expect(page.locator('.postcard')).toHaveCount(6);await expect(page.getByRole('heading',{name:'A whole world of discoveries.'})).toBeVisible();await info.attach('verified-placements.json',{body:JSON.stringify({engine:info.project.name,scenes:authored.length,placements,physicalIPhone:false}),contentType:'application/json'});
 });
 
 test('a complete chapter works offline, detects missing art and repairs without losing finds',async({page,context})=>{
@@ -58,7 +58,7 @@ test('a complete chapter works offline, detects missing art and repairs without 
  const openChapter=async()=>{await page.getByRole('button',{name:'Open settings',exact:true}).click();await page.getByRole('button',{name:`1. ${catalog.chapters[0].title}`,exact:true}).click();};
  await openChapter();await page.getByRole('button',{name:/^(Keep this chapter offline|Resume download)$/}).click();await expect(page.getByText('Available offline',{exact:true})).toBeVisible({timeout:60000});await page.getByRole('button',{name:'Close panel',exact:true}).click();await context.setOffline(true);
  for(let id=1;id<=10;id++){await page.goto(`/#scene/${id}`);await ready(page,id);await expect(page.locator('#picture canvas')).toBeVisible();await expect.poll(()=>page.locator('#object-tray img').evaluateAll(imgs=>imgs.every(i=>(i as HTMLImageElement).complete&&(i as HTMLImageElement).naturalWidth>0))).toBe(true);if(id===5){await assist(page,readLevel(5).targets[0].name);await expect(page.locator('#progress')).toHaveText(`1 / ${catalog.levels[4].targetCount}`);}}
- expect(await page.evaluate(async art=>{const m=await(await fetch('./offline-manifest-v2.json')).json(),cache=await caches.open(`little-discoveries-content-${m.contentVersion}`);return cache.delete(new URL(art,location.href).href);},readLevel(5).art)).toBe(true);
+ expect(await page.evaluate(async art=>{const m=await(await fetch('./offline-manifest-v3.json')).json(),cache=await caches.open(`little-discoveries-content-${m.contentVersion}`);return cache.delete(new URL(art,location.href).href);},readLevel(5).art)).toBe(true);
  await page.goto('/#scene/5');await expect(page.getByRole('button',{name:'Try again',exact:true})).toBeVisible();await expect(page.getByText('This picture couldn’t open. Reconnect and tap Try again. Your discoveries are safe.',{exact:true})).toBeVisible();await expect(page.locator('#progress')).toHaveText(`1 / ${catalog.levels[4].targetCount}`);
  await openChapter();await expect(page.getByText('Available offline',{exact:true})).toHaveCount(0);await expect(page.getByRole('button',{name:'Resume download',exact:true})).toBeVisible();await context.setOffline(false);await page.getByRole('button',{name:'Resume download',exact:true}).click();await expect(page.getByText('Available offline',{exact:true})).toBeVisible({timeout:60000});await page.getByRole('button',{name:'Close panel',exact:true}).click();await page.getByRole('button',{name:'Try again',exact:true}).click();await ready(page,5);await expect(page.locator('#progress')).toHaveText(`1 / ${catalog.levels[4].targetCount}`);
 });

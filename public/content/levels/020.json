@@ -3,8 +3,8 @@
   "chapter": 2,
   "title": "The observatory",
   "targetCount": 14,
-  "art": "art/v2/020.webp",
-  "thumbnail": "art/v2/020-thumb.webp",
+  "art": "art/v3/020.webp",
+  "thumbnail": "art/v3/020-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l070-star-chart",
       "name": "Parchment star chart",
-      "preview": "art/v2/020/star-chart.webp",
+      "preview": "art/v3/020/star-chart.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           0,
@@ -311,7 +312,8 @@
     {
       "id": "l070-lens-brush",
       "name": "Lens brush",
-      "preview": "art/v2/020/lens-brush.webp",
+      "preview": "art/v3/020/lens-brush.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           763,
@@ -546,7 +548,8 @@
     {
       "id": "l070-moon-brooch",
       "name": "Silver moon brooch",
-      "preview": "art/v2/020/moon-brooch.webp",
+      "preview": "art/v3/020/moon-brooch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           170,
@@ -829,7 +832,8 @@
     {
       "id": "l070-spyglass",
       "name": "Handheld brass spyglass",
-      "preview": "art/v2/020/spyglass.webp",
+      "preview": "art/v3/020/spyglass.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           824,
@@ -1024,7 +1028,8 @@
     {
       "id": "l070-orrery",
       "name": "Brass orrery",
-      "preview": "art/v2/020/orrery.webp",
+      "preview": "art/v3/020/orrery.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           515,
@@ -1667,7 +1672,8 @@
     {
       "id": "l070-hourglass",
       "name": "Brass hourglass",
-      "preview": "art/v2/020/hourglass.webp",
+      "preview": "art/v3/020/hourglass.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           94,
@@ -1846,7 +1852,8 @@
     {
       "id": "l070-teacup",
       "name": "Leaf-handle teacup",
-      "preview": "art/v2/020/teacup.webp",
+      "preview": "art/v3/020/teacup.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           54,
@@ -2061,7 +2068,8 @@
     {
       "id": "l070-winding-key",
       "name": "Clock winding key",
-      "preview": "art/v2/020/winding-key.webp",
+      "preview": "art/v3/020/winding-key.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           861,
@@ -2312,7 +2320,8 @@
     {
       "id": "l070-handkerchief",
       "name": "Linen handkerchief",
-      "preview": "art/v2/020/handkerchief.webp",
+      "preview": "art/v3/020/handkerchief.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           151,
@@ -2491,7 +2500,8 @@
     {
       "id": "l070-star-biscuit",
       "name": "Star biscuit",
-      "preview": "art/v2/020/star-biscuit.webp",
+      "preview": "art/v3/020/star-biscuit.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           558,
@@ -2694,7 +2704,8 @@
     {
       "id": "l070-red-notebook",
       "name": "Red notebook",
-      "preview": "art/v2/020/red-notebook.webp",
+      "preview": "art/v3/020/red-notebook.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           841,
@@ -2841,7 +2852,8 @@
     {
       "id": "l070-feather-quill",
       "name": "White feather quill",
-      "preview": "art/v2/020/feather-quill.webp",
+      "preview": "art/v3/020/feather-quill.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           526,
@@ -3124,7 +3136,8 @@
     {
       "id": "l070-ink-bottle",
       "name": "Cobalt ink bottle",
-      "preview": "art/v2/020/ink-bottle.webp",
+      "preview": "art/v3/020/ink-bottle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           394,
@@ -3343,7 +3356,8 @@
     {
       "id": "l070-wooden-owl",
       "name": "Carved wooden owl",
-      "preview": "art/v2/020/wooden-owl.webp",
+      "preview": "art/v3/020/wooden-owl.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           876,

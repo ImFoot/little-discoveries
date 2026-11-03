@@ -1,3 +1,5 @@
+> Historical rejected revision: the player rejected all fifty replacement pictures. Current scope is 50 retained scenes plus three samples; see DESIGN.md. Automated technical checks below did not establish player acceptance.
+
 # Revision 2 completion record
 
 The complete revised collection is implemented, prepared, tested, published and verified at https://imfoot.github.io/little-discoveries/. Public repository ImFoot/little-discoveries deployed source commit a001937ecc8fe947b9c36ba31de1dc49e9bda0b9 successfully in workflow 41585023371. Final hosted checks are recorded in verification/deployment.json.

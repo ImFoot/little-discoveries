@@ -3,8 +3,8 @@
   "chapter": 3,
   "title": "The woodland cottage",
   "targetCount": 12,
-  "art": "art/v2/021.webp",
-  "thumbnail": "art/v2/021-thumb.webp",
+  "art": "art/v3/021.webp",
+  "thumbnail": "art/v3/021-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l071-acorn-cup",
       "name": "Acorn cup",
-      "preview": "art/v2/021/acorn-cup.webp",
+      "preview": "art/v3/021/acorn-cup.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           621,
@@ -231,7 +232,8 @@
     {
       "id": "l071-knitted-cap",
       "name": "Red knitted cap",
-      "preview": "art/v2/021/knitted-cap.webp",
+      "preview": "art/v3/021/knitted-cap.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           62,
@@ -474,7 +476,8 @@
     {
       "id": "l071-carved-key",
       "name": "Carved key",
-      "preview": "art/v2/021/carved-key.webp",
+      "preview": "art/v3/021/carved-key.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           199,
@@ -733,7 +736,8 @@
     {
       "id": "l071-cream-pitcher",
       "name": "Cream pitcher",
-      "preview": "art/v2/021/cream-pitcher.webp",
+      "preview": "art/v3/021/cream-pitcher.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           527,
@@ -944,7 +948,8 @@
     {
       "id": "l071-brass-bell",
       "name": "Brass handbell",
-      "preview": "art/v2/021/brass-bell.webp",
+      "preview": "art/v3/021/brass-bell.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           813,
@@ -1131,7 +1136,8 @@
     {
       "id": "l071-pear",
       "name": "Green pear",
-      "preview": "art/v2/021/pear.webp",
+      "preview": "art/v3/021/pear.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           53,
@@ -1286,7 +1292,8 @@
     {
       "id": "l071-pinecone",
       "name": "Pinecone",
-      "preview": "art/v2/021/pinecone.webp",
+      "preview": "art/v3/021/pinecone.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           426,
@@ -1537,7 +1544,8 @@
     {
       "id": "l071-mushroom-pincushion",
       "name": "Mushroom pincushion",
-      "preview": "art/v2/021/mushroom-pincushion.webp",
+      "preview": "art/v3/021/mushroom-pincushion.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           618,
@@ -1732,7 +1740,8 @@
     {
       "id": "l071-striped-sock",
       "name": "Striped wool sock",
-      "preview": "art/v2/021/striped-sock.webp",
+      "preview": "art/v3/021/striped-sock.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           866,
@@ -1935,7 +1944,8 @@
     {
       "id": "l071-blue-book",
       "name": "Blue book",
-      "preview": "art/v2/021/blue-book.webp",
+      "preview": "art/v3/021/blue-book.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           1,
@@ -2042,7 +2052,8 @@
     {
       "id": "l071-wooden-rabbit",
       "name": "Wooden rabbit",
-      "preview": "art/v2/021/wooden-rabbit.webp",
+      "preview": "art/v3/021/wooden-rabbit.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           112,
@@ -2325,7 +2336,8 @@
     {
       "id": "l071-copper-watering-can",
       "name": "Copper watering can",
-      "preview": "art/v2/021/copper-watering-can.webp",
+      "preview": "art/v3/021/copper-watering-can.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           789,

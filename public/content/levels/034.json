@@ -3,8 +3,8 @@
   "chapter": 4,
   "title": "The candle workshop",
   "targetCount": 15,
-  "art": "art/v2/034.webp",
-  "thumbnail": "art/v2/034-thumb.webp",
+  "art": "art/v3/034.webp",
+  "thumbnail": "art/v3/034-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l084-wick-trimmer",
       "name": "Black wick trimmer",
-      "preview": "art/v2/034/wick-trimmer.webp",
+      "preview": "art/v3/034/wick-trimmer.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           44,
@@ -319,7 +320,8 @@
     {
       "id": "l084-wax-rose",
       "name": "Pink wax rose",
-      "preview": "art/v2/034/wax-rose.webp",
+      "preview": "art/v3/034/wax-rose.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           45,
@@ -498,7 +500,8 @@
     {
       "id": "l084-brass-mold",
       "name": "Brass candle mold",
-      "preview": "art/v2/034/brass-mold.webp",
+      "preview": "art/v3/034/brass-mold.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           198,
@@ -757,7 +760,8 @@
     {
       "id": "l084-copper-pitcher",
       "name": "Copper pouring pitcher",
-      "preview": "art/v2/034/copper-pitcher.webp",
+      "preview": "art/v3/034/copper-pitcher.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           162,
@@ -984,7 +988,8 @@
     {
       "id": "l084-blue-thread-spool",
       "name": "Blue thread spool",
-      "preview": "art/v2/034/blue-thread-spool.webp",
+      "preview": "art/v3/034/blue-thread-spool.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           387,
@@ -1147,7 +1152,8 @@
     {
       "id": "l084-honey-dipper",
       "name": "Wooden honey dipper",
-      "preview": "art/v2/034/honey-dipper.webp",
+      "preview": "art/v3/034/honey-dipper.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           593,
@@ -1318,7 +1324,8 @@
     {
       "id": "l084-star-cutter",
       "name": "Metal star cutter",
-      "preview": "art/v2/034/star-cutter.webp",
+      "preview": "art/v3/034/star-cutter.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           459,
@@ -1441,7 +1448,8 @@
     {
       "id": "l084-green-bottle",
       "name": "Green glass perfume bottle",
-      "preview": "art/v2/034/green-bottle.webp",
+      "preview": "art/v3/034/green-bottle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           744,
@@ -1708,7 +1716,8 @@
     {
       "id": "l084-yellow-mitten",
       "name": "Yellow mitten",
-      "preview": "art/v2/034/yellow-mitten.webp",
+      "preview": "art/v3/034/yellow-mitten.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           850,
@@ -1935,7 +1944,8 @@
     {
       "id": "l084-wooden-bird",
       "name": "Carved wooden bird",
-      "preview": "art/v2/034/wooden-bird.webp",
+      "preview": "art/v3/034/wooden-bird.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           531,
@@ -2162,7 +2172,8 @@
     {
       "id": "l084-red-bow",
       "name": "Red ribbon bow",
-      "preview": "art/v2/034/red-bow.webp",
+      "preview": "art/v3/034/red-bow.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           595,
@@ -2485,7 +2496,8 @@
     {
       "id": "l084-wax-stamp",
       "name": "Ivory wax seal stamp",
-      "preview": "art/v2/034/wax-stamp.webp",
+      "preview": "art/v3/034/wax-stamp.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           810,
@@ -2720,7 +2732,8 @@
     {
       "id": "l084-blue-notebook",
       "name": "Blue notebook",
-      "preview": "art/v2/034/blue-notebook.webp",
+      "preview": "art/v3/034/blue-notebook.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           884,
@@ -2827,7 +2840,8 @@
     {
       "id": "l084-shell-dish",
       "name": "Scallop shell dish",
-      "preview": "art/v2/034/shell-dish.webp",
+      "preview": "art/v3/034/shell-dish.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           880,
@@ -3062,7 +3076,8 @@
     {
       "id": "l084-wick-rope",
       "name": "Coiled cotton wick",
-      "preview": "art/v2/034/wick-rope.webp",
+      "preview": "art/v3/034/wick-rope.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           725,

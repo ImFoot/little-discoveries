@@ -3,8 +3,8 @@
   "chapter": 1,
   "title": "The hilltop inn",
   "targetCount": 14,
-  "art": "art/v2/010.webp",
-  "thumbnail": "art/v2/010-thumb.webp",
+  "art": "art/v3/010.webp",
+  "thumbnail": "art/v3/010-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l060-door-knocker",
       "name": "Lion-head door knocker",
-      "preview": "art/v2/010/door-knocker.webp",
+      "preview": "art/v3/010/door-knocker.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           439,
@@ -279,7 +280,8 @@
     {
       "id": "l060-hiking-badge",
       "name": "Mountain hiking badge",
-      "preview": "art/v2/010/hiking-badge.webp",
+      "preview": "art/v3/010/hiking-badge.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           172,
@@ -362,7 +364,8 @@
     {
       "id": "l060-flower-press",
       "name": "Wooden flower press",
-      "preview": "art/v2/010/flower-press.webp",
+      "preview": "art/v3/010/flower-press.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           543,
@@ -749,7 +752,8 @@
     {
       "id": "l060-red-scarf",
       "name": "Red knitted scarf",
-      "preview": "art/v2/010/red-scarf.webp",
+      "preview": "art/v3/010/red-scarf.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           0,
@@ -1064,7 +1068,8 @@
     {
       "id": "l060-blue-mug",
       "name": "Blue enamel travel mug",
-      "preview": "art/v2/010/blue-mug.webp",
+      "preview": "art/v3/010/blue-mug.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           503,
@@ -1299,7 +1304,8 @@
     {
       "id": "l060-room-key",
       "name": "Brass room key",
-      "preview": "art/v2/010/room-key.webp",
+      "preview": "art/v3/010/room-key.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           616,
@@ -1606,7 +1612,8 @@
     {
       "id": "l060-yellow-pear",
       "name": "Yellow pear",
-      "preview": "art/v2/010/yellow-pear.webp",
+      "preview": "art/v3/010/yellow-pear.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           921,
@@ -1801,7 +1808,8 @@
     {
       "id": "l060-hiking-whistle",
       "name": "Wooden hiking whistle",
-      "preview": "art/v2/010/hiking-whistle.webp",
+      "preview": "art/v3/010/hiking-whistle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           833,
@@ -1964,7 +1972,8 @@
     {
       "id": "l060-paper-crane",
       "name": "White paper crane",
-      "preview": "art/v2/010/paper-crane.webp",
+      "preview": "art/v3/010/paper-crane.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           104,
@@ -2111,7 +2120,8 @@
     {
       "id": "l060-cream-pitcher",
       "name": "Cream floral pitcher",
-      "preview": "art/v2/010/cream-pitcher.webp",
+      "preview": "art/v3/010/cream-pitcher.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           666,
@@ -2338,7 +2348,8 @@
     {
       "id": "l060-green-journal",
       "name": "Green leather journal",
-      "preview": "art/v2/010/green-journal.webp",
+      "preview": "art/v3/010/green-journal.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           0,
@@ -2461,7 +2472,8 @@
     {
       "id": "l060-pinecone",
       "name": "Pinecone on step",
-      "preview": "art/v2/010/pinecone.webp",
+      "preview": "art/v3/010/pinecone.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           518,
@@ -2672,7 +2684,8 @@
     {
       "id": "l060-butterfly-brooch",
       "name": "Silver butterfly brooch",
-      "preview": "art/v2/010/butterfly-brooch.webp",
+      "preview": "art/v3/010/butterfly-brooch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           914,
@@ -2883,7 +2896,8 @@
     {
       "id": "l060-orange-thermos",
       "name": "Orange thermos",
-      "preview": "art/v2/010/orange-thermos.webp",
+      "preview": "art/v3/010/orange-thermos.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           35,

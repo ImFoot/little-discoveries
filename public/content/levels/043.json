@@ -3,8 +3,8 @@
   "chapter": 5,
   "title": "The craft afternoon",
   "targetCount": 14,
-  "art": "art/v2/043.webp",
-  "thumbnail": "art/v2/043-thumb.webp",
+  "art": "art/v3/043.webp",
+  "thumbnail": "art/v3/043-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l093-embroidery-scissors",
       "name": "Gold embroidery scissors",
-      "preview": "art/v2/043/embroidery-scissors.webp",
+      "preview": "art/v3/043/embroidery-scissors.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           147,
@@ -263,7 +264,8 @@
     {
       "id": "l093-paper-butterfly",
       "name": "Blue paper butterfly",
-      "preview": "art/v2/043/paper-butterfly.webp",
+      "preview": "art/v3/043/paper-butterfly.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           206,
@@ -482,7 +484,8 @@
     {
       "id": "l093-crochet-hook",
       "name": "Orange crochet hook",
-      "preview": "art/v2/043/crochet-hook.webp",
+      "preview": "art/v3/043/crochet-hook.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           319,
@@ -685,7 +688,8 @@
     {
       "id": "l093-pink-yarn",
       "name": "Pink yarn ball",
-      "preview": "art/v2/043/pink-yarn.webp",
+      "preview": "art/v3/043/pink-yarn.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           283,
@@ -968,7 +972,8 @@
     {
       "id": "l093-green-thread-spool",
       "name": "Green thread spool",
-      "preview": "art/v2/043/green-thread-spool.webp",
+      "preview": "art/v3/043/green-thread-spool.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           416,
@@ -1131,7 +1136,8 @@
     {
       "id": "l093-heart-button",
       "name": "Red heart button",
-      "preview": "art/v2/043/heart-button.webp",
+      "preview": "art/v3/043/heart-button.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           358,
@@ -1254,7 +1260,8 @@
     {
       "id": "l093-embroidery-hoop",
       "name": "Daisy embroidery hoop",
-      "preview": "art/v2/043/embroidery-hoop.webp",
+      "preview": "art/v3/043/embroidery-hoop.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           543,
@@ -1561,7 +1568,8 @@
     {
       "id": "l093-tailor-chalk",
       "name": "White tailor chalk",
-      "preview": "art/v2/043/tailor-chalk.webp",
+      "preview": "art/v3/043/tailor-chalk.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           500,
@@ -1692,7 +1700,8 @@
     {
       "id": "l093-purple-bow",
       "name": "Purple ribbon bow",
-      "preview": "art/v2/043/purple-bow.webp",
+      "preview": "art/v3/043/purple-bow.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           439,
@@ -2023,7 +2032,8 @@
     {
       "id": "l093-lace-glove",
       "name": "Cream lace glove",
-      "preview": "art/v2/043/lace-glove.webp",
+      "preview": "art/v3/043/lace-glove.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           669,
@@ -2522,7 +2532,8 @@
     {
       "id": "l093-silver-thimble",
       "name": "Silver thimble",
-      "preview": "art/v2/043/silver-thimble.webp",
+      "preview": "art/v3/043/silver-thimble.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           912,
@@ -2661,7 +2672,8 @@
     {
       "id": "l093-wooden-ruler",
       "name": "Wooden ruler",
-      "preview": "art/v2/043/wooden-ruler.webp",
+      "preview": "art/v3/043/wooden-ruler.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           548,
@@ -2744,7 +2756,8 @@
     {
       "id": "l093-blue-mug",
       "name": "Blue ceramic mug",
-      "preview": "art/v2/043/blue-mug.webp",
+      "preview": "art/v3/043/blue-mug.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           36,
@@ -2963,7 +2976,8 @@
     {
       "id": "l093-wooden-bird",
       "name": "Carved wooden bird",
-      "preview": "art/v2/043/wooden-bird.webp",
+      "preview": "art/v3/043/wooden-bird.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           3,

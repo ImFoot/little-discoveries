@@ -3,8 +3,8 @@
   "chapter": 3,
   "title": "The floating garden",
   "targetCount": 15,
-  "art": "art/v2/024.webp",
-  "thumbnail": "art/v2/024-thumb.webp",
+  "art": "art/v3/024.webp",
+  "thumbnail": "art/v3/024-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l074-feather-quill",
       "name": "Feather quill",
-      "preview": "art/v2/024/feather-quill.webp",
+      "preview": "art/v3/024/feather-quill.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           69,
@@ -151,7 +152,8 @@
     {
       "id": "l074-glass-watering-bulb",
       "name": "Glass watering bulb",
-      "preview": "art/v2/024/glass-watering-bulb.webp",
+      "preview": "art/v3/024/glass-watering-bulb.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           152,
@@ -386,7 +388,8 @@
     {
       "id": "l074-wind-chime",
       "name": "Brass wind chime",
-      "preview": "art/v2/024/wind-chime.webp",
+      "preview": "art/v3/024/wind-chime.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           335,
@@ -701,7 +704,8 @@
     {
       "id": "l074-red-glove",
       "name": "Red garden glove",
-      "preview": "art/v2/024/red-glove.webp",
+      "preview": "art/v3/024/red-glove.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           48,
@@ -944,7 +948,8 @@
     {
       "id": "l074-blue-watering-can",
       "name": "Blue watering can",
-      "preview": "art/v2/024/blue-watering-can.webp",
+      "preview": "art/v3/024/blue-watering-can.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           189,
@@ -1219,7 +1224,8 @@
     {
       "id": "l074-brass-compass",
       "name": "Brass compass",
-      "preview": "art/v2/024/brass-compass.webp",
+      "preview": "art/v3/024/brass-compass.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           882,
@@ -1430,7 +1436,8 @@
     {
       "id": "l074-purple-seed-tin",
       "name": "Purple seed tin",
-      "preview": "art/v2/024/purple-seed-tin.webp",
+      "preview": "art/v3/024/purple-seed-tin.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           58,
@@ -1561,7 +1568,8 @@
     {
       "id": "l074-snail-ornament",
       "name": "White snail ornament",
-      "preview": "art/v2/024/snail-ornament.webp",
+      "preview": "art/v3/024/snail-ornament.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           32,
@@ -1796,7 +1804,8 @@
     {
       "id": "l074-wooden-bird",
       "name": "Wooden bird",
-      "preview": "art/v2/024/wooden-bird.webp",
+      "preview": "art/v3/024/wooden-bird.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           718,
@@ -1967,7 +1976,8 @@
     {
       "id": "l074-yellow-fan",
       "name": "Folded yellow fan",
-      "preview": "art/v2/024/yellow-fan.webp",
+      "preview": "art/v3/024/yellow-fan.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           702,
@@ -2130,7 +2140,8 @@
     {
       "id": "l074-copper-trowel",
       "name": "Copper hand trowel",
-      "preview": "art/v2/024/copper-trowel.webp",
+      "preview": "art/v3/024/copper-trowel.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           17,
@@ -2357,7 +2368,8 @@
     {
       "id": "l074-ribbon-spool",
       "name": "Pink ribbon spool",
-      "preview": "art/v2/024/ribbon-spool.webp",
+      "preview": "art/v3/024/ribbon-spool.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           772,
@@ -2648,7 +2660,8 @@
     {
       "id": "l074-glass-terrarium",
       "name": "Glass terrarium",
-      "preview": "art/v2/024/glass-terrarium.webp",
+      "preview": "art/v3/024/glass-terrarium.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           965,
@@ -2795,7 +2808,8 @@
     {
       "id": "l074-orange-secateurs",
       "name": "Orange-handled secateurs",
-      "preview": "art/v2/024/orange-secateurs.webp",
+      "preview": "art/v3/024/orange-secateurs.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           455,
@@ -3046,7 +3060,8 @@
     {
       "id": "l074-twine-ball",
       "name": "Twine ball",
-      "preview": "art/v2/024/twine-ball.webp",
+      "preview": "art/v3/024/twine-ball.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           589,

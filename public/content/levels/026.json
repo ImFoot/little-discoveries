@@ -3,8 +3,8 @@
   "chapter": 3,
   "title": "The fairy tailor",
   "targetCount": 14,
-  "art": "art/v2/026.webp",
-  "thumbnail": "art/v2/026-thumb.webp",
+  "art": "art/v3/026.webp",
+  "thumbnail": "art/v3/026-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l076-thimble-hat",
       "name": "Feathered thimble hat",
-      "preview": "art/v2/026/thimble-hat.webp",
+      "preview": "art/v3/026/thimble-hat.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           101,
@@ -239,7 +240,8 @@
     {
       "id": "l076-silk-bow",
       "name": "Pink silk bow",
-      "preview": "art/v2/026/silk-bow.webp",
+      "preview": "art/v3/026/silk-bow.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           67,
@@ -586,7 +588,8 @@
     {
       "id": "l076-silver-needle",
       "name": "Silver needle",
-      "preview": "art/v2/026/silver-needle.webp",
+      "preview": "art/v3/026/silver-needle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           394,
@@ -701,7 +704,8 @@
     {
       "id": "l076-gold-scissors",
       "name": "Gold embroidery scissors",
-      "preview": "art/v2/026/gold-scissors.webp",
+      "preview": "art/v3/026/gold-scissors.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           53,
@@ -1000,7 +1004,8 @@
     {
       "id": "l076-blue-pincushion",
       "name": "Blue pincushion",
-      "preview": "art/v2/026/blue-pincushion.webp",
+      "preview": "art/v3/026/blue-pincushion.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           284,
@@ -1587,7 +1592,8 @@
     {
       "id": "l076-tailor-chalk",
       "name": "Triangular tailor chalk",
-      "preview": "art/v2/026/tailor-chalk.webp",
+      "preview": "art/v3/026/tailor-chalk.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           475,
@@ -1702,7 +1708,8 @@
     {
       "id": "l076-purple-tassel",
       "name": "Purple tassel",
-      "preview": "art/v2/026/purple-tassel.webp",
+      "preview": "art/v3/026/purple-tassel.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           524,
@@ -1993,7 +2000,8 @@
     {
       "id": "l076-pink-thread-spool",
       "name": "Pink thread spool",
-      "preview": "art/v2/026/pink-thread-spool.webp",
+      "preview": "art/v3/026/pink-thread-spool.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           143,
@@ -2156,7 +2164,8 @@
     {
       "id": "l076-peach-case",
       "name": "Peach shears case",
-      "preview": "art/v2/026/peach-case.webp",
+      "preview": "art/v3/026/peach-case.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           390,
@@ -2303,7 +2312,8 @@
     {
       "id": "l076-measuring-tape",
       "name": "Green measuring tape",
-      "preview": "art/v2/026/measuring-tape.webp",
+      "preview": "art/v3/026/measuring-tape.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           170,
@@ -2706,7 +2716,8 @@
     {
       "id": "l076-lace-glove",
       "name": "Lace glove",
-      "preview": "art/v2/026/lace-glove.webp",
+      "preview": "art/v3/026/lace-glove.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           13,
@@ -3213,7 +3224,8 @@
     {
       "id": "l076-heart-button",
       "name": "Red heart button",
-      "preview": "art/v2/026/heart-button.webp",
+      "preview": "art/v3/026/heart-button.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           362,
@@ -3328,7 +3340,8 @@
     {
       "id": "l076-crochet-hook",
       "name": "Orange crochet hook",
-      "preview": "art/v2/026/crochet-hook.webp",
+      "preview": "art/v3/026/crochet-hook.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           477,
@@ -3507,7 +3520,8 @@
     {
       "id": "l076-shoe-pincushion",
       "name": "Shoe pin holder",
-      "preview": "art/v2/026/shoe-pincushion.webp",
+      "preview": "art/v3/026/shoe-pincushion.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           532,

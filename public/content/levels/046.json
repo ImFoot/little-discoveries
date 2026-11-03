@@ -3,8 +3,8 @@
   "chapter": 5,
   "title": "The celebration table",
   "targetCount": 14,
-  "art": "art/v2/046.webp",
-  "thumbnail": "art/v2/046-thumb.webp",
+  "art": "art/v3/046.webp",
+  "thumbnail": "art/v3/046-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l096-cake-knife",
       "name": "Pink-handled cake knife",
-      "preview": "art/v2/046/cake-knife.webp",
+      "preview": "art/v3/046/cake-knife.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           214,
@@ -199,7 +200,8 @@
     {
       "id": "l096-candleholder",
       "name": "Brass candleholder",
-      "preview": "art/v2/046/candleholder.webp",
+      "preview": "art/v3/046/candleholder.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           369,
@@ -482,7 +484,8 @@
     {
       "id": "l096-turquoise-fan",
       "name": "Turquoise paper fan",
-      "preview": "art/v2/046/turquoise-fan.webp",
+      "preview": "art/v3/046/turquoise-fan.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           467,
@@ -637,7 +640,8 @@
     {
       "id": "l096-velvet-pouch",
       "name": "Red velvet pouch",
-      "preview": "art/v2/046/velvet-pouch.webp",
+      "preview": "art/v3/046/velvet-pouch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           360,
@@ -824,7 +828,8 @@
     {
       "id": "l096-blue-teacup",
       "name": "Blue floral teacup",
-      "preview": "art/v2/046/blue-teacup.webp",
+      "preview": "art/v3/046/blue-teacup.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           896,
@@ -1059,7 +1064,8 @@
     {
       "id": "l096-amber-vase",
       "name": "Amber glass vase",
-      "preview": "art/v2/046/amber-vase.webp",
+      "preview": "art/v3/046/amber-vase.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           454,
@@ -1214,7 +1220,8 @@
     {
       "id": "l096-green-pear",
       "name": "Green pear",
-      "preview": "art/v2/046/green-pear.webp",
+      "preview": "art/v3/046/green-pear.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           861,
@@ -1369,7 +1376,8 @@
     {
       "id": "l096-star-biscuit",
       "name": "Star biscuit",
-      "preview": "art/v2/046/star-biscuit.webp",
+      "preview": "art/v3/046/star-biscuit.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           505,
@@ -1532,7 +1540,8 @@
     {
       "id": "l096-wooden-dove",
       "name": "Wooden dove",
-      "preview": "art/v2/046/wooden-dove.webp",
+      "preview": "art/v3/046/wooden-dove.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           671,
@@ -1783,7 +1792,8 @@
     {
       "id": "l096-purple-bow",
       "name": "Purple ribbon bow",
-      "preview": "art/v2/046/purple-bow.webp",
+      "preview": "art/v3/046/purple-bow.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           182,
@@ -2090,7 +2100,8 @@
     {
       "id": "l096-sugar-tongs",
       "name": "Gold sugar tongs",
-      "preview": "art/v2/046/sugar-tongs.webp",
+      "preview": "art/v3/046/sugar-tongs.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           607,
@@ -2285,7 +2296,8 @@
     {
       "id": "l096-shell-dish",
       "name": "White scallop shell dish",
-      "preview": "art/v2/046/shell-dish.webp",
+      "preview": "art/v3/046/shell-dish.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           681,
@@ -2480,7 +2492,8 @@
     {
       "id": "l096-peach-book",
       "name": "Peach recipe book",
-      "preview": "art/v2/046/peach-book.webp",
+      "preview": "art/v3/046/peach-book.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           719,
@@ -2587,7 +2600,8 @@
     {
       "id": "l096-copper-bell",
       "name": "Small copper bell",
-      "preview": "art/v2/046/copper-bell.webp",
+      "preview": "art/v3/046/copper-bell.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           236,

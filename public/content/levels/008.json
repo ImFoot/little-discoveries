@@ -3,8 +3,8 @@
   "chapter": 1,
   "title": "The mapmaker’s studio",
   "targetCount": 15,
-  "art": "art/v2/008.webp",
-  "thumbnail": "art/v2/008-thumb.webp",
+  "art": "art/v3/008.webp",
+  "thumbnail": "art/v3/008-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l058-divider",
       "name": "Brass divider",
-      "preview": "art/v2/008/divider.webp",
+      "preview": "art/v3/008/divider.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           421,
@@ -271,7 +272,8 @@
     {
       "id": "l058-wax-stamp",
       "name": "Wood-handled wax stamp",
-      "preview": "art/v2/008/wax-stamp.webp",
+      "preview": "art/v3/008/wax-stamp.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           841,
@@ -498,7 +500,8 @@
     {
       "id": "l058-miniature-globe",
       "name": "Miniature globe",
-      "preview": "art/v2/008/miniature-globe.webp",
+      "preview": "art/v3/008/miniature-globe.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           191,
@@ -773,7 +776,8 @@
     {
       "id": "l058-blue-quill",
       "name": "Blue feather quill",
-      "preview": "art/v2/008/blue-quill.webp",
+      "preview": "art/v3/008/blue-quill.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           74,
@@ -1048,7 +1052,8 @@
     {
       "id": "l058-ink-bottle",
       "name": "Green ink bottle",
-      "preview": "art/v2/008/ink-bottle.webp",
+      "preview": "art/v3/008/ink-bottle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           266,
@@ -1235,7 +1240,8 @@
     {
       "id": "l058-sealing-wax",
       "name": "Red sealing wax stick",
-      "preview": "art/v2/008/sealing-wax.webp",
+      "preview": "art/v3/008/sealing-wax.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           123,
@@ -1350,7 +1356,8 @@
     {
       "id": "l058-magnifier",
       "name": "Wood-handled magnifier",
-      "preview": "art/v2/008/magnifier.webp",
+      "preview": "art/v3/008/magnifier.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           849,
@@ -1609,7 +1616,8 @@
     {
       "id": "l058-compass-paperweight",
       "name": "Compass rose paperweight",
-      "preview": "art/v2/008/compass-paperweight.webp",
+      "preview": "art/v3/008/compass-paperweight.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           741,
@@ -1788,7 +1796,8 @@
     {
       "id": "l058-pocket-watch",
       "name": "Silver pocket watch",
-      "preview": "art/v2/008/pocket-watch.webp",
+      "preview": "art/v3/008/pocket-watch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           199,
@@ -1991,7 +2000,8 @@
     {
       "id": "l058-paper-boat",
       "name": "White paper boat",
-      "preview": "art/v2/008/paper-boat.webp",
+      "preview": "art/v3/008/paper-boat.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           429,
@@ -2106,7 +2116,8 @@
     {
       "id": "l058-ribbon-bookmark",
       "name": "Red ribbon bookmark",
-      "preview": "art/v2/008/ribbon-bookmark.webp",
+      "preview": "art/v3/008/ribbon-bookmark.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           985,
@@ -2245,7 +2256,8 @@
     {
       "id": "l058-spectacles",
       "name": "Round spectacles",
-      "preview": "art/v2/008/spectacles.webp",
+      "preview": "art/v3/008/spectacles.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           0,
@@ -2638,7 +2650,8 @@
     {
       "id": "l058-scroll-case",
       "name": "Leather scroll case",
-      "preview": "art/v2/008/scroll-case.webp",
+      "preview": "art/v3/008/scroll-case.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           235,
@@ -2873,7 +2886,8 @@
     {
       "id": "l058-ceramic-cup",
       "name": "Cream floral cup",
-      "preview": "art/v2/008/ceramic-cup.webp",
+      "preview": "art/v3/008/ceramic-cup.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           723,
@@ -3044,7 +3058,8 @@
     {
       "id": "l058-shell-dish",
       "name": "Shell-shaped clip dish",
-      "preview": "art/v2/008/shell-dish.webp",
+      "preview": "art/v3/008/shell-dish.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           0,

@@ -3,8 +3,8 @@
   "chapter": 1,
   "title": "The mountain balcony",
   "targetCount": 10,
-  "art": "art/v2/005.webp",
-  "thumbnail": "art/v2/005-thumb.webp",
+  "art": "art/v3/005.webp",
+  "thumbnail": "art/v3/005-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l055-binoculars",
       "name": "Black binoculars",
-      "preview": "art/v2/005/binoculars.webp",
+      "preview": "art/v3/005/binoculars.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           102,
@@ -303,7 +304,8 @@
     {
       "id": "l055-blanket-clip",
       "name": "Brass blanket clip",
-      "preview": "art/v2/005/blanket-clip.webp",
+      "preview": "art/v3/005/blanket-clip.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           165,
@@ -482,7 +484,8 @@
     {
       "id": "l055-pinecone",
       "name": "Large pinecone",
-      "preview": "art/v2/005/pinecone.webp",
+      "preview": "art/v3/005/pinecone.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           334,
@@ -965,7 +968,8 @@
     {
       "id": "l055-red-thermos",
       "name": "Red thermos",
-      "preview": "art/v2/005/red-thermos.webp",
+      "preview": "art/v3/005/red-thermos.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           734,
@@ -1128,7 +1132,8 @@
     {
       "id": "l055-blue-cup",
       "name": "Blue enamel cup",
-      "preview": "art/v2/005/blue-cup.webp",
+      "preview": "art/v3/005/blue-cup.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           518,
@@ -1371,7 +1376,8 @@
     {
       "id": "l055-edelweiss-brooch",
       "name": "Silver edelweiss brooch",
-      "preview": "art/v2/005/edelweiss-brooch.webp",
+      "preview": "art/v3/005/edelweiss-brooch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           928,
@@ -1638,7 +1644,8 @@
     {
       "id": "l055-trail-map",
       "name": "Folded trail map",
-      "preview": "art/v2/005/trail-map.webp",
+      "preview": "art/v3/005/trail-map.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           116,
@@ -1753,7 +1760,8 @@
     {
       "id": "l055-wooden-whistle",
       "name": "Wooden hiking whistle",
-      "preview": "art/v2/005/wooden-whistle.webp",
+      "preview": "art/v3/005/wooden-whistle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           341,
@@ -1924,7 +1932,8 @@
     {
       "id": "l055-yellow-pear",
       "name": "Yellow pear",
-      "preview": "art/v2/005/yellow-pear.webp",
+      "preview": "art/v3/005/yellow-pear.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           880,
@@ -2159,7 +2168,8 @@
     {
       "id": "l055-striped-mitten",
       "name": "Striped wool mitten",
-      "preview": "art/v2/005/striped-mitten.webp",
+      "preview": "art/v3/005/striped-mitten.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           813,

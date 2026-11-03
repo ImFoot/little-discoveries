@@ -3,8 +3,8 @@
   "chapter": 1,
   "title": "The station waiting room",
   "targetCount": 12,
-  "art": "art/v2/001.webp",
-  "thumbnail": "art/v2/001-thumb.webp",
+  "art": "art/v3/001.webp",
+  "thumbnail": "art/v3/001-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l051-luggage-tag",
       "name": "Scalloped luggage tag",
-      "preview": "art/v2/001/luggage-tag.webp",
+      "preview": "art/v3/001/luggage-tag.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           957,
@@ -223,7 +224,8 @@
     {
       "id": "l051-knitted-mitten",
       "name": "Red knitted mitten",
-      "preview": "art/v2/001/knitted-mitten.webp",
+      "preview": "art/v3/001/knitted-mitten.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           331,
@@ -378,7 +380,8 @@
     {
       "id": "l051-newspaper",
       "name": "Folded newspaper",
-      "preview": "art/v2/001/newspaper.webp",
+      "preview": "art/v3/001/newspaper.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           166,
@@ -573,7 +576,8 @@
     {
       "id": "l051-travel-umbrella",
       "name": "Green travel umbrella",
-      "preview": "art/v2/001/travel-umbrella.webp",
+      "preview": "art/v3/001/travel-umbrella.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           177,
@@ -936,7 +940,8 @@
     {
       "id": "l051-blue-thermos",
       "name": "Blue enamel thermos",
-      "preview": "art/v2/001/blue-thermos.webp",
+      "preview": "art/v3/001/blue-thermos.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           824,
@@ -1099,7 +1104,8 @@
     {
       "id": "l051-spectacles",
       "name": "Gold-rim spectacles",
-      "preview": "art/v2/001/spectacles.webp",
+      "preview": "art/v3/001/spectacles.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           165,
@@ -1500,7 +1506,8 @@
     {
       "id": "l051-flower-brooch",
       "name": "Yellow flower brooch",
-      "preview": "art/v2/001/flower-brooch.webp",
+      "preview": "art/v3/001/flower-brooch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           333,
@@ -1655,7 +1662,8 @@
     {
       "id": "l051-basket-apple",
       "name": "Basket apple",
-      "preview": "art/v2/001/basket-apple.webp",
+      "preview": "art/v3/001/basket-apple.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           603,
@@ -1858,7 +1866,8 @@
     {
       "id": "l051-coin-purse",
       "name": "Leather coin purse",
-      "preview": "art/v2/001/coin-purse.webp",
+      "preview": "art/v3/001/coin-purse.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           522,
@@ -2101,7 +2110,8 @@
     {
       "id": "l051-train-whistle",
       "name": "Brass train whistle",
-      "preview": "art/v2/001/train-whistle.webp",
+      "preview": "art/v3/001/train-whistle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           511,
@@ -2360,7 +2370,8 @@
     {
       "id": "l051-striped-sock",
       "name": "Striped wool sock",
-      "preview": "art/v2/001/striped-sock.webp",
+      "preview": "art/v3/001/striped-sock.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           832,
@@ -2595,7 +2606,8 @@
     {
       "id": "l051-sealed-envelope",
       "name": "Sealed cream envelope",
-      "preview": "art/v2/001/sealed-envelope.webp",
+      "preview": "art/v3/001/sealed-envelope.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           844,

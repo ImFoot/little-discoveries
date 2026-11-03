@@ -1,1 +1,30 @@
-Use case: illustration-story. One complete original hidden-object game illustration, portrait1024x1536. The shell inlayer’s cabinet: a sunny coastal marquetry workshop, tall shell-lined corner cabinets surround a deep diagonal work surface and an open casement facing hazy sea, drawers of mother-of-pearl fragments, driftwood frames, miniature carved objects, wooden hand tools, brass clamps, coils and inlaid medallions among a dense assortment of natural shell curls and polished pieces. Six clearer anchors: a teal enamel mug, a red cloth pincushion, a cream scallop dish, a blue folded cloth, a small green watering can and a pale wooden spatula. Cozy adult editorial storybook realism in extremely fine tactile gouache and colored pencil, warm coherent lighting, crisp zoomable detail, no people,text,labels,UI,borders,watermarks. Dense believable working environment with dozens of naturally overlapping small specific objects and recognizable animal/plant ornaments in its fittings. Most small forms share surrounding colors and textures, nestled among similarly curved or angled shapes, sometimes60–75% visible with defining feature exposed, or at oblique orientation. They must reward close inspection instead of appearing as isolated foreground showcase objects. Most objects60–130pixels, spread from top to bottom and sides, readable at zoom; no haze, blobby noise, transparent invisible forms or blank halos behind objects. The six clear anchors are only the easy discoveries; the smaller environment details should be genuinely well camouflaged among the natural clutter. Rich composition with depth, hundreds of fine material details, coherent perspective.
+Provenance: New original image, generated with the built-in image_gen tool. No reference image was supplied. The prompt below is the exact generation prompt. Source result path will be recorded after generation.
+
+BEGIN EXACT GENERATION PROMPT
+Use case: illustration-story.
+Asset type: original portrait scene for an adult cozy hidden-object browser game, 1024 by 1536 pixels, full bleed.
+
+Paint a welcoming seaside potting shed on a clear late-spring afternoon. The viewer stands inside the small shed, looking past pale honey-colored wooden rafters, a left workbench and a right shelving unit toward an open window and a glimpse of a quiet blue harbor. Terracotta pots, fresh green seedlings, geraniums, a few hanging herbs, baskets, simple drawers and weathered turquoise boards make a believable working garden room. A narrow central floor aisle creates depth. The illustration should feel detailed, warm and lived-in, with ordinary well-made belongings and clear lighting.
+
+Make the following twelve everyday objects physically believable and clearly recognizable, dispersed across the FULL height and width of the composition. Do not collect them together on the front table. Keep their distinguishing parts visible. Each object appears once. Use natural placement and only modest 10–25 percent overlap for a little searching:
+- A straw sunhat hanging high on the right wall, with its complete brim and crown readable.
+- A red wooden hand brush with visible bristles hanging high on the left wall.
+- A small round cream wall clock under the upper rafter, its round face clearly visible.
+- One yellow gardening glove draped beside plants at about upper-middle height, with its fingers readable.
+- A blue enamel mug on the far window ledge, with its handle visible.
+- A paper seed packet with a simple sunflower picture, tucked behind a small middle-distance pot; its top and most of the sunflower remain visible.
+- A steel hand trowel with a red wooden handle resting diagonally in a right-side wall basket around middle height, with its blade and handle identifiable.
+- A green metal watering can below the left workbench, partly behind a small pot but with its body, handle and long spout visible.
+- A ball of natural twine tucked in a low open cubby near the central aisle.
+- A pair of garden shears with orange handles on a low right stool, both handles and the metal blades visible.
+- One yellow rubber boot standing near the lower left, partly behind the leg of a crate, with toe and open cuff readable.
+- A white scallop shell on a low shelf to the right, with clear radiating ridges.
+
+Use rich but orderly environmental detail around these objects. These are solid familiar objects, not decorative fragments or carved symbols. Keep a natural lived-in composition, not a catalog or a display of collectibles. Give the props a modest readable scale, roughly 80–180 pixels across in the finished image, and enough quiet space around their silhouettes that a tight context crop can identify each one without another object dominating it. They can blend slightly into the room, but no microscopic objects, muddy brass clutter, heavy occlusion or ambiguous apparatus. A slightly harder search comes from objects being in different places and depths rather than from losing their identities.
+
+Style: polished detailed hand-painted realism with crisp, natural object edges, like an inviting adult illustrated puzzle book. Bright diffuse daylight and warm wood, gentle ocean blue and living greens; readable shadows without dark hiding spots. Avoid dreamy blur, bokeh, gritty brown patina and oversaturated visual noise. No people, no letters or readable labels, no arrows, no circles, no target outlines, no game UI, no watermark.
+END EXACT GENERATION PROMPT
+
+Built-in generated source: C:\Users\tensi\.codex\generated_images\01a19f5b-8be9-7540-b284-c955725fc294\exec-787e286f-b321-450d-a10a-6b633608cb41.png
+Workspace copy: artwork/samples-v3/source/053.png
+Generation type: new original composition; no reference image or CLI fallback used.

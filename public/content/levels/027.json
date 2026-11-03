@@ -3,8 +3,8 @@
   "chapter": 3,
   "title": "The enchanted book room",
   "targetCount": 14,
-  "art": "art/v2/027.webp",
-  "thumbnail": "art/v2/027-thumb.webp",
+  "art": "art/v3/027.webp",
+  "thumbnail": "art/v3/027-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l077-dragon-bookmark",
       "name": "Dragon bookmark",
-      "preview": "art/v2/027/dragon-bookmark.webp",
+      "preview": "art/v3/027/dragon-bookmark.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           354,
@@ -359,7 +360,8 @@
     {
       "id": "l077-candleholder",
       "name": "Ornate candleholder",
-      "preview": "art/v2/027/candleholder.webp",
+      "preview": "art/v3/027/candleholder.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           93,
@@ -778,7 +780,8 @@
     {
       "id": "l077-crystal-ink-bottle",
       "name": "Crystal ink bottle",
-      "preview": "art/v2/027/crystal-ink-bottle.webp",
+      "preview": "art/v3/027/crystal-ink-bottle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           215,
@@ -981,7 +984,8 @@
     {
       "id": "l077-red-quill",
       "name": "Red feather quill",
-      "preview": "art/v2/027/red-quill.webp",
+      "preview": "art/v3/027/red-quill.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           245,
@@ -1160,7 +1164,8 @@
     {
       "id": "l077-hourglass",
       "name": "Blue hourglass",
-      "preview": "art/v2/027/hourglass.webp",
+      "preview": "art/v3/027/hourglass.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           548,
@@ -1387,7 +1392,8 @@
     {
       "id": "l077-gold-key",
       "name": "Golden key",
-      "preview": "art/v2/027/gold-key.webp",
+      "preview": "art/v3/027/gold-key.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           186,
@@ -1710,7 +1716,8 @@
     {
       "id": "l077-reading-spectacles",
       "name": "Green spectacles",
-      "preview": "art/v2/027/reading-spectacles.webp",
+      "preview": "art/v3/027/reading-spectacles.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           115,
@@ -2009,7 +2016,8 @@
     {
       "id": "l077-wooden-owl",
       "name": "Wooden owl",
-      "preview": "art/v2/027/wooden-owl.webp",
+      "preview": "art/v3/027/wooden-owl.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           324,
@@ -2204,7 +2212,8 @@
     {
       "id": "l077-crescent-dish",
       "name": "Crescent dish",
-      "preview": "art/v2/027/crescent-dish.webp",
+      "preview": "art/v3/027/crescent-dish.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           476,
@@ -2375,7 +2384,8 @@
     {
       "id": "l077-tied-scroll",
       "name": "Ribbon-tied scroll",
-      "preview": "art/v2/027/tied-scroll.webp",
+      "preview": "art/v3/027/tied-scroll.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           279,
@@ -2674,7 +2684,8 @@
     {
       "id": "l077-orange-pear",
       "name": "Orange pear",
-      "preview": "art/v2/027/orange-pear.webp",
+      "preview": "art/v3/027/orange-pear.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           977,
@@ -2829,7 +2840,8 @@
     {
       "id": "l077-velvet-slipper",
       "name": "Purple velvet slipper",
-      "preview": "art/v2/027/velvet-slipper.webp",
+      "preview": "art/v3/027/velvet-slipper.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           857,
@@ -3000,7 +3012,8 @@
     {
       "id": "l077-paper-knife",
       "name": "Ivory paper knife",
-      "preview": "art/v2/027/paper-knife.webp",
+      "preview": "art/v3/027/paper-knife.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           319,
@@ -3155,7 +3168,8 @@
     {
       "id": "l077-rose-box",
       "name": "Rose keepsake box",
-      "preview": "art/v2/027/rose-box.webp",
+      "preview": "art/v3/027/rose-box.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           508,

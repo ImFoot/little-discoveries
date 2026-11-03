@@ -3,8 +3,8 @@
   "chapter": 1,
   "title": "The canal boat",
   "targetCount": 14,
-  "art": "art/v2/003.webp",
-  "thumbnail": "art/v2/003-thumb.webp",
+  "art": "art/v3/003.webp",
+  "thumbnail": "art/v3/003-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l053-mooring-hook",
       "name": "Iron mooring hook",
-      "preview": "art/v2/003/mooring-hook.webp",
+      "preview": "art/v3/003/mooring-hook.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           209,
@@ -391,7 +392,8 @@
     {
       "id": "l053-blue-teapot",
       "name": "Blue teapot",
-      "preview": "art/v2/003/blue-teapot.webp",
+      "preview": "art/v3/003/blue-teapot.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           284,
@@ -714,7 +716,8 @@
     {
       "id": "l053-postcard",
       "name": "Lighthouse postcard",
-      "preview": "art/v2/003/postcard.webp",
+      "preview": "art/v3/003/postcard.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           429,
@@ -773,7 +776,8 @@
     {
       "id": "l053-rope-fender",
       "name": "Red rope fender",
-      "preview": "art/v2/003/rope-fender.webp",
+      "preview": "art/v3/003/rope-fender.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           893,
@@ -1152,7 +1156,8 @@
     {
       "id": "l053-pocket-compass",
       "name": "Brass pocket compass",
-      "preview": "art/v2/003/pocket-compass.webp",
+      "preview": "art/v3/003/pocket-compass.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           711,
@@ -1507,7 +1512,8 @@
     {
       "id": "l053-wool-hat",
       "name": "Yellow wool hat",
-      "preview": "art/v2/003/wool-hat.webp",
+      "preview": "art/v3/003/wool-hat.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           0,
@@ -1718,7 +1724,8 @@
     {
       "id": "l053-enamel-dipper",
       "name": "Long-handled enamel dipper",
-      "preview": "art/v2/003/enamel-dipper.webp",
+      "preview": "art/v3/003/enamel-dipper.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           981,
@@ -1905,7 +1912,8 @@
     {
       "id": "l053-green-cord",
       "name": "Coiled green cord",
-      "preview": "art/v2/003/green-cord.webp",
+      "preview": "art/v3/003/green-cord.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           1,
@@ -2116,7 +2124,8 @@
     {
       "id": "l053-wooden-duck",
       "name": "Wooden duck",
-      "preview": "art/v2/003/wooden-duck.webp",
+      "preview": "art/v3/003/wooden-duck.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           23,
@@ -2311,7 +2320,8 @@
     {
       "id": "l053-striped-mug",
       "name": "Striped ceramic mug",
-      "preview": "art/v2/003/striped-mug.webp",
+      "preview": "art/v3/003/striped-mug.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           283,
@@ -2486,7 +2496,8 @@
     {
       "id": "l053-bottle-opener",
       "name": "Red-handled bottle opener",
-      "preview": "art/v2/003/bottle-opener.webp",
+      "preview": "art/v3/003/bottle-opener.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           74,
@@ -2785,7 +2796,8 @@
     {
       "id": "l053-jam-jar",
       "name": "Gingham-lid jam jar",
-      "preview": "art/v2/003/jam-jar.webp",
+      "preview": "art/v3/003/jam-jar.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           286,
@@ -2956,7 +2968,8 @@
     {
       "id": "l053-orange",
       "name": "Orange",
-      "preview": "art/v2/003/orange.webp",
+      "preview": "art/v3/003/orange.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           495,
@@ -3183,7 +3196,8 @@
     {
       "id": "l053-leaf-pendant",
       "name": "Silver leaf pendant",
-      "preview": "art/v2/003/leaf-pendant.webp",
+      "preview": "art/v3/003/leaf-pendant.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           910,

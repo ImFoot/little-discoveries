@@ -3,8 +3,8 @@
   "chapter": 5,
   "title": "The picnic basket",
   "targetCount": 10,
-  "art": "art/v2/045.webp",
-  "thumbnail": "art/v2/045-thumb.webp",
+  "art": "art/v3/045.webp",
+  "thumbnail": "art/v3/045-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l095-cherry-napkin",
       "name": "Cherry napkin",
-      "preview": "art/v2/045/cherry-napkin.webp",
+      "preview": "art/v3/045/cherry-napkin.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           41,
@@ -215,7 +216,8 @@
     {
       "id": "l095-bottle-stopper",
       "name": "Mushroom bottle stopper",
-      "preview": "art/v2/045/bottle-stopper.webp",
+      "preview": "art/v3/045/bottle-stopper.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           311,
@@ -418,7 +420,8 @@
     {
       "id": "l095-daisy-clip",
       "name": "Daisy hair clip",
-      "preview": "art/v2/045/daisy-clip.webp",
+      "preview": "art/v3/045/daisy-clip.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           454,
@@ -741,7 +744,8 @@
     {
       "id": "l095-green-pear",
       "name": "Green pear",
-      "preview": "art/v2/045/green-pear.webp",
+      "preview": "art/v3/045/green-pear.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           497,
@@ -952,7 +956,8 @@
     {
       "id": "l095-blue-mug",
       "name": "Blue enamel mug",
-      "preview": "art/v2/045/blue-mug.webp",
+      "preview": "art/v3/045/blue-mug.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           560,
@@ -1171,7 +1176,8 @@
     {
       "id": "l095-red-fan",
       "name": "Folded red fan",
-      "preview": "art/v2/045/red-fan.webp",
+      "preview": "art/v3/045/red-fan.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           514,
@@ -1374,7 +1380,8 @@
     {
       "id": "l095-wooden-knife",
       "name": "Wooden butter knife",
-      "preview": "art/v2/045/wooden-knife.webp",
+      "preview": "art/v3/045/wooden-knife.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           576,
@@ -1553,7 +1560,8 @@
     {
       "id": "l095-honey-jar",
       "name": "Little honey jar",
-      "preview": "art/v2/045/honey-jar.webp",
+      "preview": "art/v3/045/honey-jar.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           722,
@@ -1732,7 +1740,8 @@
     {
       "id": "l095-purple-mitten",
       "name": "Purple knitted mitten",
-      "preview": "art/v2/045/purple-mitten.webp",
+      "preview": "art/v3/045/purple-mitten.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           49,
@@ -2039,7 +2048,8 @@
     {
       "id": "l095-wooden-heart",
       "name": "Small wooden heart",
-      "preview": "art/v2/045/wooden-heart.webp",
+      "preview": "art/v3/045/wooden-heart.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           668,

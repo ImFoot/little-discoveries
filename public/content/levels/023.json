@@ -3,8 +3,8 @@
   "chapter": 3,
   "title": "The storybook bakery",
   "targetCount": 14,
-  "art": "art/v2/023.webp",
-  "thumbnail": "art/v2/023-thumb.webp",
+  "art": "art/v3/023.webp",
+  "thumbnail": "art/v3/023-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l073-star-biscuit",
       "name": "Star biscuit",
-      "preview": "art/v2/023/star-biscuit.webp",
+      "preview": "art/v3/023/star-biscuit.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           209,
@@ -159,7 +160,8 @@
     {
       "id": "l073-silver-whisk",
       "name": "Silver whisk",
-      "preview": "art/v2/023/silver-whisk.webp",
+      "preview": "art/v3/023/silver-whisk.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           290,
@@ -306,7 +308,8 @@
     {
       "id": "l073-striped-spoon",
       "name": "Candy-striped spoon",
-      "preview": "art/v2/023/striped-spoon.webp",
+      "preview": "art/v3/023/striped-spoon.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           861,
@@ -453,7 +456,8 @@
     {
       "id": "l073-fish-mold",
       "name": "Copper fish mold",
-      "preview": "art/v2/023/fish-mold.webp",
+      "preview": "art/v3/023/fish-mold.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           473,
@@ -616,7 +620,8 @@
     {
       "id": "l073-lavender-rolling-pin",
       "name": "Lavender rolling pin",
-      "preview": "art/v2/023/lavender-rolling-pin.webp",
+      "preview": "art/v3/023/lavender-rolling-pin.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           341,
@@ -899,7 +904,8 @@
     {
       "id": "l073-green-pear",
       "name": "Green pear",
-      "preview": "art/v2/023/green-pear.webp",
+      "preview": "art/v3/023/green-pear.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           102,
@@ -1046,7 +1052,8 @@
     {
       "id": "l073-oven-mitt",
       "name": "Yellow oven mitt",
-      "preview": "art/v2/023/oven-mitt.webp",
+      "preview": "art/v3/023/oven-mitt.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           713,
@@ -1209,7 +1216,8 @@
     {
       "id": "l073-sugar-jar",
       "name": "Blue sugar jar",
-      "preview": "art/v2/023/sugar-jar.webp",
+      "preview": "art/v3/023/sugar-jar.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           414,
@@ -1388,7 +1396,8 @@
     {
       "id": "l073-ribbon-bag",
       "name": "Ribbon-tied paper bag",
-      "preview": "art/v2/023/ribbon-bag.webp",
+      "preview": "art/v3/023/ribbon-bag.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           570,
@@ -1575,7 +1584,8 @@
     {
       "id": "l073-jam-jar",
       "name": "Strawberry jam jar",
-      "preview": "art/v2/023/jam-jar.webp",
+      "preview": "art/v3/023/jam-jar.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           714,
@@ -1754,7 +1764,8 @@
     {
       "id": "l073-pastry-wheel",
       "name": "Pastry wheel",
-      "preview": "art/v2/023/pastry-wheel.webp",
+      "preview": "art/v3/023/pastry-wheel.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           149,
@@ -2037,7 +2048,8 @@
     {
       "id": "l073-recipe-book",
       "name": "Open recipe book",
-      "preview": "art/v2/023/recipe-book.webp",
+      "preview": "art/v3/023/recipe-book.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           347,
@@ -2240,7 +2252,8 @@
     {
       "id": "l073-kitchen-bell",
       "name": "Brass kitchen bell",
-      "preview": "art/v2/023/kitchen-bell.webp",
+      "preview": "art/v3/023/kitchen-bell.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           484,
@@ -2435,7 +2448,8 @@
     {
       "id": "l073-pink-madeleine",
       "name": "Pink madeleine",
-      "preview": "art/v2/023/pink-madeleine.webp",
+      "preview": "art/v3/023/pink-madeleine.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           609,

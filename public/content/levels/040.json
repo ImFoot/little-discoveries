@@ -3,8 +3,8 @@
   "chapter": 4,
   "title": "The fireside armchair",
   "targetCount": 14,
-  "art": "art/v2/040.webp",
-  "thumbnail": "art/v2/040-thumb.webp",
+  "art": "art/v3/040.webp",
+  "thumbnail": "art/v3/040-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l090-embroidery-hoop",
       "name": "Daisy embroidery hoop",
-      "preview": "art/v2/040/embroidery-hoop.webp",
+      "preview": "art/v3/040/embroidery-hoop.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           60,
@@ -239,7 +240,8 @@
     {
       "id": "l090-biscuit-tin",
       "name": "Blue biscuit tin",
-      "preview": "art/v2/040/biscuit-tin.webp",
+      "preview": "art/v3/040/biscuit-tin.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           153,
@@ -362,7 +364,8 @@
     {
       "id": "l090-wooden-heart",
       "name": "Wooden heart",
-      "preview": "art/v2/040/wooden-heart.webp",
+      "preview": "art/v3/040/wooden-heart.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           277,
@@ -501,7 +504,8 @@
     {
       "id": "l090-purple-slipper",
       "name": "Purple wool slipper",
-      "preview": "art/v2/040/purple-slipper.webp",
+      "preview": "art/v3/040/purple-slipper.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           380,
@@ -712,7 +716,8 @@
     {
       "id": "l090-striped-mug",
       "name": "Red striped mug",
-      "preview": "art/v2/040/striped-mug.webp",
+      "preview": "art/v3/040/striped-mug.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           183,
@@ -875,7 +880,8 @@
     {
       "id": "l090-green-book",
       "name": "Green leather book",
-      "preview": "art/v2/040/green-book.webp",
+      "preview": "art/v3/040/green-book.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           536,
@@ -990,7 +996,8 @@
     {
       "id": "l090-candle-snuffer",
       "name": "Brass candle snuffer",
-      "preview": "art/v2/040/candle-snuffer.webp",
+      "preview": "art/v3/040/candle-snuffer.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           346,
@@ -1201,7 +1208,8 @@
     {
       "id": "l090-white-quill",
       "name": "White feather quill",
-      "preview": "art/v2/040/white-quill.webp",
+      "preview": "art/v3/040/white-quill.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           131,
@@ -1356,7 +1364,8 @@
     {
       "id": "l090-orange-case",
       "name": "Orange glasses case",
-      "preview": "art/v2/040/orange-case.webp",
+      "preview": "art/v3/040/orange-case.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           628,
@@ -1495,7 +1504,8 @@
     {
       "id": "l090-yellow-mitten",
       "name": "Yellow knitted mitten",
-      "preview": "art/v2/040/yellow-mitten.webp",
+      "preview": "art/v3/040/yellow-mitten.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           661,
@@ -1690,7 +1700,8 @@
     {
       "id": "l090-ceramic-bird",
       "name": "Blue ceramic bird",
-      "preview": "art/v2/040/ceramic-bird.webp",
+      "preview": "art/v3/040/ceramic-bird.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           507,
@@ -1885,7 +1896,8 @@
     {
       "id": "l090-pocket-watch",
       "name": "Silver pocket watch",
-      "preview": "art/v2/040/pocket-watch.webp",
+      "preview": "art/v3/040/pocket-watch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           736,
@@ -2072,7 +2084,8 @@
     {
       "id": "l090-pear-bottle",
       "name": "Pear-shaped glass bottle",
-      "preview": "art/v2/040/pear-bottle.webp",
+      "preview": "art/v3/040/pear-bottle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           697,
@@ -2267,7 +2280,8 @@
     {
       "id": "l090-pink-ribbon-spool",
       "name": "Pink ribbon spool",
-      "preview": "art/v2/040/pink-ribbon-spool.webp",
+      "preview": "art/v3/040/pink-ribbon-spool.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           714,

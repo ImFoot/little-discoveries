@@ -3,8 +3,8 @@
   "chapter": 4,
   "title": "The costume cupboard",
   "targetCount": 14,
-  "art": "art/v2/033.webp",
-  "thumbnail": "art/v2/033-thumb.webp",
+  "art": "art/v3/033.webp",
+  "thumbnail": "art/v3/033-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l083-velvet-mask",
       "name": "Velvet eye mask",
-      "preview": "art/v2/033/velvet-mask.webp",
+      "preview": "art/v3/033/velvet-mask.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           169,
@@ -327,7 +328,8 @@
     {
       "id": "l083-star-wand",
       "name": "Star wand",
-      "preview": "art/v2/033/star-wand.webp",
+      "preview": "art/v3/033/star-wand.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           78,
@@ -546,7 +548,8 @@
     {
       "id": "l083-blue-buckle",
       "name": "Oval blue buckle",
-      "preview": "art/v2/033/blue-buckle.webp",
+      "preview": "art/v3/033/blue-buckle.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           664,
@@ -685,7 +688,8 @@
     {
       "id": "l083-pointed-hat",
       "name": "Green pointed hat",
-      "preview": "art/v2/033/pointed-hat.webp",
+      "preview": "art/v3/033/pointed-hat.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           619,
@@ -912,7 +916,8 @@
     {
       "id": "l083-ballet-shoe",
       "name": "Pink ballet shoe",
-      "preview": "art/v2/033/ballet-shoe.webp",
+      "preview": "art/v3/033/ballet-shoe.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           53,
@@ -1227,7 +1232,8 @@
     {
       "id": "l083-feather-fan",
       "name": "Blue feather fan",
-      "preview": "art/v2/033/feather-fan.webp",
+      "preview": "art/v3/033/feather-fan.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           616,
@@ -1526,7 +1532,8 @@
     {
       "id": "l083-silver-bell",
       "name": "Silver handbell",
-      "preview": "art/v2/033/silver-bell.webp",
+      "preview": "art/v3/033/silver-bell.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           355,
@@ -1753,7 +1760,8 @@
     {
       "id": "l083-bow-tie",
       "name": "Red silk bow tie",
-      "preview": "art/v2/033/bow-tie.webp",
+      "preview": "art/v3/033/bow-tie.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           654,
@@ -1924,7 +1932,8 @@
     {
       "id": "l083-jeweled-crown",
       "name": "Jeweled crown",
-      "preview": "art/v2/033/jeweled-crown.webp",
+      "preview": "art/v3/033/jeweled-crown.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           644,
@@ -2287,7 +2296,8 @@
     {
       "id": "l083-lace-collar",
       "name": "White lace collar",
-      "preview": "art/v2/033/lace-collar.webp",
+      "preview": "art/v3/033/lace-collar.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           447,
@@ -2586,7 +2596,8 @@
     {
       "id": "l083-striped-mitten",
       "name": "Striped mitten",
-      "preview": "art/v2/033/striped-mitten.webp",
+      "preview": "art/v3/033/striped-mitten.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           638,
@@ -2813,7 +2824,8 @@
     {
       "id": "l083-rose-hat-box",
       "name": "Rose hat box",
-      "preview": "art/v2/033/rose-hat-box.webp",
+      "preview": "art/v3/033/rose-hat-box.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           565,
@@ -2968,7 +2980,8 @@
     {
       "id": "l083-butterfly-brooch",
       "name": "Pearl butterfly brooch",
-      "preview": "art/v2/033/butterfly-brooch.webp",
+      "preview": "art/v3/033/butterfly-brooch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           250,
@@ -3219,7 +3232,8 @@
     {
       "id": "l083-leather-purse",
       "name": "Brown leather purse",
-      "preview": "art/v2/033/leather-purse.webp",
+      "preview": "art/v3/033/leather-purse.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           714,

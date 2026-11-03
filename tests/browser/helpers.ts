@@ -5,7 +5,7 @@ import type {Catalog,Level,Point,Target,View} from '../../src/types';
 export const catalog=JSON.parse(readFileSync('public/content/catalog.json','utf8')) as Catalog;
 export const readLevel=(id:number)=>JSON.parse(readFileSync(`public/content/levels/${String(id).padStart(3,'0')}.json`,'utf8')) as Level;
 export const firstLevel=readLevel(1);
-export async function saved(page:Page){return page.evaluate(()=>JSON.parse(localStorage.getItem('little-discoveries.save.v2')!));}
+export async function saved(page:Page){return page.evaluate(()=>JSON.parse(localStorage.getItem('little-discoveries.save.v3')!));}
 export async function dismissIntro(page:Page){if(await page.getByRole('button',{name:'Let’s explore',exact:true}).isVisible())await page.getByRole('button',{name:'Let’s explore',exact:true}).click();}
 export async function ready(page:Page,id:number){await expect(page.locator('.play-heading h1')).toHaveText(catalog.levels[id-1].title);await expect(page.locator('#object-tray .object-card')).toHaveCount(catalog.levels[id-1].targetCount);}
 export async function start(page:Page,id=1){await page.goto(`/#scene/${id}`);await ready(page,id);await dismissIntro(page);}

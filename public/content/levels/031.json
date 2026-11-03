@@ -3,8 +3,8 @@
   "chapter": 4,
   "title": "The autumn doorstep",
   "targetCount": 12,
-  "art": "art/v2/031.webp",
-  "thumbnail": "art/v2/031-thumb.webp",
+  "art": "art/v3/031.webp",
+  "thumbnail": "art/v3/031-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l081-leaf-wreath",
       "name": "Autumn leaf wreath",
-      "preview": "art/v2/031/leaf-wreath.webp",
+      "preview": "art/v3/031/leaf-wreath.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           617,
@@ -599,7 +600,8 @@
     {
       "id": "l081-garden-snips",
       "name": "Garden snips",
-      "preview": "art/v2/031/garden-snips.webp",
+      "preview": "art/v3/031/garden-snips.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           103,
@@ -770,7 +772,8 @@
     {
       "id": "l081-striped-scarf",
       "name": "Striped autumn scarf",
-      "preview": "art/v2/031/striped-scarf.webp",
+      "preview": "art/v3/031/striped-scarf.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           874,
@@ -1125,7 +1128,8 @@
     {
       "id": "l081-copper-watering-can",
       "name": "Copper watering can",
-      "preview": "art/v2/031/copper-watering-can.webp",
+      "preview": "art/v3/031/copper-watering-can.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           539,
@@ -1320,7 +1324,8 @@
     {
       "id": "l081-enamel-mug",
       "name": "Blue enamel mug",
-      "preview": "art/v2/031/enamel-mug.webp",
+      "preview": "art/v3/031/enamel-mug.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           196,
@@ -1515,7 +1520,8 @@
     {
       "id": "l081-green-pear",
       "name": "Green pear",
-      "preview": "art/v2/031/green-pear.webp",
+      "preview": "art/v3/031/green-pear.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           385,
@@ -1654,7 +1660,8 @@
     {
       "id": "l081-wooden-squirrel",
       "name": "Wooden squirrel",
-      "preview": "art/v2/031/wooden-squirrel.webp",
+      "preview": "art/v3/031/wooden-squirrel.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           515,
@@ -2017,7 +2024,8 @@
     {
       "id": "l081-purple-tin",
       "name": "Purple seed tin",
-      "preview": "art/v2/031/purple-tin.webp",
+      "preview": "art/v3/031/purple-tin.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           716,
@@ -2140,7 +2148,8 @@
     {
       "id": "l081-folded-umbrella",
       "name": "Folded cream umbrella",
-      "preview": "art/v2/031/folded-umbrella.webp",
+      "preview": "art/v3/031/folded-umbrella.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           815,
@@ -2527,7 +2536,8 @@
     {
       "id": "l081-garden-gloves",
       "name": "Brown garden gloves",
-      "preview": "art/v2/031/garden-gloves.webp",
+      "preview": "art/v3/031/garden-gloves.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           15,
@@ -2810,7 +2820,8 @@
     {
       "id": "l081-leaf-plaque",
       "name": "Brass leaf plaque",
-      "preview": "art/v2/031/leaf-plaque.webp",
+      "preview": "art/v3/031/leaf-plaque.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           923,
@@ -3053,7 +3064,8 @@
     {
       "id": "l081-checked-cushion",
       "name": "Yellow checked cushion",
-      "preview": "art/v2/031/checked-cushion.webp",
+      "preview": "art/v3/031/checked-cushion.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           0,

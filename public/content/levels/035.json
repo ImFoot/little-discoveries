@@ -3,8 +3,8 @@
   "chapter": 4,
   "title": "A rainy window",
   "targetCount": 10,
-  "art": "art/v2/035.webp",
-  "thumbnail": "art/v2/035-thumb.webp",
+  "art": "art/v3/035.webp",
+  "thumbnail": "art/v3/035-thumb.webp",
   "width": 1024,
   "height": 1536,
   "status": "reviewed",
@@ -12,7 +12,8 @@
     {
       "id": "l085-umbrella-brooch",
       "name": "Umbrella brooch",
-      "preview": "art/v2/035/umbrella-brooch.webp",
+      "preview": "art/v3/035/umbrella-brooch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           354,
@@ -343,7 +344,8 @@
     {
       "id": "l085-striped-mug",
       "name": "Red checked mug",
-      "preview": "art/v2/035/striped-mug.webp",
+      "preview": "art/v3/035/striped-mug.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           483,
@@ -538,7 +540,8 @@
     {
       "id": "l085-wool-slipper",
       "name": "Purple wool slipper",
-      "preview": "art/v2/035/wool-slipper.webp",
+      "preview": "art/v3/035/wool-slipper.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           649,
@@ -765,7 +768,8 @@
     {
       "id": "l085-green-book",
       "name": "Green book",
-      "preview": "art/v2/035/green-book.webp",
+      "preview": "art/v3/035/green-book.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           306,
@@ -888,7 +892,8 @@
     {
       "id": "l085-pocket-watch",
       "name": "Brass pocket watch",
-      "preview": "art/v2/035/pocket-watch.webp",
+      "preview": "art/v3/035/pocket-watch.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           175,
@@ -1139,7 +1144,8 @@
     {
       "id": "l085-spectacles-case",
       "name": "Yellow spectacles case",
-      "preview": "art/v2/035/spectacles-case.webp",
+      "preview": "art/v3/035/spectacles-case.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           644,
@@ -1278,7 +1284,8 @@
     {
       "id": "l085-glass-vase",
       "name": "Pear-shaped glass vase",
-      "preview": "art/v2/035/glass-vase.webp",
+      "preview": "art/v3/035/glass-vase.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           684,
@@ -1481,7 +1488,8 @@
     {
       "id": "l085-wooden-heart",
       "name": "Carved wooden heart",
-      "preview": "art/v2/035/wooden-heart.webp",
+      "preview": "art/v3/035/wooden-heart.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           26,
@@ -1668,7 +1676,8 @@
     {
       "id": "l085-white-feather",
       "name": "White feather",
-      "preview": "art/v2/035/white-feather.webp",
+      "preview": "art/v3/035/white-feather.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           110,
@@ -1975,7 +1984,8 @@
     {
       "id": "l085-blue-mitten",
       "name": "Blue knitted mitten",
-      "preview": "art/v2/035/blue-mitten.webp",
+      "preview": "art/v3/035/blue-mitten.webp",
+      "previewMode": "cutout",
       "outline": [
         [
           93,
