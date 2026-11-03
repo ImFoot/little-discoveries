@@ -10,8 +10,8 @@ const check=(valid,message)=>{if(!valid)errors.push(message);};
 check(catalog.levels.length===requiredScenes,`Exactly ${requiredScenes} catalog entries are required.`);
 check(catalog.levels.reduce((n,l)=>n+l.targetCount,0)===requiredPlacements,`Target counts must total ${requiredPlacements}.`);
 check(catalog.chapters.length===Math.ceil(requiredScenes/10),'Chapter count does not match the active collection.');
-check(catalog.revision===3&&requiredScenes===54&&requiredPlacements===714,'This release must contain 50 retained scenes and four samples.');
-check(await readFile('public/content/v3/catalog-54.json','utf8')===await readFile('public/content/catalog.json','utf8'),'Release catalog alias differs from canonical catalog.');
+check(catalog.revision===3&&requiredScenes===55&&requiredPlacements===726,'This release must contain 50 retained scenes and five samples.');
+check(await readFile('public/content/v3/catalog-55.json','utf8')===await readFile('public/content/catalog.json','utf8'),'Release catalog alias differs from canonical catalog.');
 let ready=0,placements=0,phone=0;
 const artHashes=new Set();
 function simplePolygon(points){

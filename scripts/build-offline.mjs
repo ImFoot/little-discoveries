@@ -5,10 +5,10 @@ const hash=buffer=>createHash('sha256').update(buffer).digest('hex').slice(0,16)
 async function walk(dir){const out=[];for(const f of await readdir(dir,{withFileTypes:true})){const p=`${dir}/${f.name}`;if(f.isDirectory())out.push(...await walk(p));else out.push(p);}return out;}
 const catalog=JSON.parse(await readFile('dist/content/catalog.json','utf8'));
 const contentPrefix='content/v3';
-const manifestPath='offline-manifest-v3-54.json',entry='app-v3-54.html';
+const manifestPath='offline-manifest-v3-55.json',entry='app-v3-55.html';
 await writeFile('dist/'+entry,await readFile('dist/index.html'));
 const files=await walk('dist');
-const shell=files.sort().filter(p=>!p.startsWith('dist/art/')&&!p.startsWith('dist/content/levels/')&&!p.startsWith('dist/content/v3/levels/')&&!p.endsWith('/sw.js')&&!/\/offline-manifest[^/]*\.json$/.test(p)&&!['dist/index.html','dist/app-v3.html','dist/content/catalog.json','dist/content/v3/catalog.json'].includes(p)).map(p=>p.slice(5));
+const shell=files.sort().filter(p=>!p.startsWith('dist/art/')&&!p.startsWith('dist/content/levels/')&&!p.startsWith('dist/content/v3/levels/')&&!p.endsWith('/sw.js')&&!/\/offline-manifest[^/]*\.json$/.test(p)&&!['dist/index.html','dist/app-v3.html','dist/app-v3-54.html','dist/content/catalog.json','dist/content/v3/catalog.json','dist/content/v3/catalog-54.json'].includes(p)).map(p=>p.slice(5));
 const chapters=[];
 const allData=[];
 const compatibleData=[],compatiblePaths=new Set();
@@ -19,10 +19,10 @@ for(const chapter of catalog.chapters){
   const level=JSON.parse(await readFile(`dist/${path}`,'utf8'));
   paths.add(path);paths.add(level.art);paths.add(level.thumbnail);
   for(const t of level.targets)paths.add(t.preview);
-  // Recompute the preceding 53-scene build's content hash from these bytes.
+  // Recompute the preceding 54-scene build's content hash from these bytes.
   // A matching existing cache is safe to reuse only when every old asset is
   // unchanged, including definitions and previews.
-  if(meta.id<=53)for(const file of [path,level.art,level.thumbnail,...level.targets.map(t=>t.preview)])compatiblePaths.add(file);
+  if(meta.id<=54)for(const file of [path,level.art,level.thumbnail,...level.targets.map(t=>t.preview)])compatiblePaths.add(file);
   readyLevels++;
  }
  const assets=[];
@@ -74,7 +74,7 @@ self.addEventListener('fetch',event=>{
  // incompatible definitions. Existing v3 scene/art paths remain compatible.
  // This runs in an active fetch event, avoiding navigation/activation
  // lifecycle differences in browsers.
- if(request.mode!=='navigate'&&event.clientId&&(relative==='content/v3/catalog.json'||relative.startsWith('content/levels/')||relative.startsWith('content/v2/')||relative.startsWith('art/v2/')||legacyArt)){
+ if(request.mode!=='navigate'&&event.clientId&&(relative==='content/v3/catalog.json'||relative==='content/v3/catalog-54.json'||relative.startsWith('content/levels/')||relative.startsWith('content/v2/')||relative.startsWith('art/v2/')||legacyArt)){
   event.waitUntil((async()=>{const client=await self.clients.get(event.clientId);if(client&&client.url.startsWith(self.registration.scope))await client.navigate(client.url);})().catch(()=>{}));
   event.respondWith(Promise.resolve(new Response('The revised collection is opening. Your discoveries are saved.',{status:409})));
   return;

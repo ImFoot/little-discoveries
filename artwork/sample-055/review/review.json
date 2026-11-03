@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-03T09:41:34.321Z",
+  "scene": 55,
+  "reference": 54,
+  "playerFeedbackOnReference": "Better; request a little more challenge in one additional level",
+  "sourceTool": "built-in image_gen",
+  "method": "Natural pantry first, select clear actual objects afterward; hand-traced visible contours independent from unchanged source crops",
+  "targets": 12,
+  "previewMode": "context",
+  "sourceAndOutlineReview": "All twelve source crops and final contour overlays inspected enlarged, including basket/drawer/book/cloth occlusion and jug/whisk openings",
+  "actualTrayProof": {
+    "viewportWidth": 375,
+    "cardWidth": 72.75,
+    "cardHeight": 61,
+    "previewHeight": 32,
+    "allNamesFitTwoLines": true,
+    "allTwelveInspected": true
+  },
+  "physicalIPhone": false,
+  "playerAccepted": false,
+  "remainingQuestion": "Intended-player assessment of the slight challenge increase and preview clarity on the actual phone",
+  "files": {
+    "prompt": "artwork/sample-055/prompts/055.txt",
+    "source": "artwork/sample-055/source/055.png",
+    "annotations": "artwork/sample-055/annotations/055.json",
+    "proof": "artwork/sample-055/review/phone-proof.png",
+    "interactiveProofCommand": "node scripts/review-level.mjs 55"
+  }
+}

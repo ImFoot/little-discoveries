@@ -22,3 +22,7 @@ The smallest object, the blue lidded tin, is deliberately recessed and partly co
 ## Further control
 
 Layered authoring could eventually combine a background, consistent object sprites and foreground occluders, then flatten them into the existing scene format. This would allow deliberate repositioning without a renderer rewrite, but perspective, lighting, contact shadows and occlusion must match. That workflow has not been implemented or validated here. The scene-first process and actual-size proof are the concrete improvements used for this level.
+
+## Fifth sample
+
+After the player described 54 as better and requested a little more challenge, scene 55 (The baker’s pantry) continued the same process. Its target selection favors meaningful partial overlap: a rolling pin and flower tin behind a drawer front, a small jug in a basket, a flask partly covered by cloth, and utensils among related tools. Names are based on visible evidence; an ambiguous arch above the copper pot was not assumed to belong to it. Sources, prompts, individual crop/contour proofs and review records are in artwork/sample-055. Generate its standalone phone proof with `node scripts/review-level.mjs 55`.

@@ -25,6 +25,7 @@ export class SceneView {
   private hintTimer?:number;
   private showMarkers=true;
   private started=false;
+  private paused=false;
   private disposed=false;
   private loadToken=0;
   constructor(private host:HTMLElement, private onFind:(target:Target)=>void,private onView:(view:View)=>void,private resolve:(path:string)=>string,private onPicturePaused?:()=>void){}
@@ -32,7 +33,11 @@ export class SceneView {
     await this.app.init({width:Math.max(this.host.clientWidth,1),height:Math.max(this.host.clientHeight,1),resolution:Math.min(window.devicePixelRatio||1,2),autoDensity:true,antialias:true,backgroundAlpha:0,preference:'webgl',autoStart:false,powerPreference:'low-power'});
     this.app.stage.addChild(this.world);this.world.addChild(this.marks,this.effect);
     this.host.appendChild(this.app.canvas);
-    this.app.canvas.addEventListener('webglcontextlost',event=>{if(this.disposed)return;event.preventDefault();this.onPicturePaused?.();});
+    this.app.canvas.addEventListener('webglcontextlost',event=>{
+      if(this.disposed)return;
+      event.preventDefault();this.paused=true;this.resetGesture();
+      this.onPicturePaused?.();
+    });
     this.app.canvas.setAttribute('aria-label','Illustrated scene. Drag to explore, pinch to zoom, or use the zoom buttons.');
     this.app.canvas.setAttribute('role','img');
     this.host.addEventListener('pointerdown',this.down);
@@ -67,7 +72,7 @@ export class SceneView {
     if(old&&old!==path) await Assets.unload(old);
   }
   private resize(){
-    if(!this.started) return;
+    if(!this.started||this.paused) return;
     const w=this.host.clientWidth,h=this.host.clientHeight;if(w<1||h<1) return;
     this.app.renderer.resize(w,h);this.apply();
   }
@@ -85,7 +90,7 @@ export class SceneView {
     if(notify)this.onView({...this.view});
   }
   private draw(){
-    if(!this.level) return;
+    if(!this.level||this.paused) return;
     this.marks.clear();this.effect.clear();
     const s=this.scale;
     if(this.showMarkers) for(const target of this.level.targets){
@@ -108,9 +113,9 @@ export class SceneView {
     this.app.render();
   }
   setFound(found:string[],markers=this.showMarkers){this.found=new Set(found);this.showMarkers=markers;if(this.selected&&this.found.has(this.selected.id))this.selected=undefined;if(this.broad&&this.found.has(this.broad.id))this.broad=undefined;this.draw();}
-  fit(){this.view={x:.5,y:.5,zoom:1};this.apply();}
+  fit(){if(this.paused)return;this.view={x:.5,y:.5,zoom:1};this.apply();}
   zoom(factor:number,anchor?:Point){
-    if(!this.level)return;
+    if(!this.level||this.paused)return;
     const a=anchor??[this.host.clientWidth/2,this.host.clientHeight/2];
     const before=this.toWorld(a);this.view.zoom=Math.min(8,Math.max(1,this.view.zoom*factor));
     const s=Math.min(this.host.clientWidth/this.level.width,this.host.clientHeight/this.level.height)*this.view.zoom;
@@ -132,7 +137,10 @@ export class SceneView {
   private local(e:{clientX:number;clientY:number}):Point{const r=this.host.getBoundingClientRect();return[e.clientX-r.left,e.clientY-r.top];}
   private toWorld(p:Point):Point{return[(p[0]-this.world.x)/this.scale,(p[1]-this.world.y)/this.scale];}
   private down=(e:PointerEvent)=>{
-    if(e.button!==0||!this.level)return;
+    // Recovery controls live inside the viewport. Their pointer events must
+    // never start a scene gesture or discover an object behind the overlay.
+    if(e.button!==0||!this.level||this.paused||this.disposed)return;
+    if(e.target!==this.host&&e.target!==this.app.canvas)return;
     e.preventDefault();this.host.focus({preventScroll:true});
     this.host.setPointerCapture(e.pointerId);
     const [x,y]=this.local(e);this.pointers.set(e.pointerId,{x,y,startX:x,startY:y});
@@ -172,7 +180,7 @@ export class SceneView {
   private resetGesture(){this.pointers.clear();this.gesture=false;this.moved=false;this.pinching=false;}
   private wheel=(e:WheelEvent)=>{e.preventDefault();this.zoom(Math.exp(-e.deltaY*.002),this.local(e));};
   private key=(e:KeyboardEvent)=>{
-    if(!this.level)return;
+    if(!this.level||this.paused)return;
     if(['+','=','-','0','ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key))e.preventDefault();
     if(e.key==='+'||e.key==='=')this.zoom(1.4);
     else if(e.key==='-')this.zoom(1/1.4);

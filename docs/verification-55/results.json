@@ -1,0 +1,326 @@
+{
+  "date": "2026-11-03T09:50:48.527Z",
+  "scope": "One appended sample, scene55. Prior54 scenes/714 placements unchanged; earlier exhaustive702 tour in verification-v3 and twelve-object54 tour in verification-54.",
+  "scenes": 55,
+  "placements": 726,
+  "maxTargets": 15,
+  "unitTests": 25,
+  "browserCases": [
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "old Safari progress follows its picture from 72 to 22 without double migration",
+      "project": "chromium-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "an original cached tab upgrades on reload and preserves discoveries",
+      "project": "chromium-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "a complete chapter works offline, detects missing art and repairs without losing finds",
+      "project": "chromium-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "an interrupted chapter download resumes without discarding cached files or progress",
+      "project": "chromium-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "old Safari progress follows its picture from 72 to 22 without double migration",
+      "project": "webkit-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "an original cached tab upgrades on reload and preserves discoveries",
+      "project": "webkit-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "a complete chapter works offline, detects missing art and repairs without losing finds",
+      "project": "webkit-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "an interrupted chapter download resumes without discarding cached files or progress",
+      "project": "webkit-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "real taps, offscreen tray targets, help, resume and replay preserve the gameplay loop",
+      "project": "chromium-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "drag and pinch never collect; compact portrait and landscape controls stay reachable",
+      "project": "chromium-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "five clear samples render; rejected scenes are absent from the catalog",
+      "project": "chromium-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "backup export, invalid import preservation, and confirmed restore",
+      "project": "chromium-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "service worker restores a visited scene with networking disabled",
+      "project": "chromium-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "real taps, offscreen tray targets, help, resume and replay preserve the gameplay loop",
+      "project": "webkit-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "drag and pinch never collect; compact portrait and landscape controls stay reachable",
+      "project": "webkit-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "five clear samples render; rejected scenes are absent from the catalog",
+      "project": "webkit-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "backup export, invalid import preservation, and confirmed restore",
+      "project": "webkit-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "service worker restores a visited scene with networking disabled",
+      "project": "webkit-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "revision two updates preserve level 24 and do not transfer rejected finds to sample 51",
+      "project": "chromium-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "all five samples and their unchanged source previews download as one complete offline set",
+      "project": "chromium-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "all twelve new sample objects can be revealed, touched and saved without duplicate credit",
+      "project": "chromium-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "normal reload bypasses an installed 54-scene cache-first catalog and preserves version-three finds",
+      "project": "chromium-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "revision two updates preserve level 24 and do not transfer rejected finds to sample 51",
+      "project": "webkit-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "all five samples and their unchanged source previews download as one complete offline set",
+      "project": "webkit-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "all twelve new sample objects can be revealed, touched and saved without duplicate credit",
+      "project": "webkit-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-browser.json",
+      "title": "normal reload bypasses an installed 54-scene cache-first catalog and preserves version-three finds",
+      "project": "webkit-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-performance.json",
+      "title": "a cold scene fits the transfer and loading budgets at an emulated 10 Mbps",
+      "project": "chromium-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-performance.json",
+      "title": "a valid touch gives feedback within 100 ms and picture recovery preserves finds",
+      "project": "chromium-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-performance.json",
+      "title": "a cold scene fits the transfer and loading budgets at an emulated 10 Mbps",
+      "project": "webkit-phone",
+      "status": "expected"
+    },
+    {
+      "run": ".cache/sample55-performance.json",
+      "title": "a valid touch gives feedback within 100 ms and picture recovery preserves finds",
+      "project": "webkit-phone",
+      "status": "expected"
+    }
+  ],
+  "metrics": [
+    {
+      "project": "chromium-phone",
+      "name": "sample-55-collection.json",
+      "scene": 55,
+      "placements": 12,
+      "engine": "chromium-phone",
+      "physicalIPhone": false
+    },
+    {
+      "project": "webkit-phone",
+      "name": "sample-55-collection.json",
+      "scene": 55,
+      "placements": 12,
+      "engine": "webkit-phone",
+      "physicalIPhone": false
+    },
+    {
+      "project": "chromium-phone",
+      "name": "emulated-loading.json",
+      "playableMs": 1759,
+      "bytes": 1057685,
+      "downloadMbps": 10,
+      "latencyMs": 40,
+      "measurement": "Aggregate HTTP response payloads, including page, Pixi worker and service worker; picture and all target previews ready.",
+      "physicalIPhone": false
+    },
+    {
+      "project": "chromium-phone",
+      "name": "emulated-touch-feedback.json",
+      "scene": 55,
+      "feedbackMs": 3.5,
+      "physicalIPhone": false
+    },
+    {
+      "project": "webkit-phone",
+      "name": "emulated-loading.json",
+      "playableMs": 2300,
+      "bytes": 1226699,
+      "downloadMbps": 10,
+      "latencyMs": 40,
+      "measurement": "Aggregate HTTP response payloads, including page, Pixi worker and service worker; picture and all target previews ready.",
+      "physicalIPhone": false
+    },
+    {
+      "project": "webkit-phone",
+      "name": "emulated-touch-feedback.json",
+      "scene": 55,
+      "feedbackMs": 3,
+      "physicalIPhone": false
+    }
+  ],
+  "content": {
+    "catalogRevision": 3,
+    "catalogScenes": 55,
+    "requiredPlacements": 726,
+    "illustratedScenes": 55,
+    "authoredPlacements": 726,
+    "actualIPhoneReviewed": 0,
+    "errors": [],
+    "warnings": []
+  },
+  "retained": {
+    "date": "2026-11-03T09:47:17.018Z",
+    "baseline": "53f8423",
+    "retainedScenes": 54,
+    "retainedPlacements": 714,
+    "identicalFiles": 1092,
+    "sourcePngs": 54,
+    "sourceAnnotations": 54,
+    "prompts": 54,
+    "canonicalLevels": 54,
+    "runtimeLevels": 54,
+    "sceneWebps": 54,
+    "thumbnails": 54,
+    "previews": 714,
+    "catalogEntriesUnchanged": true,
+    "verified": true
+  },
+  "staticArchive": {
+    "catalogRevision": 3,
+    "created": "2026-11-03T09:50:24.4890961Z",
+    "file": "LittleDiscoveries-static.zip",
+    "bytes": 41593268,
+    "sha256": "78a19d7ee17399da472d70a2249ac985b1df1e7087abcad8bdae985584833b1d",
+    "counts": {
+      "Scenes": 55,
+      "Previews": 726,
+      "RuntimeLevels": 55,
+      "Catalogs": 4
+    }
+  },
+  "buildVersion": "d9c9cc4b4e85c65a",
+  "contentVersion": "982742b92f4967cf",
+  "compatiblePreviousContentVersion": "2ded88050d338ed4",
+  "offlineChapters": [
+    {
+      "id": 1,
+      "scenes": 10,
+      "files": 164,
+      "bytes": 7783386
+    },
+    {
+      "id": 2,
+      "scenes": 10,
+      "files": 164,
+      "bytes": 7595216
+    },
+    {
+      "id": 3,
+      "scenes": 10,
+      "files": 164,
+      "bytes": 8120686
+    },
+    {
+      "id": 4,
+      "scenes": 10,
+      "files": 164,
+      "bytes": 7731884
+    },
+    {
+      "id": 5,
+      "scenes": 10,
+      "files": 160,
+      "bytes": 7478115
+    },
+    {
+      "id": 6,
+      "scenes": 5,
+      "files": 75,
+      "bytes": 4534982
+    }
+  ],
+  "physicalIPhoneTested": false,
+  "playerAccepted": false,
+  "correctedIssue": "The initial graphics-recovery check found a control click also collecting an underlying object. Scene input now pauses on context loss and excludes overlay controls. Final browser and performance reports pass after the fix."
+}

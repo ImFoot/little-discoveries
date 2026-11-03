@@ -1,7 +1,7 @@
 {
   "revision": 3,
-  "requiredScenes": 54,
-  "requiredPlacements": 714,
+  "requiredScenes": 55,
+  "requiredPlacements": 726,
   "chapters": [
     {
       "id": 1,
@@ -35,7 +35,7 @@
     },
     {
       "id": 6,
-      "title": "Four samples to try",
+      "title": "Five samples to try",
       "subtitle": "Familiar little things, tucked a little further away.",
       "color": "#819475"
     }
@@ -1459,6 +1459,32 @@
       ],
       "sceneKey": "sample3-054",
       "targetPrefix": "sample3-054",
+      "sampleLevel": true
+    },
+    {
+      "id": 55,
+      "chapter": 6,
+      "title": "The baker’s pantry",
+      "targetCount": 12,
+      "sample": "Look among pantry shelves, drawers and picnic things; familiar objects tucked a little further away.",
+      "thumbnail": "art/v3/055-thumb.webp",
+      "status": "reviewed",
+      "targetIds": [
+        "sample3-055-copper-pot",
+        "sample3-055-whisk",
+        "sample3-055-fluted-mould",
+        "sample3-055-mortar-pestle",
+        "sample3-055-yellow-crock",
+        "sample3-055-gingham-jam-jar",
+        "sample3-055-little-cream-jug",
+        "sample3-055-metal-flask",
+        "sample3-055-blue-floral-tin",
+        "sample3-055-rolling-pin",
+        "sample3-055-flower-tin",
+        "sample3-055-floral-milk-jug"
+      ],
+      "sceneKey": "sample3-055",
+      "targetPrefix": "sample3-055",
       "sampleLevel": true
     }
   ]
