@@ -5,6 +5,7 @@ const json=async path=>JSON.parse((await readFile(path,'utf8')).replace(/^\uFEFF
 const reportPaths=process.argv.slice(2);
 if(!reportPaths.length)throw Error('Pass the revision-3 browser reports, in chronological order.');
 const content=await json('.cache/r3-content.json'),unit=await json('.cache/r3-unit.json'),catalog=await json('public/content/catalog.json'),manifest=await json('dist/offline-manifest.json');
+if(catalog.requiredScenes!==53)throw Error('This historical writer records the original three-sample release only. Current append evidence is in docs/verification-54.');
 const archive=await json('.cache/archive-info.json');
 const retained=await json('.cache/r3-retained.json');
 if(!retained.verified||retained.identicalFiles!==866)throw Error('Retained-picture comparison must pass.');

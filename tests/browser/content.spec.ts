@@ -4,6 +4,7 @@ import {writeArtifact} from '../../scripts/artifact-io.mjs';
 import {catalog,firstLevel,start,ready,readLevel,dismissIntro,targetCoordinates,assist} from './helpers';
 import {freshSave,newAttempt} from '../../src/save';
 import legacy from '../../src/data/legacy-catalog-v1.json' with {type:'json'};
+import {offlineManifestUrl} from '../../src/content';
 const authored=catalog.levels.filter(l=>l.status==='reviewed');
 
 test('old Safari progress follows its picture from 72 to 22 without double migration',async({page})=>{
@@ -58,7 +59,7 @@ test('a complete chapter works offline, detects missing art and repairs without 
  const openChapter=async()=>{await page.getByRole('button',{name:'Open settings',exact:true}).click();await page.getByRole('button',{name:`1. ${catalog.chapters[0].title}`,exact:true}).click();};
  await openChapter();await page.getByRole('button',{name:/^(Keep this chapter offline|Resume download)$/}).click();await expect(page.getByText('Available offline',{exact:true})).toBeVisible({timeout:60000});await page.getByRole('button',{name:'Close panel',exact:true}).click();await context.setOffline(true);
  for(let id=1;id<=10;id++){await page.goto(`/#scene/${id}`);await ready(page,id);await expect(page.locator('#picture canvas')).toBeVisible();await expect.poll(()=>page.locator('#object-tray img').evaluateAll(imgs=>imgs.every(i=>(i as HTMLImageElement).complete&&(i as HTMLImageElement).naturalWidth>0))).toBe(true);if(id===5){await assist(page,readLevel(5).targets[0].name);await expect(page.locator('#progress')).toHaveText(`1 / ${catalog.levels[4].targetCount}`);}}
- expect(await page.evaluate(async art=>{const m=await(await fetch('./offline-manifest-v3.json')).json(),cache=await caches.open(`little-discoveries-content-${m.contentVersion}`);return cache.delete(new URL(art,location.href).href);},readLevel(5).art)).toBe(true);
+ expect(await page.evaluate(async({art,manifest})=>{const m=await(await fetch(manifest)).json(),cache=await caches.open(`little-discoveries-content-${m.contentVersion}`);return cache.delete(new URL(art,location.href).href);},{art:readLevel(5).art,manifest:offlineManifestUrl})).toBe(true);
  await page.goto('/#scene/5');await expect(page.getByRole('button',{name:'Try again',exact:true})).toBeVisible();await expect(page.getByText('This picture couldn’t open. Reconnect and tap Try again. Your discoveries are safe.',{exact:true})).toBeVisible();await expect(page.locator('#progress')).toHaveText(`1 / ${catalog.levels[4].targetCount}`);
  await openChapter();await expect(page.getByText('Available offline',{exact:true})).toHaveCount(0);await expect(page.getByRole('button',{name:'Resume download',exact:true})).toBeVisible();await context.setOffline(false);await page.getByRole('button',{name:'Resume download',exact:true}).click();await expect(page.getByText('Available offline',{exact:true})).toBeVisible({timeout:60000});await page.getByRole('button',{name:'Close panel',exact:true}).click();await page.getByRole('button',{name:'Try again',exact:true}).click();await ready(page,5);await expect(page.locator('#progress')).toHaveText(`1 / ${catalog.levels[4].targetCount}`);
 });

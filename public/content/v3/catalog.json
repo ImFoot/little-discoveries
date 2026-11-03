@@ -1,7 +1,7 @@
 {
   "revision": 3,
-  "requiredScenes": 53,
-  "requiredPlacements": 702,
+  "requiredScenes": 54,
+  "requiredPlacements": 714,
   "chapters": [
     {
       "id": 1,
@@ -35,7 +35,7 @@
     },
     {
       "id": 6,
-      "title": "Three samples to try",
+      "title": "Four samples to try",
       "subtitle": "Familiar little things, tucked a little further away.",
       "color": "#819475"
     }
@@ -1433,6 +1433,32 @@
       ],
       "sceneKey": "sample3-053",
       "targetPrefix": "sample3-053",
+      "sampleLevel": true
+    },
+    {
+      "id": 54,
+      "chapter": 6,
+      "title": "The village flower shop",
+      "targetCount": 12,
+      "sample": "A fuller working flower shop, with objects nestled among shelves, baskets and cloth.",
+      "thumbnail": "art/v3/054-thumb.webp",
+      "status": "reviewed",
+      "targetIds": [
+        "sample3-054-blue-throw",
+        "sample3-054-flower-picture",
+        "sample3-054-brass-mister",
+        "sample3-054-blue-lidded-tin",
+        "sample3-054-floral-card",
+        "sample3-054-green-tin",
+        "sample3-054-floral-teacup",
+        "sample3-054-metal-watering-can",
+        "sample3-054-striped-jug",
+        "sample3-054-pruning-shears",
+        "sample3-054-floral-glove",
+        "sample3-054-blue-paper-roll"
+      ],
+      "sceneKey": "sample3-054",
+      "targetPrefix": "sample3-054",
       "sampleLevel": true
     }
   ]

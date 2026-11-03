@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-03T08:20:19.818Z",
+  "scene": 54,
+  "sourceTool": "built-in image_gen",
+  "method": "Generate natural environment first, select existing objects afterward; manually trace independent outlines; preserve unmasked source crops",
+  "targets": 12,
+  "previewMode": "context",
+  "sourceAndOutlineReview": "Every target inspected enlarged, final watering-can correction reinspected",
+  "actualTrayProof": {
+    "viewportWidth": 375,
+    "cardWidth": 72.75,
+    "cardHeight": 61,
+    "previewHeight": 32,
+    "allNamesFitTwoLines": true,
+    "allTwelveInspected": true
+  },
+  "physicalIPhone": false,
+  "playerAccepted": false,
+  "remainingQuestion": "Intended-player clarity and modest difficulty increase; especially comfort of the small blue lidded tin.",
+  "files": {
+    "prompt": "artwork/sample-054/prompts/054.txt",
+    "source": "artwork/sample-054/source/054.png",
+    "annotations": "artwork/sample-054/annotations/054.json",
+    "proof": "artwork/sample-054/review/phone-proof.png",
+    "interactiveProofCommand": "node scripts/review-level.mjs 54"
+  }
+}

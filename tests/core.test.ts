@@ -9,9 +9,9 @@ const catalog=JSON.parse(readFileSync('public/content/catalog.json','utf8')) as 
 const level=JSON.parse(readFileSync('public/content/levels/001.json','utf8')) as Level;
 afterEach(()=>vi.unstubAllGlobals());
 describe('authored content and input geometry',()=>{
- it('contains the retained fifty and exactly three twelve-object samples',()=>{
-  expect(catalog.revision).toBe(3);expect(catalog.levels).toHaveLength(53);expect(catalog.chapters).toHaveLength(6);
-  expect(catalog.levels.reduce((n,l)=>n+l.targetCount,0)).toBe(702);
+ it('contains the retained fifty and exactly four twelve-object samples',()=>{
+  expect(catalog.revision).toBe(3);expect(catalog.levels).toHaveLength(54);expect(catalog.chapters).toHaveLength(6);
+  expect(catalog.levels.reduce((n,l)=>n+l.targetCount,0)).toBe(714);
   expect(catalog.levels.every(l=>l.targetCount<=15)).toBe(true);
   for(const meta of catalog.levels.slice(50)){expect(meta.targetCount).toBe(12);expect(meta.sampleLevel).toBe(true);expect(meta.sceneKey).toBe('sample3-'+String(meta.id).padStart(3,'0'));}
   expect(catalog.levels.slice(0,50).map(l=>l.targetIds)).toEqual(previous.levels.slice(0,50).map(l=>l.targetIds));
@@ -147,8 +147,28 @@ describe('removing the rejected fifty preserves only the retained picture progre
   const value=old();expect(importBackup(JSON.stringify({format:'little-discoveries',schemaVersion:2,save:value}),catalog.levels).completed).toEqual([24]);
   value.attempts[80].found=['invented-id'];expect(()=>validateSave(value,catalog.levels)).toThrow('invalid scene progress');
  });
- it('continues through the three samples after completing the retained pictures',()=>{
+ it('continues through the four samples after completing the retained pictures',()=>{
   const value=freshSave();value.completed=Array.from({length:50},(_,i)=>i+1);expect(continueLevel(value,catalog.levels)).toBe(51);
-  value.completed=catalog.levels.map(l=>l.id);expect(continueLevel(value,catalog.levels)).toBe(53);
+  value.completed=catalog.levels.map(l=>l.id);expect(continueLevel(value,catalog.levels)).toBe(54);
+ });
+});
+
+describe('appending sample 54 keeps version-three discoveries unchanged',()=>{
+ it('loads and imports every prior scene, completion, favorite, preference and view without migration',()=>{
+  const old=freshSave();old.current=53;old.onboarded=true;old.catalogScroll=1234;old.preferences.largePreviews=true;
+  for(const meta of catalog.levels.slice(0,53)){
+   old.attempts[meta.id]={...newAttempt(),found:[...meta.targetIds],completed:true,view:{x:.6,y:.4,zoom:2}};
+   old.completed.push(meta.id);old.favorites.push(meta.id);
+  }
+  const raw=JSON.stringify(old),map=new Map([['little-discoveries.save.v3',raw],['little-discoveries.save.v3.recovery',raw]]);
+  vi.stubGlobal('localStorage',{getItem:(key:string)=>map.get(key)??null,setItem:(key:string,value:string)=>map.set(key,value)});
+  const loaded=loadSave(catalog.levels);expect(loaded.migrated).toBeFalsy();expect(loaded.save).toEqual(old);
+  expect(importBackup(exportBackup(old),catalog.levels)).toEqual(old);expect(continueLevel(loaded.save,catalog.levels)).toBe(54);
+  expect(map.get('little-discoveries.save.v3')).toBe(raw);expect(loaded.save.attempts[54]).toBeUndefined();
+  const target=catalog.levels[53].targetIds[0];expect(collect(loaded.save,catalog.levels[53],target)).toBe(true);
+  expect(collect(loaded.save,catalog.levels[53],target)).toBe(false);persist(loaded.save);
+  const again=loadSave(catalog.levels).save;expect(again.attempts[54].found).toEqual([target]);
+  for(const meta of catalog.levels.slice(0,53))expect(again.attempts[meta.id]).toEqual(old.attempts[meta.id]);
+  expect(again.completed).toEqual(old.completed);expect(again.favorites).toEqual(old.favorites);expect(again.preferences).toEqual(old.preferences);
  });
 });

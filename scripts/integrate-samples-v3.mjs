@@ -4,6 +4,8 @@ import {readFile,copyFile,readdir,unlink,mkdir} from 'node:fs/promises';
 import {resolve,sep} from 'node:path';
 import {writeArtifact} from './artifact-io.mjs';
 const previous=JSON.parse(await readFile('src/data/legacy-catalog-v2.json','utf8'));
+const active=JSON.parse(await readFile('public/content/catalog.json','utf8'));
+if(active.levels.length>53)throw Error('Historical three-sample integration cannot overwrite the appended collection. Edit authoritative annotations and run content:prepare.');
 const catalog={revision:3,requiredScenes:53,requiredPlacements:702,
  chapters:[...previous.chapters.slice(0,5),{id:6,title:'Three samples to try',subtitle:'Familiar little things, tucked a little further away.',color:'#819475'}],
  levels:previous.levels.slice(0,50).map(l=>({...l,thumbnail:l.thumbnail.replace('art/v2/','art/v3/')}))};

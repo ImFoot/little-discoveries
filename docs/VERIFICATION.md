@@ -1,22 +1,27 @@
-# Three-sample release verification
+# Fourth-sample verification
 
-Generated 2026-11-03T07:28:11.493Z. Revision 3 has **53 scenes / 702 placements**, maximum 15 targets. Fifty original retained scenes are unchanged; three new twelve-object samples replace the entire rejected fifty-scene revision-2 batch. A [comparison against the previous release](verification-v3/retained-content.json) confirms all 866 retained source, annotation, scene, thumbnail and preview files are byte-identical. The earlier automatic checks did not establish player acceptance: the player subsequently rejected those pictures and their cutout previews.
+Verified 2026-11-03T08:22:35.325Z. The active game contains **54 scenes / 714 placements**, maximum 15 targets per scene. Scene 54, The village flower shop, adds twelve objects. No additional batch was created.
 
-All three new illustrations and all 36 target previews/contours were inspected. Samples use tight unmasked source crops, validated byte-for-byte against the finished PNGs; contours no longer determine the preview silhouette. They aim for only a modest increase over current level 24 through placement and small overlaps. Their actual clarity and difficulty still require intended-player feedback. No new fifty-scene batch has been produced.
+## Content and artwork
 
-- 24 core tests passed.
-- 28 browser scenarios passed; 0 failed; 0 skipped.
-- Both desktop engines collected all 702 placements in all 53 scenes through the real picker.
-- Checks cover duplicate taps, help/reveals/assists, replay, album/postcards, backups/rejection, one-time old-save migration, retained level-24 finds and no rejected credit on sample 51.
-- Both engines downloaded the complete three-sample chapter, opened every sample/preview offline and retained finds after offline reload. Ten-scene downloads, interrupted resume and missing-file repair also passed.
-- Compact portrait 375×568 and landscape 667×375 keep the horizontal bottom tray and reachable 44px controls.
+All 1–53 catalog entries and **1073 source, annotation, prompt, level, picture, thumbnail and preview files** match the published53-scene baseline 54a3988. See [retained-content evidence](verification-54/retained.json). The earlier exhaustive702-placement browser tours remain in [the previous release evidence](verification-v3/README.md); they were not repeated for unchanged content.
 
-The initial cached-tab test still expected save version 2. After correcting that obsolete assertion to version 3, both engine reruns passed. Raw reports retain the initial run and the corrected rerun; the case summary uses the latest result for each scenario.
+Strict validation passes54/714 counts, distinct illustrations, maximum 15, all 48 sample preview/source comparisons, complete crop bounds and valid contours. Every new target was inspected against its enlarged source and outline, and at the real 32-pixel tray-preview size. A watering-can contour crossing was corrected before the final passing build. [Production workflow](ARTWORK_WORKFLOW.md) and [visual review](../artwork/sample-054/review/review.json) describe the method and remaining player judgment.
 
-Aggregate 10 Mbps / 40 ms emulated loading: chromium-phone: 2188ms, 1,162,450 response payload bytes; webkit-phone: 2452ms, 1,369,167 response payload bytes. This counts page, Pixi worker and service-worker traffic. Touch-to-counter feedback: chromium-phone: 3.8ms; webkit-phone: 4.0ms. These are desktop measurements, **not physical iPhone tests**.
+## Current tests
 
-The local production ZIP contains 53 scene images, 702 matching previews and 53 versioned level packages. It is 40.0 MB. [Evidence, metrics and cases](verification-v3/results.json) · [ZIP checksum/counts](verification-v3/static-archive.json). Original and rejected revision-2 evidence remain historical; they are not current acceptance results.
+- 25/25 core tests passed, including all 53 earlier v3 attempts, completions, favorites, views, preferences and backup import/export surviving the append.
+- 26/26 targeted browser cases passed across desktop Chromium and WebKit phone emulation, with no flaky results. Both engines collected all 12 new objects through the real touch picker, checked duplicate taps, repeated hints/reveals, completion and reload. Other cases cover gestures, compact 375-pixel portrait/landscape layouts, backups, recovery, earlier-save migrations and offline repair.
+- A genuinely installed cache-first53-scene worker fixture verifies ordinary reload opens54, retains previous progress, carries compatible level 24 offline files forward and upgrades an obsolete-catalog request.
+- Chapter 6 downloads all four sample scenes, definitions and previews; all four reopen, collect and reload offline.
+- 4/4 separate performance cases passed. At emulated 10Mbps / 40 ms latency, chromium-phone: 1742ms and 1,020,163 bytes; webkit-phone: 2005ms and 1,170,203 bytes. Touch feedback: chromium-phone: 3.3ms; webkit-phone: 3.0ms. Limits are 5000 ms, 5 MB and 100 ms respectively.
 
-Published at [Little Discoveries](https://imfoot.github.io/little-discoveries/). [Hosted deployment checks](verification-v3/deployment.json).
+Full reports and metrics are in [verification-54/results.json](verification-54/results.json). Emulation is not physical iPhone testing. Intended-player approval of preview clarity and increased difficulty is pending.
 
-Reload Safari after publication. Retained discoveries migrate automatically; old raw saves remain available as recovery, and rejected pictures never grant sample credit. Offline chapter downloads should be repeated for the updated collection. Actual iPhone testing and intended-player sample feedback remain pending; see [device review](DEVICE_REVIEW.md).
+## Build and offline update
+
+Production build passed. Shell version: 52796f2733b34f58; content version: 2ded88050d338ed4. The release-specific catalog-54, manifest and offline entry bypass old cache-first catalog data without changing save schema 3 or earlier scene/art URLs. Compatible prior content hash: a1da8e6447a16460. Cache writes can fail under browser storage pressure; affected offline files may need a retry, while progress is separate.
+
+Six complete offline packages contain 54 scenes, with four in the sample chapter. The local static ZIP contains 54 scene WebPs, 714 previews, 54 runtime level definitions and all required shell files. Size: 40,762,699 bytes. SHA-256: c6a940687eb7531b15492bb6c45e055eb26ff9c6eaadc9e7fb0ad4b256dc794a. It is generated at output/LittleDiscoveries-static.zip and excluded from Git.
+
+Publishing status will be recorded below after live HTTPS verification.

@@ -65,5 +65,6 @@ for (const file of files) {
 }
 await writeFile('public/content/catalog.json',JSON.stringify(catalog,null,2)+'\n');
 await writeFile(`public/${contentPrefix}/catalog.json`,JSON.stringify(catalog,null,2)+'\n');
+await writeFile(`public/${contentPrefix}/catalog-${catalog.requiredScenes}.json`,JSON.stringify(catalog,null,2)+'\n');
 await writeFile('.cache/content-prepared.json',JSON.stringify(stamps,null,2));
 console.log(`Prepared ${files.length} scenes (${changed} changed). No real-iPhone review claimed.`);
