@@ -2,7 +2,7 @@
 
 The player supplied an actual iPhone Safari screenshot of the original collection and reported that it was too easy. No revised scene has been represented as acceptance-reviewed on that physical phone. Desktop WebKit phone emulation is useful evidence for layout and browser behavior; it does not establish real-device touch comfort, readability, or performance.
 
-The public HTTPS build is ready to review at **https://imfoot.github.io/little-discoveries/**. Export progress from a local preview before moving to the hosted origin if you want to keep that progress.
+The revised public HTTPS build is published at **https://imfoot.github.io/little-discoveries/**. Reload Safari once to open it; original scene 72 becomes scene 22 with its retained discoveries. Export progress from a local preview before moving to the hosted origin if you want to keep that progress.
 
 Use a static HTTPS build on the wife's intended iPhone, at normal brightness, in ordinary Safari. No installation is needed. Start with 1 (retained baseline), 51 (new workshop), 60 (a gentler break) and 86 (a detailed new archive). After approving the style and interaction, review each remaining scene and each target.
 

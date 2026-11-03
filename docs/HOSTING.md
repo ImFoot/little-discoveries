@@ -12,7 +12,7 @@ The Pages source is GitHub Actions. The workflow in .github/workflows/pages.yml 
 
 Vite uses relative asset URLs, and scene navigation uses URL hashes. Both a domain root and this project's subdirectory work without route rewrites. Offline caching remains inside the game's directory. A complete chapter download contains its ten scenes, target previews and definitions plus the application shell.
 
-Current revision-2 publication checks belong in [verification/deployment.json](verification/deployment.json). The original collection's [deployment evidence](verification-v1/deployment.json) and [verification report](VERIFICATION-v1.md) are retained separately. Later updates publish by committing and pushing to main; the repository's Actions tab records deployment status.
+Revision 2 deployed successfully from a001937ecc8fe947b9c36ba31de1dc49e9bda0b9 in [workflow 41585023371](https://github.com/ImFoot/little-discoveries/actions/runs/41585023371). The live catalog confirms 100 scenes, 1,391 placements and a maximum of fifteen targets. Forty-four HTTP checks and a hosted desktop Chromium check passed, including saved progress, a complete chapter 6 download and offline play. Current revision-2 publication checks are in [verification/deployment.json](verification/deployment.json). The original collection's [deployment evidence](verification-v1/deployment.json) and [verification report](VERIFICATION-v1.md) are retained separately. Later updates publish by committing and pushing to main; the repository's Actions tab records deployment status.
 
 ## Opening the revised collection
 

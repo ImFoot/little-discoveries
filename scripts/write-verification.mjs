@@ -57,5 +57,7 @@ The local static hosting ZIP contains 100 scene pictures, 1,391 matching preview
 The player provided an actual iPhone Safari screenshot of the original collection and rejected its difficulty. This task's revised collection has not been acceptance-tested on that physical iPhone. New artwork readability, real multitouch, Safari toolbar/lock/app interruptions and performance still need review there; see [DEVICE_REVIEW.md](DEVICE_REVIEW.md).
 
 ${deployment?'The revised collection is published at [Play Little Discoveries]('+deployment.url+'). Hosted checks are recorded in [verification/deployment.json](verification/deployment.json).':'The complete revised build is ready for deployment. The hosted revision will be recorded after successful publication.'} Home Screen installation is optional. Existing hosted saves migrate automatically; a backup remains portable between devices/origins.
+
+${deployment?.browserSmoke?'A separate desktop Chromium check on the live HTTPS site verified a reveal and assisted find in scene 51, saved progress after reload, a complete chapter 6 download, offline reload with the find retained, and opening break scene 60 offline. The hosted screenshot is [hosted-chromium-phone-51.png](verification/hosted-chromium-phone-51.png). This was phone emulation, not a physical iPhone.':''}
 `);
 console.log('Saved complete revision-2 verification records.');

@@ -1,0 +1,451 @@
+{
+  "date": "2026-11-03T05:46:31.521Z",
+  "catalogRevision": 2,
+  "verified": true,
+  "url": "https://imfoot.github.io/little-discoveries/",
+  "repository": {
+    "url": "https://github.com/ImFoot/little-discoveries",
+    "visibility": "PUBLIC"
+  },
+  "sourceCommit": "a001937ecc8fe947b9c36ba31de1dc49e9bda0b9",
+  "workflowUrl": "https://github.com/ImFoot/little-discoveries/actions/runs/41585023371",
+  "workflowConclusion": "success",
+  "scenes": 100,
+  "placements": 1391,
+  "maximumTargets": 15,
+  "chapters": [
+    {
+      "id": 1,
+      "readyLevels": 10,
+      "files": 164,
+      "bytes": 7779232
+    },
+    {
+      "id": 2,
+      "readyLevels": 10,
+      "files": 164,
+      "bytes": 7591062
+    },
+    {
+      "id": 3,
+      "readyLevels": 10,
+      "files": 164,
+      "bytes": 8116532
+    },
+    {
+      "id": 4,
+      "readyLevels": 10,
+      "files": 164,
+      "bytes": 7727730
+    },
+    {
+      "id": 5,
+      "readyLevels": 10,
+      "files": 160,
+      "bytes": 7474085
+    },
+    {
+      "id": 6,
+      "readyLevels": 10,
+      "files": 175,
+      "bytes": 9557216
+    },
+    {
+      "id": 7,
+      "readyLevels": 10,
+      "files": 175,
+      "bytes": 10046806
+    },
+    {
+      "id": 8,
+      "readyLevels": 10,
+      "files": 175,
+      "bytes": 9652807
+    },
+    {
+      "id": 9,
+      "readyLevels": 10,
+      "files": 175,
+      "bytes": 10154817
+    },
+    {
+      "id": 10,
+      "readyLevels": 10,
+      "files": 175,
+      "bytes": 9916187
+    }
+  ],
+  "hostedBuildVersion": "89202fbfd603d658",
+  "localBuildVersion": "7aa94f9c078b40de",
+  "contentVersion": "2cd88e3115b2afec",
+  "shellNote": "All 17 shell asset files and the complete content version match the tested local build. Shell list ordering differs across Windows/Linux, so the order-sensitive shell hash differs; each build has internally matching manifest and worker cache versions.",
+  "httpChecks": [
+    {
+      "path": "content/v2/catalog.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 85008,
+      "sha256": "a1dd3e6db208867702a9bcf5195b8b81eb5e62af8567e59afa94aec4660d5bb1",
+      "matchesLocal": true
+    },
+    {
+      "path": "offline-manifest-v2.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 88606,
+      "sha256": "64e0d8a7e1eb686c5d91a84b614dd28244e2456eefc9ba0ab4981a77b7f0a927"
+    },
+    {
+      "path": "app-v2.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 974,
+      "sha256": "3352892244d11c036d8b9a09132516f5bc477d2ede81ed2f6ea02d8ce18af05c",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/CanvasPool-BmBAKckE.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 1887,
+      "sha256": "72fa5b5052a3fadb7c204a5d4f357caad8b0cd131a97032b4741b702ca340e86",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/Filter-k61vmXf9.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 904,
+      "sha256": "4679342b373b8920e18fc8f660f32540c1781dbb3ed80c17d20548c82333f9c2",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/getTexelRangeRects-0NU8Diz7.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 11403,
+      "sha256": "ae05bc4e41fc2617ef87033a32ad3a8bfdbfcd7d9b60ee392768ec13ebc9bac5",
+      "matchesLocal": true
+    },
+    {
+      "path": "icon.svg",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bytes": 320,
+      "sha256": "a377bf2591577cfd1ff6e663b505ace440377a89bd28ac3daaf7370b4e9214c6",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/webworkerAll-DiDB38io.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 15500,
+      "sha256": "446e201e14558ad8b3223b99a9225aa6805ffe617228f11095b543b5a2d81dea",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/CanvasRenderer-B1wIYuqW.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 17920,
+      "sha256": "af360ea745bf960f230e917f56de0be05ec79a7ad7f4de42edc0b1db68db4dc7",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/canvasUtils-CeiAgt0U.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 5709,
+      "sha256": "f7818102614b523c708bc2750b9826cd28afacfc9190fe57863b99e5709e774f",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/BitmapFont-Cxdrsa4j.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 33819,
+      "sha256": "36cfe8c01434eaea75d018e27caefcc353c18c254e06c0da651409f0a72d8011",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/browserAll-C5wOnfV3.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 43995,
+      "sha256": "57ac1cf1b30b37a07d15700009a084da154e6a05aa24893d622923ab6d1f976c",
+      "matchesLocal": true
+    },
+    {
+      "path": "manifest.webmanifest",
+      "status": 200,
+      "contentType": "application/manifest+json; charset=utf-8",
+      "bytes": 245,
+      "sha256": "711d1b9c3168f90e61255dedc5d316e4fffe1807939df2593623000c57446828",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/index-D9sxs_sf.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "bytes": 34835,
+      "sha256": "f62cacdc9fec0c832720cfaddf37e68bbe03e8a743fde0508c8035fbc10c516c",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/RenderTargetSystem-Djr3mLVH.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 53949,
+      "sha256": "10227a92c48c964487ff11c2de3331383a66b93187d653ad9b83b60081834ed6",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/WebGLRenderer-D8hC3jRS.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 73666,
+      "sha256": "6107bdb9faf38a64b9965e7e1dd4cbd09250b0a3772c72ffd8da7fcb727aa73b",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/index-DEsK4xBx.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 347570,
+      "sha256": "407627d863e075b975664fff2adb8cdc14ccb7459b2c222b9ac4fc94f34e23f6",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/WebGPURenderer-GuhibhOT.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 55910,
+      "sha256": "db79773fc31b7542ed847327f2e7961397b15943faebb6238e7f22016cc230d9",
+      "matchesLocal": true
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 974,
+      "sha256": "3352892244d11c036d8b9a09132516f5bc477d2ede81ed2f6ea02d8ce18af05c",
+      "matchesLocal": true
+    },
+    {
+      "path": "sw.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 3487,
+      "sha256": "1130947418fd7c1e76f4d434da21858c1a465888983075a66cbbccf66728f3f1"
+    },
+    {
+      "path": "content/v2/levels/001.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 36296,
+      "sha256": "be22fb6486208956d30def18c56fe90d1a5f3b13411e0f6a09209d7acef9fb65",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v2/001/luggage-tag.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 8496,
+      "sha256": "691d931651bd4d351db998b43086e883cd405c289cb3f4306edb7186ae157542",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v2/001-thumb.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 43636,
+      "sha256": "739efcc1a9ab75976895134caccc7ad4a210da9897c38c96d6847aa9eb819df6",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v2/001.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 434178,
+      "sha256": "8a892fa2bfabfe6195903c807709fb175d540cfa73ca72375030a0275e04ec53",
+      "matchesLocal": true
+    },
+    {
+      "path": "content/v2/levels/022.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 36778,
+      "sha256": "d3de64ea6d345529749b4568d6d95d71e3129b261cbba3060f3842b948e8ae82",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v2/022-thumb.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 61756,
+      "sha256": "59b17d9df32c6afe6575c402827e0036944b60576d66e8bc0640760a7642b189",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v2/022/little-basket.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 16688,
+      "sha256": "95be32a1e2044d98785460df24adaf6e79ccac294e6e0e09bc920cf59ed0128c",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v2/022.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 570548,
+      "sha256": "2de418ab80760118902cce48fc9cf97097c39b0370fd400a9aecf471e6383abf",
+      "matchesLocal": true
+    },
+    {
+      "path": "content/v2/levels/051.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 61164,
+      "sha256": "cbe2e8924012074f66d7c05221842cc323de9b44637e39704adc39ad7a22f99a",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v2/051-thumb.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 50342,
+      "sha256": "fa7be344c1c228a5ae319b963b524ec97f23d41d6b7c5d74d7cd40c8b8a7941b",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v2/051/carved-owl.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 12042,
+      "sha256": "22c158bd812aa592708c0b5a469756fee9f390070bb234ac93eedefb632d1bb9",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v2/051.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 607242,
+      "sha256": "9f7cdd09e2c25cb61b4696a67ae16adbf61f15744ea52761553884b9d9f4249d",
+      "matchesLocal": true
+    },
+    {
+      "path": "content/v2/levels/060.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 43738,
+      "sha256": "737d719cc9d3d58e4b859425f9e51704c7bba7b95b3de502853d6673b3167feb",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v2/060-thumb.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 49862,
+      "sha256": "12bd74c5856e5c1280be891c9cf651b5cc176aa8434115c9c39f8f3976dc368a",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v2/060.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 638802,
+      "sha256": "680da4689ba5f611e5c2327540bb732b0e8c272cce5390f59075ca252aa67027",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v2/060/leaf-button.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 10904,
+      "sha256": "810d2018fcd74c59b5ae65e8d4197b52dbc977213354c70af3ca9bf4d70e6f24",
+      "matchesLocal": true
+    },
+    {
+      "path": "content/v2/levels/086.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 87516,
+      "sha256": "9aafe3c8b1bebb71909a0060246b5869408152b2bc155f5946358d181ef545e3",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v2/086.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 692410,
+      "sha256": "cf0f37faf852106d397e026172beeeac9d07b780c3a9bbb21898aefe23191f5c",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v2/086/carved-owl.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 12280,
+      "sha256": "e88a95ca92bee27a92471231b1a3b37ac089209ce6eae2ec2ff35a183ad4a370",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v2/086-thumb.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 57396,
+      "sha256": "84eb69c077393902f7c0c299981e0175cb32e85c1be4618f9738c634c74febf4",
+      "matchesLocal": true
+    },
+    {
+      "path": "content/v2/levels/100.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 29023,
+      "sha256": "28d71e023596708128003e68941cccc933f866592640280a5bc7a05d837809ce",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v2/100/arch-bee.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 10464,
+      "sha256": "d175b8d03bc88705ee53fa395d9c1ce290c960372cff7ce9f95955115dcdd8f9",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v2/100.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 466326,
+      "sha256": "edea42c34a2d0461add0df4feb7efa3cef90b0356f851af52489b657250bc231",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v2/100-thumb.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 55650,
+      "sha256": "e2f7e1a9d133b53fafbe21800303c71c2cb1929d8687835519798d6707392e42",
+      "matchesLocal": true
+    }
+  ],
+  "browserSmoke": {
+    "engine": "Chromium",
+    "version": "156.0.8078.4",
+    "viewport": {
+      "width": 375,
+      "height": 667
+    },
+    "emulatedPhone": true,
+    "physicalIPhone": false,
+    "scene": 51,
+    "assistedFindAndReveal": true,
+    "reloadPreservedFind": true,
+    "completeChapterDownloaded": 6,
+    "offlineReloadPreservedFind": true,
+    "offlineBreakScene": 60,
+    "consoleErrors": []
+  }
+}

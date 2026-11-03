@@ -1,6 +1,6 @@
 # Revision 2 completion record
 
-The complete revised collection is implemented, prepared and tested. Publication to the existing public GitHub Pages repository follows this verified snapshot; final hosted checks are recorded in verification/deployment.json.
+The complete revised collection is implemented, prepared, tested, published and verified at https://imfoot.github.io/little-discoveries/. Public repository ImFoot/little-discoveries deployed source commit a001937ecc8fe947b9c36ba31de1dc49e9bda0b9 successfully in workflow 41585023371. Final hosted checks are recorded in verification/deployment.json.
 
 ## Delivered content
 
@@ -37,4 +37,4 @@ Windows intermittently rejected direct overwrites of watched files with UNKNOWN 
 
 Artwork used the built-in image-generation tool. The previous 085 worker lost its original base-generation prompt; the prompt record documents that loss and retains the exact final edit prompt. No invented reconstruction is presented as an original.
 
-The intended player supplied real iPhone Safari feedback on the original collection. The new collection has been tested in desktop Chromium/WebKit emulation, not on her physical iPhone. New difficulty/readability, real multitouch, toolbar and app interruptions, device performance and Safari cache eviction still need device/player acceptance. All new smallPhone flags remain false. There are no implementation or deployment prerequisites waiting for user approval.
+The intended player supplied real iPhone Safari feedback on the original collection. The new collection has been tested in desktop Chromium/WebKit emulation, not on her physical iPhone. New difficulty/readability, real multitouch, toolbar and app interruptions, device performance and Safari cache eviction still need device/player acceptance. All new smallPhone flags remain false. No implementation or deployment blockers remain.
