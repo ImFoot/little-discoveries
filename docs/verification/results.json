@@ -1,40 +1,41 @@
 {
-  "date": "2026-11-02T08:40:32.160Z",
+  "date": "2026-11-03T05:35:31.479Z",
+  "catalogRevision": 2,
   "content": {
+    "catalogRevision": 2,
     "catalogScenes": 100,
-    "requiredPlacements": 1304,
+    "requiredPlacements": 1391,
     "illustratedScenes": 100,
-    "authoredPlacements": 1304,
+    "authoredPlacements": 1391,
     "actualIPhoneReviewed": 0,
     "errors": [],
     "warnings": []
   },
   "unitTests": {
-    "passed": 15,
+    "passed": 20,
     "failed": 0
   },
   "browserTests": {
     "total": 24,
-    "passed": 23,
-    "skipped": 1,
+    "passed": 24,
+    "skipped": 0,
     "failed": 0,
-    "method": "Latest result per engine and scenario, full tour followed by final focused regression checks.",
     "runs": [
       {
-        "file": "full-browser-run.json",
-        "startTime": "2026-11-02T07:54:07.861Z",
-        "duration": 512875.403,
-        "expected": 21,
-        "skipped": 1,
-        "unexpected": 2,
+        "file": "r2-browser.json",
+        "startTime": "2026-11-03T05:22:24.354Z",
+        "duration": 468569.146,
+        "expected": 20,
+        "skipped": 0,
+        "unexpected": 0,
         "flaky": 0
       },
       {
-        "file": "final-regression-run.json",
-        "startTime": "2026-11-02T08:08:43.726Z",
-        "duration": 34205.956,
-        "expected": 13,
-        "skipped": 1,
+        "file": "r2-performance-proxy.json",
+        "startTime": "2026-11-03T05:34:39.344Z",
+        "duration": 7626.701,
+        "expected": 4,
+        "skipped": 0,
         "unexpected": 0,
         "flaky": 0
       }
@@ -42,351 +43,308 @@
     "cases": [
       {
         "project": "chromium-phone",
-        "title": "a narrow foreground comb keeps its edge when pointer coordinates are rounded",
+        "title": "old Safari progress follows its picture from 72 to 22 without double migration",
         "status": "expected",
-        "run": "full-browser-run.json"
+        "run": "r2-browser.json"
       },
       {
         "project": "chromium-phone",
-        "title": "an unfound scarf keeps its visible edge beside an unfound journal",
+        "title": "an original cached tab upgrades on reload and preserves discoveries",
         "status": "expected",
-        "run": "full-browser-run.json"
+        "run": "r2-browser.json"
       },
       {
         "project": "chromium-phone",
         "title": "every authored placement can be revealed and collected through the real scene picker",
         "status": "expected",
-        "run": "full-browser-run.json"
+        "run": "r2-browser.json"
       },
       {
         "project": "chromium-phone",
-        "title": "a complete chapter downloads, survives offline navigation, detects missing files, and repairs",
+        "title": "a complete chapter works offline, detects missing art and repairs without losing finds",
         "status": "expected",
-        "run": "full-browser-run.json"
+        "run": "r2-browser.json"
       },
       {
         "project": "chromium-phone",
         "title": "an interrupted chapter download resumes without discarding cached files or progress",
         "status": "expected",
-        "run": "full-browser-run.json"
+        "run": "r2-browser.json"
       },
       {
         "project": "webkit-phone",
-        "title": "a narrow foreground comb keeps its edge when pointer coordinates are rounded",
+        "title": "old Safari progress follows its picture from 72 to 22 without double migration",
         "status": "expected",
-        "run": "full-browser-run.json"
+        "run": "r2-browser.json"
       },
       {
         "project": "webkit-phone",
-        "title": "an unfound scarf keeps its visible edge beside an unfound journal",
+        "title": "an original cached tab upgrades on reload and preserves discoveries",
         "status": "expected",
-        "run": "full-browser-run.json"
+        "run": "r2-browser.json"
       },
       {
         "project": "webkit-phone",
         "title": "every authored placement can be revealed and collected through the real scene picker",
         "status": "expected",
-        "run": "full-browser-run.json"
+        "run": "r2-browser.json"
       },
       {
         "project": "webkit-phone",
-        "title": "a complete chapter downloads, survives offline navigation, detects missing files, and repairs",
+        "title": "a complete chapter works offline, detects missing art and repairs without losing finds",
         "status": "expected",
-        "run": "full-browser-run.json"
+        "run": "r2-browser.json"
       },
       {
         "project": "webkit-phone",
         "title": "an interrupted chapter download resumes without discarding cached files or progress",
         "status": "expected",
-        "run": "full-browser-run.json"
+        "run": "r2-browser.json"
       },
       {
         "project": "chromium-phone",
-        "title": "real tap, repeated tap, offscreen-card collection, help, resume, and complete replay",
+        "title": "real taps, offscreen tray targets, help, resume and replay preserve the gameplay loop",
         "status": "expected",
-        "run": "final-regression-run.json"
+        "run": "r2-browser.json"
       },
       {
         "project": "chromium-phone",
-        "title": "drag and pinch never collect; small portrait and landscape controls stay reachable",
+        "title": "drag and pinch never collect; compact portrait and landscape controls stay reachable",
         "status": "expected",
-        "run": "final-regression-run.json"
+        "run": "r2-browser.json"
       },
       {
         "project": "chromium-phone",
-        "title": "representatives render all targets and all 100 catalog entries are selectable",
+        "title": "new challenging scenes and breaks render; all 100 entries remain selectable",
         "status": "expected",
-        "run": "final-regression-run.json"
+        "run": "r2-browser.json"
       },
       {
         "project": "chromium-phone",
         "title": "backup export, invalid import preservation, and confirmed restore",
         "status": "expected",
-        "run": "final-regression-run.json"
+        "run": "r2-browser.json"
       },
       {
         "project": "chromium-phone",
         "title": "service worker restores a visited scene with networking disabled",
         "status": "expected",
-        "run": "final-regression-run.json"
+        "run": "r2-browser.json"
       },
       {
         "project": "webkit-phone",
-        "title": "real tap, repeated tap, offscreen-card collection, help, resume, and complete replay",
+        "title": "real taps, offscreen tray targets, help, resume and replay preserve the gameplay loop",
         "status": "expected",
-        "run": "final-regression-run.json"
+        "run": "r2-browser.json"
       },
       {
         "project": "webkit-phone",
-        "title": "drag and pinch never collect; small portrait and landscape controls stay reachable",
+        "title": "drag and pinch never collect; compact portrait and landscape controls stay reachable",
         "status": "expected",
-        "run": "final-regression-run.json"
+        "run": "r2-browser.json"
       },
       {
         "project": "webkit-phone",
-        "title": "representatives render all targets and all 100 catalog entries are selectable",
+        "title": "new challenging scenes and breaks render; all 100 entries remain selectable",
         "status": "expected",
-        "run": "final-regression-run.json"
+        "run": "r2-browser.json"
       },
       {
         "project": "webkit-phone",
         "title": "backup export, invalid import preservation, and confirmed restore",
         "status": "expected",
-        "run": "final-regression-run.json"
+        "run": "r2-browser.json"
       },
       {
         "project": "webkit-phone",
         "title": "service worker restores a visited scene with networking disabled",
         "status": "expected",
-        "run": "final-regression-run.json"
+        "run": "r2-browser.json"
       },
       {
         "project": "chromium-phone",
         "title": "a cold scene fits the transfer and loading budgets at an emulated 10 Mbps",
         "status": "expected",
-        "run": "final-regression-run.json"
+        "run": "r2-performance-proxy.json"
       },
       {
         "project": "chromium-phone",
-        "title": "a valid touch produces progress feedback within 100 ms and picture recovery preserves finds",
+        "title": "a valid touch gives feedback within 100 ms and picture recovery preserves finds",
         "status": "expected",
-        "run": "final-regression-run.json"
+        "run": "r2-performance-proxy.json"
       },
       {
         "project": "webkit-phone",
         "title": "a cold scene fits the transfer and loading budgets at an emulated 10 Mbps",
-        "status": "skipped",
-        "run": "final-regression-run.json"
+        "status": "expected",
+        "run": "r2-performance-proxy.json"
       },
       {
         "project": "webkit-phone",
-        "title": "a valid touch produces progress feedback within 100 ms and picture recovery preserves finds",
+        "title": "a valid touch gives feedback within 100 ms and picture recovery preserves finds",
         "status": "expected",
-        "run": "final-regression-run.json"
+        "run": "r2-performance-proxy.json"
       }
     ]
   },
-  "additionalRecovery": {
-    "startTime": "2026-11-02T07:51:10.266Z",
-    "duration": 20014.965999999997,
-    "expected": 2,
-    "skipped": 0,
-    "unexpected": 0,
-    "flaky": 0
+  "difficulty": {
+    "maxTargets": 15,
+    "retainedScenes": 50,
+    "newScenes": 50,
+    "ordinary": {
+      "scenes": 45,
+      "targets": 15,
+      "challenging": 11,
+      "easy": 4
+    },
+    "breaks": {
+      "levels": [
+        60,
+        70,
+        80,
+        90,
+        100
+      ],
+      "targets": 10,
+      "challenging": 3,
+      "easy": 7
+    },
+    "newPlacements": 725,
+    "newChallenging": 510,
+    "newEasy": 215
   },
   "metrics": [
     {
       "name": "verified-placements.json",
       "project": "chromium-phone",
-      "run": "full-browser-run.json",
+      "run": "r2-browser.json",
       "engine": "chromium-phone",
       "scenes": 100,
-      "placements": 1304,
+      "placements": 1391,
       "physicalIPhone": false
     },
     {
       "name": "verified-placements.json",
       "project": "webkit-phone",
-      "run": "full-browser-run.json",
+      "run": "r2-browser.json",
       "engine": "webkit-phone",
       "scenes": 100,
-      "placements": 1304,
+      "placements": 1391,
       "physicalIPhone": false
     },
     {
       "name": "emulated-loading.json",
       "project": "chromium-phone",
-      "run": "final-regression-run.json",
-      "playableMs": 1388,
-      "bytes": 128351,
+      "run": "r2-performance-proxy.json",
+      "playableMs": 1809,
+      "bytes": 860229,
       "downloadMbps": 10,
       "latencyMs": 40,
+      "measurement": "Aggregate HTTP response payloads, including page, Pixi worker and service worker; picture and all target previews ready.",
       "physicalIPhone": false
     },
     {
       "name": "emulated-touch-feedback.json",
       "project": "chromium-phone",
-      "run": "final-regression-run.json",
-      "feedbackMs": 3.199999988079071,
+      "run": "r2-performance-proxy.json",
+      "feedbackMs": 3.300000000745058,
+      "physicalIPhone": false
+    },
+    {
+      "name": "emulated-loading.json",
+      "project": "webkit-phone",
+      "run": "r2-performance-proxy.json",
+      "playableMs": 1848,
+      "bytes": 1011079,
+      "downloadMbps": 10,
+      "latencyMs": 40,
+      "measurement": "Aggregate HTTP response payloads, including page, Pixi worker and service worker; picture and all target previews ready.",
       "physicalIPhone": false
     },
     {
       "name": "emulated-touch-feedback.json",
       "project": "webkit-phone",
-      "run": "final-regression-run.json",
-      "feedbackMs": 3,
+      "run": "r2-performance-proxy.json",
+      "feedbackMs": 4,
       "physicalIPhone": false
     }
   ],
-  "packages": {
-    "pixi.js": "8.22.0",
-    "vite": "7.3.7",
-    "typescript": "5.9.3",
-    "sharp": "0.35.5",
-    "@playwright/test": "1.64.1"
-  },
-  "buildVersion": "638e4557d5db56de",
-  "contentVersion": "c671b9b40405e5eb",
-  "hostedDeployment": {
-    "checkedAt": "2026-11-02T08:37:10.222Z",
-    "url": "https://imfoot.github.io/little-discoveries/",
-    "https": true,
-    "catalogScenes": 100,
-    "placements": 1304,
-    "completeOfflineChapters": 10,
-    "buildVersion": "db2ebbc10a3a2a25",
-    "contentVersion": "c671b9b40405e5eb",
-    "representatives": [
-      {
-        "id": 1,
-        "title": "Morning kitchen",
-        "targets": 8
-      },
-      {
-        "id": 28,
-        "title": "The haberdashery",
-        "targets": 16
-      },
-      {
-        "id": 80,
-        "title": "The lantern grove",
-        "targets": 14
-      },
-      {
-        "id": 100,
-        "title": "A table for two",
-        "targets": 10
-      }
-    ],
-    "entryAssets": [
-      "./assets/index-DKEk8VsT.js",
-      "./assets/index-D9sxs_sf.css"
-    ],
-    "httpChecksPassed": true,
-    "physicalIPhone": false,
-    "verified": true,
-    "repository": "https://github.com/ImFoot/little-discoveries",
-    "repositoryVisibility": "public",
-    "sourceCommit": "6c2abaa02ff9a3572b9efcc54f01a841058893a3",
-    "workflow": {
-      "url": "https://github.com/ImFoot/little-discoveries/actions/runs/41414125158",
-      "status": "completed",
-      "conclusion": "success",
-      "updatedAt": "2026-11-02T08:36:32Z",
-      "jobs": [
-        {
-          "name": "build",
-          "conclusion": "success"
-        },
-        {
-          "name": "deploy",
-          "conclusion": "success"
-        }
-      ]
-    },
-    "browserChecks": {
-      "browser": "ChatGPT in-app browser on Windows",
-      "physicalIPhone": false,
-      "illustrationsRendered": [
-        1,
-        28
-      ],
-      "pointerCollection": {
-        "level": 1,
-        "target": "Striped mug",
-        "counter": "1 / 8"
-      },
-      "reloadPreservedFind": true,
-      "chapterDownload": {
-        "chapter": 1,
-        "state": "Available offline",
-        "filesCached": 136,
-        "filesRequired": 136
-      },
-      "offlineWithoutNetwork": "Previously verified in local production Chromium and WebKit tests; network disconnection was not repeated in this hosted browser check."
-    }
-  },
+  "buildVersion": "7aa94f9c078b40de",
+  "contentVersion": "2cd88e3115b2afec",
   "offlineChapters": [
     {
-      "chapter": 1,
+      "id": 1,
       "scenes": 10,
-      "files": 136,
-      "bytes": 6998622
+      "files": 164,
+      "bytes": 7779232
     },
     {
-      "chapter": 2,
+      "id": 2,
       "scenes": 10,
-      "files": 150,
-      "bytes": 8390299
+      "files": 164,
+      "bytes": 7591062
     },
     {
-      "chapter": 3,
+      "id": 3,
+      "scenes": 10,
+      "files": 164,
+      "bytes": 8116532
+    },
+    {
+      "id": 4,
+      "scenes": 10,
+      "files": 164,
+      "bytes": 7727730
+    },
+    {
+      "id": 5,
       "scenes": 10,
       "files": 160,
-      "bytes": 7631551
+      "bytes": 7474085
     },
     {
-      "chapter": 4,
+      "id": 6,
       "scenes": 10,
-      "files": 166,
-      "bytes": 7703918
+      "files": 175,
+      "bytes": 9557216
     },
     {
-      "chapter": 5,
+      "id": 7,
       "scenes": 10,
-      "files": 166,
-      "bytes": 8020016
+      "files": 175,
+      "bytes": 10046806
     },
     {
-      "chapter": 6,
+      "id": 8,
       "scenes": 10,
-      "files": 166,
-      "bytes": 7806326
+      "files": 175,
+      "bytes": 9652807
     },
     {
-      "chapter": 7,
+      "id": 9,
       "scenes": 10,
-      "files": 166,
-      "bytes": 7638843
+      "files": 175,
+      "bytes": 10154817
     },
     {
-      "chapter": 8,
+      "id": 10,
       "scenes": 10,
-      "files": 166,
-      "bytes": 8160084
-    },
-    {
-      "chapter": 9,
-      "scenes": 10,
-      "files": 166,
-      "bytes": 7780443
-    },
-    {
-      "chapter": 10,
-      "scenes": 10,
-      "files": 162,
-      "bytes": 7508223
+      "files": 175,
+      "bytes": 9916187
     }
   ],
+  "staticArchive": {
+    "catalogRevision": 2,
+    "created": "2026-11-03T05:29:25.3141038Z",
+    "file": "LittleDiscoveries-static.zip",
+    "bytes": 84298194,
+    "sha256": "d2d6e9f7863276e9c018373100ad5a1446120f5f0b170a033fb0d91baa68c5cf",
+    "counts": {
+      "Scenes": 100,
+      "Previews": 1391,
+      "RuntimeLevels": 100,
+      "Catalogs": 2
+    }
+  },
   "physicalIPhoneTested": false
 }

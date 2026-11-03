@@ -1,29 +1,31 @@
-# Implementation and verification
+# Revised collection verification
 
-Generated 2026-11-02T08:40:32.160Z.
+Generated 2026-11-03T05:35:31.479Z. This report describes collection revision 2. Original collection evidence is retained in [verification-v1](verification-v1/results.json).
 
-The local game contains **100 original illustrated scenes and 1,304 authored object placements**, with the exact chapter/level counts in DESIGN.md. Source PNGs, final prompts, manually traced outlines, matching previews and runtime level JSON are retained in this workspace. No placeholder level counts as finished. All ten complete offline packages are in the production build.
+## Completed content
 
-The object tray is a compact horizontal strip at the bottom (about 74 CSS pixels in portrait), including landscape. Larger details and the remaining-only filter are in All objects. All scenes are immediately selectable. Help, exact reveals, and assisted finds are unlimited.
+The active game has **100 illustrated scenes and 1,391 placements**, with **at most 15 targets in every level**. Original 51–100 are now 1–50; original 1–50 are retired. Fifty new illustrations fill 51–100. Ten retained sixteen-target lists were reduced to fifteen by removing their largest visible target. Their artwork and remaining target IDs are retained.
 
-## Automated checks
+New ordinary scenes contain 11 challenging and 4 easy targets. Breaks 60, 70, 80, 90, 100 contain 3 challenging and 7 easy targets. Across all 725 new placements, 510 (70.3%) are classified as challenging. Each has a concrete concealment rationale. The source/outline overlay review is recorded for each new scene. These are authored visual assessments, not measured player difficulty; the intended player's feedback remains necessary.
 
-- 15 core tests passed.
-- 23 distinct browser cases passed; 0 unresolved failures; 1 intentional skip (Chromium-specific network throttling is not repeated in WebKit).
-- chromium-phone: 100 scenes / 1304 real scene-picker collections; webkit-phone: 100 scenes / 1304 real scene-picker collections.
-- Exact counts, stable IDs, matching previews, source dimensions, polygon topology, broad hint coverage, inspection bounds, missing assets and duplicate scene bytes checked.
-- Pointer/touch event collection, duplicate taps, offscreen tray targets, drag/pinch suppression, help, assisted completion, replay, album/postcards, backup export/import and rejection, reload recovery, and saved viewing position checked.
-- Complete chapter download, offline navigation through ten scenes, missing-file detection/repair and interrupted download resumption checked in Chromium and WebKit. Service-worker reload recovery checked independently.
-- 375-pixel portrait, a 375 × 568 small-height viewport, and 667 × 375 landscape keep controls reachable and the tray horizontal at the bottom.
+## Checks and evidence
 
-Evidence combines the complete browser tour with a final focused run of gameplay, reload/offline recovery, layout and performance checks against the final build. The initial run exposed a test acting before artwork was ready and first-marker graphics initialization exceeding the feedback budget under concurrent load. The test now waits for scene readiness; the renderer prepares its feedback pipeline while loading. The final regression run passed all 13 applicable cases, with one intentional skip. Raw reports retain the earlier failures rather than replacing their history. Performance was measured with one test worker.
+- 20 core tests passed, including original-backup validation, 72→22 migration with thirteen finds, retained favorites/view, one-time migration and fifteen-target trimming/completion.
+- 24 browser scenarios passed; 0 unresolved failures; 0 skipped.
+- chromium-phone: 100 scenes / 1,391 actual pointer collections; webkit-phone: 100 scenes / 1,391 actual pointer collections.
+- Count/quota/cap, unique IDs/art bytes, source dimensions, matching nonempty previews, polygon bounds/topology, hint coverage and inspection bounds checked.
+- Collection, repeated taps, offscreen tray targets, hints/reveals/assists, replay, album/postcards/dedication, backups/rejection, reload and old-save recovery checked.
+- Chapter downloads, offline navigation, missing-file detection/repair and interrupted resumption checked in Chromium and WebKit. Refreshing an original cached tab preserves its discoveries and reads the versioned catalog.
+- Portrait 375×568 and landscape 667×375 keep 44px controls reachable and the bottom object scroller compact and horizontal.
 
-A cold scene became playable in **1388 ms** under Chromium's emulated 10 Mbps / 40 ms network conditions. Window resource entries reported **128,351 transfer bytes**; service-worker installation traffic is separate. The complete uncompressed app shell is below 1 MB. Touch-to-counter feedback measured **chromium-phone: 3.2 ms; webkit-phone: 3.0 ms**. These measurements are from this Windows workstation, not a real iPhone.
+At an aggregate emulated 10 Mbps with 40 ms latency, the picture and every target preview became ready in **chromium-phone: 1809ms; webkit-phone: 1848ms**. The throttled local HTTP proxy counted chromium-phone: 860,229 response payload bytes; webkit-phone: 1,011,079 response payload bytes across the page, Pixi image worker and service worker. This replaces a page-only CDP/resource-entry measurement that omitted worker traffic. Touch-to-counter feedback measured **chromium-phone: 3.3ms; webkit-phone: 4.0ms**. Timing checks use a single worker. These are desktop browser measurements.
 
-## Remaining acceptance work
+Raw reports and latest per-scenario outcomes are in [verification/results.json](verification/results.json). Source art, final prompts, annotations and diagnostic review sheets remain available. Rejected drafts do not count as levels.
 
-**No actual iPhone has been tested.** All 100 per-scene smallPhone flags remain false. The intended phone still needs normal-brightness artwork/target review, real two-finger pinch/drag, Safari toolbar and app-switch/lock interruptions, storage eviction behavior, and performance measurements. See [DEVICE_REVIEW.md](DEVICE_REVIEW.md). This is the remaining acceptance blocker; browser emulation cannot establish those results.
+The local static hosting ZIP contains 100 scene pictures, 1,391 matching previews and 100 versioned level definitions, plus its application shell. Its size is 84.3 MB. The SHA-256 checksum and verified entry counts are retained in [verification/static-archive.json](verification/static-archive.json).
 
-The game is published on GitHub Pages at [https://imfoot.github.io/little-discoveries/](https://imfoot.github.io/little-discoveries/). Deployment details and hosted checks are recorded in [verification/deployment.json](verification/deployment.json). Opening a normal HTTPS link is sufficient; Home Screen installation is optional.
+## Phone and deployment status
 
-Detailed evidence, raw reports, screenshots and package versions are in [verification/results.json](verification/results.json) and the neighboring files. Chapter composition contact sheets are in artwork/review/.
+The player provided an actual iPhone Safari screenshot of the original collection and rejected its difficulty. This task's revised collection has not been acceptance-tested on that physical iPhone. New artwork readability, real multitouch, Safari toolbar/lock/app interruptions and performance still need review there; see [DEVICE_REVIEW.md](DEVICE_REVIEW.md).
+
+The complete revised build is ready for deployment. The hosted revision will be recorded after successful publication. Home Screen installation is optional. Existing hosted saves migrate automatically; a backup remains portable between devices/origins.

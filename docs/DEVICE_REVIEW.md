@@ -1,10 +1,10 @@
 # Actual iPhone review — pending
 
-No scene has been represented as reviewed on a physical iPhone. Desktop WebKit phone emulation is useful evidence for layout and browser behavior; it does not establish real-device touch comfort, readability, or performance.
+The player supplied an actual iPhone Safari screenshot of the original collection and reported that it was too easy. No revised scene has been represented as acceptance-reviewed on that physical phone. Desktop WebKit phone emulation is useful evidence for layout and browser behavior; it does not establish real-device touch comfort, readability, or performance.
 
 The public HTTPS build is ready to review at **https://imfoot.github.io/little-discoveries/**. Export progress from a local preview before moving to the hosted origin if you want to keep that progress.
 
-Use a static HTTPS build on the wife's intended iPhone, at normal brightness, in ordinary Safari. No installation is needed. Start with 1 (Morning kitchen), 28 (The haberdashery), and 80 (The lantern grove). After approving the style and interaction, review each remaining scene and each target.
+Use a static HTTPS build on the wife's intended iPhone, at normal brightness, in ordinary Safari. No installation is needed. Start with 1 (retained baseline), 51 (new workshop), 60 (a gentler break) and 86 (a detailed new archive). After approving the style and interaction, review each remaining scene and each target.
 
 For every scene, record phone model, iOS/Safari version, date, normal brightness, and reviewer. Check every target's preview against its actual shape/color/orientation, at least 60% visible silhouette and its defining feature, absence of an indistinguishable twin, fair edge taps, useful broad hint, exact reveal alignment, and useful inspection zoom. Tap targets both at Fit and at inspection zoom. Revise artwork or geometry if the reveal does not make the object recognizable. Mark `smallPhone: true` in the source annotation only after this review.
 

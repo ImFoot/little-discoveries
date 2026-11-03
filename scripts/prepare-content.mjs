@@ -1,7 +1,10 @@
 import sharp from 'sharp';
-import { readFile, writeFile, readdir, mkdir, access } from 'node:fs/promises';
+import { readFile, readdir, mkdir, access } from 'node:fs/promises';
+import {writeArtifact as writeFile} from './artifact-io.mjs';
 import { createHash } from 'node:crypto';
 const catalog = JSON.parse(await readFile('public/content/catalog.json','utf8'));
+const artPrefix=catalog.revision===2?'art/v2':'art',contentPrefix=catalog.revision===2?'content/v2':'content';
+await mkdir(`public/${contentPrefix}/levels`,{recursive:true});
 const files = (await readdir('artwork/annotations')).filter(f=>f.endsWith('.json')).sort();
 const pipeline=await readFile(new URL(import.meta.url));
 await mkdir('.cache',{recursive:true});
@@ -16,15 +19,15 @@ for (const file of files) {
   if(stamps[tag]===signature){
     try{
       const level=JSON.parse(await readFile(`public/content/levels/${tag}.json`,'utf8'));
-      await Promise.all([level.art,level.thumbnail,...level.targets.map(t=>t.preview)].map(path=>access(`public/${path}`)));
+      await Promise.all([level.art,level.thumbnail,...level.targets.map(t=>t.preview),`${contentPrefix}/levels/${tag}.json`].map(path=>access(`public/${path}`)));
       meta.status=level.status;meta.targetIds=level.targets.map(t=>t.id);continue;
     }catch{/* Rebuild missing outputs. */}
   }
   const { width, height } = await sharp(source).metadata();
   const targets = [];
-  await mkdir(`public/art/${tag}`, {recursive:true});
-  await sharp(source).webp({quality:87,effort:5}).toFile(`public/art/${tag}.webp`);
-  await sharp(source).resize(320,480,{fit:'inside'}).webp({quality:78}).toFile(`public/art/${tag}-thumb.webp`);
+  await mkdir(`public/${artPrefix}/${tag}`, {recursive:true});
+  await sharp(source).webp({quality:87,effort:5}).toFile(`public/${artPrefix}/${tag}.webp`);
+  await sharp(source).resize(320,480,{fit:'inside'}).webp({quality:78}).toFile(`public/${artPrefix}/${tag}-thumb.webp`);
   for (const item of annotation.targets) {
     const outline = item.outline;
     const xs = outline.map(p=>p[0]), ys = outline.map(p=>p[1]);
@@ -33,8 +36,8 @@ for (const file of files) {
     const crop={ x:Math.max(0,minX-pad), y:Math.max(0,minY-pad), width:0,height:0 };
     crop.width=Math.min(width-crop.x, maxX-minX+pad*2);
     crop.height=Math.min(height-crop.y, maxY-minY+pad*2);
-    const id=`l${tag}-${item.id}`;
-    const preview=`art/${tag}/${item.id}.webp`;
+    const id=`${meta.targetPrefix??`l${tag}`}-${item.id}`;
+    const preview=`${artPrefix}/${tag}/${item.id}.webp`;
     const contour=poly=>`M${poly.map(([x,y])=>`${x-crop.x},${y-crop.y}`).join('L')}Z`;
     const path=[outline,...item.holes??[]].map(contour).join('');
     const mask=Buffer.from(`<svg width="${crop.width}" height="${crop.height}"><path d="${path}" fill="white" fill-rule="evenodd"/></svg>`);
@@ -45,15 +48,18 @@ for (const file of files) {
     const hintHeight=Math.min(height,Math.ceil(Math.max(350,(maxY-minY)*1.4+100)));
     const hint={x:Math.max(0,Math.min(width-hintWidth,Math.floor(cx-hintWidth/2))),y:Math.max(0,Math.min(height-hintHeight,Math.floor(cy-hintHeight/2))),width:hintWidth,height:hintHeight};
     const inspectionZoom=Math.min(6,Math.max(1.25,110/(Math.max(maxX-minX,maxY-minY)*Math.min(375/width,380/height))));
-    targets.push({id,name:item.name,preview,outline,...item.holes?.length?{holes:item.holes}:{},hit:item.hit??outline,crop,hint:item.hint??hint,inspect:{x:cx/width,y:cy/height,zoom:item.zoom??inspectionZoom},notes:item.notes??''});
+    targets.push({id,name:item.name,preview,outline,...item.holes?.length?{holes:item.holes}:{},hit:item.hit??outline,crop,hint:item.hint??hint,inspect:{x:cx/width,y:cy/height,zoom:item.zoom??inspectionZoom},notes:item.notes??'',...(item.difficulty?{difficulty:item.difficulty,concealment:item.concealment??''}:{})});
   }
   const review=annotation.review??{artwork:true,geometry:true,smallPhone:false,notes:'Screen review only; actual iPhone review pending.'};
-  const level={id:meta.id,chapter:meta.chapter,title:meta.title,targetCount:meta.targetCount,art:`art/${tag}.webp`,thumbnail:meta.thumbnail,width,height,status:review.artwork&&review.geometry?'reviewed':'draft',targets,review};
+  const approved=review.artwork&&review.geometry&&(catalog.revision!==2||meta.id<=50||review.contextOutlines===true);
+  const level={id:meta.id,chapter:meta.chapter,title:meta.title,targetCount:meta.targetCount,art:`${artPrefix}/${tag}.webp`,thumbnail:meta.thumbnail,width,height,status:approved?'reviewed':'draft',targets,review};
   if(targets.length!==meta.targetCount) throw Error(`${tag}: ${targets.length} instead of ${meta.targetCount}`);
   await writeFile(`public/content/levels/${tag}.json`,JSON.stringify(level,null,2)+'\n');
+  if(catalog.revision===2)await writeFile(`public/${contentPrefix}/levels/${tag}.json`,JSON.stringify(level,null,2)+'\n');
   meta.status=level.status;meta.targetIds=targets.map(t=>t.id);
   stamps[tag]=signature;changed++;
 }
 await writeFile('public/content/catalog.json',JSON.stringify(catalog,null,2)+'\n');
+if(catalog.revision===2)await writeFile(`public/${contentPrefix}/catalog.json`,JSON.stringify(catalog,null,2)+'\n');
 await writeFile('.cache/content-prepared.json',JSON.stringify(stamps,null,2));
 console.log(`Prepared ${files.length} scenes (${changed} changed). No real-iPhone review claimed.`);

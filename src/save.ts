@@ -1,14 +1,17 @@
 import type { Attempt, CatalogEntry, Save } from './types';
-const KEY='little-discoveries.save.v1', RECOVERY=KEY+'.recovery';
+import legacyCatalog from './data/legacy-catalog-v1.json' with {type:'json'};
+export const SAVE_KEY='little-discoveries.save.v2';
+const KEY=SAVE_KEY,RECOVERY=KEY+'.recovery',LEGACY='little-discoveries.save.v1';
 export const defaultView=()=>({x:.5,y:.5,zoom:1});
 export const newAttempt=(replay=false):Attempt=>({found:[],view:defaultView(),started:true,updated:Date.now(),replay,completed:false});
-export const freshSave=():Save=>({version:1,updated:Date.now(),current:1,completed:[],favorites:[],attempts:{},preferences:{sound:false,reduceMotion:false,largePreviews:false,largeText:false,markers:true},catalogScroll:0,onboarded:false});
+export const freshSave=():Save=>({version:2,updated:Date.now(),current:1,completed:[],favorites:[],attempts:{},preferences:{sound:false,reduceMotion:false,largePreviews:false,largeText:false,markers:true},catalogScroll:0,onboarded:false});
 const object=(v:unknown):v is Record<string,unknown>=>typeof v==='object'&&v!==null&&!Array.isArray(v);
 const integer=(v:unknown,lo:number,hi:number):v is number=>Number.isInteger(v)&&Number(v)>=lo&&Number(v)<=hi;
 const finite=(v:unknown,lo:number,hi:number):v is number=>typeof v==='number'&&Number.isFinite(v)&&v>=lo&&v<=hi;
 const uniqueIds=(v:unknown):v is number[]=>Array.isArray(v)&&v.every(n=>integer(n,1,100))&&new Set(v).size===v.length;
-export function validateSave(input:unknown, catalog:CatalogEntry[]):Save {
-  if(!object(input)||input.version!==1||!integer(input.current,1,100)||!uniqueIds(input.completed)||!uniqueIds(input.favorites)||!object(input.attempts)||!object(input.preferences)||typeof input.onboarded!=='boolean'||!finite(input.updated,0,1e15)||!finite(input.catalogScroll,0,1e8)) throw Error('This file is not a valid Little Discoveries save. Your progress has not changed.');
+type SaveCatalog=Pick<CatalogEntry,'id'|'targetCount'|'targetIds'>[];
+function validateVersion(input:unknown, catalog:SaveCatalog,version:number):Save {
+  if(!object(input)||input.version!==version||!integer(input.current,1,100)||!uniqueIds(input.completed)||!uniqueIds(input.favorites)||!object(input.attempts)||!object(input.preferences)||typeof input.onboarded!=='boolean'||!finite(input.updated,0,1e15)||!finite(input.catalogScroll,0,1e8)) throw Error('This file is not a valid Little Discoveries save. Your progress has not changed.');
   const prefs=input.preferences;
   for(const key of ['sound','reduceMotion','largePreviews','largeText','markers']) if(typeof prefs[key]!=='boolean') throw Error('The backup has invalid settings. Your progress has not changed.');
   for(const [key,value] of Object.entries(input.attempts)){
@@ -19,17 +22,44 @@ export function validateSave(input:unknown, catalog:CatalogEntry[]):Save {
   }
   return structuredClone(input) as Save;
 }
-export function loadSave(catalog:CatalogEntry[]):{save:Save;recovered:boolean;warning:string} {
+export function validateSave(input:unknown,catalog:SaveCatalog):Save {
+  if(object(input)&&input.version===1){
+    const old=validateVersion(input,legacyCatalog,1);
+    const save={...old,version:2,current:old.current>50?old.current-50:1,
+      completed:old.completed.filter(id=>id>50).map(id=>id-50),
+      favorites:old.favorites.filter(id=>id>50).map(id=>id-50),
+      attempts:Object.fromEntries(Object.entries(old.attempts).filter(([id])=>+id>50).map(([id,attempt])=>{
+        const meta=catalog.find(level=>level.id===+id-50);
+        if(!meta)throw Error('The retained scene could not be matched. Your progress has not changed.');
+        const found=attempt.found.filter(targetId=>meta.targetIds.includes(targetId));
+        return[meta.id,{...attempt,found,completed:found.length===meta.targetCount}];
+      })),catalogScroll:0} as Save;
+    for(const [id,attempt]of Object.entries(save.attempts))if(attempt.completed&&!save.completed.includes(+id))save.completed.push(+id);
+    if(old.current<=50)save.current=continueLevel(save);
+    return validateVersion(save,catalog,2);
+  }
+  return validateVersion(input,catalog,2);
+}
+export function loadSave(catalog:CatalogEntry[]):{save:Save;recovered:boolean;warning:string;migrated:boolean} {
   let recovered=false, warning='';
   try {
-    for(const key of [KEY,RECOVERY]){
+    for(const key of [KEY,RECOVERY,LEGACY,LEGACY+'.recovery']){
       const raw=localStorage.getItem(key);
       if(!raw) continue;
-      try { return {save:validateSave(JSON.parse(raw),catalog),recovered,warning}; }
+      try {
+        const input:unknown=JSON.parse(raw),save=validateSave(input,catalog),migrated=object(input)&&input.version===1;
+        if(migrated){
+          // Keep the original save before remapping its scene numbers. Retired
+          // scenes never become progress on unrelated replacement pictures.
+          try{if(!localStorage.getItem(LEGACY+'.before-revision2'))localStorage.setItem(LEGACY+'.before-revision2',raw);}catch{}
+        }
+        if(migrated||key!==KEY)persist(save);
+        return {save,recovered,warning:migrated?'Your saved discoveries have moved with their pictures. The new collection is ready.':warning,migrated};
+      }
       catch {recovered=true;warning='Your last save could not be read. A recovery copy was used when available.';}
     }
   } catch {warning='This browser could not open device storage. You can still play and back up progress in Settings.';}
-  return {save:freshSave(),recovered,warning};
+  return {save:freshSave(),recovered,warning,migrated:false};
 }
 export function persist(save:Save):boolean {
   save.updated=Date.now();
@@ -54,11 +84,11 @@ export function continueLevel(save:Save):number {
   const unfinished=Object.entries(save.attempts).filter(([,a])=>a.started&&!a.completed).sort((a,b)=>b[1].updated-a[1].updated);
   return unfinished.length?+unfinished[0][0]:(Array.from({length:100},(_,i)=>i+1).find(id=>!save.completed.includes(id))??100);
 }
-export function exportBackup(save:Save):string {return JSON.stringify({format:'little-discoveries',schemaVersion:1,savedAt:new Date().toISOString(),save},null,2);}
+export function exportBackup(save:Save):string {return JSON.stringify({format:'little-discoveries',schemaVersion:2,savedAt:new Date().toISOString(),save},null,2);}
 export function importBackup(text:string,catalog:CatalogEntry[]):Save {
   if(text.length>2_000_000) throw Error('That file is too large to be a progress backup. Your progress has not changed.');
   let parsed:unknown;
   try {parsed=JSON.parse(text);} catch {throw Error('That file could not be read. Choose a Little Discoveries backup. Your progress has not changed.');}
-  if(!object(parsed)||parsed.format!=='little-discoveries'||parsed.schemaVersion!==1) throw Error('Choose a Little Discoveries progress backup. Your progress has not changed.');
+  if(!object(parsed)||parsed.format!=='little-discoveries'||![1,2].includes(Number(parsed.schemaVersion))||!object(parsed.save)||parsed.save.version!==parsed.schemaVersion) throw Error('Choose a Little Discoveries progress backup. Your progress has not changed.');
   return validateSave(parsed.save,catalog);
 }

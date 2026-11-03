@@ -1,85 +1,61 @@
-import {readFile,writeFile,mkdir,copyFile} from 'node:fs/promises';
-
-const readJSON=async path=>JSON.parse(await readFile(path,'utf8'));
-const reports=[
-  {name:'full-browser-run.json',path:'.cache/browser-report.json'},
-  {name:'final-regression-run.json',path:'.cache/final-check-report.json'},
-];
-const latest=new Map();
-function collect(suite,run){
-  for(const spec of suite.specs||[])for(const test of spec.tests||[]){
-    const key=`${test.projectName}: ${spec.title}`;
-    latest.set(key,{project:test.projectName,title:spec.title,status:test.status,results:test.results,run});
-  }
-  for(const child of suite.suites||[])collect(child,run);
-}
-for(const run of reports){run.report=await readJSON(run.path);for(const suite of run.report.suites)collect(suite,run.name);}
-const content=await readJSON('.cache/content-validation.json');
-const unit=await readJSON('.cache/unit-report.json');
-const manifest=await readJSON('dist/offline-manifest.json');
-let deployment;try{deployment=await readJSON('docs/verification/deployment.json');}catch{}
-let missingArt;try{missingArt=await readJSON('.cache/missing-art-results.json');}catch{}
-const cases=[...latest.values()];
-const summary={total:cases.length,passed:cases.filter(c=>c.status==='expected').length,skipped:cases.filter(c=>c.status==='skipped').length,failed:cases.filter(c=>!['expected','skipped'].includes(c.status)).length};
-if(summary.total!==24||summary.failed||unit.numFailedTests||content.errors.length||content.illustratedScenes!==100||content.authoredPlacements!==1304)throw Error('Latest verification is not complete and passing.');
-if(missingArt?.stats.unexpected)throw Error('Additional missing-art recovery checks did not pass.');
+import {readFile,mkdir,copyFile} from 'node:fs/promises';
+import {basename} from 'node:path';
+import {writeArtifact} from './artifact-io.mjs';
+const json=async path=>JSON.parse((await readFile(path,'utf8')).replace(/^\uFEFF/,''));
+const reportPaths=process.argv.slice(2);
+if(!reportPaths.length)throw Error('Pass the revision-2 browser reports, in chronological order.');
+const content=await json('.cache/r2-content.json'),unit=await json('.cache/r2-unit.json'),catalog=await json('public/content/catalog.json'),manifest=await json('dist/offline-manifest.json');
+const archive=await json('.cache/archive-info.json');
+if(archive.catalogRevision!==2||archive.counts.Scenes!==100||archive.counts.Previews!==1391||archive.counts.RuntimeLevels!==100)throw Error('A verified complete revision-2 static archive is required.');
+if(catalog.revision!==2||content.errors.length||content.illustratedScenes!==100||content.authoredPlacements!==1391||unit.numFailedTests)throw Error('Complete passing revision-2 content and core checks are required.');
+const latest=new Map(),runs=[];
+function visit(suite,run){for(const s of suite.specs??[])for(const t of s.tests??[])latest.set(`${t.projectName}: ${s.title}`,{project:t.projectName,title:s.title,status:t.status,results:t.results,run});for(const child of suite.suites??[])visit(child,run);}
+for(const path of reportPaths){const report=await json(path);runs.push({path,report});for(const suite of report.suites)visit(suite,basename(path));}
+const cases=[...latest.values()],summary={total:cases.length,passed:cases.filter(c=>c.status==='expected').length,skipped:cases.filter(c=>c.status==='skipped').length,failed:cases.filter(c=>!['expected','skipped'].includes(c.status)).length};
+if(summary.total!==24||summary.failed||summary.skipped)throw Error('All 24 distinct browser scenarios must pass.');
 const metrics=[];
-for(const c of cases)for(const result of c.results)for(const attachment of result.attachments||[]){
-  if(!attachment.name.endsWith('.json'))continue;
-  const body=attachment.path?await readFile(attachment.path,'utf8'):Buffer.from(attachment.body,'base64').toString('utf8');
-  metrics.push({name:attachment.name,project:c.project,run:c.run,...JSON.parse(body)});
-}
-const collection=metrics.filter(m=>m.name==='verified-placements.json');
-if(collection.length!==2||collection.some(m=>m.scenes!==100||m.placements!==1304))throw Error('Both complete collection tours are required.');
+for(const c of cases)for(const result of c.results)for(const a of result.attachments??[]){if(!a.name.endsWith('.json'))continue;const body=a.path?await readFile(a.path,'utf8'):Buffer.from(a.body,'base64').toString('utf8');metrics.push({name:a.name,project:c.project,run:c.run,...JSON.parse(body)});}
+const tours=metrics.filter(m=>m.name==='verified-placements.json');if(tours.length!==2||tours.some(t=>t.scenes!==100||t.placements!==1391))throw Error('Both complete 1,391-placement collection tours are required.');
+const feedback=metrics.filter(m=>m.name==='emulated-touch-feedback.json'),loading=metrics.filter(m=>m.name==='emulated-loading.json');
+if(feedback.length!==2||loading.length!==2)throw Error('Both feedback checks and both emulated cold-load checks are required.');
 await mkdir('docs/verification',{recursive:true});
-for(const run of reports)await copyFile(run.path,`docs/verification/${run.name}`);
-await copyFile('.cache/unit-report.json','docs/verification/unit-run.json');
-if(missingArt)await copyFile('.cache/missing-art-results.json','docs/verification/additional-recovery-run.json');
-for(const name of ['chromium-phone-scene-1.png','chromium-phone-scene-28.png','chromium-phone-scene-80.png','chromium-phone-landscape.png','chromium-phone-home.png'])await copyFile(`test-results/${name}`,`docs/verification/${name}`);
-const versions=(await readJSON('package-lock.json')).packages;
-const evidence={
-  date:new Date().toISOString(),content,
-  unitTests:{passed:unit.numPassedTests,failed:unit.numFailedTests},
-  browserTests:{...summary,method:'Latest result per engine and scenario, full tour followed by final focused regression checks.',runs:reports.map(r=>({file:r.name,...r.report.stats})),cases:cases.map(({results,...c})=>c)},
-  additionalRecovery:missingArt?.stats,metrics,
-  packages:Object.fromEntries(['pixi.js','vite','typescript','sharp','@playwright/test'].map(name=>[name,versions[`node_modules/${name}`].version])),
-  buildVersion:manifest.version,contentVersion:manifest.contentVersion,
-  hostedDeployment:deployment,
-  offlineChapters:manifest.chapters.map(c=>({chapter:c.id,scenes:c.readyLevels,files:c.files.length,bytes:c.bytes})),
-  physicalIPhoneTested:false,
-};
-await writeFile('docs/verification/results.json',JSON.stringify(evidence,null,2)+'\n');
-const loading=metrics.find(m=>m.name==='emulated-loading.json');
-const feedback=metrics.filter(m=>m.name==='emulated-touch-feedback.json');
-const doc=`# Implementation and verification
+for(const run of runs)await copyFile(run.path,`docs/verification/${basename(run.path)}`);
+await copyFile('.cache/r2-unit.json','docs/verification/unit-run.json');
+await copyFile('.cache/archive-info.json','docs/verification/static-archive.json');
+for(const name of ['scene-1','scene-51','scene-60','scene-86','scene-100','landscape','home'])await copyFile(`test-results/chromium-phone-${name}.png`,`docs/verification/chromium-phone-${name}.png`);
+let deployment;try{const d=await json('docs/verification/deployment.json');if(d.catalogRevision===2&&d.verified)deployment=d;}catch{}
+const evidence={date:new Date().toISOString(),catalogRevision:2,content,unitTests:{passed:unit.numPassedTests,failed:unit.numFailedTests},browserTests:{...summary,runs:runs.map(r=>({file:basename(r.path),...r.report.stats})),cases:cases.map(({results,...c})=>c)},difficulty:{maxTargets:15,retainedScenes:50,newScenes:50,ordinary:{scenes:45,targets:15,challenging:11,easy:4},breaks:{levels:[60,70,80,90,100],targets:10,challenging:3,easy:7},newPlacements:725,newChallenging:510,newEasy:215},metrics,buildVersion:manifest.version,contentVersion:manifest.contentVersion,offlineChapters:manifest.chapters.map(c=>({id:c.id,scenes:c.readyLevels,files:c.files.length,bytes:c.bytes})),staticArchive:archive,hostedDeployment:deployment,physicalIPhoneTested:false};
+await writeArtifact('docs/verification/results.json',JSON.stringify(evidence,null,2)+'\n');
+await writeArtifact('docs/VERIFICATION.md',`# Revised collection verification
 
-Generated ${evidence.date}.
+Generated ${evidence.date}. This report describes collection revision 2. Original collection evidence is retained in [verification-v1](verification-v1/results.json).
 
-The local game contains **100 original illustrated scenes and 1,304 authored object placements**, with the exact chapter/level counts in DESIGN.md. Source PNGs, final prompts, manually traced outlines, matching previews and runtime level JSON are retained in this workspace. No placeholder level counts as finished. All ten complete offline packages are in the production build.
+## Completed content
 
-The object tray is a compact horizontal strip at the bottom (about 74 CSS pixels in portrait), including landscape. Larger details and the remaining-only filter are in All objects. All scenes are immediately selectable. Help, exact reveals, and assisted finds are unlimited.
+The active game has **100 illustrated scenes and 1,391 placements**, with **at most 15 targets in every level**. Original 51–100 are now 1–50; original 1–50 are retired. Fifty new illustrations fill 51–100. Ten retained sixteen-target lists were reduced to fifteen by removing their largest visible target. Their artwork and remaining target IDs are retained.
 
-## Automated checks
+New ordinary scenes contain 11 challenging and 4 easy targets. Breaks 60, 70, 80, 90, 100 contain 3 challenging and 7 easy targets. Across all 725 new placements, 510 (70.3%) are classified as challenging. Each has a concrete concealment rationale. The source/outline overlay review is recorded for each new scene. These are authored visual assessments, not measured player difficulty; the intended player's feedback remains necessary.
 
-- ${unit.numPassedTests} core tests passed.
-- ${summary.passed} distinct browser cases passed; ${summary.failed} unresolved failures; ${summary.skipped} intentional skip (Chromium-specific network throttling is not repeated in WebKit).
-- ${collection.map(c=>`${c.engine}: ${c.scenes} scenes / ${c.placements} real scene-picker collections`).join('; ')}.
-- Exact counts, stable IDs, matching previews, source dimensions, polygon topology, broad hint coverage, inspection bounds, missing assets and duplicate scene bytes checked.
-- Pointer/touch event collection, duplicate taps, offscreen tray targets, drag/pinch suppression, help, assisted completion, replay, album/postcards, backup export/import and rejection, reload recovery, and saved viewing position checked.
-- Complete chapter download, offline navigation through ten scenes, missing-file detection/repair and interrupted download resumption checked in Chromium and WebKit. Service-worker reload recovery checked independently.
-- 375-pixel portrait, a 375 × 568 small-height viewport, and 667 × 375 landscape keep controls reachable and the tray horizontal at the bottom.
+## Checks and evidence
 
-Evidence combines the complete browser tour with a final focused run of gameplay, reload/offline recovery, layout and performance checks against the final build. The initial run exposed a test acting before artwork was ready and first-marker graphics initialization exceeding the feedback budget under concurrent load. The test now waits for scene readiness; the renderer prepares its feedback pipeline while loading. The final regression run passed all 13 applicable cases, with one intentional skip. Raw reports retain the earlier failures rather than replacing their history. Performance was measured with one test worker.
+- ${unit.numPassedTests} core tests passed, including original-backup validation, 72→22 migration with thirteen finds, retained favorites/view, one-time migration and fifteen-target trimming/completion.
+- ${summary.passed} browser scenarios passed; ${summary.failed} unresolved failures; ${summary.skipped} skipped.
+- ${tours.map(t=>`${t.project}: 100 scenes / 1,391 actual pointer collections`).join('; ')}.
+- Count/quota/cap, unique IDs/art bytes, source dimensions, matching nonempty previews, polygon bounds/topology, hint coverage and inspection bounds checked.
+- Collection, repeated taps, offscreen tray targets, hints/reveals/assists, replay, album/postcards/dedication, backups/rejection, reload and old-save recovery checked.
+- Chapter downloads, offline navigation, missing-file detection/repair and interrupted resumption checked in Chromium and WebKit. Refreshing an original cached tab preserves its discoveries and reads the versioned catalog.
+- Portrait 375×568 and landscape 667×375 keep 44px controls reachable and the bottom object scroller compact and horizontal.
 
-A cold scene became playable in **${loading.playableMs} ms** under Chromium's emulated 10 Mbps / 40 ms network conditions. Window resource entries reported **${loading.bytes.toLocaleString()} transfer bytes**; service-worker installation traffic is separate. The complete uncompressed app shell is below 1 MB. Touch-to-counter feedback measured **${feedback.map(m=>`${m.project}: ${m.feedbackMs.toFixed(1)} ms`).join('; ')}**. These measurements are from this Windows workstation, not a real iPhone.
+At an aggregate emulated 10 Mbps with 40 ms latency, the picture and every target preview became ready in **${loading.map(l=>`${l.project}: ${l.playableMs}ms`).join('; ')}**. The throttled local HTTP proxy counted ${loading.map(l=>`${l.project}: ${l.bytes.toLocaleString()} response payload bytes`).join('; ')} across the page, Pixi image worker and service worker. This replaces a page-only CDP/resource-entry measurement that omitted worker traffic. Touch-to-counter feedback measured **${feedback.map(f=>`${f.project}: ${f.feedbackMs.toFixed(1)}ms`).join('; ')}**. Timing checks use a single worker. These are desktop browser measurements.
 
-## Remaining acceptance work
+Raw reports and latest per-scenario outcomes are in [verification/results.json](verification/results.json). Source art, final prompts, annotations and diagnostic review sheets remain available. Rejected drafts do not count as levels.
 
-**No actual iPhone has been tested.** All 100 per-scene smallPhone flags remain false. The intended phone still needs normal-brightness artwork/target review, real two-finger pinch/drag, Safari toolbar and app-switch/lock interruptions, storage eviction behavior, and performance measurements. See [DEVICE_REVIEW.md](DEVICE_REVIEW.md). This is the remaining acceptance blocker; browser emulation cannot establish those results.
+The local static hosting ZIP contains 100 scene pictures, 1,391 matching previews and 100 versioned level definitions, plus its application shell. Its size is ${(archive.bytes/1e6).toFixed(1)} MB. The SHA-256 checksum and verified entry counts are retained in [verification/static-archive.json](verification/static-archive.json).
 
-${deployment?.verified?`The game is published on GitHub Pages at [${deployment.url}](${deployment.url}). Deployment details and hosted checks are recorded in [verification/deployment.json](verification/deployment.json).`:'The build is ready for static HTTPS hosting in dist/. It has not been deployed to a public website by this task.'} Opening a normal HTTPS link is sufficient; Home Screen installation is optional.
+## Phone and deployment status
 
-Detailed evidence, raw reports, screenshots and package versions are in [verification/results.json](verification/results.json) and the neighboring files. Chapter composition contact sheets are in artwork/review/.
-`;
-await writeFile('docs/VERIFICATION.md',doc);
-console.log('Wrote docs/VERIFICATION.md and durable evidence.');
+The player provided an actual iPhone Safari screenshot of the original collection and rejected its difficulty. This task's revised collection has not been acceptance-tested on that physical iPhone. New artwork readability, real multitouch, Safari toolbar/lock/app interruptions and performance still need review there; see [DEVICE_REVIEW.md](DEVICE_REVIEW.md).
+
+${deployment?'The revised collection is published at [Play Little Discoveries]('+deployment.url+'). Hosted checks are recorded in [verification/deployment.json](verification/deployment.json).':'The complete revised build is ready for deployment. The hosted revision will be recorded after successful publication.'} Home Screen installation is optional. Existing hosted saves migrate automatically; a backup remains portable between devices/origins.
+`);
+console.log('Saved complete revision-2 verification records.');

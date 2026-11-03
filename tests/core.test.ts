@@ -1,16 +1,21 @@
 import {describe,it,expect,vi,afterEach} from 'vitest';
 import {readFileSync} from 'node:fs';
-import {collect,continueLevel,exportBackup,freshSave,importBackup,loadSave,newAttempt,persist} from '../src/save';
+import {collect,continueLevel,exportBackup,freshSave,importBackup,loadSave,newAttempt,persist,validateSave} from '../src/save';
+import legacy from '../src/data/legacy-catalog-v1.json' with {type:'json'};
 import {inside,pickTarget,clampView} from '../src/geometry';
 import type {Catalog,Level} from '../src/types';
 const catalog=JSON.parse(readFileSync('public/content/catalog.json','utf8')) as Catalog;
 const level=JSON.parse(readFileSync('public/content/levels/001.json','utf8')) as Level;
 afterEach(()=>vi.unstubAllGlobals());
 describe('authored content and input geometry',()=>{
- it('retains all 100 designed counts and the 1,304-placement total',()=>{
+ it('retains 100 scenes with the active catalog’s required placement total',()=>{
   expect(catalog.levels).toHaveLength(100);expect(catalog.chapters).toHaveLength(10);
-  expect(catalog.levels.reduce((n,l)=>n+l.targetCount,0)).toBe(1304);
-  expect([1,28,80].map(id=>catalog.levels[id-1].targetCount)).toEqual([8,16,14]);
+  expect(catalog.levels.reduce((n,l)=>n+l.targetCount,0)).toBe(catalog.requiredPlacements??1304);
+  if(catalog.revision===2){
+   expect(catalog.requiredPlacements).toBe(1391);
+   expect(catalog.levels.every(l=>l.targetCount<=15)).toBe(true);
+   for(const meta of catalog.levels.slice(50)){expect(meta.targetCount).toBe(meta.id%10===0?10:15);expect(meta.challengingCount).toBe(meta.id%10===0?3:11);}
+  }
  });
  it('selects one visible silhouette before a neighbor’s generous padding',()=>{
   const a={...level.targets[0],id:'a',outline:[[0,0],[10,0],[10,10],[0,10]],hit:[[0,0],[10,0],[10,10],[0,10]]} as typeof level.targets[0];
@@ -43,7 +48,7 @@ describe('generous collection, replay, and resume',()=>{
   expect(collect(save,meta,level.targets[0].id)).toBe(true);
   expect(collect(save,meta,level.targets[0].id)).toBe(false);
   for(const t of level.targets)collect(save,meta,t.id);
-  expect(save.attempts[1].found).toHaveLength(8);expect(save.attempts[1].completed).toBe(true);expect(save.completed).toEqual([1]);
+  expect(save.attempts[1].found).toHaveLength(level.targetCount);expect(save.attempts[1].completed).toBe(true);expect(save.completed).toEqual([1]);
   save.attempts[1]=newAttempt(true);
   expect(save.completed).toEqual([1]);expect(save.attempts[1].found).toEqual([]);
  });
@@ -52,6 +57,52 @@ describe('generous collection, replay, and resume',()=>{
   expect(continueLevel(save)).toBe(28);expect(save.attempts[1].started).toBe(true);
   save.current=2;save.attempts[1].updated=100;save.attempts[28].updated=200;
   expect(continueLevel(save)).toBe(28);
+ });
+});
+
+describe('revision-2 progress migration',()=>{
+ const retained=legacy.slice(50).map(meta=>({...catalog.levels[0],...meta,id:meta.id-50}));
+ function oldSave(){
+  const save={...freshSave(),version:1,current:72,completed:[2,90],favorites:[2,72,100],onboarded:true,attempts:{
+   2:{...newAttempt(),found:legacy[1].targetIds.slice(0,1)},
+   72:{...newAttempt(),found:legacy[71].targetIds.slice(0,13),view:{x:.62,y:.41,zoom:3}},
+   90:{...newAttempt(),found:[...legacy[89].targetIds],completed:true},
+  }};return save;
+ }
+ it('moves old 72 to 22 with thirteen finds, view and favorites; retired progress never credits replacements',()=>{
+  const migrated=validateSave(oldSave(),retained);
+  expect(migrated.version).toBe(2);expect(migrated.current).toBe(22);
+  expect(migrated.attempts[22].found).toEqual(legacy[71].targetIds.slice(0,13));
+  expect(migrated.attempts[22].view).toEqual({x:.62,y:.41,zoom:3});
+  expect(migrated.completed).toEqual([40]);expect(migrated.favorites).toEqual([22,50]);
+  expect(Object.keys(migrated.attempts).sort()).toEqual(['22','40']);
+ });
+ it('imports original portable backups and rejects invalid old IDs before remapping',()=>{
+  const backup={format:'little-discoveries',schemaVersion:1,save:oldSave()};
+  expect(importBackup(JSON.stringify(backup),retained).attempts[22].found).toHaveLength(13);
+  backup.save.attempts[72].found[0]='l072-nonexistent';
+  expect(()=>importBackup(JSON.stringify(backup),retained)).toThrow('invalid scene progress');
+ });
+ it('filters retired cap targets and credits a retained scene when all fifteen remaining targets were already found',()=>{
+  const current=retained.map(l=>l.id===4?{...l,targetCount:15,targetIds:l.targetIds.slice(0,15)}:l);
+  const old={...oldSave(),current:54,attempts:{54:{...newAttempt(),found:legacy[53].targetIds.slice(0,15)}}};
+  const migrated=validateSave(old,current);expect(migrated.attempts[4].completed).toBe(true);expect(migrated.completed).toContain(4);
+  old.attempts[54].found=legacy[53].targetIds.slice(15);const trimmed=validateSave(old,current);expect(trimmed.attempts[4].found).toEqual([]);expect(trimmed.attempts[4].completed).toBe(false);
+ });
+ it('migrates storage exactly once and preserves the original recovery file',()=>{
+  const map=new Map([['little-discoveries.save.v1',JSON.stringify(oldSave())]]);
+  vi.stubGlobal('localStorage',{getItem:(key:string)=>map.get(key)??null,setItem:(key:string,value:string)=>map.set(key,value)});
+  const first=loadSave(retained);expect(first.migrated).toBe(true);expect(first.save.current).toBe(22);
+  expect(JSON.parse(map.get('little-discoveries.save.v1.before-revision2')!).current).toBe(72);
+  const second=loadSave(retained);expect(second.migrated).toBe(false);expect(second.save).toEqual(first.save);
+ });
+ it('keeps revised saves independent of an older cached copy of the game',()=>{
+  const original=JSON.stringify(oldSave()),map=new Map([['little-discoveries.save.v1',original]]);
+  vi.stubGlobal('localStorage',{getItem:(key:string)=>map.get(key)??null,setItem:(key:string,value:string)=>map.set(key,value)});
+  const migrated=loadSave(retained);expect(map.get('little-discoveries.save.v1')).toBe(original);
+  expect(JSON.parse(map.get('little-discoveries.save.v2')!).version).toBe(2);
+  const oldTab=oldSave();oldTab.current=90;map.set('little-discoveries.save.v1',JSON.stringify(oldTab));
+  const resumed=loadSave(retained);expect(resumed.migrated).toBe(false);expect(resumed.save).toEqual(migrated.save);
  });
 });
 describe('portable, validated saves and recovery',()=>{
@@ -70,7 +121,7 @@ describe('portable, validated saves and recovery',()=>{
  it('recovers a corrupted primary save from an independently validated copy',()=>{
   const map=new Map<string,string>();vi.stubGlobal('localStorage',{getItem:(k:string)=>map.get(k)??null,setItem:(k:string,v:string)=>map.set(k,v)});
   const save=freshSave();collect(save,catalog.levels[0],level.targets[0].id);expect(persist(save)).toBe(true);
-  map.set('little-discoveries.save.v1','{broken');const loaded=loadSave(catalog.levels);
+  map.set('little-discoveries.save.v2','{broken');const loaded=loadSave(catalog.levels);
   expect(loaded.recovered).toBe(true);expect(loaded.save.attempts[1].found).toEqual([level.targets[0].id]);
  });
  it('reports unavailable device storage while keeping in-memory progress exportable',()=>{

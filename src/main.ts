@@ -4,6 +4,7 @@ import { collect, continueLevel, exportBackup, importBackup, loadSave, newAttemp
 import { SceneView } from './scene';
 import { icon } from './icons';
 import { OfflineLibrary, type DownloadState } from './offline';
+import {catalogUrl,levelUrl} from './content';
 
 const base=new URL(import.meta.env.BASE_URL,location.href);
 const asset=(path:string)=>new URL(path,base).href;
@@ -36,6 +37,10 @@ class Game {
   private modalReturn?:HTMLElement;
   constructor(private catalog:Catalog){
     const loaded=loadSave(catalog.levels);this.save=loaded.save;
+    if(loaded.migrated&&/^#scene\/\d+$/.test(location.hash)){
+      const oldId=Number(location.hash.split('/')[1]);
+      history.replaceState(null,'',`#scene/${oldId>50?oldId-50:this.save.current}`);
+    }
     this.preferences();
     root.addEventListener('click',e=>void this.click(e));
     window.addEventListener('hashchange',()=>void this.renderRoute());
@@ -79,8 +84,9 @@ class Game {
   private renderHome(){
     const next=this.catalog.levels[continueLevel(this.save)-1];
     const found=this.save.attempts[next.id]?.found.length??0;
-    const featured=[1,28,80].map(id=>this.catalog.levels[id-1]);
-    root.innerHTML=`${this.header()}<main class="home page"><div class="home-intro"><div class="intro-copy"><p class="eyebrow">A LITTLE TIME, JUST FOR YOU</p><h1>Lovely things.<br>Little discoveries.</h1><p class="lede">Wander into a beautiful picture.<br>Find a few hidden treasures.<br>Stay as long as you like.</p><div class="home-actions">${button(`Continue ${icon('next')}`,'continue','primary')}<a class="button secondary" href="#scenes">Choose a scene ${icon('grid')}</a></div><p class="resume-caption">${found?`${found} of ${next.targetCount} found · `:''}Scene ${next.id} · ${esc(next.title)}</p><div class="quiet-promise">${icon('leaf')}<span>No rush. A little help whenever you like.</span></div></div><button class="hero-picture" data-action="play:1" aria-label="Explore Morning kitchen"><img src="${asset('art/001.webp')}" alt="A sunlit cottage kitchen with sage cupboards, a sleepy cat, and a table set for a gentle morning." fetchpriority="high"><span class="picture-caption"><span>${icon('sun')} A cozy start</span><span>01 / 100</span></span><span class="photo-tape" aria-hidden="true"></span></button></div><section class="wander-section"><div class="section-heading"><div><p class="eyebrow">A WORLD OF SMALL WONDERS</p><h2>Where shall we wander?</h2></div><a class="text-link" href="#scenes">All 100 scenes ${icon('next')}</a></div><div class="featured-grid">${featured.map(l=>this.featured(l)).join('')}</div></section><footer class="home-footer">${icon('flower')}<p>Made for you, with love.</p><span>100 places to pause. All yours to explore.</span></footer></main>`;
+    const featured=[1,51,86].map(id=>this.catalog.levels[id-1]);
+    const hero=this.catalog.levels[50];
+    root.innerHTML=`${this.header()}<main class="home page"><div class="home-intro"><div class="intro-copy"><p class="eyebrow">A LITTLE TIME, JUST FOR YOU</p><h1>Lovely things.<br>Little discoveries.</h1><p class="lede">Wander into a beautiful picture.<br>Find a few hidden treasures.<br>Stay as long as you like.</p><div class="home-actions">${button(`Continue ${icon('next')}`,'continue','primary')}<a class="button secondary" href="#scenes">Choose a scene ${icon('grid')}</a></div><p class="resume-caption">${found?`${found} of ${next.targetCount} found · `:''}Scene ${next.id} · ${esc(next.title)}</p><div class="quiet-promise">${icon('leaf')}<span>No rush. A little help whenever you like.</span></div></div><button class="hero-picture" data-action="play:${hero.id}" aria-label="Explore ${esc(hero.title)}"><img src="${asset(hero.thumbnail.replace('-thumb',''))}" alt="${esc(hero.title)} — a detailed illustrated scene with concealed objects." fetchpriority="high"><span class="picture-caption"><span>${icon('sun')} Look a little closer</span><span>${String(hero.id).padStart(2,'0')} / 100</span></span><span class="photo-tape" aria-hidden="true"></span></button></div><section class="wander-section"><div class="section-heading"><div><p class="eyebrow">A WORLD OF SMALL WONDERS</p><h2>Where shall we wander?</h2></div><a class="text-link" href="#scenes">All 100 scenes ${icon('next')}</a></div><div class="featured-grid">${featured.map(l=>this.featured(l)).join('')}</div></section><footer class="home-footer">${icon('flower')}<p>Made for you, with love.</p><span>100 places to pause. All yours to explore.</span></footer></main>`;
     window.scrollTo(0,0);
   }
   private featured(level:CatalogEntry){
@@ -120,11 +126,11 @@ class Game {
     const host=document.querySelector<HTMLElement>('#picture')!;
     try{
       if(meta.status!=='reviewed')throw Error('This illustration is still in production. It is not counted as a finished level.');
-      const response=await fetch(asset(`content/levels/${String(id).padStart(3,'0')}.json`));
+      const response=await fetch(asset(levelUrl(id)));
       if(!response.ok)throw Error('This picture is not saved on this device yet. Reconnect and tap Try again. Your progress is safe.');
       const level=await response.json() as Level;
       if(sequence!==this.loadSequence)return;
-      if(level.targets.length!==meta.targetCount)throw Error('This scene’s object data could not be read. Please retry. Your progress is safe.');
+      if(level.id!==meta.id||level.targets.length!==meta.targetCount||level.targets.some((target,i)=>target.id!==meta.targetIds[i]))throw Error('This scene’s object data could not be read. Please retry. Your progress is safe.');
       this.level=level;
       const attempt=this.save.attempts[id]??(this.save.attempts[id]=newAttempt(this.save.completed.includes(id)));
       this.save.current=id;attempt.updated=Date.now();this.write();
@@ -308,9 +314,9 @@ class Game {
 
 async function boot(){
   try{
-    const response=await fetch(asset('content/catalog.json'));if(!response.ok)throw Error('catalog');
+    const response=await fetch(asset(catalogUrl));if(!response.ok)throw Error('catalog');
     const catalog=await response.json() as Catalog;
-    if(catalog.levels.length!==100)throw Error('catalog count');
+    if(catalog.revision!==2||catalog.levels.length!==100)throw Error('catalog count or revision');
     new Game(catalog);
   }catch{
     root.innerHTML=`<main class="startup-error">${icon('flower')}<h1>A little pause</h1><p>The game could not open its scene list. Connect once to get started; downloaded chapters can then travel with you.</p><button class="primary" id="retry-start">Try again</button></main>`;

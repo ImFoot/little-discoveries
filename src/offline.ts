@@ -1,7 +1,8 @@
 import type {Level} from './types';
+import {levelUrl,offlineManifestUrl} from './content';
 export type OfflineAsset={url:string;bytes:number};
 export type OfflineChapter={id:number;files:OfflineAsset[];bytes:number;readyLevels:number};
-type Manifest={version:string;contentVersion:string;shell:string[];chapters:OfflineChapter[]};
+type Manifest={catalogRevision:2;version:string;contentVersion:string;shell:string[];chapters:OfflineChapter[]};
 export type DownloadState={total:number;cached:number;bytes:number;available:boolean;partial:boolean};
 export class OfflineLibrary {
   manifest?:Manifest;
@@ -14,9 +15,10 @@ export class OfflineLibrary {
     try{
       await navigator.serviceWorker.register(this.resolve('sw.js'),{scope:new URL('.',this.resolve('sw.js')).pathname});
       await navigator.serviceWorker.ready;
-      const response=await fetch(this.resolve('offline-manifest.json'));
+      const response=await fetch(this.resolve(offlineManifestUrl));
       if(!response.ok)throw Error('Download information is unavailable.');
       this.manifest=await response.json() as Manifest;
+      if(this.manifest.catalogRevision!==2){this.manifest=undefined;throw Error('The download list belongs to an older collection.');}
     }catch{this.error='Offline setup could not finish. Reconnect and open Settings to retry. Your progress is safe.';}
   }
   private async shellReady(){
@@ -37,7 +39,7 @@ export class OfflineLibrary {
     if(!this.manifest)return;
     try{
       const cache=await caches.open(`little-discoveries-content-${this.manifest.contentVersion}`);
-      const files=[`content/levels/${String(level.id).padStart(3,'0')}.json`,level.art,level.thumbnail,...level.targets.map(t=>t.preview)];
+      const files=[levelUrl(level.id),level.art,level.thumbnail,...level.targets.map(t=>t.preview)];
       for(const path of files){const url=this.resolve(path);if((await cache.match(url))?.ok)continue;const response=await fetch(url);if(response.ok&&!response.headers.get('content-type')?.includes('text/html'))await cache.put(url,response);}
     }catch{/* Optional visit caching never prevents play or changes search progress. */}
   }

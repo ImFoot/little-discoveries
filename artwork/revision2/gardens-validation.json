@@ -1,0 +1,277 @@
+{
+  "checkedAtUtc": "2026-11-03T05:11:26.044095+00:00",
+  "scope": "New garden scenes 085\u2013100 only",
+  "sceneCount": 16,
+  "placements": 230,
+  "challenging": 160,
+  "easy": 70,
+  "allSourceSizes": [
+    1024,
+    1536
+  ],
+  "distinctSourceHashes": 16,
+  "allContextOutlinesReviewed": true,
+  "allPolygonsAndHolesValid": true,
+  "allCoordinatesInBounds": true,
+  "allFinalPromptFilesPresent": true,
+  "provenanceException": "085 original base-generation prompt was lost by the previous worker. 085.txt states this explicitly and preserves the exact retained final edit prompt.",
+  "physicalIPhoneTested": false,
+  "scenes": [
+    {
+      "id": 85,
+      "title": "The orchid keeper\u2019s conservatory",
+      "targetCount": 15,
+      "challenging": 11,
+      "easy": 4,
+      "contextOutlines": true,
+      "validPolygons": 15,
+      "holes": 4,
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "sourceSha256": "27585f96ce42e3c9dc6158fc19c97cab29a503815773156d32813b23f2c4a2db",
+      "promptCharacters": 2871
+    },
+    {
+      "id": 86,
+      "title": "The moonlit herbal archive",
+      "targetCount": 15,
+      "challenging": 11,
+      "easy": 4,
+      "contextOutlines": true,
+      "validPolygons": 15,
+      "holes": 2,
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "sourceSha256": "654a524ff995e9959b88913411ab54a3849207348596b357f700a0adaadfa491",
+      "promptCharacters": 1679
+    },
+    {
+      "id": 87,
+      "title": "The moss-grown orrery garden",
+      "targetCount": 15,
+      "challenging": 11,
+      "easy": 4,
+      "contextOutlines": true,
+      "validPolygons": 15,
+      "holes": 0,
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "sourceSha256": "ef28e709610e630e99e4f4c84df1def2725399cf1e4fd6bad60d9ee8b2da4e21",
+      "promptCharacters": 1490
+    },
+    {
+      "id": 88,
+      "title": "The kitchen beneath the roots",
+      "targetCount": 15,
+      "challenging": 11,
+      "easy": 4,
+      "contextOutlines": true,
+      "validPolygons": 15,
+      "holes": 3,
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "sourceSha256": "65b12bbab93aa463e53b33de87fd7373de3ec4a30e29537a933354e3fe85ff3e",
+      "promptCharacters": 1641
+    },
+    {
+      "id": 89,
+      "title": "The rainmaker\u2019s glasshouse",
+      "targetCount": 15,
+      "challenging": 11,
+      "easy": 4,
+      "contextOutlines": true,
+      "validPolygons": 15,
+      "holes": 1,
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "sourceSha256": "9a39830184181cf373c85e2e3945d96b4cfa8829866cdb8655b3d6779faff511",
+      "promptCharacters": 1421
+    },
+    {
+      "id": 90,
+      "title": "Tea on the butterfly terrace",
+      "targetCount": 10,
+      "challenging": 3,
+      "easy": 7,
+      "contextOutlines": true,
+      "validPolygons": 10,
+      "holes": 5,
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "sourceSha256": "f0e5c33ee63e7cf4dbd99660c71f219599b58eb6a7db9f63440449f519a0dbdb",
+      "promptCharacters": 1409
+    },
+    {
+      "id": 91,
+      "title": "The starlight seamstress\u2019s bower",
+      "targetCount": 15,
+      "challenging": 11,
+      "easy": 4,
+      "contextOutlines": true,
+      "validPolygons": 15,
+      "holes": 2,
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "sourceSha256": "6b5a2e5974f199cc1bf12f3ba461aeed05e97b6909670d64c3a3354eb870da55",
+      "promptCharacters": 1401
+    },
+    {
+      "id": 92,
+      "title": "The river-pearl boathouse",
+      "targetCount": 15,
+      "challenging": 11,
+      "easy": 4,
+      "contextOutlines": true,
+      "validPolygons": 15,
+      "holes": 8,
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "sourceSha256": "03e3a9ed51585a7d58d0ba91c83d26c2c47fb54f823f5034eb0a62939cd77c09",
+      "promptCharacters": 1365
+    },
+    {
+      "id": 93,
+      "title": "The snowdrop clock garden",
+      "targetCount": 15,
+      "challenging": 11,
+      "easy": 4,
+      "contextOutlines": true,
+      "validPolygons": 15,
+      "holes": 18,
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "sourceSha256": "fd12011f7099e21ce80e71eb8df4b27a254d130185c56960c18587305b44b104",
+      "promptCharacters": 1336
+    },
+    {
+      "id": 94,
+      "title": "The heron potter\u2019s courtyard",
+      "targetCount": 15,
+      "challenging": 11,
+      "easy": 4,
+      "contextOutlines": true,
+      "validPolygons": 15,
+      "holes": 5,
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "sourceSha256": "7f01ee44231a07063b37f5daad86acf94ddac44363751071b168f2195f562ca1",
+      "promptCharacters": 1385
+    },
+    {
+      "id": 95,
+      "title": "The fern-stair library",
+      "targetCount": 15,
+      "challenging": 11,
+      "easy": 4,
+      "contextOutlines": true,
+      "validPolygons": 15,
+      "holes": 3,
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "sourceSha256": "329effabced4cc151ff75552b5edaa50ce676f28bb6934ee2a850eaaae2470f2",
+      "promptCharacters": 1308
+    },
+    {
+      "id": 96,
+      "title": "The sunflower printing room",
+      "targetCount": 15,
+      "challenging": 11,
+      "easy": 4,
+      "contextOutlines": true,
+      "validPolygons": 15,
+      "holes": 0,
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "sourceSha256": "e854e688bd313ee5f6272cd6e21e5d68e93220404f31d019a33055b4d113eec9",
+      "promptCharacters": 1386
+    },
+    {
+      "id": 97,
+      "title": "The moth keeper\u2019s reading room",
+      "targetCount": 15,
+      "challenging": 11,
+      "easy": 4,
+      "contextOutlines": true,
+      "validPolygons": 15,
+      "holes": 1,
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "sourceSha256": "1ef25497faa3bf0edfbcda8a75c72d978dd9ec3748eb0269edda0e9e3f72037e",
+      "promptCharacters": 1323
+    },
+    {
+      "id": 98,
+      "title": "The wisteria lantern bridge",
+      "targetCount": 15,
+      "challenging": 11,
+      "easy": 4,
+      "contextOutlines": true,
+      "validPolygons": 15,
+      "holes": 2,
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "sourceSha256": "a77bab0635ed86abf4da270c72749d9be2a81c63d24ea09d480a0bbb59515220",
+      "promptCharacters": 1311
+    },
+    {
+      "id": 99,
+      "title": "The honeycomb observatory",
+      "targetCount": 15,
+      "challenging": 11,
+      "easy": 4,
+      "contextOutlines": true,
+      "validPolygons": 15,
+      "holes": 9,
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "sourceSha256": "7179e600fd6d82b948076dd17c0ca027f7e2420e181e87cc8037419b0be66f9e",
+      "promptCharacters": 1348
+    },
+    {
+      "id": 100,
+      "title": "The secret courtyard supper",
+      "targetCount": 10,
+      "challenging": 3,
+      "easy": 7,
+      "contextOutlines": true,
+      "validPolygons": 10,
+      "holes": 3,
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "sourceSha256": "7834db898d3f81f6a228232b8908c7b3c67e00d9ecdc45c6cbc67b7bce7e95fd",
+      "promptCharacters": 1384
+    }
+  ]
+}

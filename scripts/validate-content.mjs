@@ -1,11 +1,13 @@
-import {readFile,access} from 'node:fs/promises';
+import {readFile,access,mkdir} from 'node:fs/promises';
 import sharp from 'sharp';
 import {createHash} from 'node:crypto';
+import {writeArtifact} from './artifact-io.mjs';
 const catalog=JSON.parse(await readFile('public/content/catalog.json','utf8'));
+const requiredPlacements=catalog.requiredPlacements??1304;
 const errors=[],warnings=[];
 const check=(valid,message)=>{if(!valid)errors.push(message);};
 check(catalog.levels.length===100,'Exactly 100 catalog entries are required.');
-check(catalog.levels.reduce((n,l)=>n+l.targetCount,0)===1304,'Target counts must total 1,304.');
+check(catalog.levels.reduce((n,l)=>n+l.targetCount,0)===requiredPlacements,`Target counts must total ${requiredPlacements}.`);
 check(catalog.chapters.length===10,'Exactly 10 chapters are required.');
 let ready=0,placements=0,phone=0;
 const artHashes=new Set();
@@ -24,6 +26,7 @@ for(let i=0;i<100;i++){
  const meta=catalog.levels[i];if(!meta)continue;
  check(meta.id===i+1,`Numbering mismatch at ${i+1}`);
  check(meta.chapter===Math.floor(i/10)+1,`Chapter mismatch at ${i+1}`);
+ if(catalog.revision===2)check(meta.targetCount<=15,`Scene ${meta.id}: fifteen-target maximum exceeded`);
  if(meta.status!=='reviewed'){warnings.push(`Scene ${meta.id}: illustration and placement production pending.`);continue;}
  try{
   const level=JSON.parse(await readFile(`public/content/levels/${String(meta.id).padStart(3,'0')}.json`,'utf8'));
@@ -35,6 +38,20 @@ for(let i=0;i<100;i++){
   check(level.targetCount===meta.targetCount&&level.targets.length===meta.targetCount,`Scene ${meta.id}: target count mismatch`);
   check(new Set(level.targets.map(t=>t.id)).size===meta.targetCount,`Scene ${meta.id}: duplicate target IDs`);
   check(JSON.stringify(level.targets.map(t=>t.id))===JSON.stringify(meta.targetIds),`Scene ${meta.id}: catalog target IDs differ`);
+  if(catalog.revision===2){
+   const alias=await readFile(`public/content/v2/levels/${String(meta.id).padStart(3,'0')}.json`,'utf8');
+   check(alias===await readFile(`public/content/levels/${String(meta.id).padStart(3,'0')}.json`,'utf8'),`Scene ${meta.id}: versioned data differs`);
+   check([level.art,level.thumbnail,...level.targets.map(t=>t.preview)].every(path=>path.startsWith('art/v2/')),`Scene ${meta.id}: old-cache asset URL collision`);
+  }
+  if(catalog.revision===2&&meta.id>=51){
+   check(level.review.contextOutlines===true,`Scene ${meta.id}: source/outline overlay review required`);
+   const count=meta.id%10===0?10:15,hard=meta.id%10===0?3:11;
+   check(level.targetCount===count,`Scene ${meta.id}: replacement scene requires ${count} targets`);
+   check(meta.breakLevel===(meta.id%10===0),`Scene ${meta.id}: incorrect break schedule`);
+   check(level.targets.filter(t=>t.difficulty==='challenging').length===hard,`Scene ${meta.id}: requires ${hard} challenging targets`);
+   check(level.targets.filter(t=>t.difficulty==='easy').length===count-hard,`Scene ${meta.id}: incorrect easy target quota`);
+   check(level.targets.every(t=>typeof t.concealment==='string'&&t.concealment.length>=20),`Scene ${meta.id}: missing visual concealment review`);
+  }
   await access(`public/${level.thumbnail}`);
   const names=new Set();
   for(const target of level.targets){
@@ -55,5 +72,7 @@ for(let i=0;i<100;i++){
   ready++;placements+=level.targets.length;
  }catch(e){errors.push(`Scene ${meta.id}: ${e.message}`);}
 }
-console.log(JSON.stringify({catalogScenes:100,requiredPlacements:1304,illustratedScenes:ready,authoredPlacements:placements,actualIPhoneReviewed:phone,errors,warnings},null,2));
-if(errors.length||process.argv.includes('--complete')&&(ready!==100||placements!==1304))process.exitCode=1;
+const report={catalogRevision:catalog.revision??1,catalogScenes:100,requiredPlacements,illustratedScenes:ready,authoredPlacements:placements,actualIPhoneReviewed:phone,errors,warnings};
+console.log(JSON.stringify(report,null,2));
+if(catalog.revision===2&&process.argv.includes('--complete')){await mkdir('.cache',{recursive:true});await writeArtifact('.cache/r2-content.json',JSON.stringify(report,null,2)+'\n');}
+if(errors.length||process.argv.includes('--complete')&&(ready!==100||placements!==requiredPlacements))process.exitCode=1;

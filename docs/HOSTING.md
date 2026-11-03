@@ -1,31 +1,31 @@
-# GitHub repository and Pages
+# Public repository and GitHub Pages
 
-Repository: https://github.com/ImFoot/little-discoveries
+Repository: [ImFoot/little-discoveries](https://github.com/ImFoot/little-discoveries). The repository and playable site are public.
 
-The game is a static TypeScript/Vite/PixiJS site. GitHub Pages can serve the production HTML, JavaScript, WebP artwork, JSON level definitions and service worker without a backend. The production directory is about 78 MB; source artwork is retained separately in the repository and is not deployed.
+Live game: **[Play Little Discoveries](https://imfoot.github.io/little-discoveries/)**. An ordinary iPhone Safari link is sufficient; Home Screen installation is optional.
 
 ## Deployment
 
-The repository uses GitHub Actions as its Pages publishing source. `.github/workflows/pages.yml` runs on pushes to `main`, pull requests, and manual dispatch. It installs the lockfile, runs core tests, validates all 100 scenes and 1,304 placements, builds the game, and uploads `dist/`. Only successful builds from `main` or manual dispatch publish to the `github-pages` environment. Pull requests build without publishing.
+This is a static TypeScript/Vite/PixiJS browser game. GitHub Pages serves its production HTML, JavaScript, WebP pictures, JSON definitions and service worker. Source PNG artwork and authoring records stay in the repository and are not deployed.
 
-The workflow uses GitHub's built-in token and deployment identity. No personal access token or API key belongs in the repository or in the deployed game.
+The Pages source is GitHub Actions. The workflow in .github/workflows/pages.yml installs the locked dependencies on Node.js 24, runs core tests, prepares source artwork and matching previews, validates 100 reviewed scenes / 1,391 placements with a fifteen-target cap, builds, and uploads dist/. Only successful builds from main or manual dispatch publish; pull requests build without publishing. The workflow uses GitHub's built-in token and deployment identity. No personal token or runtime API key belongs in the game.
 
-Vite uses relative asset URLs and the game uses hash navigation, so the project subdirectory works without server route rewrites. The service worker, manifest, artwork and chapter downloads stay within the game's directory. HTTPS supports ordinary iPhone Safari and service-worker offline downloads; Home Screen installation is optional.
+Vite uses relative asset URLs, and scene navigation uses URL hashes. Both a domain root and this project's subdirectory work without route rewrites. Offline caching remains inside the game's directory. A complete chapter download contains its ten scenes, target previews and definitions plus the application shell.
 
-Live game: **https://imfoot.github.io/little-discoveries/**
+Current revision-2 publication checks belong in [verification/deployment.json](verification/deployment.json). The original collection's [deployment evidence](verification-v1/deployment.json) and [verification report](VERIFICATION-v1.md) are retained separately. Later updates publish by committing and pushing to main; the repository's Actions tab records deployment status.
 
-The [first deployment](https://github.com/ImFoot/little-discoveries/actions/runs/41414125158) succeeded on 2026-11-02 from commit `6c2abaa02ff9a3572b9efcc54f01a841058893a3`. Hosted checks confirmed the catalog's 100 scenes / 1,304 targets, all ten complete chapter manifests, required entry assets, and scene/preview assets for levels 1, 28, 80 and 100. Desktop browser checks confirmed collection, saved progress after reload, and a complete first-chapter download (136/136 files). These checks do not establish physical iPhone acceptance. Details are in [verification/deployment.json](verification/deployment.json).
+## Opening the revised collection
 
-Later updates publish by committing and pushing to `main`; deployment status appears in the repository's Actions tab.
+Reload Safari once after publication. Original scenes 51–100 now occupy 1–50, and fifty new scenes occupy 51–100. The game validates and migrates the original local save before loading the renumbered pictures. Original scene 72 with thirteen finds becomes scene 22 with the same discoveries. Removed cap targets are filtered. Retired scenes never become progress on an unrelated replacement.
 
-## Moving progress
+The original version-1 save remains intact; the revised game writes to a separate version-2 key and keeps a pre-revision copy. Versioned catalog, level, artwork and manifest URLs prevent a cached original response from being used for a different picture. The offline application entry is app-v2.html. Automatic reopening of an older tab is best effort; a normal reload is the supported upgrade path. Download chapters again after an artwork/content update.
 
-Before leaving a local preview, use Settings → Back up progress. Open the hosted game and use Settings → Restore progress to import that file. Each browser/device and website origin has its own local save. GitHub does not synchronize game progress.
+## Local runs and portable hosting
 
-## Scope and limits
+From C:\Users\tensi\hidden_objects, run npm ci and npm run dev. For a production preview run npm run build followed by npm run preview, then open http://127.0.0.1:4173. The server binds only to the local machine. No Windows firewall change is needed for local development.
 
-The repository and playable site are public. The browser game does not upload progress or require an account. GitHub provides the hosting and applies its normal website logging and usage limits.
+Upload the contents of dist/ to a static HTTPS host, preserving every filename and directory. The portable output/LittleDiscoveries-static.zip has index.html at its root. Source changes require rebuilding and recreating that archive. Service workers require HTTPS on a phone; file URLs and ordinary HTTP LAN links do not provide offline downloads in iPhone Safari.
 
-GitHub Pages currently permits a published site up to 1 GB and has a soft bandwidth limit of 100 GB per month. This personal, untimed game has no commercial transactions or SaaS backend. See [GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits).
+Before switching from localhost to the hosted origin or moving devices, use Settings → Back up progress. Open the destination link and restore that file in Settings. Progress is stored locally by device/browser and website origin; GitHub does not synchronize it. The game uploads no progress and requires no account. GitHub applies its ordinary hosting limits and website logging.
 
-Physical iPhone Safari acceptance testing remains separate from desktop Chromium/WebKit emulation. See [DEVICE_REVIEW.md](DEVICE_REVIEW.md).
+Physical iPhone acceptance of the revised collection remains separate from desktop Chromium/WebKit emulation; see [DEVICE_REVIEW.md](DEVICE_REVIEW.md).
