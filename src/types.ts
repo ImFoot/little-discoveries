@@ -6,7 +6,9 @@ export type Target = {
   outline: Point[]; holes?: Point[][]; hit: Point[]; hint: Rect;
   inspect: View; crop: Rect; notes?: string;
   difficulty?: 'challenging' | 'easy'; concealment?: string;
-  previewMode?: 'context' | 'cutout';
+  previewMode?: 'context' | 'cutout' | 'asset';
+  previewSource?: string;
+  regions?: {outline:Point[];holes?:Point[][]}[];
 };
 export type Level = {
   id: number; chapter: number; title: string; targetCount: number;

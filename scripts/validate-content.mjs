@@ -10,8 +10,8 @@ const check=(valid,message)=>{if(!valid)errors.push(message);};
 check(catalog.levels.length===requiredScenes,`Exactly ${requiredScenes} catalog entries are required.`);
 check(catalog.levels.reduce((n,l)=>n+l.targetCount,0)===requiredPlacements,`Target counts must total ${requiredPlacements}.`);
 check(catalog.chapters.length===Math.ceil(requiredScenes/10),'Chapter count does not match the active collection.');
-check(catalog.revision===3&&requiredScenes===55&&requiredPlacements===726,'This release must contain 50 retained scenes and five samples.');
-check(await readFile('public/content/v3/catalog-55.json','utf8')===await readFile('public/content/catalog.json','utf8'),'Release catalog alias differs from canonical catalog.');
+check(catalog.revision===3&&requiredScenes===56&&requiredPlacements===738,'This release must contain 50 retained scenes and six samples.');
+check(await readFile('public/content/v3/catalog-56.json','utf8')===await readFile('public/content/catalog.json','utf8'),'Release catalog alias differs from canonical catalog.');
 let ready=0,placements=0,phone=0;
 const artHashes=new Set();
 function simplePolygon(points){
@@ -49,7 +49,7 @@ for(let i=0;i<requiredScenes;i++){
   if(meta.id>=51){
    check(level.review.contextOutlines===true,`Scene ${meta.id}: source/outline overlay review required`);
    check(level.targetCount===12&&meta.sampleLevel===true,`Scene ${meta.id}: sample requires 12 targets`);
-   check(level.targets.every(t=>t.previewMode==='context'),`Scene ${meta.id}: samples require unmasked picture crops`);
+   check(level.targets.every(t=>t.previewMode===(meta.id===56?'asset':'context')),`Scene ${meta.id}: samples require unmasked picture crops`);
   }
   await access(`public/${level.thumbnail}`);
   const names=new Set();
@@ -57,6 +57,7 @@ for(let i=0;i<requiredScenes;i++){
    const tag=`Scene ${meta.id}, ${target.name}`;
    check(typeof target.name==='string'&&target.name.length>2&&!names.has(target.name),`${tag}: unclear/duplicate name`);names.add(target.name);
    for(const field of ['hit','outline'])check(Array.isArray(target[field])&&target[field].length>=3&&target[field].every(p=>p.length===2&&Number.isFinite(p[0])&&Number.isFinite(p[1])&&p[0]>=0&&p[0]<=level.width&&p[1]>=0&&p[1]<=level.height),`${tag}: invalid ${field}`);
+   for(const r of target.regions??[])for(const p of [r.outline,...r.holes??[]])check(simplePolygon(p)&&p.every(([x,y])=>x>=0&&y>=0&&x<=level.width&&y<=level.height),`${tag}: invalid layered region`);
    check(simplePolygon(target.outline),`${tag}: self-intersecting outline`);
    for(const hole of target.holes??[])check(hole.length>=3&&simplePolygon(hole),`${tag}: invalid interior outline`);
    const h=target.hint;
@@ -68,6 +69,7 @@ for(let i=0;i<requiredScenes;i++){
    const c=target.crop;
    check(c.x>=0&&c.y>=0&&c.width>0&&c.height>0&&c.x+c.width<=level.width&&c.y+c.height<=level.height,`${tag}: preview crop outside source`);
    check(target.outline.every(([x,y])=>x>=c.x&&x<=c.x+c.width&&y>=c.y&&y<=c.y+c.height),`${tag}: preview clips target silhouette`);
+   if(target.previewMode==='asset'){const expected=await sharp(target.previewSource).resize(280,280,{fit:'inside'}).webp({quality:92}).toBuffer();check(expected.equals(await readFile(`public/${target.preview}`)),`${tag}: preview differs from authored full object`);}
    if(target.previewMode==='context'){
     const expected=await sharp(`artwork/source/${String(meta.id).padStart(3,'0')}.png`).extract({left:c.x,top:c.y,width:c.width,height:c.height}).resize(280,280,{fit:'inside'}).webp({quality:92}).toBuffer();
     check(expected.equals(await readFile(`public/${target.preview}`)),`${tag}: preview is not an unchanged source crop`);

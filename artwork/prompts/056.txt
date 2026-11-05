@@ -1,0 +1,11 @@
+Production asset sheet for an ORIGINAL cozy adult hidden-object game, The lantern-maker's festival stall. Exactly twelve isolated, fully visible workshop objects in a THREE COLUMN by FOUR ROW grid on a genuinely transparent alpha background. One whole object centered in each cell with broad empty margins; no objects overlap or cross cells. Portrait1536x2048.
+
+UNIFIED ART DIRECTION for the entire future scene: matte hand-painted gouache storybook illustration with fine paper grain, precise but gently painted edges, subtle irregular brush shading, no photorealism, no 3D render, no glossy highlights or plastic, no dramatic drop shadows. Restrained palette: warm ivory, faded coral red, dusty indigo, muted turquoise, honey bamboo, tarnished brass. Soft warm daylight from upper left. Slightly elevated three-quarter view, consistent scale and perspective. Each object has a clear ordinary identity, beautiful adult craft detail, simplified readable material planes rather than shiny microtextures.
+
+Reading order, exactly:
+row1: a small coral-red pair of sewing scissors with two loop handles, closed; an indigo ceramic ink bottle with a short cork stopper; a honey-brown wooden rubber stamp with a rounded handle and square base.
+row2: a folded turquoise paper crane; a cream wax candle in a shallow brass candleholder; an ivory cotton thread spool with red wooden ends.
+row3: a broad bamboo-handled paintbrush with dark bristles; a long honey wooden clothes peg; a tarnished brass key with a large oval bow.
+row4: a folded wooden ruler showing three jointed segments folded together, with simple tick marks but no text or numerals; a small ball of faded coral cotton twine with a short loose tail; a crescent-moon ornament cut from warm ivory paper with one tiny punched hanging hole.
+
+These assets will be placed individually between other illustration layers. Keep every object's entire silhouette and defining parts intact, all interiors opaque and all surrounding empty space alpha0, clear antialiased silhouettes and handle openings. No background, grid lines, labels, words, decorative border, surface or extra objects. The overall impression is an artisan's quiet hand-painted world, NOT isolated product photography.

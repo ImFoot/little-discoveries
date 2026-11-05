@@ -4,5 +4,7 @@ test-results/
 playwright-report/
 .cache/
 output/
+# Rejected workroom direction; retained locally, excluded from the finished level.
+/artwork/layered-056/
 .env*
 !.env.example

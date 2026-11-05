@@ -1,0 +1,86 @@
+[
+  {
+    "id": "coral-scissors",
+    "name": "Coral scissors",
+    "file": "assets/coral-scissors.png",
+    "width": 210,
+    "height": 367
+  },
+  {
+    "id": "indigo-ink",
+    "name": "Indigo ink bottle",
+    "file": "assets/indigo-ink.png",
+    "width": 253,
+    "height": 311
+  },
+  {
+    "id": "wooden-stamp",
+    "name": "Wooden stamp",
+    "file": "assets/wooden-stamp.png",
+    "width": 232,
+    "height": 346
+  },
+  {
+    "id": "paper-crane",
+    "name": "Paper crane",
+    "file": "assets/paper-crane.png",
+    "width": 274,
+    "height": 284
+  },
+  {
+    "id": "candle",
+    "name": "Candle holder",
+    "file": "assets/candle.png",
+    "width": 272,
+    "height": 285
+  },
+  {
+    "id": "thread-spool",
+    "name": "Thread spool",
+    "file": "assets/thread-spool.png",
+    "width": 209,
+    "height": 299
+  },
+  {
+    "id": "paintbrush",
+    "name": "Paintbrush",
+    "file": "assets/paintbrush.png",
+    "width": 245,
+    "height": 394
+  },
+  {
+    "id": "wooden-peg",
+    "name": "Wooden peg",
+    "file": "assets/wooden-peg.png",
+    "width": 248,
+    "height": 372
+  },
+  {
+    "id": "brass-key",
+    "name": "Brass key",
+    "file": "assets/brass-key.png",
+    "width": 244,
+    "height": 369
+  },
+  {
+    "id": "folding-ruler",
+    "name": "Folding ruler",
+    "file": "assets/folding-ruler.png",
+    "width": 282,
+    "height": 298
+  },
+  {
+    "id": "coral-twine",
+    "name": "Coral twine",
+    "file": "assets/coral-twine.png",
+    "width": 256,
+    "height": 294
+  },
+  {
+    "id": "paper-moon",
+    "name": "Paper moon",
+    "file": "assets/paper-moon.png",
+    "width": 275,
+    "height": 303
+  }
+]

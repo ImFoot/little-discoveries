@@ -1,0 +1,198 @@
+{
+  "width": 1024,
+  "height": 1536,
+  "layers": [
+    {
+      "id": "background",
+      "file": "background.png",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "coral-scissors-shadow",
+      "name": "Coral scissors contact shadow",
+      "file": "coral-scissors-shadow.png",
+      "x": 2,
+      "y": 3
+    },
+    {
+      "id": "coral-scissors",
+      "name": "Coral scissors",
+      "file": "coral-scissors-full.png",
+      "x": 375,
+      "y": 323,
+      "visibleFraction": 0.612
+    },
+    {
+      "id": "indigo-ink-shadow",
+      "name": "Indigo ink bottle contact shadow",
+      "file": "indigo-ink-shadow.png",
+      "x": 2,
+      "y": 3
+    },
+    {
+      "id": "indigo-ink",
+      "name": "Indigo ink bottle",
+      "file": "indigo-ink-full.png",
+      "x": 570,
+      "y": 661,
+      "visibleFraction": 0.519
+    },
+    {
+      "id": "wooden-stamp-shadow",
+      "name": "Wooden stamp contact shadow",
+      "file": "wooden-stamp-shadow.png",
+      "x": 2,
+      "y": 3
+    },
+    {
+      "id": "wooden-stamp",
+      "name": "Wooden stamp",
+      "file": "wooden-stamp-full.png",
+      "x": 338,
+      "y": 690,
+      "visibleFraction": 0.67
+    },
+    {
+      "id": "paper-crane-shadow",
+      "name": "Paper crane contact shadow",
+      "file": "paper-crane-shadow.png",
+      "x": 2,
+      "y": 3
+    },
+    {
+      "id": "paper-crane",
+      "name": "Paper crane",
+      "file": "paper-crane-full.png",
+      "x": 287,
+      "y": 1058,
+      "visibleFraction": 0.517
+    },
+    {
+      "id": "candle-shadow",
+      "name": "Candle holder contact shadow",
+      "file": "candle-shadow.png",
+      "x": 2,
+      "y": 3
+    },
+    {
+      "id": "candle",
+      "name": "Candle holder",
+      "file": "candle-full.png",
+      "x": 661,
+      "y": 581,
+      "visibleFraction": 0.878
+    },
+    {
+      "id": "thread-spool-shadow",
+      "name": "Thread spool contact shadow",
+      "file": "thread-spool-shadow.png",
+      "x": 2,
+      "y": 3
+    },
+    {
+      "id": "thread-spool",
+      "name": "Thread spool",
+      "file": "thread-spool-full.png",
+      "x": 818,
+      "y": 969,
+      "visibleFraction": 0.615
+    },
+    {
+      "id": "paintbrush-shadow",
+      "name": "Paintbrush contact shadow",
+      "file": "paintbrush-shadow.png",
+      "x": 2,
+      "y": 3
+    },
+    {
+      "id": "paintbrush",
+      "name": "Paintbrush",
+      "file": "paintbrush-full.png",
+      "x": 58,
+      "y": 867,
+      "visibleFraction": 0.472
+    },
+    {
+      "id": "wooden-peg-shadow",
+      "name": "Wooden peg contact shadow",
+      "file": "wooden-peg-shadow.png",
+      "x": 2,
+      "y": 3
+    },
+    {
+      "id": "wooden-peg",
+      "name": "Wooden peg",
+      "file": "wooden-peg-full.png",
+      "x": 295,
+      "y": 442,
+      "visibleFraction": 0.777
+    },
+    {
+      "id": "brass-key-shadow",
+      "name": "Brass key contact shadow",
+      "file": "brass-key-shadow.png",
+      "x": 2,
+      "y": 3
+    },
+    {
+      "id": "brass-key",
+      "name": "Brass key",
+      "file": "brass-key-full.png",
+      "x": 812,
+      "y": 667,
+      "visibleFraction": 0.839
+    },
+    {
+      "id": "folding-ruler-shadow",
+      "name": "Folding ruler contact shadow",
+      "file": "folding-ruler-shadow.png",
+      "x": 2,
+      "y": 3
+    },
+    {
+      "id": "folding-ruler",
+      "name": "Folding ruler",
+      "file": "folding-ruler-full.png",
+      "x": 461,
+      "y": 743,
+      "visibleFraction": 0.85
+    },
+    {
+      "id": "coral-twine-shadow",
+      "name": "Coral twine contact shadow",
+      "file": "coral-twine-shadow.png",
+      "x": 2,
+      "y": 3
+    },
+    {
+      "id": "coral-twine",
+      "name": "Coral twine",
+      "file": "coral-twine-full.png",
+      "x": 901,
+      "y": 996,
+      "visibleFraction": 0.734
+    },
+    {
+      "id": "paper-moon-shadow",
+      "name": "Paper moon contact shadow",
+      "file": "paper-moon-shadow.png",
+      "x": 2,
+      "y": 3
+    },
+    {
+      "id": "paper-moon",
+      "name": "Paper moon",
+      "file": "paper-moon-full.png",
+      "x": 844,
+      "y": 388,
+      "visibleFraction": 0.908
+    },
+    {
+      "id": "foreground",
+      "file": "foreground.png",
+      "x": 0,
+      "y": 0
+    }
+  ]
+}

@@ -28,8 +28,10 @@ export function polygonArea(polygon:Point[]):number{
 /** Visible shape wins over padding. Smaller foreground silhouettes win shared visible areas. */
 export function pickTarget(point: Point, targets: Target[], sceneScale: number,found:ReadonlySet<string>=new Set(),revealed?:string): Target | undefined {
   return targets.map((target,index)=>{
-    const hole=target.holes?.find(h=>inside(point,h));
-    return{target,index,d:hole?boundaryDistance(point,hole):edgeDistance(point,target.hit),visible:inside(point,target.outline)&&!hole,area:polygonArea(target.outline)};
+    const regions=target.regions??[{outline:target.outline,holes:target.holes}];
+    const visible=regions.some(r=>inside(point,r.outline)&&!r.holes?.some(h=>inside(point,h)));
+    const d=target.regions?Math.min(...regions.map(r=>{const hole=r.holes?.find(h=>inside(point,h));return hole?boundaryDistance(point,hole):edgeDistance(point,r.outline);})):target.holes?.some(h=>inside(point,h))?Math.min(...target.holes.filter(h=>inside(point,h)).map(h=>boundaryDistance(point,h))):edgeDistance(point,target.hit);
+    return{target,index,d,visible,area:regions.reduce((n,r)=>n+polygonArea(r.outline),0)};
   })
     .filter(t=>t.d<=Math.min(75,18/sceneScale))
     .sort((a,b)=>{

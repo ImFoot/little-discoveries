@@ -1,0 +1,183 @@
+{
+  "date": "2026-11-05T04:29:08.041Z",
+  "scenes": 56,
+  "placements": 738,
+  "unitTests": 26,
+  "browserCases": 26,
+  "performanceCases": 4,
+  "content": {
+    "catalogRevision": 3,
+    "catalogScenes": 56,
+    "requiredPlacements": 738,
+    "illustratedScenes": 56,
+    "authoredPlacements": 738,
+    "actualIPhoneReviewed": 0,
+    "errors": [],
+    "warnings": []
+  },
+  "retained": {
+    "date": "2026-11-05T04:26:07.537Z",
+    "baseline": "361c10e",
+    "retainedScenes": 55,
+    "retainedPlacements": 726,
+    "identicalFiles": 1111,
+    "sourcePngs": 55,
+    "sourceAnnotations": 55,
+    "prompts": 55,
+    "canonicalLevels": 55,
+    "runtimeLevels": 55,
+    "sceneWebps": 55,
+    "thumbnails": 55,
+    "previews": 726,
+    "catalogEntriesUnchanged": true,
+    "verified": true
+  },
+  "layers": {
+    "layers": 36,
+    "flattenedPixelIdentical": true,
+    "objectLayers": 12,
+    "shadowLayers": 12,
+    "foregroundLayers": 11,
+    "backgroundLayers": 1
+  },
+  "mask": [
+    {
+      "id": "coral-scissors",
+      "visibleFraction": 0.612,
+      "regionRecall": 0.986,
+      "regionPrecision": 0.9817,
+      "regions": 2
+    },
+    {
+      "id": "indigo-ink",
+      "visibleFraction": 0.519,
+      "regionRecall": 0.9969,
+      "regionPrecision": 0.998,
+      "regions": 1
+    },
+    {
+      "id": "wooden-stamp",
+      "visibleFraction": 0.67,
+      "regionRecall": 0.9952,
+      "regionPrecision": 0.9939,
+      "regions": 1
+    },
+    {
+      "id": "paper-crane",
+      "visibleFraction": 0.517,
+      "regionRecall": 0.9954,
+      "regionPrecision": 0.9957,
+      "regions": 1
+    },
+    {
+      "id": "candle",
+      "visibleFraction": 0.878,
+      "regionRecall": 0.9847,
+      "regionPrecision": 0.9961,
+      "regions": 2
+    },
+    {
+      "id": "thread-spool",
+      "visibleFraction": 0.615,
+      "regionRecall": 0.9977,
+      "regionPrecision": 0.9964,
+      "regions": 1
+    },
+    {
+      "id": "paintbrush",
+      "visibleFraction": 0.472,
+      "regionRecall": 0.9877,
+      "regionPrecision": 0.9869,
+      "regions": 2
+    },
+    {
+      "id": "wooden-peg",
+      "visibleFraction": 0.777,
+      "regionRecall": 0.9924,
+      "regionPrecision": 0.9965,
+      "regions": 1
+    },
+    {
+      "id": "brass-key",
+      "visibleFraction": 0.839,
+      "regionRecall": 0.9891,
+      "regionPrecision": 0.988,
+      "regions": 1
+    },
+    {
+      "id": "folding-ruler",
+      "visibleFraction": 0.85,
+      "regionRecall": 0.9958,
+      "regionPrecision": 0.9955,
+      "regions": 1
+    },
+    {
+      "id": "coral-twine",
+      "visibleFraction": 0.734,
+      "regionRecall": 0.9982,
+      "regionPrecision": 0.9963,
+      "regions": 1
+    },
+    {
+      "id": "paper-moon",
+      "visibleFraction": 0.908,
+      "regionRecall": 0.9964,
+      "regionPrecision": 0.9956,
+      "regions": 1
+    }
+  ],
+  "metrics": [
+    {
+      "project": "chromium-phone",
+      "name": "emulated-loading.json",
+      "playableMs": 1863,
+      "bytes": 1103443,
+      "downloadMbps": 10,
+      "latencyMs": 40,
+      "measurement": "Aggregate HTTP response payloads, including page, Pixi worker and service worker; picture and all target previews ready.",
+      "physicalIPhone": false
+    },
+    {
+      "project": "chromium-phone",
+      "name": "emulated-touch-feedback.json",
+      "scene": 56,
+      "feedbackMs": 3.4000000059604645,
+      "physicalIPhone": false
+    },
+    {
+      "project": "webkit-phone",
+      "name": "emulated-loading.json",
+      "playableMs": 2230,
+      "bytes": 1255826,
+      "downloadMbps": 10,
+      "latencyMs": 40,
+      "measurement": "Aggregate HTTP response payloads, including page, Pixi worker and service worker; picture and all target previews ready.",
+      "physicalIPhone": false
+    },
+    {
+      "project": "webkit-phone",
+      "name": "emulated-touch-feedback.json",
+      "scene": 56,
+      "feedbackMs": 3,
+      "physicalIPhone": false
+    }
+  ],
+  "archive": {
+    "catalogRevision": 3,
+    "created": "2026-11-05T04:27:50.7593921Z",
+    "file": "LittleDiscoveries-static.zip",
+    "bytes": 42469959,
+    "sha256": "d8c1b4c3513eb19e486e79a3a88912a260c26a6998004a0ca340065338ea913e",
+    "counts": {
+      "Scenes": 56,
+      "Previews": 738,
+      "RuntimeLevels": 56,
+      "Catalogs": 5
+    }
+  },
+  "buildVersion": "291120a1391273d8",
+  "contentVersion": "98f5c5fcde53e329",
+  "compatiblePriorContentVersion": "982742b92f4967cf",
+  "physicalIPhoneTested": false,
+  "playerAccepted": false
+}

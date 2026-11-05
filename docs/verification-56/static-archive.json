@@ -1,0 +1,13 @@
+﻿{
+    "catalogRevision":  3,
+    "created":  "2026-11-05T04:27:50.7593921Z",
+    "file":  "LittleDiscoveries-static.zip",
+    "bytes":  42469959,
+    "sha256":  "d8c1b4c3513eb19e486e79a3a88912a260c26a6998004a0ca340065338ea913e",
+    "counts":  {
+                   "Scenes":  56,
+                   "Previews":  738,
+                   "RuntimeLevels":  56,
+                   "Catalogs":  5
+               }
+}

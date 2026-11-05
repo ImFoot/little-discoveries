@@ -1,0 +1,86 @@
+[
+  {
+    "id": "coral-scissors",
+    "visibleFraction": 0.612,
+    "regionRecall": 0.986,
+    "regionPrecision": 0.9817,
+    "regions": 2
+  },
+  {
+    "id": "indigo-ink",
+    "visibleFraction": 0.519,
+    "regionRecall": 0.9969,
+    "regionPrecision": 0.998,
+    "regions": 1
+  },
+  {
+    "id": "wooden-stamp",
+    "visibleFraction": 0.67,
+    "regionRecall": 0.9952,
+    "regionPrecision": 0.9939,
+    "regions": 1
+  },
+  {
+    "id": "paper-crane",
+    "visibleFraction": 0.517,
+    "regionRecall": 0.9954,
+    "regionPrecision": 0.9957,
+    "regions": 1
+  },
+  {
+    "id": "candle",
+    "visibleFraction": 0.878,
+    "regionRecall": 0.9847,
+    "regionPrecision": 0.9961,
+    "regions": 2
+  },
+  {
+    "id": "thread-spool",
+    "visibleFraction": 0.615,
+    "regionRecall": 0.9977,
+    "regionPrecision": 0.9964,
+    "regions": 1
+  },
+  {
+    "id": "paintbrush",
+    "visibleFraction": 0.472,
+    "regionRecall": 0.9877,
+    "regionPrecision": 0.9869,
+    "regions": 2
+  },
+  {
+    "id": "wooden-peg",
+    "visibleFraction": 0.777,
+    "regionRecall": 0.9924,
+    "regionPrecision": 0.9965,
+    "regions": 1
+  },
+  {
+    "id": "brass-key",
+    "visibleFraction": 0.839,
+    "regionRecall": 0.9891,
+    "regionPrecision": 0.988,
+    "regions": 1
+  },
+  {
+    "id": "folding-ruler",
+    "visibleFraction": 0.85,
+    "regionRecall": 0.9958,
+    "regionPrecision": 0.9955,
+    "regions": 1
+  },
+  {
+    "id": "coral-twine",
+    "visibleFraction": 0.734,
+    "regionRecall": 0.9982,
+    "regionPrecision": 0.9963,
+    "regions": 1
+  },
+  {
+    "id": "paper-moon",
+    "visibleFraction": 0.908,
+    "regionRecall": 0.9964,
+    "regionPrecision": 0.9956,
+    "regions": 1
+  }
+]

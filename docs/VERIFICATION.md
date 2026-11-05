@@ -1,35 +1,26 @@
-# Fifth-sample verification
+# Layered festival demo verification
 
-Verified 2026-11-03T09:50:48.527Z. The active game contains **55 scenes / 726 placements**, maximum 15 targets per scene. Scene 55, The baker’s pantry, adds twelve objects. No additional batch was created.
+Verified 2026-11-05T04:29:08.041Z. Active collection: **56 scenes / 738 placements**, maximum 15 per level. The new level has twelve objects, all created as complete separate assets before its environmental scene.
 
-## Content and artwork
+## Authored layers and geometry
 
-All 1–54 catalog entries and **1092 source, annotation, prompt, level, picture, thumbnail and preview files** match the published 54-scene baseline 53f8423. See [retained-content evidence](verification-55/retained.json). The earlier exhaustive 702-placement tours remain in [the initial sample evidence](verification-v3/README.md); the twelve-object level 54 tour is in [the fourth-sample evidence](verification-54/README.md). They were not repeated for unchanged content.
+The new festival stall uses a coordinated matte palette and an original composition. Its 36 editable OpenRaster layers comprise a background, twelve objects, twelve contact shadows and eleven foreground masks. Recombining the archive layers reproduces every pixel of the finished static scene. The game previews come from the original full objects; hotspots and exact outlines follow their visible alpha after foreground coverage. Disconnected visible pieces are supported. See [the authoring method](LAYERED_ARTWORK.md), [layer verification](../artwork/lantern-056/review/layer-verification.json), [mask verification](../artwork/lantern-056/review/mask-verification.json) and [phone-size proof](../artwork/lantern-056/review/phone-proof.png). Every target exceeds 98% visible-mask coverage and precision. All twelve references and finished outlines were visually inspected.
 
-Strict validation passes 55/726 counts, distinct illustrations, maximum 15, all 60 sample preview/source comparisons, complete crop bounds and valid contours. Every new target was inspected against its enlarged source and outline, and at the real 32-pixel tray-preview size. Names and outlines follow the visible object: the floor vessel is a milk jug, and the copper pot contour omits an arch whose connection is obscured. [Production workflow](ARTWORK_WORKFLOW.md) and [visual review](../artwork/sample-055/review/review.json) describe the method and remaining player judgment.
+A [retained-content comparison](verification-56/retained.json) verifies all 55 earlier catalog entries and 1111 source, annotation, prompt, level, scene, thumbnail and preview files are unchanged from 361c10e. Earlier exhaustive tours remain in their historical verification folders.
 
 ## Current tests
 
-- 25/25 core tests passed, including all 54 earlier v3 attempts, completions, favorites, views, preferences and backup import/export surviving the append.
-- 26/26 targeted browser cases passed across desktop Chromium and WebKit phone emulation, with no flaky results. Both engines collected all 12 new objects through the real touch picker, checked duplicate taps, repeated hints/reveals, completion and reload. Other cases cover gestures, compact 375-pixel portrait/landscape layouts, backups, recovery, earlier-save migrations and offline repair.
-- A genuinely installed cache-first 54-scene worker fixture verifies ordinary reload opens 55, retains previous progress, carries compatible levels 24 and 54 offline files forward and upgrades an obsolete-catalog request.
-- Chapter 6 downloads all five sample scenes, definitions and previews; all five reopen, collect and reload offline.
-- 4/4 separate performance cases passed. At emulated 10 Mbps / 40 ms latency, chromium-phone: 1759 ms and 1,057,685 bytes; webkit-phone: 2300 ms and 1,226,699 bytes. Touch feedback: chromium-phone: 3.5 ms; webkit-phone: 3.0 ms. Limits are 5000 ms, 5 MB and 100 ms respectively.
+- 26/26 core tests passed, including earlier progress and backup preservation and disconnected-region picking priority.
+- 26/26 Chromium/WebKit phone-emulation browser cases passed, including all twelve new targets, repeated hints/reveals, duplicate taps, completion, saving/reload, migrations, compact portrait/landscape, recovery and offline repair.
+- The complete six-scene sample chapter downloads and all six scenes reopen, collect and reload offline. A cached 55-scene app upgrades through normal reload while retaining progress and compatible offline content.
+- 4/4 separate loading/feedback/recovery cases passed at emulated 10Mbps/40ms latency. Metrics: chromium-phone: 1863 ms, 1103443 bytes; chromium-phone: 3.4000000059604645 ms touch feedback; webkit-phone: 2230 ms, 1255826 bytes; webkit-phone: 3 ms touch feedback.
 
-The initial graphics-recovery check exposed a button tap also collecting an object behind the recovery overlay. The scene now pauses input on graphics loss, clears pending gestures and excludes overlay controls. Both engines verify the recovery click leaves exact saved target IDs unchanged and a subsequent real picture tap still works. The initial failure report is retained in verification-55/performance-initial.json.
+These are desktop browser tests, not physical iPhone tests or intended-player approval of style, clarity or difficulty. See [full evidence](verification-56/results.json).
 
-Full reports and metrics are in [verification-55/results.json](verification-55/results.json). Emulation is not physical iPhone testing. Intended-player approval of preview clarity and increased difficulty is pending.
+## Production build
 
-## Build and offline update
+Strict content validation passed 56/738 counts, distinct scene hashes, max 15 targets, all prior context crops, original full-sprite previews, polygon topology/bounds and complete packages for all six chapters. Build version 291120a1391273d8; content version 98f5c5fcde53e329; compatible prior content 982742b92f4967cf. New release URLs bypass cached catalogs; save version 3 and earlier level IDs remain stable. Browser storage pressure can require an offline download retry.
 
-Production build passed. Shell version: d9c9cc4b4e85c65a; content version: 982742b92f4967cf. The release-specific catalog-55, manifest and offline entry bypass old cache-first catalog data without changing save schema 3 or earlier scene/art URLs. Compatible prior content hash: 2ded88050d338ed4. Cache writes can fail under browser storage pressure; affected offline files may need a retry, while progress is separate.
+The static hosting ZIP at output/LittleDiscoveries-static.zip contains 56 scene images, 738 previews and 56 runtime definitions. Size 42469959 bytes; SHA256 d8c1b4c3513eb19e486e79a3a88912a260c26a6998004a0ca340065338ea913e. Local run/build instructions remain in README.md. Static hosting requires no authoring tools or Python.
 
-Six complete offline packages contain 55 scenes, with five in the sample chapter. The local static ZIP contains 55 scene WebPs, 726 previews, 55 runtime level definitions and all required shell files. Size: 41,593,268 bytes. SHA-256: 78a19d7ee17399da472d70a2249ac985b1df1e7087abcad8bdae985584833b1d. It is generated at output/LittleDiscoveries-static.zip and excluded from Git.
-
-## Live publication
-
-[Level 55 is live](https://imfoot.github.io/little-discoveries/#scene/55). [GitHub Pages run 41614400475](https://github.com/ImFoot/little-discoveries/actions/runs/41614400475) completed successfully for commit bdc24047108edd43128785f64c42a94116977969. The repository remains public.
-
-All 55 HTTP checks passed, including matching tested shell/content assets and 404 responses for retired resources. A fresh hosted Chromium phone-emulation session verified scene 55, reveal/assisted find, saved progress after reload, complete chapter 6 download, saved offline reload and opening the other four samples offline with no page errors. [Deployment evidence](verification-55/deployment.json) records the exact files and versions.
-
-Reload ordinary Safari to receive the new collection. Existing level 1–54 progress is preserved. Revisit the chapter 6 offline download to add the new picture. Physical iPhone/player approval remains pending.
+Live deployment verification pending.

@@ -55,7 +55,7 @@ const data = JSON.parse(document.getElementById('review-data').textContent);
 const $ = id => document.getElementById(id);
 const escape = value => String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const path = (poly, x=0, y=0) => 'M' + poly.map(p => (p[0]-x)+','+(p[1]-y)).join('L') + 'Z';
-const contours = (target,x=0,y=0) => [target.outline,...(target.holes||[])].map(p=>path(p,x,y)).join('');
+const contours = (target,x=0,y=0) => (target.regions||[{outline:target.outline,holes:target.holes}]).flatMap(r=>[r.outline,...r.holes||[]]).map(p=>path(p,x,y)).join('');
 const checks = [['identity','Name and ordinary object identity clear'],['tray','Recognizable in the actual-size tray'],['crop','All visible target parts in preview'],['outline','Outline / holes follow visible target'],['hint','Hint and inspection position useful'],['placement','Concealment feels fair and intentional']];
 const key = 'little-discoveries-authoring-proof:'+data.id+':'+data.fingerprint;
 let selected=0, frameReady=false, storageOK=true, reviews={};

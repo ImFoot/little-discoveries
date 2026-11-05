@@ -21,8 +21,12 @@ The smallest object, the blue lidded tin, is deliberately recessed and partly co
 
 ## Further control
 
-Layered authoring could eventually combine a background, consistent object sprites and foreground occluders, then flatten them into the existing scene format. This would allow deliberate repositioning without a renderer rewrite, but perspective, lighting, contact shadows and occlusion must match. That workflow has not been implemented or validated here. The scene-first process and actual-size proof are the concrete improvements used for this level.
+Layered authoring could eventually combine a background, consistent object sprites and foreground occluders, then flatten them into the existing scene format. This would allow deliberate repositioning without a renderer rewrite, but perspective, lighting, contact shadows and occlusion must match. That was the status for scenes54–55. Scene56 now implements and verifies layered authoring; see docs/LAYERED_ARTWORK.md for the actual object-first sources,36 editable layers, foreground masks and static runtime export.
 
 ## Fifth sample
 
 After the player described 54 as better and requested a little more challenge, scene 55 (The baker’s pantry) continued the same process. Its target selection favors meaningful partial overlap: a rolling pin and flower tin behind a drawer front, a small jug in a basket, a flask partly covered by cloth, and utensils among related tools. Names are based on visible evidence; an ambiguous arch above the copper pot was not assumed to belong to it. Sources, prompts, individual crop/contour proofs and review records are in artwork/sample-055. Generate its standalone phone proof with `node scripts/review-level.mjs 55`.
+
+## Layered scene56
+
+The latest player request supersedes the scene-first approach for the new demo. The lantern-maker’s festival stall uses a fresh setting and twelve new complete objects first, followed by environmental composition and separately editable concealment layers. Previews come from the full original sprites; hotspots and reveals come from the visible masks. See [LAYERED_ARTWORK.md](LAYERED_ARTWORK.md).

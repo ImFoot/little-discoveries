@@ -1,7 +1,7 @@
 {
   "revision": 3,
-  "requiredScenes": 55,
-  "requiredPlacements": 726,
+  "requiredScenes": 56,
+  "requiredPlacements": 738,
   "chapters": [
     {
       "id": 1,
@@ -35,7 +35,7 @@
     },
     {
       "id": 6,
-      "title": "Five samples to try",
+      "title": "Six scenes to try",
       "subtitle": "Familiar little things, tucked a little further away.",
       "color": "#819475"
     }
@@ -1485,6 +1485,32 @@
       ],
       "sceneKey": "sample3-055",
       "targetPrefix": "sample3-055",
+      "sampleLevel": true
+    },
+    {
+      "id": 56,
+      "chapter": 6,
+      "title": "The lantern-maker’s festival stall",
+      "targetCount": 12,
+      "sample": "An original festival pavilion assembled from twelve full object sprites and foreground concealment layers.",
+      "thumbnail": "art/v3/056-thumb.webp",
+      "status": "reviewed",
+      "targetIds": [
+        "sample3-056-coral-scissors",
+        "sample3-056-indigo-ink",
+        "sample3-056-wooden-stamp",
+        "sample3-056-paper-crane",
+        "sample3-056-candle",
+        "sample3-056-thread-spool",
+        "sample3-056-paintbrush",
+        "sample3-056-wooden-peg",
+        "sample3-056-brass-key",
+        "sample3-056-folding-ruler",
+        "sample3-056-coral-twine",
+        "sample3-056-paper-moon"
+      ],
+      "sceneKey": "sample3-056",
+      "targetPrefix": "sample3-056",
       "sampleLevel": true
     }
   ]

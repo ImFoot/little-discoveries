@@ -105,10 +105,12 @@ export class SceneView {
       this.effect.ellipse(h.x+h.width/2,h.y+h.height/2,h.width/2,h.height/2).fill({color:0xffe6a4,alpha:.1}).stroke({color:0x553f26,width:6/s,alpha:.65}).stroke({color:0xffe6a4,width:3/s});
     }
     if(this.selected&&!this.found.has(this.selected.id)){
-      const points=this.selected.outline.flat();
-      this.effect.poly(points).stroke({color:0x473b22,width:7/s,alpha:.8,join:'round'});
-      this.effect.poly(points).stroke({color:0xffeb9e,width:3/s,join:'round'});
-      for(const hole of this.selected.holes??[]){this.effect.poly(hole.flat()).stroke({color:0x473b22,width:7/s,alpha:.8,join:'round'});this.effect.poly(hole.flat()).stroke({color:0xffeb9e,width:3/s,join:'round'});}
+      for(const region of this.selected.regions??[{outline:this.selected.outline,holes:this.selected.holes}]){
+        for(const polygon of [region.outline,...region.holes??[]]){
+          this.effect.poly(polygon.flat()).stroke({color:0x473b22,width:7/s,alpha:.8,join:'round'});
+          this.effect.poly(polygon.flat()).stroke({color:0xffeb9e,width:3/s,join:'round'});
+        }
+      }
     }
     this.app.render();
   }

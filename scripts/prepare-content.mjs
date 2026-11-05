@@ -45,14 +45,14 @@ for (const file of files) {
     const mask=Buffer.from(`<svg width="${crop.width}" height="${crop.height}"><path d="${path}" fill="white" fill-rule="evenodd"/></svg>`);
     const previewMode=item.previewMode??annotation.previewMode??'cutout';
     const extracted=sharp(source).extract({left:crop.x,top:crop.y,width:crop.width,height:crop.height});
-    const masked=await (previewMode==='context'?extracted:extracted.composite([{input:mask,blend:'dest-in'}])).png().toBuffer();
+    const masked=previewMode==='asset'?await readFile(item.previewSource):await (previewMode==='context'?extracted:extracted.composite([{input:mask,blend:'dest-in'}])).png().toBuffer();
     await sharp(masked).resize(280,280,{fit:'inside'}).webp({quality:92}).toFile(`public/${preview}`);
     const cx=(minX+maxX)/2,cy=(minY+maxY)/2;
     const hintWidth=Math.min(width,Math.ceil(Math.max(370,(maxX-minX)*1.4+100)));
     const hintHeight=Math.min(height,Math.ceil(Math.max(350,(maxY-minY)*1.4+100)));
     const hint={x:Math.max(0,Math.min(width-hintWidth,Math.floor(cx-hintWidth/2))),y:Math.max(0,Math.min(height-hintHeight,Math.floor(cy-hintHeight/2))),width:hintWidth,height:hintHeight};
     const inspectionZoom=Math.min(6,Math.max(1.25,110/(Math.max(maxX-minX,maxY-minY)*Math.min(375/width,380/height))));
-    targets.push({id,name:item.name,preview,previewMode,outline,...item.holes?.length?{holes:item.holes}:{},hit:item.hit??outline,crop,hint:item.hint??hint,inspect:{x:cx/width,y:cy/height,zoom:item.zoom??inspectionZoom},notes:item.notes??'',...(item.difficulty?{difficulty:item.difficulty,concealment:item.concealment??''}:{})});
+    targets.push({id,name:item.name,preview,previewMode,...(previewMode==='asset'?{previewSource:item.previewSource,regions:item.regions}:{}),outline,...item.holes?.length?{holes:item.holes}:{},hit:item.hit??outline,crop,hint:item.hint??hint,inspect:{x:cx/width,y:cy/height,zoom:item.zoom??inspectionZoom},notes:item.notes??'',...(item.difficulty?{difficulty:item.difficulty,concealment:item.concealment??''}:{})});
   }
   const review=annotation.review??{artwork:true,geometry:true,smallPhone:false,notes:'Screen review only; actual iPhone review pending.'};
   const approved=review.artwork&&review.geometry&&(meta.id<=50||review.contextOutlines===true);

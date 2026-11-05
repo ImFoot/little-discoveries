@@ -13,3 +13,5 @@ The fourth sample, The village flower shop (54), uses a scene-first process. Its
 Before integration, check the actual 32-pixel tray previews with scripts/review-level.mjs as well as the enlarged source/outline overlays. A difficult placement must still have a clear reference picture.
 
 The player described level 54 as better and requested one more, with a little more challenge. Level 55, The baker’s pantry, continues the scene-first method with more objects nested in drawers and baskets, partly covered by cloth or neighboring utensils. It retains twelve targets and unchanged source-crop previews. The increased challenge is an authoring intention until the player tries it.
+
+Scene56 changes the construction method rather than simply choosing harder crops. Twelve full assets were created first; foreground layers then cover about9–53% of individual object alpha. The matched matte palette and overlapping patterned papers provide search detail. These visibility measurements describe composition, not proven player difficulty. Full previews remain intact and the intended player must judge whether this new design works.
