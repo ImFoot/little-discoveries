@@ -24,4 +24,8 @@ Static build passed. Shell a2a8e48debea7a75; content c71b4ddac9f46a8d; compatibl
 
 The HTTPS-hosting ZIP contains 57 scene images, 750 previews and 57 runtime definitions. Size 43213384 bytes; SHA256 94e889929898e8c9d65be64446d82dabfd5f859dd2320197517abb064ccd707d. Local run/build instructions remain in README.md. Python is required only for authoring, not hosting/play.
 
-Live deployment verification pending.
+## Live publication
+
+[Corrected scene 57 is live](https://imfoot.github.io/little-discoveries/#scene/57). [Pages run 41972894877](https://github.com/ImFoot/little-discoveries/actions/runs/41972894877) succeeded for commit e02c9c91b6c80131aa76617b2fea0f7eca8ed657. All 63 HTTP checks passed and matched the tested shell/content. Hosted Chromium phone emulation verified previews, reveal/assisted find, saving/reload, the complete seven-scene chapter download and all seven trial scenes opening offline, without page errors. [Deployment evidence](verification-57/deployment.json).
+
+The repository remains public. Reload Safari and update chapter 6's offline download to add the new scene. The ordered assembly proof is output/assembly-057-review.html and the editable source is artwork/assembly-057/build/assembled-stall.ora. Physical iPhone and intended-player review remain pending.

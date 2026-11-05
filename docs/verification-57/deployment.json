@@ -1,0 +1,577 @@
+{
+  "date": "2026-11-05T05:18:31.102Z",
+  "catalogRevision": 3,
+  "verified": true,
+  "url": "https://imfoot.github.io/little-discoveries/",
+  "repository": {
+    "url": "https://github.com/ImFoot/little-discoveries",
+    "visibility": "PUBLIC"
+  },
+  "sourceCommit": "e02c9c91b6c80131aa76617b2fea0f7eca8ed657",
+  "workflowUrl": "https://github.com/ImFoot/little-discoveries/actions/runs/41972894877",
+  "workflowConclusion": "success",
+  "scenes": 57,
+  "placements": 750,
+  "maximumTargets": 15,
+  "chapters": [
+    {
+      "id": 1,
+      "readyLevels": 10,
+      "files": 164,
+      "bytes": 7783386
+    },
+    {
+      "id": 2,
+      "readyLevels": 10,
+      "files": 164,
+      "bytes": 7595216
+    },
+    {
+      "id": 3,
+      "readyLevels": 10,
+      "files": 164,
+      "bytes": 8120686
+    },
+    {
+      "id": 4,
+      "readyLevels": 10,
+      "files": 164,
+      "bytes": 7731884
+    },
+    {
+      "id": 5,
+      "readyLevels": 10,
+      "files": 160,
+      "bytes": 7478115
+    },
+    {
+      "id": 6,
+      "readyLevels": 7,
+      "files": 105,
+      "bytes": 6622143
+    }
+  ],
+  "hostedBuildVersion": "a2a8e48debea7a75",
+  "localBuildVersion": "a2a8e48debea7a75",
+  "contentVersion": "c71b4ddac9f46a8d",
+  "shellNote": "All shell assets and the complete content version match the tested local build; manifest and worker cache versions are internally consistent.",
+  "httpChecks": [
+    {
+      "path": "content/v3/catalog-57.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 45238,
+      "sha256": "b2355e3bd6a6a184a308a7aa110ed748ff621360640af1375129dc9d2639f7d1",
+      "matchesLocal": true
+    },
+    {
+      "path": "offline-manifest-v3-57.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 48345,
+      "sha256": "dcdb40f9ee3d5208120804db44fec818183c5457d14c502d84a2efcbdd83d719"
+    },
+    {
+      "path": "app-v3-57.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 974,
+      "sha256": "a6fa57ac1663621672c1a4d4a64eb1e9122d5b33d1a20332b2f0572258318bce",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/index-D9sxs_sf.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "bytes": 34835,
+      "sha256": "f62cacdc9fec0c832720cfaddf37e68bbe03e8a743fde0508c8035fbc10c516c",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/BitmapFont-CVEsxC-O.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 33819,
+      "sha256": "2e688b13a2b90a95ae84ac1cb1242a152e30a1e24574af10d03502cb457a2913",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/canvasUtils-DhCaxSZN.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 5709,
+      "sha256": "34478a63980a8d653b50b62246ceaf5458e93bf9e1f5639679cfa1bd8e756230",
+      "matchesLocal": true
+    },
+    {
+      "path": "icon.svg",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bytes": 320,
+      "sha256": "a377bf2591577cfd1ff6e663b505ace440377a89bd28ac3daaf7370b4e9214c6",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/CanvasPool-FdIm7S4k.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 1887,
+      "sha256": "5f3633365c28692e1b6bd8000ee17de28ac92ddc9b6b9fd4feaee0d7bf8bca77",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/RenderTargetSystem-DDQ8Idj3.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 53949,
+      "sha256": "39a07b28e84366d964cb63f5ab5f20498de55e2c2e262c82e4472c0965ae405f",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/WebGLRenderer-DWu56Xzs.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 73666,
+      "sha256": "e486d1358645de457f07d8455b589803c5bd752d0390265832b77bf801285aeb",
+      "matchesLocal": true
+    },
+    {
+      "path": "manifest.webmanifest",
+      "status": 200,
+      "contentType": "application/manifest+json; charset=utf-8",
+      "bytes": 245,
+      "sha256": "711d1b9c3168f90e61255dedc5d316e4fffe1807939df2593623000c57446828",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/index-N_OrygHj.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 409583,
+      "sha256": "9032beea6a24f91584504974cd12cbbc9fff384ed3cc88eb5608a7b7bf47a4c0",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/Filter-DCmrHpBG.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 904,
+      "sha256": "2da2ebb3313d402760a6aaf58de22bc569ab778963343ba56e2806d61b1a2a8a",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/browserAll-DktmaXQD.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 43995,
+      "sha256": "04aeaba1aca421dd7cdc32a8a89983d67c6bb55987d5c024fbfa4cb3a23a15b6",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/WebGPURenderer-BOf2vjLW.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 55910,
+      "sha256": "4541c672abab4101f264b0243d510369d22af9ecb226c2310c52509660401800",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/webworkerAll-CVy6lys3.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 15500,
+      "sha256": "9487c7386bd9bcada0d42c0e503bbbf2c075cc5f80e26fe156d1922cfb0ec7a4",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/getTexelRangeRects-BYXpY0e_.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 11403,
+      "sha256": "a62b6c8d7f8ffad5f28f6d9b76c28f339b0ca1ed899251dad8d578fc1effc231",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/CanvasRenderer-DajUC_Iw.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 17920,
+      "sha256": "d60c222f8c82cf84f7b5aa5beeecec0e8c7c7df4e30e7f52d2c0e7fbe358dccc",
+      "matchesLocal": true
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 974,
+      "sha256": "a6fa57ac1663621672c1a4d4a64eb1e9122d5b33d1a20332b2f0572258318bce",
+      "matchesLocal": true
+    },
+    {
+      "path": "sw.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 31289,
+      "sha256": "3fd477627d05c09684c3a14254db900d8e655532be6b8edbe81a5179e94aa53b"
+    },
+    {
+      "path": "content/v3/levels/001.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 36668,
+      "sha256": "fda8d70bef093d84e666bca0194413a068f70ae4226dff620470f629b782634c",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/001/luggage-tag.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 8496,
+      "sha256": "691d931651bd4d351db998b43086e883cd405c289cb3f4306edb7186ae157542",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/001-thumb.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 43636,
+      "sha256": "739efcc1a9ab75976895134caccc7ad4a210da9897c38c96d6847aa9eb819df6",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/001.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 434178,
+      "sha256": "8a892fa2bfabfe6195903c807709fb175d540cfa73ca72375030a0275e04ec53",
+      "matchesLocal": true
+    },
+    {
+      "path": "content/v3/levels/024.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 45019,
+      "sha256": "a420e181c59a013c4c30b7395b2c3609ca9d39aaa867bb839c00ff495bbaddb9",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/024/feather-quill.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 9676,
+      "sha256": "789f18a5367ea4a0b8d53cc775161aa356a873197b90b07541195c395a76f32b",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/024-thumb.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 59152,
+      "sha256": "539a04d4a02ad6a9c57019442327e8c765e9f75e1628b83f4b6e1a1f7f0f3c31",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/024.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 548912,
+      "sha256": "9b75c59a71b7b01f5e517f3735702f620a070ece7f438be598cc49cb176b3880",
+      "matchesLocal": true
+    },
+    {
+      "path": "content/v3/levels/050.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 32084,
+      "sha256": "c458f8da94b9452f4b7033e82cfb2866ca6254e78c92bab67f638f577dd391d6",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/050-thumb.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 47216,
+      "sha256": "7a658af1a55cb6790768cbdf19e3427261399f0fed561a4ec9d1aeca1ad3e9f0",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/050/sealed-note.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 7534,
+      "sha256": "9c498f521a0556d723b36bd77cd05e0b9e75edb93840a874448efef01b114ad3",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/050.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 453018,
+      "sha256": "71db0ecdefbff133f1aa0ebc50514bce211958febb27e6f97d55e0242f629f74",
+      "matchesLocal": true
+    },
+    {
+      "path": "content/v3/levels/051.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 115678,
+      "sha256": "52fbbe5c931aca75200afccad5fcceb9f0d5388bd7e8e38ddfa55cbb424f3535",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/051/red-apple.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 16440,
+      "sha256": "0505cb8e4d50c6ac98ad2617d4fd3ce5337324c0bd88247207f8607855548b4a",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/051.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 620402,
+      "sha256": "9c47fdce4c44757a16872dc1bf9bafe83d2b99af06d9da6a678305192aa5b7a7",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/051-thumb.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 64574,
+      "sha256": "8fce5fd0714f34dd6d587d5a257b35f8a10495e15fce79dde23ad88839e0e71c",
+      "matchesLocal": true
+    },
+    {
+      "path": "content/v3/levels/052.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 142120,
+      "sha256": "3dc05b0a64359fb9e58b71b4e5a98ab012bc0d7aff747d6dde094d2524a59ceb",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/052/red-clock.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 11030,
+      "sha256": "2ed10f2ccd35c47e18a688065829ed20e37d0780a9d7b8458bc9b454cb389eb9",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/052-thumb.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 49114,
+      "sha256": "1244e80579c41904790555ade4d0234651d964a0eb3a7d49a6a61180c80b0c51",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/052.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 469022,
+      "sha256": "fb7b96ed386e5104e193b74aa15f02f94e76cf153c3fea3d7d1ceccc14da2b69",
+      "matchesLocal": true
+    },
+    {
+      "path": "content/v3/levels/053.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 112602,
+      "sha256": "b8ea162d94eca7aa7bdffd34a3f5f0b1e2c113d0f9c7be8980425a82422e7fec",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/053-thumb.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 51954,
+      "sha256": "062bf9b3b0672f2bbf109260a0bad7596661f9abe02084b040440e1c94ee9c09",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/053/red-brush.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 10990,
+      "sha256": "6f3104293532e2103f20027be8ac6976808fcd2ef2003a9e9709e861aa23597a",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/053.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 616268,
+      "sha256": "ab90cb0229884b262bf859d54c25dd2f0526699223a1445f4481f4424f64220e",
+      "matchesLocal": true
+    },
+    {
+      "path": "content/v3/levels/054.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 59224,
+      "sha256": "e6bd94b8addddf8c12ce777c937beffaf70a262c54cf468cd6de75c3e0296ce8",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/054/blue-throw.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 14422,
+      "sha256": "cce3af1125e487facb4a1505e054ce220c234b6eed404b68b2039fced45c2cbe",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/054-thumb.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 51538,
+      "sha256": "869fe8ebc0cc3af01a9a0e2689d15f1a33f527c303867c7a7734a07ae798ff19",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/054.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 581236,
+      "sha256": "eb6db81f35f34645d503d501f297ecd6df9c4ec792f555812424a2c25dad9a82",
+      "matchesLocal": true
+    },
+    {
+      "path": "content/v3/levels/055.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 77748,
+      "sha256": "e9b82cd2e43bc5c9e92f0f62cdaa2c5700153f6a2a3987f24f0659bf0f61c050",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/055/copper-pot.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 15550,
+      "sha256": "fc70cc6cad3c96ffb78a45677ac417261fb185d9aecd0d453419482851ee34df",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/055-thumb.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 50902,
+      "sha256": "288df4652d60641e28c3ae3f78a28bf03256e88a1e660e30d8942c2502ffd08a",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/055.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 597402,
+      "sha256": "df06620b255bce133c68ac54a0b79f661c67bbb0c692f3619dc59a0b4faab49f",
+      "matchesLocal": true
+    },
+    {
+      "path": "content/v3/levels/056.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 101247,
+      "sha256": "f2c811d56e62d54030ae40ed32a035aab392c59bab49e60cfee126c6a49419d7",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/056.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 569654,
+      "sha256": "805cfbef79bb3ac89a2b8af40af7be8967b6da5689097dd41cf98fe6cfed651b",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/056/coral-scissors.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 17464,
+      "sha256": "e3d45cf1a2a335e6dc1baa8baa2833a4c3901f49f1ba9a3f41ad26e2c6f5854f",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/056-thumb.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 52178,
+      "sha256": "c23e2a2502d0c053deee065a974ed3ab3f203818bc0a3aaf976482dfe3834d71",
+      "matchesLocal": true
+    },
+    {
+      "path": "content/v3/levels/057.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 471140,
+      "sha256": "8c7b9eb22a7036dbe5bee2a110879c0f0f38b6f4185bb2daf579cb9041fa01f1",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/057-thumb.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 36946,
+      "sha256": "d0da53e33064fad426bedb730460e91f5bbc61e1a93e31c0e7f41eb6901d9b38",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/057/coral-scissors.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 17774,
+      "sha256": "6267bc4f152ce2f03b6c54bf60671824e8fe14ab33669821322a4dd381525461",
+      "matchesLocal": true
+    },
+    {
+      "path": "art/v3/057.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 397688,
+      "sha256": "cbf7abc752b59775fdc44041201abea9cadd4136f5070bc55373919e427d2e10",
+      "matchesLocal": true
+    },
+    {
+      "path": "content/v3/levels/058.json",
+      "status": 404,
+      "retired": true
+    },
+    {
+      "path": "content/v2/catalog.json",
+      "status": 404,
+      "retired": true
+    },
+    {
+      "path": "art/v2/051.webp",
+      "status": 404,
+      "retired": true
+    }
+  ],
+  "browserSmoke": {
+    "engine": "Chromium",
+    "version": "156.0.8078.4",
+    "viewport": {
+      "width": 375,
+      "height": 667
+    },
+    "emulatedPhone": true,
+    "physicalIPhone": false,
+    "scene": 57,
+    "assistedFindAndReveal": true,
+    "reloadPreservedFind": true,
+    "completeChapterDownloaded": 6,
+    "offlineReloadPreservedFind": true,
+    "offlineSampleScenes": [
+      51,
+      52,
+      53,
+      54,
+      55,
+      56
+    ],
+    "consoleErrors": []
+  }
+}
