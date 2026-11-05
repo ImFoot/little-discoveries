@@ -1,3 +1,5 @@
+> Historical prototype. The player correctly rejected this approach: it still used a finished environmental painting and cut-out foreground patches. It did not fulfill the requested construction method. The corrected implementation is documented in [COMPONENT_ASSEMBLY.md](COMPONENT_ASSEMBLY.md).
+
 # Layered festival scene — level 56
 
 The requested method is implemented in The lantern-maker’s festival stall. Its setting, twelve-object atlas and matte palette are new. The earlier workroom direction was rejected for its mismatched colors/style and contributes no assets to the finished scene.

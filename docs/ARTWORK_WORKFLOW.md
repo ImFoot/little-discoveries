@@ -30,3 +30,7 @@ After the player described 54 as better and requested a little more challenge, s
 ## Layered scene56
 
 The latest player request supersedes the scene-first approach for the new demo. The lantern-maker’s festival stall uses a fresh setting and twelve new complete objects first, followed by environmental composition and separately editable concealment layers. Previews come from the full original sprites; hotspots and reveals come from the visible masks. See [LAYERED_ARTWORK.md](LAYERED_ARTWORK.md).
+
+## Corrected component assembly57
+
+The player rejected56 because the method still reused a finished environmental picture. Scene57 renders an ordered assembly of independent whole structures, props and object assets. There are no cut foreground patches. The original twelve separately created target assets are placed between actual prop layers, with full references preserved. See [COMPONENT_ASSEMBLY.md](COMPONENT_ASSEMBLY.md) for sources, proof and limitations.

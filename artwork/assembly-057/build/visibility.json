@@ -1,0 +1,99 @@
+[
+  {
+    "id": "coral-scissors",
+    "visibleFraction": 0.848,
+    "regions": 2,
+    "occludingProps": [
+      "hanging-materials"
+    ]
+  },
+  {
+    "id": "wooden-peg",
+    "visibleFraction": 0.403,
+    "regions": 3,
+    "occludingProps": [
+      "hanging-materials"
+    ]
+  },
+  {
+    "id": "paper-moon",
+    "visibleFraction": 0.774,
+    "regions": 2,
+    "occludingProps": [
+      "ivory-lantern"
+    ]
+  },
+  {
+    "id": "indigo-ink",
+    "visibleFraction": 0.619,
+    "regions": 1,
+    "occludingProps": [
+      "box-front"
+    ]
+  },
+  {
+    "id": "wooden-stamp",
+    "visibleFraction": 0.715,
+    "regions": 1,
+    "occludingProps": [
+      "brass-key",
+      "curled-paper"
+    ]
+  },
+  {
+    "id": "candle",
+    "visibleFraction": 0.551,
+    "regions": 12,
+    "occludingProps": [
+      "lantern-ribs"
+    ]
+  },
+  {
+    "id": "brass-key",
+    "visibleFraction": 0.749,
+    "regions": 1,
+    "occludingProps": [
+      "box-front"
+    ]
+  },
+  {
+    "id": "folding-ruler",
+    "visibleFraction": 0.591,
+    "regions": 1,
+    "occludingProps": [
+      "curled-paper"
+    ]
+  },
+  {
+    "id": "paintbrush",
+    "visibleFraction": 0.708,
+    "regions": 3,
+    "occludingProps": [
+      "desk-hoops"
+    ]
+  },
+  {
+    "id": "paper-crane",
+    "visibleFraction": 0.753,
+    "regions": 2,
+    "occludingProps": [
+      "left-container-front"
+    ]
+  },
+  {
+    "id": "thread-spool",
+    "visibleFraction": 0.717,
+    "regions": 1,
+    "occludingProps": [
+      "right-container-front"
+    ]
+  },
+  {
+    "id": "coral-twine",
+    "visibleFraction": 0.547,
+    "regions": 1,
+    "occludingProps": [
+      "right-rolls"
+    ]
+  }
+]

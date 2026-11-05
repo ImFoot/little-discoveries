@@ -1,7 +1,7 @@
 {
   "revision": 3,
-  "requiredScenes": 56,
-  "requiredPlacements": 738,
+  "requiredScenes": 57,
+  "requiredPlacements": 750,
   "chapters": [
     {
       "id": 1,
@@ -35,7 +35,7 @@
     },
     {
       "id": 6,
-      "title": "Six scenes to try",
+      "title": "Seven scenes to try",
       "subtitle": "Familiar little things, tucked a little further away.",
       "color": "#819475"
     }
@@ -1511,6 +1511,32 @@
       ],
       "sceneKey": "sample3-056",
       "targetPrefix": "sample3-056",
+      "sampleLevel": true
+    },
+    {
+      "id": 57,
+      "chapter": 6,
+      "title": "The lantern-maker’s assembled stall",
+      "targetCount": 12,
+      "sample": "Constructed on an empty canvas from separate structures, containers and whole props interleaved with twelve full objects.",
+      "thumbnail": "art/v3/057-thumb.webp",
+      "status": "reviewed",
+      "targetIds": [
+        "sample3-057-coral-scissors",
+        "sample3-057-wooden-peg",
+        "sample3-057-paper-moon",
+        "sample3-057-indigo-ink",
+        "sample3-057-wooden-stamp",
+        "sample3-057-candle",
+        "sample3-057-brass-key",
+        "sample3-057-folding-ruler",
+        "sample3-057-paintbrush",
+        "sample3-057-paper-crane",
+        "sample3-057-thread-spool",
+        "sample3-057-coral-twine"
+      ],
+      "sceneKey": "sample3-057",
+      "targetPrefix": "sample3-057",
       "sampleLevel": true
     }
   ]

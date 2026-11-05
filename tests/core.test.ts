@@ -9,14 +9,14 @@ const catalog=JSON.parse(readFileSync('public/content/catalog.json','utf8')) as 
 const level=JSON.parse(readFileSync('public/content/levels/001.json','utf8')) as Level;
 afterEach(()=>vi.unstubAllGlobals());
 describe('authored content and input geometry',()=>{
- it('contains the retained fifty and exactly six twelve-object samples',()=>{
-  expect(catalog.revision).toBe(3);expect(catalog.levels).toHaveLength(56);expect(catalog.chapters).toHaveLength(6);
-  expect(catalog.levels.reduce((n,l)=>n+l.targetCount,0)).toBe(738);
+ it('contains the retained fifty and exactly seven twelve-object samples',()=>{
+  expect(catalog.revision).toBe(3);expect(catalog.levels).toHaveLength(57);expect(catalog.chapters).toHaveLength(6);
+  expect(catalog.levels.reduce((n,l)=>n+l.targetCount,0)).toBe(750);
   expect(catalog.levels.every(l=>l.targetCount<=15)).toBe(true);
   for(const meta of catalog.levels.slice(50)){expect(meta.targetCount).toBe(12);expect(meta.sampleLevel).toBe(true);expect(meta.sceneKey).toBe('sample3-'+String(meta.id).padStart(3,'0'));}
   expect(catalog.levels.slice(0,50).map(l=>l.targetIds)).toEqual(previous.levels.slice(0,50).map(l=>l.targetIds));
-  const preceding=JSON.parse(readFileSync('public/content/v3/catalog-55.json','utf8')) as Catalog;
-  expect(preceding.levels).toHaveLength(55);expect(catalog.levels.slice(0,55)).toEqual(preceding.levels);
+  const preceding=JSON.parse(readFileSync('public/content/v3/catalog-56.json','utf8')) as Catalog;
+  expect(preceding.levels).toHaveLength(56);expect(catalog.levels.slice(0,56)).toEqual(preceding.levels);
  });
  it('selects one visible silhouette before a neighbor’s generous padding',()=>{
   const a={...level.targets[0],id:'a',outline:[[0,0],[10,0],[10,10],[0,10]],hit:[[0,0],[10,0],[10,10],[0,10]]} as typeof level.targets[0];
@@ -151,26 +151,26 @@ describe('removing the rejected fifty preserves only the retained picture progre
  });
  it('continues through the five samples after completing the retained pictures',()=>{
   const value=freshSave();value.completed=Array.from({length:50},(_,i)=>i+1);expect(continueLevel(value,catalog.levels)).toBe(51);
-  value.completed=catalog.levels.map(l=>l.id);expect(continueLevel(value,catalog.levels)).toBe(56);
+  value.completed=catalog.levels.map(l=>l.id);expect(continueLevel(value,catalog.levels)).toBe(57);
  });
 });
 
-describe('appending sample 56 keeps version-three discoveries unchanged',()=>{
+describe('appending sample 57 keeps version-three discoveries unchanged',()=>{
  it('loads and imports every prior scene, completion, favorite, preference and view without migration',()=>{
-  const old=freshSave();old.current=55;old.onboarded=true;old.catalogScroll=1234;old.preferences.largePreviews=true;
-  for(const meta of catalog.levels.slice(0,55)){
+  const old=freshSave();old.current=56;old.onboarded=true;old.catalogScroll=1234;old.preferences.largePreviews=true;
+  for(const meta of catalog.levels.slice(0,56)){
    old.attempts[meta.id]={...newAttempt(),found:[...meta.targetIds],completed:true,view:{x:.6,y:.4,zoom:2}};
    old.completed.push(meta.id);old.favorites.push(meta.id);
   }
   const raw=JSON.stringify(old),map=new Map([['little-discoveries.save.v3',raw],['little-discoveries.save.v3.recovery',raw]]);
   vi.stubGlobal('localStorage',{getItem:(key:string)=>map.get(key)??null,setItem:(key:string,value:string)=>map.set(key,value)});
   const loaded=loadSave(catalog.levels);expect(loaded.migrated).toBeFalsy();expect(loaded.save).toEqual(old);
-  expect(importBackup(exportBackup(old),catalog.levels)).toEqual(old);expect(continueLevel(loaded.save,catalog.levels)).toBe(56);
-  expect(map.get('little-discoveries.save.v3')).toBe(raw);expect(loaded.save.attempts[56]).toBeUndefined();
-  const target=catalog.levels[55].targetIds[0];expect(collect(loaded.save,catalog.levels[55],target)).toBe(true);
-  expect(collect(loaded.save,catalog.levels[55],target)).toBe(false);persist(loaded.save);
-  const again=loadSave(catalog.levels).save;expect(again.attempts[56].found).toEqual([target]);
-  for(const meta of catalog.levels.slice(0,55))expect(again.attempts[meta.id]).toEqual(old.attempts[meta.id]);
+  expect(importBackup(exportBackup(old),catalog.levels)).toEqual(old);expect(continueLevel(loaded.save,catalog.levels)).toBe(57);
+  expect(map.get('little-discoveries.save.v3')).toBe(raw);expect(loaded.save.attempts[57]).toBeUndefined();
+  const target=catalog.levels[56].targetIds[0];expect(collect(loaded.save,catalog.levels[56],target)).toBe(true);
+  expect(collect(loaded.save,catalog.levels[56],target)).toBe(false);persist(loaded.save);
+  const again=loadSave(catalog.levels).save;expect(again.attempts[57].found).toEqual([target]);
+  for(const meta of catalog.levels.slice(0,56))expect(again.attempts[meta.id]).toEqual(old.attempts[meta.id]);
   expect(again.completed).toEqual(old.completed);expect(again.favorites).toEqual(old.favorites);expect(again.preferences).toEqual(old.preferences);
  });
 });

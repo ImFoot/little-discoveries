@@ -1,0 +1,699 @@
+{
+  "width": 1024,
+  "height": 1536,
+  "layers": [
+    {
+      "id": "wall-plane",
+      "file": "000-wall-plane.png",
+      "x": 0,
+      "y": 0,
+      "kind": "primitive",
+      "asset": null,
+      "target": null
+    },
+    {
+      "id": "paving-plane",
+      "file": "001-paving-plane.png",
+      "x": 0,
+      "y": 0,
+      "kind": "primitive",
+      "asset": null,
+      "target": null
+    },
+    {
+      "id": "hanging-cords",
+      "file": "002-hanging-cords.png",
+      "x": 0,
+      "y": 0,
+      "kind": "primitive",
+      "asset": null,
+      "target": null
+    },
+    {
+      "id": "stall-structure-shadow",
+      "file": "003-stall-structure-shadow.png",
+      "x": 2,
+      "y": 34,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\stall-frame.png",
+      "target": null
+    },
+    {
+      "id": "stall-structure",
+      "file": "004-stall-structure.png",
+      "x": 0,
+      "y": 30,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\stall-frame.png",
+      "target": null
+    },
+    {
+      "id": "hanging-back-cloth-shadow",
+      "file": "005-hanging-back-cloth-shadow.png",
+      "x": 42,
+      "y": 267,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\indigo-cloth.png",
+      "target": null
+    },
+    {
+      "id": "hanging-back-cloth",
+      "file": "006-hanging-back-cloth.png",
+      "x": 40,
+      "y": 263,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\indigo-cloth.png",
+      "target": null
+    },
+    {
+      "id": "rear-bamboo-shadow",
+      "file": "007-rear-bamboo-shadow.png",
+      "x": 703,
+      "y": 446,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\bamboo-plant.png",
+      "target": null
+    },
+    {
+      "id": "rear-bamboo",
+      "file": "008-rear-bamboo.png",
+      "x": 701,
+      "y": 442,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\bamboo-plant.png",
+      "target": null
+    },
+    {
+      "id": "rack-shadow",
+      "file": "009-rack-shadow.png",
+      "x": 44,
+      "y": 409,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\paper-rack.png",
+      "target": null
+    },
+    {
+      "id": "rack",
+      "file": "010-rack.png",
+      "x": 42,
+      "y": 405,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\paper-rack.png",
+      "target": null
+    },
+    {
+      "id": "coral-scissors-shadow",
+      "file": "011-coral-scissors-shadow.png",
+      "x": 169,
+      "y": 475,
+      "kind": "shadow",
+      "asset": "artwork\\lantern-056\\assets\\coral-scissors.png",
+      "target": null
+    },
+    {
+      "id": "coral-scissors",
+      "file": "012-coral-scissors.png",
+      "x": 167,
+      "y": 471,
+      "kind": "target",
+      "asset": "artwork\\lantern-056\\assets\\coral-scissors.png",
+      "target": "Coral scissors"
+    },
+    {
+      "id": "wooden-peg-shadow",
+      "file": "013-wooden-peg-shadow.png",
+      "x": 303,
+      "y": 482,
+      "kind": "shadow",
+      "asset": "artwork\\lantern-056\\assets\\wooden-peg.png",
+      "target": null
+    },
+    {
+      "id": "wooden-peg",
+      "file": "014-wooden-peg.png",
+      "x": 301,
+      "y": 478,
+      "kind": "target",
+      "asset": "artwork\\lantern-056\\assets\\wooden-peg.png",
+      "target": "Wooden peg"
+    },
+    {
+      "id": "hanging-materials-shadow",
+      "file": "015-hanging-materials-shadow.png",
+      "x": 182,
+      "y": 521,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\paper-strips.png",
+      "target": null
+    },
+    {
+      "id": "hanging-materials",
+      "file": "016-hanging-materials.png",
+      "x": 180,
+      "y": 517,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\paper-strips.png",
+      "target": null
+    },
+    {
+      "id": "teal-lantern-shadow",
+      "file": "017-teal-lantern-shadow.png",
+      "x": 447,
+      "y": 331,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\teal-lantern.png",
+      "target": null
+    },
+    {
+      "id": "teal-lantern",
+      "file": "018-teal-lantern.png",
+      "x": 445,
+      "y": 327,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\teal-lantern.png",
+      "target": null
+    },
+    {
+      "id": "paper-moon-shadow",
+      "file": "019-paper-moon-shadow.png",
+      "x": 844,
+      "y": 531,
+      "kind": "shadow",
+      "asset": "artwork\\lantern-056\\assets\\paper-moon.png",
+      "target": null
+    },
+    {
+      "id": "paper-moon",
+      "file": "020-paper-moon.png",
+      "x": 842,
+      "y": 527,
+      "kind": "target",
+      "asset": "artwork\\lantern-056\\assets\\paper-moon.png",
+      "target": "Paper moon"
+    },
+    {
+      "id": "ivory-lantern-shadow",
+      "file": "021-ivory-lantern-shadow.png",
+      "x": 775,
+      "y": 296,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\ivory-lantern.png",
+      "target": null
+    },
+    {
+      "id": "ivory-lantern",
+      "file": "022-ivory-lantern.png",
+      "x": 773,
+      "y": 292,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\ivory-lantern.png",
+      "target": null
+    },
+    {
+      "id": "coral-lantern-shadow",
+      "file": "023-coral-lantern-shadow.png",
+      "x": 568,
+      "y": 286,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\coral-lantern.png",
+      "target": null
+    },
+    {
+      "id": "coral-lantern",
+      "file": "024-coral-lantern.png",
+      "x": 566,
+      "y": 282,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\coral-lantern.png",
+      "target": null
+    },
+    {
+      "id": "bench-shadow",
+      "file": "025-bench-shadow.png",
+      "x": 18,
+      "y": 754,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\workbench.png",
+      "target": null
+    },
+    {
+      "id": "bench",
+      "file": "026-bench.png",
+      "x": 16,
+      "y": 750,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\workbench.png",
+      "target": null
+    },
+    {
+      "id": "box-back-shadow",
+      "file": "027-box-back-shadow.png",
+      "x": 75,
+      "y": 722,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\box-back.png",
+      "target": null
+    },
+    {
+      "id": "box-back",
+      "file": "028-box-back.png",
+      "x": 73,
+      "y": 718,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\box-back.png",
+      "target": null
+    },
+    {
+      "id": "indigo-ink-shadow",
+      "file": "029-indigo-ink-shadow.png",
+      "x": 161,
+      "y": 726,
+      "kind": "shadow",
+      "asset": "artwork\\lantern-056\\assets\\indigo-ink.png",
+      "target": null
+    },
+    {
+      "id": "indigo-ink",
+      "file": "030-indigo-ink.png",
+      "x": 159,
+      "y": 722,
+      "kind": "target",
+      "asset": "artwork\\lantern-056\\assets\\indigo-ink.png",
+      "target": "Indigo ink bottle"
+    },
+    {
+      "id": "wooden-stamp-shadow",
+      "file": "031-wooden-stamp-shadow.png",
+      "x": 441,
+      "y": 786,
+      "kind": "shadow",
+      "asset": "artwork\\lantern-056\\assets\\wooden-stamp.png",
+      "target": null
+    },
+    {
+      "id": "wooden-stamp",
+      "file": "032-wooden-stamp.png",
+      "x": 439,
+      "y": 782,
+      "kind": "target",
+      "asset": "artwork\\lantern-056\\assets\\wooden-stamp.png",
+      "target": "Wooden stamp"
+    },
+    {
+      "id": "candle-shadow",
+      "file": "033-candle-shadow.png",
+      "x": 652,
+      "y": 706,
+      "kind": "shadow",
+      "asset": "artwork\\lantern-056\\assets\\candle.png",
+      "target": null
+    },
+    {
+      "id": "candle",
+      "file": "034-candle.png",
+      "x": 650,
+      "y": 702,
+      "kind": "target",
+      "asset": "artwork\\lantern-056\\assets\\candle.png",
+      "target": "Candle holder"
+    },
+    {
+      "id": "lantern-ribs-shadow",
+      "file": "035-lantern-ribs-shadow.png",
+      "x": 587,
+      "y": 673,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\lantern-skeleton.png",
+      "target": null
+    },
+    {
+      "id": "lantern-ribs",
+      "file": "036-lantern-ribs.png",
+      "x": 585,
+      "y": 669,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\lantern-skeleton.png",
+      "target": null
+    },
+    {
+      "id": "brass-key-shadow",
+      "file": "037-brass-key-shadow.png",
+      "x": 363,
+      "y": 830,
+      "kind": "shadow",
+      "asset": "artwork\\lantern-056\\assets\\brass-key.png",
+      "target": null
+    },
+    {
+      "id": "brass-key",
+      "file": "038-brass-key.png",
+      "x": 361,
+      "y": 826,
+      "kind": "target",
+      "asset": "artwork\\lantern-056\\assets\\brass-key.png",
+      "target": "Brass key"
+    },
+    {
+      "id": "folding-ruler-shadow",
+      "file": "039-folding-ruler-shadow.png",
+      "x": 518,
+      "y": 777,
+      "kind": "shadow",
+      "asset": "artwork\\lantern-056\\assets\\folding-ruler.png",
+      "target": null
+    },
+    {
+      "id": "folding-ruler",
+      "file": "040-folding-ruler.png",
+      "x": 516,
+      "y": 773,
+      "kind": "target",
+      "asset": "artwork\\lantern-056\\assets\\folding-ruler.png",
+      "target": "Folding ruler"
+    },
+    {
+      "id": "paintbrush-shadow",
+      "file": "041-paintbrush-shadow.png",
+      "x": 103,
+      "y": 929,
+      "kind": "shadow",
+      "asset": "artwork\\lantern-056\\assets\\paintbrush.png",
+      "target": null
+    },
+    {
+      "id": "paintbrush",
+      "file": "042-paintbrush.png",
+      "x": 101,
+      "y": 925,
+      "kind": "target",
+      "asset": "artwork\\lantern-056\\assets\\paintbrush.png",
+      "target": "Paintbrush"
+    },
+    {
+      "id": "box-front-shadow",
+      "file": "043-box-front-shadow.png",
+      "x": 75,
+      "y": 795,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\box-front.png",
+      "target": null
+    },
+    {
+      "id": "box-front",
+      "file": "044-box-front.png",
+      "x": 73,
+      "y": 791,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\box-front.png",
+      "target": null
+    },
+    {
+      "id": "curled-paper-shadow",
+      "file": "045-curled-paper-shadow.png",
+      "x": 480,
+      "y": 835,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\coral-paper.png",
+      "target": null
+    },
+    {
+      "id": "curled-paper",
+      "file": "046-curled-paper.png",
+      "x": 478,
+      "y": 831,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\coral-paper.png",
+      "target": null
+    },
+    {
+      "id": "desk-hoops-shadow",
+      "file": "047-desk-hoops-shadow.png",
+      "x": 39,
+      "y": 940,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\bamboo-hoops.png",
+      "target": null
+    },
+    {
+      "id": "desk-hoops",
+      "file": "048-desk-hoops.png",
+      "x": 37,
+      "y": 936,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\bamboo-hoops.png",
+      "target": null
+    },
+    {
+      "id": "desk-linen-shadow",
+      "file": "049-desk-linen-shadow.png",
+      "x": 737,
+      "y": 845,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\indigo-cloth.png",
+      "target": null
+    },
+    {
+      "id": "desk-linen",
+      "file": "050-desk-linen.png",
+      "x": 735,
+      "y": 841,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\indigo-cloth.png",
+      "target": null
+    },
+    {
+      "id": "paper-tray-shadow",
+      "file": "051-paper-tray-shadow.png",
+      "x": 329,
+      "y": 937,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\woven-tray.png",
+      "target": null
+    },
+    {
+      "id": "paper-tray",
+      "file": "052-paper-tray.png",
+      "x": 327,
+      "y": 933,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\woven-tray.png",
+      "target": null
+    },
+    {
+      "id": "ribbon-reels-shadow",
+      "file": "053-ribbon-reels-shadow.png",
+      "x": 810,
+      "y": 795,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\ribbon-reels.png",
+      "target": null
+    },
+    {
+      "id": "ribbon-reels",
+      "file": "054-ribbon-reels.png",
+      "x": 808,
+      "y": 791,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\ribbon-reels.png",
+      "target": null
+    },
+    {
+      "id": "under-bench-boxes-shadow",
+      "file": "055-under-bench-boxes-shadow.png",
+      "x": 439,
+      "y": 1114,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\box-stack.png",
+      "target": null
+    },
+    {
+      "id": "under-bench-boxes",
+      "file": "056-under-bench-boxes.png",
+      "x": 437,
+      "y": 1110,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\box-stack.png",
+      "target": null
+    },
+    {
+      "id": "left-container-back-shadow",
+      "file": "057-left-container-back-shadow.png",
+      "x": 19,
+      "y": 1099,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\hamper-back.png",
+      "target": null
+    },
+    {
+      "id": "left-container-back",
+      "file": "058-left-container-back.png",
+      "x": 17,
+      "y": 1095,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\hamper-back.png",
+      "target": null
+    },
+    {
+      "id": "paper-crane-shadow",
+      "file": "059-paper-crane-shadow.png",
+      "x": 235,
+      "y": 1214,
+      "kind": "shadow",
+      "asset": "artwork\\lantern-056\\assets\\paper-crane.png",
+      "target": null
+    },
+    {
+      "id": "paper-crane",
+      "file": "060-paper-crane.png",
+      "x": 233,
+      "y": 1210,
+      "kind": "target",
+      "asset": "artwork\\lantern-056\\assets\\paper-crane.png",
+      "target": "Paper crane"
+    },
+    {
+      "id": "left-rolls-shadow",
+      "file": "061-left-rolls-shadow.png",
+      "x": 58,
+      "y": 1154,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\paper-rolls.png",
+      "target": null
+    },
+    {
+      "id": "left-rolls",
+      "file": "062-left-rolls.png",
+      "x": 56,
+      "y": 1150,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\paper-rolls.png",
+      "target": null
+    },
+    {
+      "id": "left-container-front-shadow",
+      "file": "063-left-container-front-shadow.png",
+      "x": 23,
+      "y": 1304,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\hamper-front.png",
+      "target": null
+    },
+    {
+      "id": "left-container-front",
+      "file": "064-left-container-front.png",
+      "x": 21,
+      "y": 1300,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\hamper-front.png",
+      "target": null
+    },
+    {
+      "id": "right-container-back-shadow",
+      "file": "065-right-container-back-shadow.png",
+      "x": 666,
+      "y": 1130,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\hamper-back.png",
+      "target": null
+    },
+    {
+      "id": "right-container-back",
+      "file": "066-right-container-back.png",
+      "x": 664,
+      "y": 1126,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\hamper-back.png",
+      "target": null
+    },
+    {
+      "id": "thread-spool-shadow",
+      "file": "067-thread-spool-shadow.png",
+      "x": 876,
+      "y": 1260,
+      "kind": "shadow",
+      "asset": "artwork\\lantern-056\\assets\\thread-spool.png",
+      "target": null
+    },
+    {
+      "id": "thread-spool",
+      "file": "068-thread-spool.png",
+      "x": 874,
+      "y": 1256,
+      "kind": "target",
+      "asset": "artwork\\lantern-056\\assets\\thread-spool.png",
+      "target": "Thread spool"
+    },
+    {
+      "id": "coral-twine-shadow",
+      "file": "069-coral-twine-shadow.png",
+      "x": 740,
+      "y": 1218,
+      "kind": "shadow",
+      "asset": "artwork\\lantern-056\\assets\\coral-twine.png",
+      "target": null
+    },
+    {
+      "id": "coral-twine",
+      "file": "070-coral-twine.png",
+      "x": 738,
+      "y": 1214,
+      "kind": "target",
+      "asset": "artwork\\lantern-056\\assets\\coral-twine.png",
+      "target": "Coral twine"
+    },
+    {
+      "id": "right-rolls-shadow",
+      "file": "071-right-rolls-shadow.png",
+      "x": 683,
+      "y": 1191,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\paper-rolls.png",
+      "target": null
+    },
+    {
+      "id": "right-rolls",
+      "file": "072-right-rolls.png",
+      "x": 681,
+      "y": 1187,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\paper-rolls.png",
+      "target": null
+    },
+    {
+      "id": "right-container-front-shadow",
+      "file": "073-right-container-front-shadow.png",
+      "x": 670,
+      "y": 1328,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\hamper-front.png",
+      "target": null
+    },
+    {
+      "id": "right-container-front",
+      "file": "074-right-container-front.png",
+      "x": 668,
+      "y": 1324,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\hamper-front.png",
+      "target": null
+    },
+    {
+      "id": "small-ground-mat-shadow",
+      "file": "075-small-ground-mat-shadow.png",
+      "x": 368,
+      "y": 1419,
+      "kind": "shadow",
+      "asset": "artwork\\assembly-057\\assets\\woven-tray.png",
+      "target": null
+    },
+    {
+      "id": "small-ground-mat",
+      "file": "076-small-ground-mat.png",
+      "x": 366,
+      "y": 1415,
+      "kind": "prop",
+      "asset": "artwork\\assembly-057\\assets\\woven-tray.png",
+      "target": null
+    }
+  ]
+}

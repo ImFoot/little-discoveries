@@ -10,8 +10,8 @@ const check=(valid,message)=>{if(!valid)errors.push(message);};
 check(catalog.levels.length===requiredScenes,`Exactly ${requiredScenes} catalog entries are required.`);
 check(catalog.levels.reduce((n,l)=>n+l.targetCount,0)===requiredPlacements,`Target counts must total ${requiredPlacements}.`);
 check(catalog.chapters.length===Math.ceil(requiredScenes/10),'Chapter count does not match the active collection.');
-check(catalog.revision===3&&requiredScenes===56&&requiredPlacements===738,'This release must contain 50 retained scenes and six samples.');
-check(await readFile('public/content/v3/catalog-56.json','utf8')===await readFile('public/content/catalog.json','utf8'),'Release catalog alias differs from canonical catalog.');
+check(catalog.revision===3&&requiredScenes===57&&requiredPlacements===750,'This release must contain 50 retained scenes and seven trials.');
+check(await readFile('public/content/v3/catalog-57.json','utf8')===await readFile('public/content/catalog.json','utf8'),'Release catalog alias differs from canonical catalog.');
 let ready=0,placements=0,phone=0;
 const artHashes=new Set();
 function simplePolygon(points){
@@ -49,7 +49,7 @@ for(let i=0;i<requiredScenes;i++){
   if(meta.id>=51){
    check(level.review.contextOutlines===true,`Scene ${meta.id}: source/outline overlay review required`);
    check(level.targetCount===12&&meta.sampleLevel===true,`Scene ${meta.id}: sample requires 12 targets`);
-   check(level.targets.every(t=>t.previewMode===(meta.id===56?'asset':'context')),`Scene ${meta.id}: samples require unmasked picture crops`);
+   check(level.targets.every(t=>t.previewMode===(meta.id>=56?'asset':'context')),`Scene ${meta.id}: samples require unmasked picture crops`);
   }
   await access(`public/${level.thumbnail}`);
   const names=new Set();

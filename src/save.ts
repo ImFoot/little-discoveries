@@ -68,7 +68,7 @@ export function loadSave(catalog:CatalogEntry[]):{save:Save;recovered:boolean;wa
           try{if(!localStorage.getItem(archive))localStorage.setItem(archive,raw);}catch{}
         }
         if(updated||key!==KEY)persist(save);
-        return {save,recovered,warning:updated?'Your discoveries in the retained pictures are safe. Six new scenes are ready to try.':warning,migrated};
+        return {save,recovered,warning:updated?'Your discoveries in the retained pictures are safe. Seven new scenes are ready to try.':warning,migrated};
       }
       catch {recovered=true;warning='Your last save could not be read. A recovery copy was used when available.';}
     }

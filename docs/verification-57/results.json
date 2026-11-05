@@ -1,0 +1,187 @@
+{
+  "date": "2026-11-05T05:13:10.950Z",
+  "scenes": 57,
+  "placements": 750,
+  "unitTests": 26,
+  "browserCases": 26,
+  "performanceCases": 4,
+  "content": {
+    "catalogRevision": 3,
+    "catalogScenes": 57,
+    "requiredPlacements": 750,
+    "illustratedScenes": 57,
+    "authoredPlacements": 750,
+    "actualIPhoneReviewed": 0,
+    "errors": [],
+    "warnings": []
+  },
+  "retained": {
+    "date": "2026-11-05T05:08:41.367Z",
+    "baseline": "2ca3e77",
+    "retainedScenes": 56,
+    "retainedPlacements": 738,
+    "identicalFiles": 1130,
+    "sourcePngs": 56,
+    "sourceAnnotations": 56,
+    "prompts": 56,
+    "canonicalLevels": 56,
+    "runtimeLevels": 56,
+    "sceneWebps": 56,
+    "thumbnails": 56,
+    "previews": 738,
+    "catalogEntriesUnchanged": true,
+    "verified": true
+  },
+  "assembly": {
+    "targetRuns": 6,
+    "layers": 77,
+    "targets": 12,
+    "wholeProps": 25,
+    "primitiveSurfaces": 3,
+    "shadows": 37,
+    "finishedEnvironmentInputs": 0,
+    "manuallyCutOccluderInputs": 0,
+    "targetLayersInterleaved": true,
+    "oraFlattensIdentically": true,
+    "visibleMaskChecks": [
+      {
+        "id": "coral-scissors",
+        "recall": 1,
+        "precision": 1,
+        "visibleFraction": 0.848,
+        "regions": 2
+      },
+      {
+        "id": "wooden-peg",
+        "recall": 1,
+        "precision": 0.9992,
+        "visibleFraction": 0.403,
+        "regions": 3
+      },
+      {
+        "id": "paper-moon",
+        "recall": 1,
+        "precision": 1,
+        "visibleFraction": 0.774,
+        "regions": 2
+      },
+      {
+        "id": "indigo-ink",
+        "recall": 1,
+        "precision": 1,
+        "visibleFraction": 0.619,
+        "regions": 1
+      },
+      {
+        "id": "wooden-stamp",
+        "recall": 1,
+        "precision": 1,
+        "visibleFraction": 0.715,
+        "regions": 1
+      },
+      {
+        "id": "candle",
+        "recall": 1,
+        "precision": 1,
+        "visibleFraction": 0.551,
+        "regions": 12
+      },
+      {
+        "id": "brass-key",
+        "recall": 1,
+        "precision": 1,
+        "visibleFraction": 0.749,
+        "regions": 1
+      },
+      {
+        "id": "folding-ruler",
+        "recall": 1,
+        "precision": 1,
+        "visibleFraction": 0.591,
+        "regions": 1
+      },
+      {
+        "id": "paintbrush",
+        "recall": 0.9998,
+        "precision": 1,
+        "visibleFraction": 0.708,
+        "regions": 3
+      },
+      {
+        "id": "paper-crane",
+        "recall": 1,
+        "precision": 1,
+        "visibleFraction": 0.753,
+        "regions": 2
+      },
+      {
+        "id": "thread-spool",
+        "recall": 1,
+        "precision": 1,
+        "visibleFraction": 0.717,
+        "regions": 1
+      },
+      {
+        "id": "coral-twine",
+        "recall": 1,
+        "precision": 1,
+        "visibleFraction": 0.547,
+        "regions": 1
+      }
+    ]
+  },
+  "metrics": [
+    {
+      "project": "chromium-phone",
+      "name": "emulated-loading.json",
+      "playableMs": 1766,
+      "bytes": 948090,
+      "downloadMbps": 10,
+      "latencyMs": 40,
+      "measurement": "Aggregate HTTP response payloads, including page, Pixi worker and service worker; picture and all target previews ready.",
+      "physicalIPhone": false
+    },
+    {
+      "project": "chromium-phone",
+      "name": "emulated-touch-feedback.json",
+      "scene": 57,
+      "feedbackMs": 4.200000002980232,
+      "physicalIPhone": false
+    },
+    {
+      "project": "webkit-phone",
+      "name": "emulated-loading.json",
+      "playableMs": 1917,
+      "bytes": 1138311,
+      "downloadMbps": 10,
+      "latencyMs": 40,
+      "measurement": "Aggregate HTTP response payloads, including page, Pixi worker and service worker; picture and all target previews ready.",
+      "physicalIPhone": false
+    },
+    {
+      "project": "webkit-phone",
+      "name": "emulated-touch-feedback.json",
+      "scene": 57,
+      "feedbackMs": 4,
+      "physicalIPhone": false
+    }
+  ],
+  "archive": {
+    "catalogRevision": 3,
+    "created": "2026-11-05T05:12:09.6209506Z",
+    "file": "LittleDiscoveries-static.zip",
+    "bytes": 43213384,
+    "sha256": "94e889929898e8c9d65be64446d82dabfd5f859dd2320197517abb064ccd707d",
+    "counts": {
+      "Scenes": 57,
+      "Previews": 750,
+      "RuntimeLevels": 57,
+      "Catalogs": 6
+    }
+  },
+  "buildVersion": "a2a8e48debea7a75",
+  "contentVersion": "c71b4ddac9f46a8d",
+  "compatiblePriorContentVersion": "98f5c5fcde53e329",
+  "physicalIPhoneTested": false,
+  "playerAccepted": false
+}

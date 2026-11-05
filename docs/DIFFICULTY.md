@@ -15,3 +15,7 @@ Before integration, check the actual 32-pixel tray previews with scripts/review-
 The player described level 54 as better and requested one more, with a little more challenge. Level 55, The baker’s pantry, continues the scene-first method with more objects nested in drawers and baskets, partly covered by cloth or neighboring utensils. It retains twelve targets and unchanged source-crop previews. The increased challenge is an authoring intention until the player tries it.
 
 Scene56 changes the construction method rather than simply choosing harder crops. Twelve full assets were created first; foreground layers then cover about9–53% of individual object alpha. The matched matte palette and overlapping patterned papers provide search detail. These visibility measurements describe composition, not proven player difficulty. Full previews remain intact and the intended player must judge whether this new design works.
+
+## Corrected component assembly57
+
+The player rejected56 because the method still reused a finished environmental picture. Scene57 renders an ordered assembly of independent whole structures, props and object assets. There are no cut foreground patches. The original twelve separately created target assets are placed between actual prop layers, with full references preserved. See [COMPONENT_ASSEMBLY.md](COMPONENT_ASSEMBLY.md) for sources, proof and limitations.

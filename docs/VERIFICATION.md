@@ -1,30 +1,27 @@
-# Layered festival demo verification
+# Component assembly verification — scene 57
 
-Verified 2026-11-05T04:29:08.041Z. Active collection: **56 scenes / 738 placements**, maximum 15 per level. The new level has twelve objects, all created as complete separate assets before its environmental scene.
+Verified 2026-11-05T05:13:10.950Z. The previous method 56 was correctly rejected: it used a finished environmental picture with foreground patches. The new 57 trial starts empty and assembles separate whole components. See [COMPONENT_ASSEMBLY.md](COMPONENT_ASSEMBLY.md).
 
-## Authored layers and geometry
+## Construction proof
 
-The new festival stall uses a coordinated matte palette and an original composition. Its 36 editable OpenRaster layers comprise a background, twelve objects, twelve contact shadows and eleven foreground masks. Recombining the archive layers reproduces every pixel of the finished static scene. The game previews come from the original full objects; hotspots and exact outlines follow their visible alpha after foreground coverage. Disconnected visible pieces are supported. See [the authoring method](LAYERED_ARTWORK.md), [layer verification](../artwork/lantern-056/review/layer-verification.json), [mask verification](../artwork/lantern-056/review/mask-verification.json) and [phone-size proof](../artwork/lantern-056/review/phone-proof.png). Every target exceeds 98% visible-mask coverage and precision. All twelve references and finished outlines were visually inspected.
+The renderer reads 25 independent whole props and 12 full object assets, interleaved in six target groups, over three primitive surface/cord layers. There are 37 separate contact shadows. Source audit finds zero finished-environment inputs and zero manually cut concealment patches. The 77-layer OpenRaster archive recomposes pixel-for-pixel to the finished static render. The complete reference objects are never clipped for the list. Visibility is derived afterward from actual later prop alpha, including container fronts and open lantern ribs.
 
-A [retained-content comparison](verification-56/retained.json) verifies all 55 earlier catalog entries and 1111 source, annotation, prompt, level, scene, thumbnail and preview files are unchanged from 361c10e. Earlier exhaustive tours remain in their historical verification folders.
+The [source audit](../artwork/assembly-057/review/verification.json), [visual contact sheet](../artwork/assembly-057/review/objects-and-outlines.png) and [phone-size proof](../artwork/assembly-057/review/phone-proof.png) retain the checks. All visible-region coverage/precision checks exceed 99.9% at the mask sampling resolution. All twelve previews and contours were inspected. These measurements do not establish player approval.
 
-## Current tests
+## Game verification
 
-- 26/26 core tests passed, including earlier progress and backup preservation and disconnected-region picking priority.
-- 26/26 Chromium/WebKit phone-emulation browser cases passed, including all twelve new targets, repeated hints/reveals, duplicate taps, completion, saving/reload, migrations, compact portrait/landscape, recovery and offline repair.
-- The complete six-scene sample chapter downloads and all six scenes reopen, collect and reload offline. A cached 55-scene app upgrades through normal reload while retaining progress and compatible offline content.
-- 4/4 separate loading/feedback/recovery cases passed at emulated 10Mbps/40ms latency. Metrics: chromium-phone: 1863 ms, 1103443 bytes; chromium-phone: 3.4000000059604645 ms touch feedback; webkit-phone: 2230 ms, 1255826 bytes; webkit-phone: 3 ms touch feedback.
+- Strict validation passes 57 distinct scenes / 750 targets, max 15, matching full-asset previews and complete runtime packages.
+- All 56 previous catalog entries and 1130 source/content/art files remain identical to 2ca3e77. [Retained-content evidence](verification-57/retained.json).
+- 26/26 core tests and 26/26 Chromium/WebKit phone-emulation cases passed, including all 12 new targets, duplicate taps, repeated hints/reveals, completion, saves/reload, import/export, gestures, layout and cached 56→57 update.
+- All seven trial scenes download and reopen, collect and reload offline.
+- 4/4 separate loading, touch-feedback and recovery cases passed. chromium-phone: 1766 ms / 948090 bytes; chromium-phone: 4.200000002980232 ms feedback; webkit-phone: 1917 ms / 1138311 bytes; webkit-phone: 4 ms feedback.
 
-These are desktop browser tests, not physical iPhone tests or intended-player approval of style, clarity or difficulty. See [full evidence](verification-56/results.json).
+Full records: [verification-57/results.json](verification-57/results.json). Desktop emulation is separate from physical iPhone testing and intended-player art/difficulty review, which remain pending.
 
-## Production build
+## Build
 
-Strict content validation passed 56/738 counts, distinct scene hashes, max 15 targets, all prior context crops, original full-sprite previews, polygon topology/bounds and complete packages for all six chapters. Build version 291120a1391273d8; content version 98f5c5fcde53e329; compatible prior content 982742b92f4967cf. New release URLs bypass cached catalogs; save version 3 and earlier level IDs remain stable. Browser storage pressure can require an offline download retry.
+Static build passed. Shell a2a8e48debea7a75; content c71b4ddac9f46a8d; compatible prior content 98f5c5fcde53e329. Save version 3 and earlier IDs remain stable; matching prior downloads can be reused when browser cache writes succeed.
 
-The static hosting ZIP at output/LittleDiscoveries-static.zip contains 56 scene images, 738 previews and 56 runtime definitions. Size 42469959 bytes; SHA256 d8c1b4c3513eb19e486e79a3a88912a260c26a6998004a0ca340065338ea913e. Local run/build instructions remain in README.md. Static hosting requires no authoring tools or Python.
+The HTTPS-hosting ZIP contains 57 scene images, 750 previews and 57 runtime definitions. Size 43213384 bytes; SHA256 94e889929898e8c9d65be64446d82dabfd5f859dd2320197517abb064ccd707d. Local run/build instructions remain in README.md. Python is required only for authoring, not hosting/play.
 
-## Live deployment
-
-[Level 56 is live](https://imfoot.github.io/little-discoveries/#scene/56). [Pages run 41968328615](https://github.com/ImFoot/little-discoveries/actions/runs/41968328615) succeeded for commit 9e6e4757afcb873d132c06297fc454171757f8f5. All 59 HTTP checks passed and matched the tested shell/content. A fresh hosted Chromium phone-emulation session verified full previews, reveal/assisted find, saving/reload, the complete six-scene chapter download and all six scenes opening offline, with no page errors. [Deployment evidence](verification-56/deployment.json) records the exact assets.
-
-The repository remains public. Reload Safari for the new scene and update chapter 6's offline download to include it. The editable .ora source and standalone layer proof are retained locally. Physical iPhone and intended-player review remain pending.
+Live deployment verification pending.

@@ -1,0 +1,98 @@
+{
+  "targetRuns": 6,
+  "layers": 77,
+  "targets": 12,
+  "wholeProps": 25,
+  "primitiveSurfaces": 3,
+  "shadows": 37,
+  "finishedEnvironmentInputs": 0,
+  "manuallyCutOccluderInputs": 0,
+  "targetLayersInterleaved": true,
+  "oraFlattensIdentically": true,
+  "visibleMaskChecks": [
+    {
+      "id": "coral-scissors",
+      "recall": 1.0,
+      "precision": 1.0,
+      "visibleFraction": 0.848,
+      "regions": 2
+    },
+    {
+      "id": "wooden-peg",
+      "recall": 1.0,
+      "precision": 0.9992,
+      "visibleFraction": 0.403,
+      "regions": 3
+    },
+    {
+      "id": "paper-moon",
+      "recall": 1.0,
+      "precision": 1.0,
+      "visibleFraction": 0.774,
+      "regions": 2
+    },
+    {
+      "id": "indigo-ink",
+      "recall": 1.0,
+      "precision": 1.0,
+      "visibleFraction": 0.619,
+      "regions": 1
+    },
+    {
+      "id": "wooden-stamp",
+      "recall": 1.0,
+      "precision": 1.0,
+      "visibleFraction": 0.715,
+      "regions": 1
+    },
+    {
+      "id": "candle",
+      "recall": 1.0,
+      "precision": 1.0,
+      "visibleFraction": 0.551,
+      "regions": 12
+    },
+    {
+      "id": "brass-key",
+      "recall": 1.0,
+      "precision": 1.0,
+      "visibleFraction": 0.749,
+      "regions": 1
+    },
+    {
+      "id": "folding-ruler",
+      "recall": 1.0,
+      "precision": 1.0,
+      "visibleFraction": 0.591,
+      "regions": 1
+    },
+    {
+      "id": "paintbrush",
+      "recall": 0.9998,
+      "precision": 1.0,
+      "visibleFraction": 0.708,
+      "regions": 3
+    },
+    {
+      "id": "paper-crane",
+      "recall": 1.0,
+      "precision": 1.0,
+      "visibleFraction": 0.753,
+      "regions": 2
+    },
+    {
+      "id": "thread-spool",
+      "recall": 1.0,
+      "precision": 1.0,
+      "visibleFraction": 0.717,
+      "regions": 1
+    },
+    {
+      "id": "coral-twine",
+      "recall": 1.0,
+      "precision": 1.0,
+      "visibleFraction": 0.547,
+      "regions": 1
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "stall-frame",
+    "file": "assets/stall-frame.png",
+    "width": 1491,
+    "height": 943,
+    "kind": "environment-component",
+    "source": "frame-source.png"
+  },
+  {
+    "id": "workbench",
+    "file": "assets/workbench.png",
+    "width": 740,
+    "height": 407,
+    "kind": "environment-component",
+    "source": "structures-source.png"
+  },
+  {
+    "id": "paper-rack",
+    "file": "assets/paper-rack.png",
+    "width": 559,
+    "height": 561,
+    "kind": "environment-component",
+    "source": "structures-source.png"
+  },
+  {
+    "id": "box-back",
+    "file": "assets/box-back.png",
+    "width": 694,
+    "height": 317,
+    "kind": "environment-component",
+    "source": "structures-source.png"
+  },
+  {
+    "id": "box-front",
+    "file": "assets/box-front.png",
+    "width": 644,
+    "height": 196,
+    "kind": "environment-component",
+    "source": "structures-source.png"
+  },
+  {
+    "id": "hamper-back",
+    "file": "assets/hamper-back.png",
+    "width": 414,
+    "height": 413,
+    "kind": "environment-component",
+    "source": "containers-source.png"
+  },
+  {
+    "id": "hamper-front",
+    "file": "assets/hamper-front.png",
+    "width": 446,
+    "height": 274,
+    "kind": "environment-component",
+    "source": "containers-source.png"
+  },
+  {
+    "id": "paper-rolls",
+    "file": "assets/paper-rolls.png",
+    "width": 340,
+    "height": 495,
+    "kind": "environment-component",
+    "source": "containers-source.png"
+  },
+  {
+    "id": "coral-paper",
+    "file": "assets/coral-paper.png",
+    "width": 520,
+    "height": 448,
+    "kind": "environment-component",
+    "source": "containers-source.png"
+  },
+  {
+    "id": "paper-strips",
+    "file": "assets/paper-strips.png",
+    "width": 435,
+    "height": 547,
+    "kind": "environment-component",
+    "source": "containers-source.png"
+  },
+  {
+    "id": "indigo-cloth",
+    "file": "assets/indigo-cloth.png",
+    "width": 520,
+    "height": 519,
+    "kind": "environment-component",
+    "source": "containers-source.png"
+  },
+  {
+    "id": "coral-lantern",
+    "file": "assets/coral-lantern.png",
+    "width": 303,
+    "height": 425,
+    "kind": "environment-component",
+    "source": "decor-source.png"
+  },
+  {
+    "id": "ivory-lantern",
+    "file": "assets/ivory-lantern.png",
+    "width": 241,
+    "height": 380,
+    "kind": "environment-component",
+    "source": "decor-source.png"
+  },
+  {
+    "id": "teal-lantern",
+    "file": "assets/teal-lantern.png",
+    "width": 253,
+    "height": 278,
+    "kind": "environment-component",
+    "source": "decor-source.png"
+  },
+  {
+    "id": "lantern-skeleton",
+    "file": "assets/lantern-skeleton.png",
+    "width": 304,
+    "height": 327,
+    "kind": "environment-component",
+    "source": "decor-source.png"
+  },
+  {
+    "id": "box-stack",
+    "file": "assets/box-stack.png",
+    "width": 352,
+    "height": 327,
+    "kind": "environment-component",
+    "source": "decor-source.png"
+  },
+  {
+    "id": "bamboo-hoops",
+    "file": "assets/bamboo-hoops.png",
+    "width": 359,
+    "height": 238,
+    "kind": "environment-component",
+    "source": "decor-source.png"
+  },
+  {
+    "id": "ribbon-reels",
+    "file": "assets/ribbon-reels.png",
+    "width": 382,
+    "height": 272,
+    "kind": "environment-component",
+    "source": "decor-source.png"
+  },
+  {
+    "id": "bamboo-plant",
+    "file": "assets/bamboo-plant.png",
+    "width": 308,
+    "height": 382,
+    "kind": "environment-component",
+    "source": "decor-source.png"
+  },
+  {
+    "id": "woven-tray",
+    "file": "assets/woven-tray.png",
+    "width": 434,
+    "height": 212,
+    "kind": "environment-component",
+    "source": "decor-source.png"
+  }
+]

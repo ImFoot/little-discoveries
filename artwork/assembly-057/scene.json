@@ -1,0 +1,341 @@
+{
+  "id": 57,
+  "title": "The lantern-maker\u2019s assembled stall",
+  "width": 1024,
+  "height": 1536,
+  "layers": [
+    {
+      "id": "stall-structure",
+      "asset": "stall-frame",
+      "x": 0,
+      "y": 30,
+      "width": 1024,
+      "angle": 0,
+      "kind": "prop"
+    },
+    {
+      "id": "hanging-back-cloth",
+      "asset": "indigo-cloth",
+      "x": 40,
+      "y": 263,
+      "width": 337,
+      "angle": 0,
+      "kind": "prop"
+    },
+    {
+      "id": "rear-bamboo",
+      "asset": "bamboo-plant",
+      "x": 701,
+      "y": 442,
+      "width": 230,
+      "angle": 0,
+      "kind": "prop"
+    },
+    {
+      "id": "rack",
+      "asset": "paper-rack",
+      "x": 42,
+      "y": 405,
+      "width": 390,
+      "angle": 0,
+      "kind": "prop"
+    },
+    {
+      "id": "coral-scissors",
+      "asset": "target:coral-scissors",
+      "x": 167,
+      "y": 471,
+      "height": 128,
+      "angle": -5,
+      "kind": "target"
+    },
+    {
+      "id": "wooden-peg",
+      "asset": "target:wooden-peg",
+      "x": 301,
+      "y": 478,
+      "height": 106,
+      "angle": -10,
+      "kind": "target"
+    },
+    {
+      "id": "hanging-materials",
+      "asset": "paper-strips",
+      "x": 180,
+      "y": 517,
+      "width": 230,
+      "angle": 0,
+      "kind": "prop"
+    },
+    {
+      "id": "teal-lantern",
+      "asset": "teal-lantern",
+      "x": 445,
+      "y": 327,
+      "width": 157,
+      "angle": 0,
+      "kind": "prop"
+    },
+    {
+      "id": "paper-moon",
+      "asset": "target:paper-moon",
+      "x": 842,
+      "y": 527,
+      "height": 113,
+      "angle": -7,
+      "kind": "target"
+    },
+    {
+      "id": "ivory-lantern",
+      "asset": "ivory-lantern",
+      "x": 773,
+      "y": 292,
+      "width": 177,
+      "angle": 0,
+      "kind": "prop"
+    },
+    {
+      "id": "coral-lantern",
+      "asset": "coral-lantern",
+      "x": 566,
+      "y": 282,
+      "width": 206,
+      "angle": 0,
+      "kind": "prop"
+    },
+    {
+      "id": "bench",
+      "asset": "workbench",
+      "x": 16,
+      "y": 750,
+      "width": 992,
+      "angle": 0,
+      "kind": "prop"
+    },
+    {
+      "id": "box-back",
+      "asset": "box-back",
+      "x": 73,
+      "y": 718,
+      "width": 327,
+      "angle": 0,
+      "kind": "prop"
+    },
+    {
+      "id": "indigo-ink",
+      "asset": "target:indigo-ink",
+      "x": 159,
+      "y": 722,
+      "height": 120,
+      "angle": 0,
+      "kind": "target"
+    },
+    {
+      "id": "wooden-stamp",
+      "asset": "target:wooden-stamp",
+      "x": 439,
+      "y": 782,
+      "height": 117,
+      "angle": -6,
+      "kind": "target"
+    },
+    {
+      "id": "candle",
+      "asset": "target:candle",
+      "x": 650,
+      "y": 702,
+      "height": 145,
+      "angle": 0,
+      "kind": "target"
+    },
+    {
+      "id": "lantern-ribs",
+      "asset": "lantern-skeleton",
+      "x": 585,
+      "y": 669,
+      "width": 219,
+      "angle": 0,
+      "kind": "prop"
+    },
+    {
+      "id": "brass-key",
+      "asset": "target:brass-key",
+      "x": 361,
+      "y": 826,
+      "height": 109,
+      "angle": 78,
+      "kind": "target"
+    },
+    {
+      "id": "folding-ruler",
+      "asset": "target:folding-ruler",
+      "x": 516,
+      "y": 773,
+      "height": 110,
+      "angle": 82,
+      "kind": "target"
+    },
+    {
+      "id": "paintbrush",
+      "asset": "target:paintbrush",
+      "x": 101,
+      "y": 925,
+      "height": 153,
+      "angle": -35,
+      "kind": "target"
+    },
+    {
+      "id": "box-front",
+      "asset": "box-front",
+      "x": 73,
+      "y": 791,
+      "width": 327,
+      "angle": 0,
+      "kind": "prop"
+    },
+    {
+      "id": "curled-paper",
+      "asset": "coral-paper",
+      "x": 478,
+      "y": 831,
+      "width": 288,
+      "angle": 0,
+      "kind": "prop"
+    },
+    {
+      "id": "desk-hoops",
+      "asset": "bamboo-hoops",
+      "x": 37,
+      "y": 936,
+      "width": 282,
+      "angle": 0,
+      "kind": "prop"
+    },
+    {
+      "id": "desk-linen",
+      "asset": "indigo-cloth",
+      "x": 735,
+      "y": 841,
+      "width": 273,
+      "angle": 0,
+      "kind": "prop"
+    },
+    {
+      "id": "paper-tray",
+      "asset": "woven-tray",
+      "x": 327,
+      "y": 933,
+      "width": 233,
+      "angle": 0,
+      "kind": "prop"
+    },
+    {
+      "id": "ribbon-reels",
+      "asset": "ribbon-reels",
+      "x": 808,
+      "y": 791,
+      "width": 165,
+      "angle": 0,
+      "kind": "prop"
+    },
+    {
+      "id": "under-bench-boxes",
+      "asset": "box-stack",
+      "x": 437,
+      "y": 1110,
+      "width": 210,
+      "angle": 0,
+      "kind": "prop"
+    },
+    {
+      "id": "left-container-back",
+      "asset": "hamper-back",
+      "x": 17,
+      "y": 1095,
+      "width": 364,
+      "angle": 0,
+      "kind": "prop"
+    },
+    {
+      "id": "paper-crane",
+      "asset": "target:paper-crane",
+      "x": 233,
+      "y": 1210,
+      "height": 145,
+      "angle": -7,
+      "kind": "target"
+    },
+    {
+      "id": "left-rolls",
+      "asset": "paper-rolls",
+      "x": 56,
+      "y": 1150,
+      "width": 167,
+      "angle": 0,
+      "kind": "prop"
+    },
+    {
+      "id": "left-container-front",
+      "asset": "hamper-front",
+      "x": 21,
+      "y": 1300,
+      "width": 356,
+      "angle": 0,
+      "kind": "prop"
+    },
+    {
+      "id": "right-container-back",
+      "asset": "hamper-back",
+      "x": 664,
+      "y": 1126,
+      "width": 343,
+      "angle": 0,
+      "kind": "prop"
+    },
+    {
+      "id": "thread-spool",
+      "asset": "target:thread-spool",
+      "x": 874,
+      "y": 1256,
+      "height": 137,
+      "angle": 6,
+      "kind": "target"
+    },
+    {
+      "id": "coral-twine",
+      "asset": "target:coral-twine",
+      "x": 738,
+      "y": 1214,
+      "height": 126,
+      "angle": -8,
+      "kind": "target"
+    },
+    {
+      "id": "right-rolls",
+      "asset": "paper-rolls",
+      "x": 681,
+      "y": 1187,
+      "width": 128,
+      "angle": 0,
+      "kind": "prop"
+    },
+    {
+      "id": "right-container-front",
+      "asset": "hamper-front",
+      "x": 668,
+      "y": 1324,
+      "width": 335,
+      "angle": 0,
+      "kind": "prop"
+    },
+    {
+      "id": "small-ground-mat",
+      "asset": "woven-tray",
+      "x": 366,
+      "y": 1415,
+      "width": 245,
+      "angle": 0,
+      "kind": "prop"
+    }
+  ]
+}
