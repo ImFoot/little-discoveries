@@ -23,4 +23,8 @@ Strict content validation passed 56/738 counts, distinct scene hashes, max 15 ta
 
 The static hosting ZIP at output/LittleDiscoveries-static.zip contains 56 scene images, 738 previews and 56 runtime definitions. Size 42469959 bytes; SHA256 d8c1b4c3513eb19e486e79a3a88912a260c26a6998004a0ca340065338ea913e. Local run/build instructions remain in README.md. Static hosting requires no authoring tools or Python.
 
-Live deployment verification pending.
+## Live deployment
+
+[Level 56 is live](https://imfoot.github.io/little-discoveries/#scene/56). [Pages run 41968328615](https://github.com/ImFoot/little-discoveries/actions/runs/41968328615) succeeded for commit 9e6e4757afcb873d132c06297fc454171757f8f5. All 59 HTTP checks passed and matched the tested shell/content. A fresh hosted Chromium phone-emulation session verified full previews, reveal/assisted find, saving/reload, the complete six-scene chapter download and all six scenes opening offline, with no page errors. [Deployment evidence](verification-56/deployment.json) records the exact assets.
+
+The repository remains public. Reload Safari for the new scene and update chapter 6's offline download to include it. The editable .ora source and standalone layer proof are retained locally. Physical iPhone and intended-player review remain pending.
